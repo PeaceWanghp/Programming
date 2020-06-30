@@ -8,6 +8,12 @@
 
 #import "BPresentModel.h"
 
+@interface BPresentModel(){
+    
+}
+
+@end
+
 @implementation BPresentModel
 
 #pragma mark -
@@ -15,6 +21,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        _groupDataSource = [[NSMutableArray alloc] initWithCapacity:0];
         _dataSource = [[NSMutableArray alloc] initWithCapacity:0];
     }
     return self;
@@ -35,12 +42,16 @@
 }
 
 - (void)appendHeader:(NSString *)title status:(BOOL)status {
+    if (_dataSource.count > 0) {
+        return;
+    }
+    
     BPresentHeaderModel *headerModel = [[BPresentHeaderModel alloc] init];
     headerModel.title = title;
     headerModel.status = status;
     headerModel.items = [NSMutableArray array];
     
-    [_dataSource addObject:headerModel];
+    [_groupDataSource addObject:headerModel];
 }
 
 - (void)appendItemWithTitle:(NSString *)title class:(Class)className {
@@ -71,8 +82,13 @@
 }
 
 - (void)addItem:(BPresentItemModel *)itemModel {
-    BPresentHeaderModel *headerModel = (BPresentHeaderModel *)_dataSource.lastObject;
-    [headerModel.items addObject:itemModel];
+    if (_groupDataSource.count > 0) {
+        BPresentHeaderModel *headerModel = (BPresentHeaderModel *)_groupDataSource.lastObject;
+        [headerModel.items addObject:itemModel];
+    }
+    else {
+        [_dataSource addObject:itemModel];
+    }
 }
 
 @end

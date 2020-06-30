@@ -31,7 +31,11 @@
 #pragma mark -
 #pragma mark -- Custom
 - (void)refrushData:(NSInteger)index {
-    BPresentHeaderModel *headerModel = [_model.dataSource objectAtIndex:index];
+    if (_model.groupDataSource.count == 0) {
+        return;
+    }
+    
+    BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:index];
     headerModel.status = !headerModel.status;
     [self.tableView reloadData];
 }
@@ -39,23 +43,32 @@
 #pragma mark -
 #pragma mark -- TabelView DataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return _model.dataSource.count;
+    if (_model.groupDataSource.count > 0) {
+        return _model.groupDataSource.count;
+    }
+    else {
+        return 1;
+    }
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (_model.groupDataSource.count == 0) {
+        return nil;
+    }
+    
     static NSString *headerIdentifier = @"headerIdentifier";
     BPresentHeaderView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerIdentifier];
     if (!header) {
         header = [[BPresentHeaderView alloc] initWithIdentifier:headerIdentifier];
     }
     
-    BPresentHeaderModel *headerModel = [_model.dataSource objectAtIndex:section];
+    BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:section];
     header.title = headerModel.title;
     header.subTitle = headerModel.status ? @"收起":@"展开";
     header.index = section;
     __weak typeof(self) weakSelf = self;
     header.block = ^ (NSInteger index){
-        BPresentHeaderModel *headerModel = [weakSelf.model.dataSource objectAtIndex:index];
+        BPresentHeaderModel *headerModel = [weakSelf.model.groupDataSource objectAtIndex:index];
         headerModel.status = !headerModel.status;
         [weakSelf.tableView reloadData];
     };
@@ -64,8 +77,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    BPresentHeaderModel *headerModel = [_model.dataSource objectAtIndex:section];
-    return headerModel.status ? headerModel.items.count:0;
+    if (_model.groupDataSource.count > 0) {
+        BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:section];
+        return headerModel.status ? headerModel.items.count:0;
+    }
+    else {
+        return _model.dataSource.count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -75,8 +93,15 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    BPresentHeaderModel *headerModel = [_model.dataSource objectAtIndex:indexPath.section];
-    BPresentItemModel *itemModel = headerModel.items[indexPath.row];
+    BPresentItemModel *itemModel;
+    if (_model.groupDataSource.count > 0) {
+        BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:indexPath.section];
+        itemModel = headerModel.items[indexPath.row];
+    }
+    else {
+        itemModel = [_model.dataSource objectAtIndex:indexPath.row];
+    }
+    
     cell.textLabel.text = itemModel.displayTitle;
     
     return cell;
@@ -87,8 +112,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    BPresentHeaderModel *headerModel = [_model.dataSource objectAtIndex:indexPath.section];
-    BPresentItemModel *itemModel = headerModel.items[indexPath.row];
+    BPresentItemModel *itemModel;
+    if (_model.groupDataSource.count > 0) {
+        BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:indexPath.section];
+        itemModel = headerModel.items[indexPath.row];
+    }
+    else {
+        itemModel = [_model.dataSource objectAtIndex:indexPath.row];
+    }
  
     if (itemModel.className) {
         UIViewController *viewController = [[itemModel.className alloc] init];

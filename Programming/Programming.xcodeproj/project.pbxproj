@@ -19,6 +19,10 @@
 		CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B9249B70CC00BA9B02 /* BPresentHeaderModel.m */; };
 		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
 		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
+		CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760624AB33C400977E8F /* iOSToolsController.m */; };
+		CEF1760F24AB4B4F00977E8F /* CUBoundsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760A24AB4B4F00977E8F /* CUBoundsView.m */; };
+		CEF1761024AB4B4F00977E8F /* CUFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760C24AB4B4F00977E8F /* CUFrameView.m */; };
+		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,14 @@
 		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
 		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
 		CE9082E424A9BC7100A471B9 /* CHomework.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHomework.c; sourceTree = "<group>"; };
+		CEF1760524AB33C400977E8F /* iOSToolsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSToolsController.h; sourceTree = "<group>"; };
+		CEF1760624AB33C400977E8F /* iOSToolsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSToolsController.m; sourceTree = "<group>"; };
+		CEF1760924AB4B4F00977E8F /* CUFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameView.h; sourceTree = "<group>"; };
+		CEF1760A24AB4B4F00977E8F /* CUBoundsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUBoundsView.m; sourceTree = "<group>"; };
+		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
+		CEF1760C24AB4B4F00977E8F /* CUFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameView.m; sourceTree = "<group>"; };
+		CEF1760D24AB4B4F00977E8F /* CUBoundsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUBoundsView.h; sourceTree = "<group>"; };
+		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,13 +175,37 @@
 		CE56F5AB249B689E00BA9B02 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CEF1760424AB337C00977E8F /* Tools */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		CEF1760424AB337C00977E8F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1760524AB33C400977E8F /* iOSToolsController.h */,
+				CEF1760624AB33C400977E8F /* iOSToolsController.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CEF1760824AB4B4F00977E8F /* FrameBounds */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */,
+				CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */,
+				CEF1760924AB4B4F00977E8F /* CUFrameView.h */,
+				CEF1760C24AB4B4F00977E8F /* CUFrameView.m */,
+				CEF1760D24AB4B4F00977E8F /* CUBoundsView.h */,
+				CEF1760A24AB4B4F00977E8F /* CUBoundsView.m */,
+			);
+			path = FrameBounds;
 			sourceTree = "<group>";
 		};
 		CEF6ADDE249904A10061995A /* CocoaUI */ = {
 			isa = PBXGroup;
 			children = (
+				CEF1760824AB4B4F00977E8F /* FrameBounds */,
 			);
 			path = CocoaUI;
 			sourceTree = "<group>";
@@ -261,9 +297,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,
+				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
 				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
+				CEF1760F24AB4B4F00977E8F /* CUBoundsView.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
+				CEF1761024AB4B4F00977E8F /* CUFrameView.m in Sources */,
+				CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */,
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,
 				CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */,
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,

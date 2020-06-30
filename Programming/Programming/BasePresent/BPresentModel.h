@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BPresentModel : NSObject
 
+
+@property (nonatomic,strong,readonly) NSMutableArray *groupDataSource;
 @property (nonatomic,strong,readonly) NSMutableArray *dataSource;
 
 - (void)appendHeader:(NSString *)title;//default "status" is closed

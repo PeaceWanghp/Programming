@@ -11,6 +11,12 @@
 //C
 #import "CHomeworkController.h"
 
+//iOS
+#import "iOSToolsController.h"
+
+//CocoaUI
+#import "CUFrameBoundsViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -90,6 +96,7 @@
     [self.model appendItemWithTitle:@"@import/#import/#include/@class" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"const/extern/static/(关键字)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"#define" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"NSFileManager" class:[UIViewController class]];
     
     [self.model appendHeader:@"Swift"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
@@ -103,14 +110,14 @@
     [self.model appendHeader:@"CocoaUI"];
     [self.model appendItemWithTitle:@"Offscreen Rendered(离屏渲染)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Test Hit" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Frame/Bounds" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Frame/Bounds" class:[CUFrameBoundsViewController class]];
     [self.model appendItemWithTitle:@"手势" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"约束" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"UITableView" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Layer" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"转场" class:[UIViewController class]];
     
-    [self.model appendHeader:@"iOS"];
+    [self.model appendOpenedHeader:@"iOS"];
     [self.model appendItemWithTitle:@"Memory Masonry (内存分布)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Crash(引发崩溃)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"追踪/捕捉崩溃" class:[UIViewController class]];
@@ -124,6 +131,7 @@
     [self.model appendItemWithTitle:@"重签名" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Load/Initialize(类加载及初始化)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Tools(工具)" class:[iOSToolsController class]];
     
     [self.model appendHeader:@"Flutter"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
