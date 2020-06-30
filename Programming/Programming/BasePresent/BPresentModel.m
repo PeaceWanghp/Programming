@@ -51,7 +51,7 @@
     [self addItem:itemModel];
 }
 
-- (void)appendItem:(NSString *)title target:(id)target selector:(SEL)selector {
+- (void)appendItemTitle:(NSString *)title target:(id)target selector:(SEL)selector {
     BPresentItemModel *itemModel = [[BPresentItemModel alloc] init];
     itemModel.title = title;
     itemModel.target = target;

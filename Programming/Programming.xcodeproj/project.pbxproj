@@ -12,12 +12,13 @@
 		CE316F6D2498D4A600AC495A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE316F6C2498D4A600AC495A /* Assets.xcassets */; };
 		CE316F702498D4A600AC495A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE316F6E2498D4A600AC495A /* LaunchScreen.storyboard */; };
 		CE316F732498D4A600AC495A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F722498D4A600AC495A /* main.m */; };
-		CE4F0E8A249F6576007B8473 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4F0E89249F6576007B8473 /* CViewController.m */; };
 		CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5AD249B6D2300BA9B02 /* BPresentController.m */; };
 		CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B0249B6E9F00BA9B02 /* BPresentModel.m */; };
 		CE56F5B4249B6F4300BA9B02 /* BPresentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B3249B6F4300BA9B02 /* BPresentHeaderView.m */; };
 		CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B6249B6F7900BA9B02 /* BPresentItemModel.m */; };
 		CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B9249B70CC00BA9B02 /* BPresentHeaderModel.m */; };
+		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
+		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,6 @@
 		CE316F6F2498D4A600AC495A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE316F712498D4A600AC495A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE316F722498D4A600AC495A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE4F0E88249F6576007B8473 /* CViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
-		CE4F0E89249F6576007B8473 /* CViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
 		CE56F5AC249B6D2300BA9B02 /* BPresentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPresentController.h; sourceTree = "<group>"; };
 		CE56F5AD249B6D2300BA9B02 /* BPresentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPresentController.m; sourceTree = "<group>"; };
 		CE56F5AF249B6E9F00BA9B02 /* BPresentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPresentModel.h; sourceTree = "<group>"; };
@@ -42,6 +41,10 @@
 		CE56F5B6249B6F7900BA9B02 /* BPresentItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPresentItemModel.m; sourceTree = "<group>"; };
 		CE56F5B8249B70CC00BA9B02 /* BPresentHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPresentHeaderModel.h; sourceTree = "<group>"; };
 		CE56F5B9249B70CC00BA9B02 /* BPresentHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPresentHeaderModel.m; sourceTree = "<group>"; };
+		CE9082E024A9B4F600A471B9 /* CHomeworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkController.h; sourceTree = "<group>"; };
+		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
+		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
+		CE9082E424A9BC7100A471B9 /* CHomework.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHomework.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +131,10 @@
 		CE316F7D2498D56C00AC495A /* C */ = {
 			isa = PBXGroup;
 			children = (
-				CE4F0E88249F6576007B8473 /* CViewController.h */,
-				CE4F0E89249F6576007B8473 /* CViewController.m */,
+				CE9082E024A9B4F600A471B9 /* CHomeworkController.h */,
+				CE9082E124A9B4F600A471B9 /* CHomeworkController.m */,
+				CE9082E324A9BC7100A471B9 /* CHomework.h */,
+				CE9082E424A9BC7100A471B9 /* CHomework.c */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -255,11 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4F0E8A249F6576007B8473 /* CViewController.m in Sources */,
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
+				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,
+				CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */,
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,
 				CE316F732498D4A600AC495A /* main.m in Sources */,
 				CE56F5B4249B6F4300BA9B02 /* BPresentHeaderView.m in Sources */,
