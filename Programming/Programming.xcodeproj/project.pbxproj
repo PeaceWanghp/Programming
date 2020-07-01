@@ -20,6 +20,10 @@
 		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
 		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
 		CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3969824AC35CC00F5915E /* CUFBView.m */; };
+		CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3969D24AC5BE600F5915E /* CUHitTestController.m */; };
+		CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A024AC8D7300F5915E /* CUHitTestView.m */; };
+		CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A324AC8F4900F5915E /* CUHitTestAView.m */; };
+		CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A624AC8F6100F5915E /* CUHitTestBView.m */; };
 		CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760624AB33C400977E8F /* iOSToolsController.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +54,14 @@
 		CE9082E424A9BC7100A471B9 /* CHomework.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHomework.c; sourceTree = "<group>"; };
 		CEB3969724AC35CC00F5915E /* CUFBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUFBView.h; sourceTree = "<group>"; };
 		CEB3969824AC35CC00F5915E /* CUFBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUFBView.m; sourceTree = "<group>"; };
+		CEB3969C24AC5BE600F5915E /* CUHitTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUHitTestController.h; sourceTree = "<group>"; };
+		CEB3969D24AC5BE600F5915E /* CUHitTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestController.m; sourceTree = "<group>"; };
+		CEB3969F24AC8D7300F5915E /* CUHitTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUHitTestView.h; sourceTree = "<group>"; };
+		CEB396A024AC8D7300F5915E /* CUHitTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestView.m; sourceTree = "<group>"; };
+		CEB396A224AC8F4900F5915E /* CUHitTestAView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUHitTestAView.h; sourceTree = "<group>"; };
+		CEB396A324AC8F4900F5915E /* CUHitTestAView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestAView.m; sourceTree = "<group>"; };
+		CEB396A524AC8F6100F5915E /* CUHitTestBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUHitTestBView.h; sourceTree = "<group>"; };
+		CEB396A624AC8F6100F5915E /* CUHitTestBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestBView.m; sourceTree = "<group>"; };
 		CEF1760524AB33C400977E8F /* iOSToolsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSToolsController.h; sourceTree = "<group>"; };
 		CEF1760624AB33C400977E8F /* iOSToolsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSToolsController.m; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
@@ -177,6 +189,21 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		CEB3969B24AC5BA800F5915E /* HitTest */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3969C24AC5BE600F5915E /* CUHitTestController.h */,
+				CEB3969D24AC5BE600F5915E /* CUHitTestController.m */,
+				CEB3969F24AC8D7300F5915E /* CUHitTestView.h */,
+				CEB396A024AC8D7300F5915E /* CUHitTestView.m */,
+				CEB396A224AC8F4900F5915E /* CUHitTestAView.h */,
+				CEB396A324AC8F4900F5915E /* CUHitTestAView.m */,
+				CEB396A524AC8F6100F5915E /* CUHitTestBView.h */,
+				CEB396A624AC8F6100F5915E /* CUHitTestBView.m */,
+			);
+			path = HitTest;
+			sourceTree = "<group>";
+		};
 		CEF1760424AB337C00977E8F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +227,7 @@
 		CEF6ADDE249904A10061995A /* CocoaUI */ = {
 			isa = PBXGroup;
 			children = (
+				CEB3969B24AC5BA800F5915E /* HitTest */,
 				CEF1760824AB4B4F00977E8F /* FrameBounds */,
 			);
 			path = CocoaUI;
@@ -291,9 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */,
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,
 				CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
+				CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
 				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
@@ -303,7 +333,9 @@
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,
 				CE316F732498D4A600AC495A /* main.m in Sources */,
 				CE56F5B4249B6F4300BA9B02 /* BPresentHeaderView.m in Sources */,
+				CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */,
 				CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */,
+				CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

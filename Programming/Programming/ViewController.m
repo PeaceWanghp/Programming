@@ -15,6 +15,7 @@
 #import "iOSToolsController.h"
 
 //CocoaUI
+#import "CUHitTestController.h"
 #import "CUFrameBoundsViewController.h"
 
 @interface ViewController ()
@@ -63,17 +64,10 @@
     
     [self.model appendHeader:@"DataBase(数据库)"];
     [self.model appendItemWithTitle:@"Sqlite3" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"SQLanguage" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"SQL" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Cipher" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"FMDB" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"LKDBHelper" class:[UIViewController class]];
-    
-    [self.model appendHeader:@"DesignPattern(设计模式)"];
-    [self.model appendItemWithTitle:@"MVC" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"MVVM" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"MVP" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"单例" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"工厂" class:[UIViewController class]];
     
     [self.model appendHeader:@"Objective-C"];
     [self.model appendItemWithTitle:@"Runloop" class:[UIViewController class]];
@@ -99,23 +93,26 @@
     [self.model appendItemWithTitle:@"NSFileManager" class:[UIViewController class]];
     
     [self.model appendHeader:@"Swift"];
-    [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"桥接" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"基本语法" class:[UIViewController class]];
     
     [self.model appendHeader:@"C++"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"C"];
-    [self.model appendItemWithTitle:@"homework" class:[CHomeworkController class]];
+    [self.model appendItemWithTitle:@"Homework" class:[CHomeworkController class]];
     
     [self.model appendHeader:@"CocoaUI"];
-    [self.model appendItemWithTitle:@"Offscreen Rendered(离屏渲染)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Test Hit" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"HitTest" class:[CUHitTestController class]];
     [self.model appendItemWithTitle:@"Frame/Bounds" class:[CUFrameBoundsViewController class]];
+    [self.model appendItemWithTitle:@"Layer" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"手势" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"约束" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"UITableView" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Layer" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"转场" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"StoryBoard" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Xib" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"iOS"];
     [self.model appendItemWithTitle:@"Memory Masonry (内存分布)" class:[UIViewController class]];
@@ -145,6 +142,13 @@
     
     [self.model appendHeader:@"音视频"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
+    
+    [self.model appendHeader:@"DesignPattern(设计模式)"];
+    [self.model appendItemWithTitle:@"MVC" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"MVVM" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"MVP" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"单例" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"工厂" class:[UIViewController class]];
 }
 
 
