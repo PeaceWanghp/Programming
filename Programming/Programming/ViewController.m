@@ -15,6 +15,7 @@
 #import "iOSToolsController.h"
 
 //CocoaUI
+#import "CUOffScreenController.h"
 #import "CUHitTestController.h"
 #import "CUFrameBoundsViewController.h"
 
@@ -103,12 +104,13 @@
     [self.model appendItemWithTitle:@"Homework" class:[CHomeworkController class]];
     
     [self.model appendHeader:@"CocoaUI"];
-    [self.model appendItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
     [self.model appendItemWithTitle:@"HitTest" class:[CUHitTestController class]];
     [self.model appendItemWithTitle:@"Frame/Bounds" class:[CUFrameBoundsViewController class]];
     [self.model appendItemWithTitle:@"Layer" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"手势" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"约束" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"DispalyLink" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"UITableView" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"转场" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"StoryBoard" class:[UIViewController class]];

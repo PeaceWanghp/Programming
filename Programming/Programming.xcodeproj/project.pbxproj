@@ -24,6 +24,8 @@
 		CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A024AC8D7300F5915E /* CUHitTestView.m */; };
 		CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A324AC8F4900F5915E /* CUHitTestAView.m */; };
 		CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A624AC8F6100F5915E /* CUHitTestBView.m */; };
+		CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */; };
+		CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */; };
 		CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760624AB33C400977E8F /* iOSToolsController.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,10 @@
 		CEB396A324AC8F4900F5915E /* CUHitTestAView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestAView.m; sourceTree = "<group>"; };
 		CEB396A524AC8F6100F5915E /* CUHitTestBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUHitTestBView.h; sourceTree = "<group>"; };
 		CEB396A624AC8F6100F5915E /* CUHitTestBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestBView.m; sourceTree = "<group>"; };
+		CEC0C5DC24AD870C00E103F5 /* CUOffScreenController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUOffScreenController.h; sourceTree = "<group>"; };
+		CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUOffScreenController.m; sourceTree = "<group>"; };
+		CEC0C5DF24ADA6F100E103F5 /* CHomeworkSecond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkSecond.h; sourceTree = "<group>"; };
+		CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHomeworkSecond.c; sourceTree = "<group>"; };
 		CEF1760524AB33C400977E8F /* iOSToolsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSToolsController.h; sourceTree = "<group>"; };
 		CEF1760624AB33C400977E8F /* iOSToolsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSToolsController.m; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 				CE9082E124A9B4F600A471B9 /* CHomeworkController.m */,
 				CE9082E324A9BC7100A471B9 /* CHomework.h */,
 				CE9082E424A9BC7100A471B9 /* CHomework.c */,
+				CEC0C5DF24ADA6F100E103F5 /* CHomeworkSecond.h */,
+				CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -204,6 +212,15 @@
 			path = HitTest;
 			sourceTree = "<group>";
 		};
+		CEC0C5DB24AD852100E103F5 /* OffScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0C5DC24AD870C00E103F5 /* CUOffScreenController.h */,
+				CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */,
+			);
+			path = OffScreen;
+			sourceTree = "<group>";
+		};
 		CEF1760424AB337C00977E8F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +244,7 @@
 		CEF6ADDE249904A10061995A /* CocoaUI */ = {
 			isa = PBXGroup;
 			children = (
+				CEC0C5DB24AD852100E103F5 /* OffScreen */,
 				CEB3969B24AC5BA800F5915E /* HitTest */,
 				CEF1760824AB4B4F00977E8F /* FrameBounds */,
 			);
@@ -324,8 +342,10 @@
 				CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
 				CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */,
+				CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
 				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
+				CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
 				CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */,
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,

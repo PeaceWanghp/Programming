@@ -19,10 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendOpenedHeader:@"Homework"];
+    [self.model appendOpenedHeader:@"First"];
     [self.model appendItemTitle:@"F/C" target:self selector:@selector(FtoC)];
     [self.model appendItemTitle:@"formulo" target:self selector:@selector(formulo)];
     [self.model appendItemTitle:@"score" target:self selector:@selector(score)];
+    
+    [self.model appendOpenedHeader:@"Second"];
+    [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
+    
+    [self.model appendOpenedHeader:@"Third"];
+    [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
 }
 
 - (void)FtoC {
@@ -36,6 +42,10 @@
 
 - (void)score {
     score();
+}
+
+- (void)todo {
+ 
 }
 
 @end
