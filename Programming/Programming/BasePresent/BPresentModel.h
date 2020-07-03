@@ -23,8 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)appendOpenedHeader:(NSString *)title;
 
 - (void)appendItemWithTitle:(NSString *)title class:(Class)className;//enter next page
+- (void)appendFinishedItemWithTitle:(NSString *)title class:(Class)className;//enter next page
+
 - (void)appendItemTitle:(NSString *)title target:(id)target selector:(SEL)selector;//do "selector"
+- (void)appendFinishedItemTitle:(NSString *)title target:(id)target selector:(SEL)selector;//do "selector"
+
 - (void)appendTagItemWithTitle:(NSString *)title target:(id)target selector:(SEL)selector;//Record hit count
+- (void)appendFinishedTagItemWithTitle:(NSString *)title target:(id)target selector:(SEL)selector;//Record hit count
 
 @end
 

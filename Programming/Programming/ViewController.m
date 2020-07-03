@@ -32,13 +32,13 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.model appendHeader:@"Algorithms(算法)"];
-    [self.model appendItemWithTitle:@"✓理论" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"理论" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Array(数组)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Stack(栈)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"✓Queue(队列)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"✓Link(链表)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"✓Tree(树)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"✓Hash(散列表)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Queue(队列)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Link(链表)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Tree(树)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Hash(散列表)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Heap(堆)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Graph(图)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Other(其他)" class:[UIViewController class]];
@@ -101,12 +101,12 @@
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"C"];
-    [self.model appendItemWithTitle:@"Homework" class:[CHomeworkController class]];
+    [self.model appendFinishedItemWithTitle:@"Homework" class:[CHomeworkController class]];
     
     [self.model appendHeader:@"CocoaUI"];
-    [self.model appendItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
-    [self.model appendItemWithTitle:@"HitTest" class:[CUHitTestController class]];
-    [self.model appendItemWithTitle:@"Frame/Bounds" class:[CUFrameBoundsViewController class]];
+    [self.model appendFinishedItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
+    [self.model appendFinishedItemWithTitle:@"HitTest" class:[CUHitTestController class]];
+    [self.model appendFinishedItemWithTitle:@"Frame/Bounds" class:[CUFrameBoundsViewController class]];
     [self.model appendItemWithTitle:@"Layer" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"手势" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"约束" class:[UIViewController class]];
@@ -128,6 +128,7 @@
     [self.model appendItemWithTitle:@"防进程调试" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"反编译" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"重签名" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"沙盒机制" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Load/Initialize(类加载及初始化)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Tools(工具)" class:[iOSToolsController class]];

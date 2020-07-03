@@ -55,33 +55,41 @@
 }
 
 - (void)appendItemWithTitle:(NSString *)title class:(Class)className {
-    BPresentItemModel *itemModel = [[BPresentItemModel alloc] init];
-    itemModel.title = title;
-    itemModel.className = className;
-    
-    [self addItem:itemModel];
+    [self addItem:title class:className target:nil selector:nil];
+}
+
+- (void)appendFinishedItemWithTitle:(NSString *)title class:(Class)className {
+    BPresentItemModel *itemModel = [self addItem:title class:className target:nil selector:nil];
+    itemModel.dark = YES;
 }
 
 - (void)appendItemTitle:(NSString *)title target:(id)target selector:(SEL)selector {
-    BPresentItemModel *itemModel = [[BPresentItemModel alloc] init];
-    itemModel.title = title;
-    itemModel.target = target;
-    itemModel.selector = selector;
-    
-    [self addItem:itemModel];
+    [self addItem:title class:nil target:target selector:selector];
+}
+
+- (void)appendFinishedItemTitle:(NSString *)title target:(id)target selector:(SEL)selector {
+    BPresentItemModel *itemModel = [self addItem:title class:nil target:target selector:selector];
+    itemModel.dark = YES;
 }
 
 - (void)appendTagItemWithTitle:(NSString *)title target:(id)target selector:(SEL)selector {
-    BPresentItemModel *itemModel = [[BPresentItemModel alloc] init];
-    itemModel.title = title;
-    itemModel.target = target;
-    itemModel.selector = selector;
+    BPresentItemModel *itemModel = [self addItem:title class:nil target:target selector:selector];
     itemModel.tag = 0;
-
-    [self addItem:itemModel];
 }
 
-- (void)addItem:(BPresentItemModel *)itemModel {
+- (void)appendFinishedTagItemWithTitle:(NSString *)title target:(id)target selector:(SEL)selector {
+    BPresentItemModel *itemModel = [self addItem:title class:nil target:target selector:selector];
+    itemModel.tag = 0;
+    itemModel.dark = YES;
+}
+
+- (BPresentItemModel *)addItem:(NSString *)title class:(Class)className target:(id)target selector:(SEL)selector {
+    BPresentItemModel *itemModel = [[BPresentItemModel alloc] init];
+    itemModel.title = title;
+    itemModel.className = className;
+    itemModel.target = target;
+    itemModel.selector = selector;
+    
     if (_groupDataSource.count > 0) {
         BPresentHeaderModel *headerModel = (BPresentHeaderModel *)_groupDataSource.lastObject;
         [headerModel.items addObject:itemModel];
@@ -89,6 +97,8 @@
     else {
         [_dataSource addObject:itemModel];
     }
+    
+    return itemModel;
 }
 
 @end

@@ -103,6 +103,7 @@
     }
     
     cell.textLabel.text = itemModel.displayTitle;
+    cell.textLabel.textColor = itemModel.dark ? [UIColor blackColor]:[UIColor grayColor];
     
     return cell;
 }
