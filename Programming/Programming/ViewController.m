@@ -10,6 +10,7 @@
 
 //C
 #import "CHomeworkController.h"
+#import "CLibsController.h"
 
 //iOS
 #import "iOSToolsController.h"
@@ -102,6 +103,8 @@
     
     [self.model appendOpenedHeader:@"C"];
     [self.model appendFinishedItemWithTitle:@"Homework" class:[CHomeworkController class]];
+    [self.model appendFinishedItemWithTitle:@"标准库" class:[CLibsController class]];
+    [self.model appendFinishedItemWithTitle:@"Array(数组)" class:[CHomeworkController class]];
     
     [self.model appendHeader:@"CocoaUI"];
     [self.model appendFinishedItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];

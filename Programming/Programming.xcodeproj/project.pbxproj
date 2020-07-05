@@ -12,6 +12,7 @@
 		CE316F6D2498D4A600AC495A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE316F6C2498D4A600AC495A /* Assets.xcassets */; };
 		CE316F702498D4A600AC495A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE316F6E2498D4A600AC495A /* LaunchScreen.storyboard */; };
 		CE316F732498D4A600AC495A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F722498D4A600AC495A /* main.m */; };
+		CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */; };
 		CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5AD249B6D2300BA9B02 /* BPresentController.m */; };
 		CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B0249B6E9F00BA9B02 /* BPresentModel.m */; };
 		CE56F5B4249B6F4300BA9B02 /* BPresentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B3249B6F4300BA9B02 /* BPresentHeaderView.m */; };
@@ -28,6 +29,13 @@
 		CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */; };
 		CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760624AB33C400977E8F /* iOSToolsController.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
+		CEF17DD624B1CFB000218C27 /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DD524B1CFB000218C27 /* CArray.c */; };
+		CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DDA24B1F5A000218C27 /* CCycle.c */; };
+		CEF17DE124B2320200218C27 /* CDataType.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE024B2320200218C27 /* CDataType.c */; };
+		CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE324B2324100218C27 /* COptionAndOperator.c */; };
+		CEF17DE724B232AD00218C27 /* CPointer.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE624B232AD00218C27 /* CPointer.c */; };
+		CEF17DEA24B2338600218C27 /* CFunction.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE924B2338600218C27 /* CFunction.c */; };
+		CEF17DF124B2369C00218C27 /* CLibsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DF024B2369C00218C27 /* CLibsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,8 @@
 		CE316F6F2498D4A600AC495A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE316F712498D4A600AC495A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE316F722498D4A600AC495A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE50CA8E24AF2A9000BAB483 /* CGGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGradientView.h; sourceTree = "<group>"; };
+		CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGGradientView.m; sourceTree = "<group>"; };
 		CE56F5AC249B6D2300BA9B02 /* BPresentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPresentController.h; sourceTree = "<group>"; };
 		CE56F5AD249B6D2300BA9B02 /* BPresentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPresentController.m; sourceTree = "<group>"; };
 		CE56F5AF249B6E9F00BA9B02 /* BPresentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPresentModel.h; sourceTree = "<group>"; };
@@ -72,6 +82,20 @@
 		CEF1760624AB33C400977E8F /* iOSToolsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSToolsController.m; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
 		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
+		CEF17DD424B1CFB000218C27 /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
+		CEF17DD524B1CFB000218C27 /* CArray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CArray.c; sourceTree = "<group>"; };
+		CEF17DD924B1F5A000218C27 /* CCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCycle.h; sourceTree = "<group>"; };
+		CEF17DDA24B1F5A000218C27 /* CCycle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CCycle.c; sourceTree = "<group>"; };
+		CEF17DDF24B2320200218C27 /* CDataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDataType.h; sourceTree = "<group>"; };
+		CEF17DE024B2320200218C27 /* CDataType.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CDataType.c; sourceTree = "<group>"; };
+		CEF17DE224B2324100218C27 /* COptionAndOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COptionAndOperator.h; sourceTree = "<group>"; };
+		CEF17DE324B2324100218C27 /* COptionAndOperator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = COptionAndOperator.c; sourceTree = "<group>"; };
+		CEF17DE524B232AD00218C27 /* CPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPointer.h; sourceTree = "<group>"; };
+		CEF17DE624B232AD00218C27 /* CPointer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CPointer.c; sourceTree = "<group>"; };
+		CEF17DE824B2338600218C27 /* CFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFunction.h; sourceTree = "<group>"; };
+		CEF17DE924B2338600218C27 /* CFunction.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFunction.c; sourceTree = "<group>"; };
+		CEF17DEF24B2369C00218C27 /* CLibsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLibsController.h; sourceTree = "<group>"; };
+		CEF17DF024B2369C00218C27 /* CLibsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLibsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,12 +182,20 @@
 		CE316F7D2498D56C00AC495A /* C */ = {
 			isa = PBXGroup;
 			children = (
-				CE9082E024A9B4F600A471B9 /* CHomeworkController.h */,
-				CE9082E124A9B4F600A471B9 /* CHomeworkController.m */,
-				CE9082E324A9BC7100A471B9 /* CHomework.h */,
-				CE9082E424A9BC7100A471B9 /* CHomework.c */,
-				CEC0C5DF24ADA6F100E103F5 /* CHomeworkSecond.h */,
-				CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */,
+				CEF17DDF24B2320200218C27 /* CDataType.h */,
+				CEF17DE024B2320200218C27 /* CDataType.c */,
+				CEF17DE224B2324100218C27 /* COptionAndOperator.h */,
+				CEF17DE324B2324100218C27 /* COptionAndOperator.c */,
+				CEF17DD924B1F5A000218C27 /* CCycle.h */,
+				CEF17DDA24B1F5A000218C27 /* CCycle.c */,
+				CEF17DD424B1CFB000218C27 /* CArray.h */,
+				CEF17DD524B1CFB000218C27 /* CArray.c */,
+				CEF17DE824B2338600218C27 /* CFunction.h */,
+				CEF17DE924B2338600218C27 /* CFunction.c */,
+				CEF17DE524B232AD00218C27 /* CPointer.h */,
+				CEF17DE624B232AD00218C27 /* CPointer.c */,
+				CEF17DEE24B2365C00218C27 /* Libs */,
+				CEF17DD724B1D03A00218C27 /* Homework */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -217,6 +249,8 @@
 			children = (
 				CEC0C5DC24AD870C00E103F5 /* CUOffScreenController.h */,
 				CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */,
+				CE50CA8E24AF2A9000BAB483 /* CGGradientView.h */,
+				CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */,
 			);
 			path = OffScreen;
 			sourceTree = "<group>";
@@ -239,6 +273,28 @@
 				CEB3969824AC35CC00F5915E /* CUFBView.m */,
 			);
 			path = FrameBounds;
+			sourceTree = "<group>";
+		};
+		CEF17DD724B1D03A00218C27 /* Homework */ = {
+			isa = PBXGroup;
+			children = (
+				CE9082E024A9B4F600A471B9 /* CHomeworkController.h */,
+				CE9082E124A9B4F600A471B9 /* CHomeworkController.m */,
+				CE9082E324A9BC7100A471B9 /* CHomework.h */,
+				CE9082E424A9BC7100A471B9 /* CHomework.c */,
+				CEC0C5DF24ADA6F100E103F5 /* CHomeworkSecond.h */,
+				CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */,
+			);
+			path = Homework;
+			sourceTree = "<group>";
+		};
+		CEF17DEE24B2365C00218C27 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				CEF17DEF24B2369C00218C27 /* CLibsController.h */,
+				CEF17DF024B2369C00218C27 /* CLibsController.m */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 		CEF6ADDE249904A10061995A /* CocoaUI */ = {
@@ -337,21 +393,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF17DE724B232AD00218C27 /* CPointer.c in Sources */,
 				CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */,
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,
 				CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */,
+				CEF17DE124B2320200218C27 /* CDataType.c in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
+				CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */,
 				CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */,
+				CEF17DF124B2369C00218C27 /* CLibsController.m in Sources */,
 				CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */,
+				CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
 				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
 				CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */,
+				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
 				CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */,
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,
 				CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */,
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,
+				CEF17DD624B1CFB000218C27 /* CArray.c in Sources */,
 				CE316F732498D4A600AC495A /* main.m in Sources */,
+				CEF17DEA24B2338600218C27 /* CFunction.c in Sources */,
 				CE56F5B4249B6F4300BA9B02 /* BPresentHeaderView.m in Sources */,
 				CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */,
 				CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */,
