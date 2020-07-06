@@ -102,14 +102,14 @@
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"C"];
-    [self.model appendFinishedItemWithTitle:@"Homework" class:[CHomeworkController class]];
-    [self.model appendFinishedItemWithTitle:@"标准库" class:[CLibsController class]];
-    [self.model appendFinishedItemWithTitle:@"Array(数组)" class:[CHomeworkController class]];
+    [self.model appendDarkItemWithTitle:@"Homework" class:[CHomeworkController class]];
+    [self.model appendDarkItemWithTitle:@"标准库" class:[CLibsController class]];
+    [self.model appendDarkItemWithTitle:@"Array(数组)" class:[CHomeworkController class]];
     
     [self.model appendHeader:@"CocoaUI"];
-    [self.model appendFinishedItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
-    [self.model appendFinishedItemWithTitle:@"HitTest" class:[CUHitTestController class]];
-    [self.model appendFinishedItemWithTitle:@"Frame/Bounds" class:[CUFrameBoundsViewController class]];
+    [self.model appendDarkItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
+    [self.model appendDarkItemWithTitle:@"HitTest" class:[CUHitTestController class]];
+    [self.model appendDarkItemWithTitle:@"Frame/Bounds" class:[CUFrameBoundsViewController class]];
     [self.model appendItemWithTitle:@"Layer" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"手势" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"约束" class:[UIViewController class]];

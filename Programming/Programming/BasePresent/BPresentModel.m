@@ -58,7 +58,7 @@
     [self addItem:title class:className target:nil selector:nil];
 }
 
-- (void)appendFinishedItemWithTitle:(NSString *)title class:(Class)className {
+- (void)appendDarkItemWithTitle:(NSString *)title class:(Class)className {
     BPresentItemModel *itemModel = [self addItem:title class:className target:nil selector:nil];
     itemModel.dark = YES;
 }
@@ -67,7 +67,7 @@
     [self addItem:title class:nil target:target selector:selector];
 }
 
-- (void)appendFinishedItemTitle:(NSString *)title target:(id)target selector:(SEL)selector {
+- (void)appendDarkItemTitle:(NSString *)title target:(id)target selector:(SEL)selector {
     BPresentItemModel *itemModel = [self addItem:title class:nil target:target selector:selector];
     itemModel.dark = YES;
 }
@@ -77,7 +77,7 @@
     itemModel.tag = 0;
 }
 
-- (void)appendFinishedTagItemWithTitle:(NSString *)title target:(id)target selector:(SEL)selector {
+- (void)appendDarkTagItemWithTitle:(NSString *)title target:(id)target selector:(SEL)selector {
     BPresentItemModel *itemModel = [self addItem:title class:nil target:target selector:selector];
     itemModel.tag = 0;
     itemModel.dark = YES;
