@@ -36,6 +36,11 @@
 		CEF17DE724B232AD00218C27 /* CPointer.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE624B232AD00218C27 /* CPointer.c */; };
 		CEF17DEA24B2338600218C27 /* CFunction.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE924B2338600218C27 /* CFunction.c */; };
 		CEF17DF124B2369C00218C27 /* CLibsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DF024B2369C00218C27 /* CLibsController.m */; };
+		CEFDF91524B324C6003F53CC /* OC_Test_CADisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDF90C24B324C6003F53CC /* OC_Test_CADisplayLink.m */; };
+		CEFDF91624B324C6003F53CC /* OC_Test_NSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDF90D24B324C6003F53CC /* OC_Test_NSTimer.m */; };
+		CEFDF91824B324C6003F53CC /* NSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDF91324B324C6003F53CC /* NSWeakTimer.m */; };
+		CEFDF91924B324C6003F53CC /* OC_Test_GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDF91424B324C6003F53CC /* OC_Test_GCDTimer.m */; };
+		CEFDF91C24B328F1003F53CC /* OCTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDF91A24B328F0003F53CC /* OCTimerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +101,16 @@
 		CEF17DE924B2338600218C27 /* CFunction.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFunction.c; sourceTree = "<group>"; };
 		CEF17DEF24B2369C00218C27 /* CLibsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLibsController.h; sourceTree = "<group>"; };
 		CEF17DF024B2369C00218C27 /* CLibsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLibsController.m; sourceTree = "<group>"; };
+		CEFDF90C24B324C6003F53CC /* OC_Test_CADisplayLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OC_Test_CADisplayLink.m; sourceTree = "<group>"; };
+		CEFDF90D24B324C6003F53CC /* OC_Test_NSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OC_Test_NSTimer.m; sourceTree = "<group>"; };
+		CEFDF90E24B324C6003F53CC /* OC_Test_GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OC_Test_GCDTimer.h; sourceTree = "<group>"; };
+		CEFDF90F24B324C6003F53CC /* NSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWeakTimer.h; sourceTree = "<group>"; };
+		CEFDF91024B324C6003F53CC /* OC_Test_CADisplayLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OC_Test_CADisplayLink.h; sourceTree = "<group>"; };
+		CEFDF91224B324C6003F53CC /* OC_Test_NSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OC_Test_NSTimer.h; sourceTree = "<group>"; };
+		CEFDF91324B324C6003F53CC /* NSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWeakTimer.m; sourceTree = "<group>"; };
+		CEFDF91424B324C6003F53CC /* OC_Test_GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OC_Test_GCDTimer.m; sourceTree = "<group>"; };
+		CEFDF91A24B328F0003F53CC /* OCTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTimerController.m; sourceTree = "<group>"; };
+		CEFDF91B24B328F0003F53CC /* OCTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTimerController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +169,7 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CEFDF90A24B324C6003F53CC /* Timer */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -324,6 +340,23 @@
 			path = BasePresent;
 			sourceTree = "<group>";
 		};
+		CEFDF90A24B324C6003F53CC /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				CEFDF91B24B328F0003F53CC /* OCTimerController.h */,
+				CEFDF91A24B328F0003F53CC /* OCTimerController.m */,
+				CEFDF90F24B324C6003F53CC /* NSWeakTimer.h */,
+				CEFDF91324B324C6003F53CC /* NSWeakTimer.m */,
+				CEFDF91024B324C6003F53CC /* OC_Test_CADisplayLink.h */,
+				CEFDF90C24B324C6003F53CC /* OC_Test_CADisplayLink.m */,
+				CEFDF91224B324C6003F53CC /* OC_Test_NSTimer.h */,
+				CEFDF90D24B324C6003F53CC /* OC_Test_NSTimer.m */,
+				CEFDF91424B324C6003F53CC /* OC_Test_GCDTimer.m */,
+				CEFDF90E24B324C6003F53CC /* OC_Test_GCDTimer.h */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,6 +431,7 @@
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,
 				CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */,
 				CEF17DE124B2320200218C27 /* CDataType.c in Sources */,
+				CEFDF91C24B328F1003F53CC /* OCTimerController.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
 				CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */,
 				CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */,
@@ -405,8 +439,12 @@
 				CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */,
 				CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
+				CEFDF91924B324C6003F53CC /* OC_Test_GCDTimer.m in Sources */,
 				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
+				CEFDF91824B324C6003F53CC /* NSWeakTimer.m in Sources */,
 				CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */,
+				CEFDF91624B324C6003F53CC /* OC_Test_NSTimer.m in Sources */,
+				CEFDF91524B324C6003F53CC /* OC_Test_CADisplayLink.m in Sources */,
 				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
 				CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */,

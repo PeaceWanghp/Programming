@@ -20,6 +20,9 @@
 #import "CUHitTestController.h"
 #import "CUFrameBoundsViewController.h"
 
+//Objective-C
+#import "OCTimerController.h"
+
 @interface ViewController ()
 
 @end
@@ -71,7 +74,8 @@
     [self.model appendItemWithTitle:@"FMDB" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"LKDBHelper" class:[UIViewController class]];
     
-    [self.model appendHeader:@"Objective-C"];
+    [self.model appendOpenedHeader:@"Objective-C"];
+    [self.model appendDarkItemWithTitle:@"Timer" class:[OCTimerController class]];
     [self.model appendItemWithTitle:@"Runloop" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Runtime" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Block" class:[UIViewController class]];
@@ -80,7 +84,6 @@
     [self.model appendItemWithTitle:@"Protocol" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVC" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Timer" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Thread(多线程)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Lock(锁)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Pointer(指针)" class:[UIViewController class]];
@@ -101,7 +104,7 @@
     [self.model appendHeader:@"C++"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
-    [self.model appendOpenedHeader:@"C"];
+    [self.model appendHeader:@"C"];
     [self.model appendDarkItemWithTitle:@"Homework" class:[CHomeworkController class]];
     [self.model appendDarkItemWithTitle:@"标准库" class:[CLibsController class]];
     [self.model appendDarkItemWithTitle:@"Array(数组)" class:[CHomeworkController class]];
