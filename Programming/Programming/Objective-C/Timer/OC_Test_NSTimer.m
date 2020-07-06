@@ -10,10 +10,8 @@
 
 #import "NSWeakTimer.h"
 
-@interface OC_Test_NSTimer()
-{
+@interface OC_Test_NSTimer() {
     NSTimer *_timer;
-    NSWeakTimer *_weakTimer;
 }
 
 @end
@@ -37,7 +35,7 @@
 }
 
 #pragma mark -
-#pragma mark -- NSWeakTimer
+#pragma mark -- Weak Timer
 - (void)startWeakTimer {
     _timer = [NSWeakTimer timerWithTimeInterval:2.0
                                              target:self
@@ -48,10 +46,11 @@
 }
 
 #pragma mark -
-#pragma mark -- Exact(精准的)
-- (void)exactTimer {
+#pragma mark -- Exact(精准的) Timer
+- (void)startExactTimer {
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_queue_create("com.timer.exact", DISPATCH_QUEUE_SERIAL), ^{
-        [self startWeakTimer];
+        [weakSelf startWeakTimer];
         
         [[NSRunLoop currentRunLoop] run];
     });

@@ -351,8 +351,8 @@
 				CEFDF90C24B324C6003F53CC /* OC_Test_CADisplayLink.m */,
 				CEFDF91224B324C6003F53CC /* OC_Test_NSTimer.h */,
 				CEFDF90D24B324C6003F53CC /* OC_Test_NSTimer.m */,
-				CEFDF91424B324C6003F53CC /* OC_Test_GCDTimer.m */,
 				CEFDF90E24B324C6003F53CC /* OC_Test_GCDTimer.h */,
+				CEFDF91424B324C6003F53CC /* OC_Test_GCDTimer.m */,
 			);
 			path = Timer;
 			sourceTree = "<group>";

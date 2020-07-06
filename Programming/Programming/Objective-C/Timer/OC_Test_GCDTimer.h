@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OC_Test_GCDTimer : NSObject
 
-- (void)dispatchSourceTimer;
+- (void)startTimer;
+- (void)stopTimer;
 
 @end
 
