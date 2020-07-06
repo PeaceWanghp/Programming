@@ -21,6 +21,7 @@
 #import "CUFrameBoundsViewController.h"
 
 //Objective-C
+#import "OCThreadController.h"
 #import "OCTimerController.h"
 
 @interface ViewController ()
@@ -75,17 +76,18 @@
     [self.model appendItemWithTitle:@"LKDBHelper" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"Objective-C"];
+    [self.model appendDarkItemWithTitle:@"Thread(多线程)" class:[OCThreadController class]];
+    [self.model appendItemWithTitle:@"Lock(锁)" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"Timer" class:[OCTimerController class]];
     [self.model appendItemWithTitle:@"Runloop" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Runtime" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"GCD" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Block" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Categray" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Extention" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Protocol" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVC" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Thread(多线程)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Lock(锁)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Pointer(指针)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Property(属性)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"MessageForwarding(消息转发)" class:[UIViewController class]];
@@ -137,6 +139,7 @@
     [self.model appendItemWithTitle:@"沙盒机制" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Load/Initialize(类加载及初始化)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Playground" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Tools(工具)" class:[iOSToolsController class]];
     
     [self.model appendHeader:@"Flutter"];
