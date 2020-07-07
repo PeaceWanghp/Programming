@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)startTimer;
 - (void)stopTimer;
+- (void)after;
 
 @end
 

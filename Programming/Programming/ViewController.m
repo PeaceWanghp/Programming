@@ -22,6 +22,7 @@
 
 //Objective-C
 #import "OCThreadController.h"
+#import "OCLocksController.h"
 #import "OCTimerController.h"
 
 @interface ViewController ()
@@ -77,7 +78,7 @@
     
     [self.model appendOpenedHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"Thread(多线程)" class:[OCThreadController class]];
-    [self.model appendItemWithTitle:@"Lock(锁)" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Lock(锁)" class:[OCLocksController class]];
     [self.model appendDarkItemWithTitle:@"Timer" class:[OCTimerController class]];
     [self.model appendItemWithTitle:@"Runloop" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Runtime" class:[UIViewController class]];

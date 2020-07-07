@@ -12,6 +12,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OCGCDAsync : NSObject
 
+- (void)serialQueue;
+- (void)concurrentQueue;
+
+- (void)starQueue;
+- (void)suspend;
+- (void)resume;
+
+- (void)group;
+- (void)groupEnterLeave;
+
+- (void)barrier;
+
+- (void)sycnDeadlock;
+- (void)sycnDeadlockInSubthread;
+
 @end
 
 NS_ASSUME_NONNULL_END

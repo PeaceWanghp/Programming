@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OCThread : NSObject
 
+- (void)began;
+- (void)startAlive;
+- (void)addTask;
+- (void)finish;
+
 @end
 
 NS_ASSUME_NONNULL_END

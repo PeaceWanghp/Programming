@@ -25,6 +25,7 @@
 		CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A024AC8D7300F5915E /* CUHitTestView.m */; };
 		CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A324AC8F4900F5915E /* CUHitTestAView.m */; };
 		CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A624AC8F6100F5915E /* CUHitTestBView.m */; };
+		CEBE167624B464D200301698 /* OCLocksController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBE167524B464D200301698 /* OCLocksController.m */; };
 		CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */; };
 		CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */; };
 		CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760624AB33C400977E8F /* iOSToolsController.m */; };
@@ -83,6 +84,8 @@
 		CEB396A324AC8F4900F5915E /* CUHitTestAView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestAView.m; sourceTree = "<group>"; };
 		CEB396A524AC8F6100F5915E /* CUHitTestBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUHitTestBView.h; sourceTree = "<group>"; };
 		CEB396A624AC8F6100F5915E /* CUHitTestBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestBView.m; sourceTree = "<group>"; };
+		CEBE167424B464D200301698 /* OCLocksController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLocksController.h; sourceTree = "<group>"; };
+		CEBE167524B464D200301698 /* OCLocksController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLocksController.m; sourceTree = "<group>"; };
 		CEC0C5DC24AD870C00E103F5 /* CUOffScreenController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUOffScreenController.h; sourceTree = "<group>"; };
 		CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUOffScreenController.m; sourceTree = "<group>"; };
 		CEC0C5DF24ADA6F100E103F5 /* CHomeworkSecond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkSecond.h; sourceTree = "<group>"; };
@@ -181,6 +184,7 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CEBE167324B464AB00301698 /* Lock */,
 				CEFDF91D24B338DD003F53CC /* Thread */,
 				CEFDF90A24B324C6003F53CC /* Timer */,
 			);
@@ -271,6 +275,15 @@
 				CEB396A624AC8F6100F5915E /* CUHitTestBView.m */,
 			);
 			path = HitTest;
+			sourceTree = "<group>";
+		};
+		CEBE167324B464AB00301698 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE167424B464D200301698 /* OCLocksController.h */,
+				CEBE167524B464D200301698 /* OCLocksController.m */,
+			);
+			path = Lock;
 			sourceTree = "<group>";
 		};
 		CEC0C5DB24AD852100E103F5 /* OffScreen */ = {
@@ -456,6 +469,7 @@
 			files = (
 				CEF17DE724B232AD00218C27 /* CPointer.c in Sources */,
 				CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */,
+				CEBE167624B464D200301698 /* OCLocksController.m in Sources */,
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,
 				CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */,
 				CEF17DE124B2320200218C27 /* CDataType.c in Sources */,
