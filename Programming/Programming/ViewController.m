@@ -25,6 +25,8 @@
 #import "OCLocksController.h"
 #import "OCTimerController.h"
 #import "OCPointerController.h"
+#import "OCKeywordsController.h"
+#import "OCCategaryController.h"
 
 @interface ViewController ()
 
@@ -86,7 +88,7 @@
     [self.model appendItemWithTitle:@"Runtime（运行时）" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"GCD" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Block" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Categray" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Categray" class:[OCCategaryController class]];
     [self.model appendItemWithTitle:@"Extention" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Protocol" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVC" class:[UIViewController class]];
@@ -98,8 +100,7 @@
     [self.model appendItemWithTitle:@"RetainCount" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"深浅拷贝" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"@import/#import/#include/@class" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"const/extern/static/(关键字)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"#define" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"const/extern/static/#define/(关键字)" class:[OCKeywordsController class]];
     [self.model appendItemWithTitle:@"NSFileManager" class:[UIViewController class]];
     
     [self.model appendHeader:@"Swift"];

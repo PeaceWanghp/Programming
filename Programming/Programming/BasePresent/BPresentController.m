@@ -86,6 +86,30 @@
     }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BPresentItemModel *itemModel;
+    if (_model.groupDataSource.count > 0) {
+        BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:indexPath.section];
+        itemModel = headerModel.items[indexPath.row];
+    }
+    else {
+        itemModel = [_model.dataSource objectAtIndex:indexPath.row];
+    }
+    
+    CGSize size = CGSizeMake(self.tableView.frame.size.width, MAXFLOAT);
+    CGRect rect = [itemModel.displayTitle boundingRectWithSize:size
+                                                    options:NSStringDrawingUsesLineFragmentOrigin
+                                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17]}
+                                                    context:nil];
+    
+    if (rect.size.height > 20.0) {
+        return rect.size.height+24;
+    }
+    else {
+        return 44.0f;
+    }
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identifier = @"identifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
@@ -103,6 +127,7 @@
     }
     
     cell.textLabel.text = itemModel.displayTitle;
+    cell.textLabel.numberOfLines = 0;
     cell.textLabel.textColor = itemModel.dark ? [UIColor blackColor]:[UIColor grayColor];
     
     return cell;
