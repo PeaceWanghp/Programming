@@ -36,6 +36,8 @@
 		CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1224B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m */; };
 		CED28E1E24B5D1EC00AD2D6E /* OCKeywordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1D24B5D1EC00AD2D6E /* OCKeywordsController.m */; };
 		CED28E2224B5D91B00AD2D6E /* OCCategaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2124B5D91B00AD2D6E /* OCCategaryController.m */; };
+		CED28E2724B5E95100AD2D6E /* UIButton+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2424B5E95100AD2D6E /* UIButton+Private.m */; };
+		CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2624B5E95100AD2D6E /* UIView+Frame.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 		CEF17DD624B1CFB000218C27 /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DD524B1CFB000218C27 /* CArray.c */; };
 		CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DDA24B1F5A000218C27 /* CCycle.c */; };
@@ -113,6 +115,10 @@
 		CED28E1D24B5D1EC00AD2D6E /* OCKeywordsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCKeywordsController.m; sourceTree = "<group>"; };
 		CED28E2024B5D91B00AD2D6E /* OCCategaryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCategaryController.h; sourceTree = "<group>"; };
 		CED28E2124B5D91B00AD2D6E /* OCCategaryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCategaryController.m; sourceTree = "<group>"; };
+		CED28E2324B5E95100AD2D6E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		CED28E2424B5E95100AD2D6E /* UIButton+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Private.m"; sourceTree = "<group>"; };
+		CED28E2524B5E95100AD2D6E /* UIButton+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Private.h"; sourceTree = "<group>"; };
+		CED28E2624B5E95100AD2D6E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
 		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
 		CEF17DD424B1CFB000218C27 /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
@@ -345,6 +351,10 @@
 			children = (
 				CED28E2024B5D91B00AD2D6E /* OCCategaryController.h */,
 				CED28E2124B5D91B00AD2D6E /* OCCategaryController.m */,
+				CED28E2524B5E95100AD2D6E /* UIButton+Private.h */,
+				CED28E2424B5E95100AD2D6E /* UIButton+Private.m */,
+				CED28E2324B5E95100AD2D6E /* UIView+Frame.h */,
+				CED28E2624B5E95100AD2D6E /* UIView+Frame.m */,
 			);
 			path = Categary;
 			sourceTree = "<group>";
@@ -534,6 +544,7 @@
 				CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */,
 				CEFDF91624B324C6003F53CC /* OC_Test_NSTimer.m in Sources */,
 				CEFDF91524B324C6003F53CC /* OC_Test_CADisplayLink.m in Sources */,
+				CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */,
 				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
 				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
@@ -554,6 +565,7 @@
 				CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */,
 				CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */,
 				CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */,
+				CED28E2724B5E95100AD2D6E /* UIButton+Private.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
