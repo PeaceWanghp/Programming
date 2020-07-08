@@ -28,7 +28,12 @@
 		CEBE167624B464D200301698 /* OCLocksController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBE167524B464D200301698 /* OCLocksController.m */; };
 		CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */; };
 		CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */; };
-		CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760624AB33C400977E8F /* iOSToolsController.m */; };
+		CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0A24B5B43000AD2D6E /* OCPointerController.m */; };
+		CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */; };
+		CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0F24B5BDB700AD2D6E /* OC_CrashController.m */; };
+		CED28E1924B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1024B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m */; };
+		CED28E1A24B5BDB700AD2D6E /* OC_CrashController+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1124B5BDB700AD2D6E /* OC_CrashController+Operation.m */; };
+		CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1224B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 		CEF17DD624B1CFB000218C27 /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DD524B1CFB000218C27 /* CArray.c */; };
 		CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DDA24B1F5A000218C27 /* CCycle.c */; };
@@ -90,8 +95,18 @@
 		CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUOffScreenController.m; sourceTree = "<group>"; };
 		CEC0C5DF24ADA6F100E103F5 /* CHomeworkSecond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkSecond.h; sourceTree = "<group>"; };
 		CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHomeworkSecond.c; sourceTree = "<group>"; };
-		CEF1760524AB33C400977E8F /* iOSToolsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSToolsController.h; sourceTree = "<group>"; };
-		CEF1760624AB33C400977E8F /* iOSToolsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSToolsController.m; sourceTree = "<group>"; };
+		CED28E0924B5B43000AD2D6E /* OCPointerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPointerController.h; sourceTree = "<group>"; };
+		CED28E0A24B5B43000AD2D6E /* OCPointerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPointerController.m; sourceTree = "<group>"; };
+		CED28E0D24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+EXC_BAD_INSTRUCTION.h"; sourceTree = "<group>"; };
+		CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_CrashController+Unrecognized.m"; sourceTree = "<group>"; };
+		CED28E0F24B5BDB700AD2D6E /* OC_CrashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OC_CrashController.m; sourceTree = "<group>"; };
+		CED28E1024B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_CrashController+EXC_BAD_ACCESS.m"; sourceTree = "<group>"; };
+		CED28E1124B5BDB700AD2D6E /* OC_CrashController+Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_CrashController+Operation.m"; sourceTree = "<group>"; };
+		CED28E1224B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_CrashController+EXC_BAD_INSTRUCTION.m"; sourceTree = "<group>"; };
+		CED28E1324B5BDB700AD2D6E /* OC_CrashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OC_CrashController.h; sourceTree = "<group>"; };
+		CED28E1424B5BDB700AD2D6E /* OC_CrashController+Unrecognized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+Unrecognized.h"; sourceTree = "<group>"; };
+		CED28E1524B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+EXC_BAD_ACCESS.h"; sourceTree = "<group>"; };
+		CED28E1624B5BDB700AD2D6E /* OC_CrashController+Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+Operation.h"; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
 		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
 		CEF17DD424B1CFB000218C27 /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
@@ -187,6 +202,8 @@
 				CEBE167324B464AB00301698 /* Lock */,
 				CEFDF91D24B338DD003F53CC /* Thread */,
 				CEFDF90A24B324C6003F53CC /* Timer */,
+				CED28E0924B5B43000AD2D6E /* OCPointerController.h */,
+				CED28E0A24B5B43000AD2D6E /* OCPointerController.m */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -257,7 +274,7 @@
 		CE56F5AB249B689E00BA9B02 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CEF1760424AB337C00977E8F /* Tools */,
+				CED28E0C24B5BDB700AD2D6E /* Crash */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -297,13 +314,21 @@
 			path = OffScreen;
 			sourceTree = "<group>";
 		};
-		CEF1760424AB337C00977E8F /* Tools */ = {
+		CED28E0C24B5BDB700AD2D6E /* Crash */ = {
 			isa = PBXGroup;
 			children = (
-				CEF1760524AB33C400977E8F /* iOSToolsController.h */,
-				CEF1760624AB33C400977E8F /* iOSToolsController.m */,
+				CED28E1324B5BDB700AD2D6E /* OC_CrashController.h */,
+				CED28E0F24B5BDB700AD2D6E /* OC_CrashController.m */,
+				CED28E1424B5BDB700AD2D6E /* OC_CrashController+Unrecognized.h */,
+				CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */,
+				CED28E0D24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.h */,
+				CED28E1224B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m */,
+				CED28E1524B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.h */,
+				CED28E1024B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m */,
+				CED28E1624B5BDB700AD2D6E /* OC_CrashController+Operation.h */,
+				CED28E1124B5BDB700AD2D6E /* OC_CrashController+Operation.m */,
 			);
-			path = Tools;
+			path = Crash;
 			sourceTree = "<group>";
 		};
 		CEF1760824AB4B4F00977E8F /* FrameBounds */ = {
@@ -479,6 +504,7 @@
 				CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */,
 				CEF17DF124B2369C00218C27 /* CLibsController.m in Sources */,
 				CEFDF92024B3391C003F53CC /* OCThreadController.m in Sources */,
+				CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */,
 				CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */,
 				CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
@@ -490,11 +516,14 @@
 				CEFDF91624B324C6003F53CC /* OC_Test_NSTimer.m in Sources */,
 				CEFDF91524B324C6003F53CC /* OC_Test_CADisplayLink.m in Sources */,
 				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
+				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
-				CEF1760724AB33C400977E8F /* iOSToolsController.m in Sources */,
+				CED28E1924B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m in Sources */,
+				CED28E1A24B5BDB700AD2D6E /* OC_CrashController+Operation.m in Sources */,
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,
 				CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */,
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,
+				CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */,
 				CEF17DD624B1CFB000218C27 /* CArray.c in Sources */,
 				CEFDF92324B33A73003F53CC /* OCThread.m in Sources */,
 				CE316F732498D4A600AC495A /* main.m in Sources */,
@@ -504,6 +533,7 @@
 				CEFDF92924B33AAE003F53CC /* OCGCDAsync.m in Sources */,
 				CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */,
 				CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */,
+				CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

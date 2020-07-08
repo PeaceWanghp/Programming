@@ -1,8 +1,8 @@
 //
-//  iOSToolsController.h
+//  OCPointerController.h
 //  Programming
 //
-//  Created by Peace on 6/30/20.
+//  Created by Peace on 7/8/20.
 //  Copyright © 2020 Peace. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface iOSToolsController : BPresentController
+@interface OCPointerController : BPresentController
 
 @end
 

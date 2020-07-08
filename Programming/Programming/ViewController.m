@@ -13,7 +13,7 @@
 #import "CLibsController.h"
 
 //iOS
-#import "iOSToolsController.h"
+#import "OC_CrashController.h"
 
 //CocoaUI
 #import "CUOffScreenController.h"
@@ -24,6 +24,7 @@
 #import "OCThreadController.h"
 #import "OCLocksController.h"
 #import "OCTimerController.h"
+#import "OCPointerController.h"
 
 @interface ViewController ()
 
@@ -90,7 +91,7 @@
     [self.model appendItemWithTitle:@"Protocol" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVC" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Pointer(指针)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Pointer(指针)" class:[OCPointerController class]];
     [self.model appendItemWithTitle:@"Property(属性)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"MessageForwarding(消息转发)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"容器" class:[UIViewController class]];
@@ -128,7 +129,7 @@
     
     [self.model appendOpenedHeader:@"iOS"];
     [self.model appendItemWithTitle:@"Memory Masonry (内存分布)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Crash(引发崩溃)" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"*Crash(引发崩溃)" class:[OC_CrashController class]];
     [self.model appendItemWithTitle:@"追踪/捕捉崩溃" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Memory Leak(内存泄漏)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"启动速度" class:[UIViewController class]];
@@ -142,7 +143,6 @@
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Load/Initialize(类加载及初始化)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Playground" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Tools(工具)" class:[iOSToolsController class]];
     
     [self.model appendHeader:@"Flutter"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
