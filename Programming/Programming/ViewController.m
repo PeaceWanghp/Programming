@@ -75,13 +75,14 @@
     [self.model appendItemWithTitle:@"Cipher" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"FMDB" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"LKDBHelper" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"CoreData" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"Thread(多线程)" class:[OCThreadController class]];
-    [self.model appendDarkItemWithTitle:@"Lock(锁)" class:[OCLocksController class]];
-    [self.model appendDarkItemWithTitle:@"Timer" class:[OCTimerController class]];
-    [self.model appendItemWithTitle:@"Runloop" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Runtime" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Lock(锁)" class:[OCLocksController class]];
+    [self.model appendDarkItemWithTitle:@"Timer(计时器)" class:[OCTimerController class]];
+    [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Runtime（运行时）" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"GCD" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Block" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Categray" class:[UIViewController class]];
