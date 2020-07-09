@@ -25,6 +25,7 @@
     [self.model appendDarkItemTitle:@"3.开放私有方法" target:self selector:@selector(publicPrivateMethod)];
     
     [self.model appendOpenedHeader:@"注意："];
+    [self.model appendDarkItemTitle:@"0.可向任何类添加分类（源码/非源码）" target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"1.添加属性不自动实现，需要手动添加set/get方法避免使用crash" target:self selector:@selector(appendProperty)];
     [self.model appendDarkItemTitle:@"2.本类和分类的话，分类优先于本类的方法" target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"3.如有多个分类都实现了相同的方法，执行顺序是 targets->Build Phases->Complie Source，顺序是从上到下" target:self selector:@selector(todo)];

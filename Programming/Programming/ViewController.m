@@ -27,6 +27,7 @@
 #import "OCPointerController.h"
 #import "OCKeywordsController.h"
 #import "OCCategaryController.h"
+#import "OCExtensionController.h"
 
 @interface ViewController ()
 
@@ -89,7 +90,7 @@
     [self.model appendItemWithTitle:@"GCD" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Block" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"Categray" class:[OCCategaryController class]];
-    [self.model appendItemWithTitle:@"Extention" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Extension" class:[OCExtensionController class]];
     [self.model appendItemWithTitle:@"Protocol" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVC" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO" class:[UIViewController class]];

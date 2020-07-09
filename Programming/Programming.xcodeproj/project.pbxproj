@@ -18,6 +18,8 @@
 		CE56F5B4249B6F4300BA9B02 /* BPresentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B3249B6F4300BA9B02 /* BPresentHeaderView.m */; };
 		CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B6249B6F7900BA9B02 /* BPresentItemModel.m */; };
 		CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B9249B70CC00BA9B02 /* BPresentHeaderModel.m */; };
+		CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE48D24B70DA7008735BC /* OCExtensionController.m */; };
+		CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49224B71731008735BC /* OCTestExtension.m */; };
 		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
 		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
 		CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3969824AC35CC00F5915E /* CUFBView.m */; };
@@ -78,6 +80,12 @@
 		CE56F5B6249B6F7900BA9B02 /* BPresentItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPresentItemModel.m; sourceTree = "<group>"; };
 		CE56F5B8249B70CC00BA9B02 /* BPresentHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPresentHeaderModel.h; sourceTree = "<group>"; };
 		CE56F5B9249B70CC00BA9B02 /* BPresentHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPresentHeaderModel.m; sourceTree = "<group>"; };
+		CE6EE48C24B70DA7008735BC /* OCExtensionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCExtensionController.h; sourceTree = "<group>"; };
+		CE6EE48D24B70DA7008735BC /* OCExtensionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCExtensionController.m; sourceTree = "<group>"; };
+		CE6EE49024B70F02008735BC /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		CE6EE49124B71731008735BC /* OCTestExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestExtension.h; sourceTree = "<group>"; };
+		CE6EE49224B71731008735BC /* OCTestExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestExtension.m; sourceTree = "<group>"; };
+		CE6EE49424B7174B008735BC /* OCTestExtension+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCTestExtension+Extension.h"; sourceTree = "<group>"; };
 		CE9082E024A9B4F600A471B9 /* CHomeworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkController.h; sourceTree = "<group>"; };
 		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
 		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
@@ -208,6 +216,7 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CE6EE48B24B70C6F008735BC /* Extension */,
 				CED28E1F24B5D8FF00AD2D6E /* Categary */,
 				CEBE167324B464AB00301698 /* Lock */,
 				CEFDF91D24B338DD003F53CC /* Thread */,
@@ -289,6 +298,19 @@
 				CED28E0C24B5BDB700AD2D6E /* Crash */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		CE6EE48B24B70C6F008735BC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE6EE48C24B70DA7008735BC /* OCExtensionController.h */,
+				CE6EE48D24B70DA7008735BC /* OCExtensionController.m */,
+				CE6EE49124B71731008735BC /* OCTestExtension.h */,
+				CE6EE49224B71731008735BC /* OCTestExtension.m */,
+				CE6EE49424B7174B008735BC /* OCTestExtension+Extension.h */,
+				CE6EE49024B70F02008735BC /* UIView+Extension.h */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		CEB3969B24AC5BA800F5915E /* HitTest */ = {
@@ -543,6 +565,7 @@
 				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
 				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
+				CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */,
 				CED28E1924B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m in Sources */,
 				CED28E1A24B5BDB700AD2D6E /* OC_CrashController+Operation.m in Sources */,
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,
@@ -558,6 +581,7 @@
 				CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */,
 				CEFDF92924B33AAE003F53CC /* OCGCDAsync.m in Sources */,
 				CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */,
+				CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */,
 				CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */,
 				CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */,
 			);
