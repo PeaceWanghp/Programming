@@ -20,6 +20,8 @@
 		CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B9249B70CC00BA9B02 /* BPresentHeaderModel.m */; };
 		CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE48D24B70DA7008735BC /* OCExtensionController.m */; };
 		CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49224B71731008735BC /* OCTestExtension.m */; };
+		CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49724B728FE008735BC /* OCProtocolController.m */; };
+		CE6EE49B24B72978008735BC /* OCTestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49A24B72978008735BC /* OCTestProtocol.m */; };
 		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
 		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
 		CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3969824AC35CC00F5915E /* CUFBView.m */; };
@@ -86,6 +88,11 @@
 		CE6EE49124B71731008735BC /* OCTestExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestExtension.h; sourceTree = "<group>"; };
 		CE6EE49224B71731008735BC /* OCTestExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestExtension.m; sourceTree = "<group>"; };
 		CE6EE49424B7174B008735BC /* OCTestExtension+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCTestExtension+Extension.h"; sourceTree = "<group>"; };
+		CE6EE49624B728FE008735BC /* OCProtocolController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProtocolController.h; sourceTree = "<group>"; };
+		CE6EE49724B728FE008735BC /* OCProtocolController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCProtocolController.m; sourceTree = "<group>"; };
+		CE6EE49924B72929008735BC /* OCTestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestProtocol.h; sourceTree = "<group>"; };
+		CE6EE49A24B72978008735BC /* OCTestProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestProtocol.m; sourceTree = "<group>"; };
+		CE6EE49C24B729C5008735BC /* OCTestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestDelegate.h; sourceTree = "<group>"; };
 		CE9082E024A9B4F600A471B9 /* CHomeworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkController.h; sourceTree = "<group>"; };
 		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
 		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
@@ -216,6 +223,7 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CE6EE49524B728D4008735BC /* Protocol */,
 				CE6EE48B24B70C6F008735BC /* Extension */,
 				CED28E1F24B5D8FF00AD2D6E /* Categary */,
 				CEBE167324B464AB00301698 /* Lock */,
@@ -311,6 +319,18 @@
 				CE6EE49024B70F02008735BC /* UIView+Extension.h */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE6EE49524B728D4008735BC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CE6EE49624B728FE008735BC /* OCProtocolController.h */,
+				CE6EE49724B728FE008735BC /* OCProtocolController.m */,
+				CE6EE49924B72929008735BC /* OCTestProtocol.h */,
+				CE6EE49A24B72978008735BC /* OCTestProtocol.m */,
+				CE6EE49C24B729C5008735BC /* OCTestDelegate.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		CEB3969B24AC5BA800F5915E /* HitTest */ = {
@@ -553,6 +573,7 @@
 				CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */,
 				CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */,
 				CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */,
+				CE6EE49B24B72978008735BC /* OCTestProtocol.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
 				CEFDF91924B324C6003F53CC /* OC_Test_GCDTimer.m in Sources */,
 				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
@@ -562,6 +583,7 @@
 				CEFDF91624B324C6003F53CC /* OC_Test_NSTimer.m in Sources */,
 				CEFDF91524B324C6003F53CC /* OC_Test_CADisplayLink.m in Sources */,
 				CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */,
+				CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */,
 				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
 				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
