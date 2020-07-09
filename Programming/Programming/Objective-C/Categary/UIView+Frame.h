@@ -12,10 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (Frame)
 
+@property (nonatomic,copy) NSString * name;
+@property (nonatomic,copy) NSString * badName;
+
 - (CGFloat)x;
 - (CGFloat)y;
 - (CGFloat)width;
 - (CGFloat)height;
+
+- (NSInteger)retainCount;
 
 @end
 
