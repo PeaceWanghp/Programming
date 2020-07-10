@@ -26,6 +26,7 @@
 		CE6C172524B85F390061EB32 /* OCInheritObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C172424B85F390061EB32 /* OCInheritObject.m */; };
 		CE6C172824B85F5A0061EB32 /* OCInheritA.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C172724B85F5A0061EB32 /* OCInheritA.m */; };
 		CE6C172B24B85F6D0061EB32 /* OCInheritB.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C172A24B85F6D0061EB32 /* OCInheritB.m */; };
+		CE6C172F24B87AC90061EB32 /* OCImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C172E24B87AC90061EB32 /* OCImportController.m */; };
 		CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE48D24B70DA7008735BC /* OCExtensionController.m */; };
 		CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49224B71731008735BC /* OCTestExtension.m */; };
 		CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49724B728FE008735BC /* OCProtocolController.m */; };
@@ -106,6 +107,8 @@
 		CE6C172724B85F5A0061EB32 /* OCInheritA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCInheritA.m; sourceTree = "<group>"; };
 		CE6C172924B85F6D0061EB32 /* OCInheritB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCInheritB.h; sourceTree = "<group>"; };
 		CE6C172A24B85F6D0061EB32 /* OCInheritB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCInheritB.m; sourceTree = "<group>"; };
+		CE6C172D24B87AC90061EB32 /* OCImportController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCImportController.h; sourceTree = "<group>"; };
+		CE6C172E24B87AC90061EB32 /* OCImportController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCImportController.m; sourceTree = "<group>"; };
 		CE6EE48C24B70DA7008735BC /* OCExtensionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCExtensionController.h; sourceTree = "<group>"; };
 		CE6EE48D24B70DA7008735BC /* OCExtensionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCExtensionController.m; sourceTree = "<group>"; };
 		CE6EE49024B70F02008735BC /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -247,6 +250,7 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CE6C172C24B87AA20061EB32 /* Import */,
 				CE6C170524B848190061EB32 /* LoadInitialize */,
 				CE6EE49524B728D4008735BC /* Protocol */,
 				CE6EE48B24B70C6F008735BC /* Extension */,
@@ -370,6 +374,15 @@
 				CE6C172A24B85F6D0061EB32 /* OCInheritB.m */,
 			);
 			path = Inherit;
+			sourceTree = "<group>";
+		};
+		CE6C172C24B87AA20061EB32 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				CE6C172D24B87AC90061EB32 /* OCImportController.h */,
+				CE6C172E24B87AC90061EB32 /* OCImportController.m */,
+			);
+			path = Import;
 			sourceTree = "<group>";
 		};
 		CE6EE48B24B70C6F008735BC /* Extension */ = {
@@ -631,6 +644,7 @@
 				CEF17DE124B2320200218C27 /* CDataType.c in Sources */,
 				CEFDF91C24B328F1003F53CC /* OCTimerController.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
+				CE6C172F24B87AC90061EB32 /* OCImportController.m in Sources */,
 				CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */,
 				CE6C172024B857CF0061EB32 /* OCLoadInitializeObject+Test3.m in Sources */,
 				CE6C171724B849BF0061EB32 /* OCLoadInitializeObject.m in Sources */,
