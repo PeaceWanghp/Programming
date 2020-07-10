@@ -29,6 +29,7 @@
 #import "OCCategaryController.h"
 #import "OCExtensionController.h"
 #import "OCProtocolController.h"
+#import "OCLoadInitializeController.h"
 
 @interface ViewController ()
 
@@ -93,6 +94,7 @@
     [self.model appendDarkItemWithTitle:@"Categray" class:[OCCategaryController class]];
     [self.model appendDarkItemWithTitle:@"Extension" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Protocol" class:[OCProtocolController class]];
+    [self.model appendDarkItemWithTitle:@"Load/Initialize(加载/初始化)" class:[OCLoadInitializeController class]];
     [self.model appendItemWithTitle:@"KVC" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Pointer(指针)" class:[OCPointerController class]];
@@ -144,7 +146,6 @@
     [self.model appendItemWithTitle:@"重签名" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"沙盒机制" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Load/Initialize(类加载及初始化)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Playground" class:[UIViewController class]];
     
     [self.model appendHeader:@"Flutter"];
