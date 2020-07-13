@@ -85,7 +85,9 @@
     [self.model appendItemWithTitle:@"CoreData" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"Objective-C"];
-    [self.model appendDarkItemWithTitle:@"*#import/#include/@class" class:[OCImportController class]];
+    [self.model appendDarkItemWithTitle:@"* #import/#include/@class" class:[OCImportController class]];
+    [self.model appendDarkItemWithTitle:@"* const/extern/static/#define" class:[OCKeywordsController class]];
+    [self.model appendDarkItemWithTitle:@"* Pointer (指针)" class:[OCPointerController class]];
     [self.model appendItemWithTitle:@"Runtime（运行时）" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"MessageForwarding (消息转发)" class:[UIViewController class]];
@@ -99,11 +101,9 @@
     [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
     [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
     [self.model appendItemWithTitle:@"Property (属性)--深浅拷贝" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"容器" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"RetainCount (引用计数计)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"const/extern/static/#define/(关键字)" class:[OCKeywordsController class]];
     
     [self.model appendHeader:@"Swift"];
     [self.model appendItemWithTitle:@"桥接" class:[UIViewController class]];
@@ -121,7 +121,7 @@
     [self.model appendDarkItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
     [self.model appendDarkItemWithTitle:@"HitTest" class:[CUHitTestController class]];
     [self.model appendDarkItemWithTitle:@"Frame/Bounds" class:[CUFrameBoundsViewController class]];
-    [self.model appendItemWithTitle:@"Layer" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Layer (图层)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"手势" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"约束" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"DispalyLink" class:[UIViewController class]];

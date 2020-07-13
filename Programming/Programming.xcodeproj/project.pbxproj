@@ -50,6 +50,7 @@
 		CED28E1E24B5D1EC00AD2D6E /* OCKeywordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1D24B5D1EC00AD2D6E /* OCKeywordsController.m */; };
 		CED28E2224B5D91B00AD2D6E /* OCCategaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2124B5D91B00AD2D6E /* OCCategaryController.m */; };
 		CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2624B5E95100AD2D6E /* UIView+Frame.m */; };
+		CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 		CEF17DD624B1CFB000218C27 /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DD524B1CFB000218C27 /* CArray.c */; };
 		CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DDA24B1F5A000218C27 /* CCycle.c */; };
@@ -158,6 +159,8 @@
 		CED28E2124B5D91B00AD2D6E /* OCCategaryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCategaryController.m; sourceTree = "<group>"; };
 		CED28E2324B5E95100AD2D6E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		CED28E2624B5E95100AD2D6E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		CEE35E7D24BC78CE00E8E006 /* OCTestExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestExtern.h; sourceTree = "<group>"; };
+		CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestExtern.m; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
 		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
 		CEF17DD424B1CFB000218C27 /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CEE35E7C24BC655600E8E006 /* Pointer */,
+				CEE35E7B24BC522200E8E006 /* Keywords */,
 				CE6C172C24B87AA20061EB32 /* Import */,
 				CE6C170524B848190061EB32 /* LoadInitialize */,
 				CE6EE49524B728D4008735BC /* Protocol */,
@@ -258,10 +263,6 @@
 				CEBE167324B464AB00301698 /* Lock */,
 				CEFDF91D24B338DD003F53CC /* Thread */,
 				CEFDF90A24B324C6003F53CC /* Timer */,
-				CED28E0924B5B43000AD2D6E /* OCPointerController.h */,
-				CED28E0A24B5B43000AD2D6E /* OCPointerController.m */,
-				CED28E1C24B5D1EC00AD2D6E /* OCKeywordsController.h */,
-				CED28E1D24B5D1EC00AD2D6E /* OCKeywordsController.m */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -290,10 +291,10 @@
 		CE316F7D2498D56C00AC495A /* C */ = {
 			isa = PBXGroup;
 			children = (
-				CEF17DDF24B2320200218C27 /* CDataType.h */,
-				CEF17DE024B2320200218C27 /* CDataType.c */,
 				CEF17DE224B2324100218C27 /* COptionAndOperator.h */,
 				CEF17DE324B2324100218C27 /* COptionAndOperator.c */,
+				CEF17DDF24B2320200218C27 /* CDataType.h */,
+				CEF17DE024B2320200218C27 /* CDataType.c */,
 				CEF17DD924B1F5A000218C27 /* CCycle.h */,
 				CEF17DDA24B1F5A000218C27 /* CCycle.c */,
 				CEF17DD424B1CFB000218C27 /* CArray.h */,
@@ -471,6 +472,26 @@
 				CED28E2624B5E95100AD2D6E /* UIView+Frame.m */,
 			);
 			path = Categary;
+			sourceTree = "<group>";
+		};
+		CEE35E7B24BC522200E8E006 /* Keywords */ = {
+			isa = PBXGroup;
+			children = (
+				CED28E1C24B5D1EC00AD2D6E /* OCKeywordsController.h */,
+				CED28E1D24B5D1EC00AD2D6E /* OCKeywordsController.m */,
+				CEE35E7D24BC78CE00E8E006 /* OCTestExtern.h */,
+				CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */,
+			);
+			path = Keywords;
+			sourceTree = "<group>";
+		};
+		CEE35E7C24BC655600E8E006 /* Pointer */ = {
+			isa = PBXGroup;
+			children = (
+				CED28E0924B5B43000AD2D6E /* OCPointerController.h */,
+				CED28E0A24B5B43000AD2D6E /* OCPointerController.m */,
+			);
+			path = Pointer;
 			sourceTree = "<group>";
 		};
 		CEF1760824AB4B4F00977E8F /* FrameBounds */ = {
@@ -679,6 +700,7 @@
 				CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */,
 				CED28E2224B5D91B00AD2D6E /* OCCategaryController.m in Sources */,
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,
+				CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */,
 				CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */,
 				CEF17DD624B1CFB000218C27 /* CArray.c in Sources */,
 				CEFDF92324B33A73003F53CC /* OCThread.m in Sources */,
