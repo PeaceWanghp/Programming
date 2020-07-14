@@ -31,6 +31,7 @@
 #import "OCExtensionController.h"
 #import "OCProtocolController.h"
 #import "OCLoadInitializeController.h"
+#import "OCCopyController.h"
 
 @interface ViewController ()
 
@@ -99,11 +100,12 @@
     [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
+    [self.model appendItemWithTitle:@"Property (属性)" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"* Copy / MutableCopy (深浅拷贝)" class:[OCCopyController class]];
+    [self.model appendItemWithTitle:@"RetainCount (引用计数计)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Property (属性)--深浅拷贝" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"容器" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"RetainCount (引用计数计)" class:[UIViewController class]];
     
     [self.model appendHeader:@"Swift"];
     [self.model appendItemWithTitle:@"桥接" class:[UIViewController class]];

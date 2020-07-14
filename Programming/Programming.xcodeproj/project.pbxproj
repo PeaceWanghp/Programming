@@ -51,6 +51,8 @@
 		CED28E2224B5D91B00AD2D6E /* OCCategaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2124B5D91B00AD2D6E /* OCCategaryController.m */; };
 		CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2624B5E95100AD2D6E /* UIView+Frame.m */; };
 		CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */; };
+		CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB024BD9F97005153AA /* OCCopyController.m */; };
+		CEE8FDB724BDB73F005153AA /* OCCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB624BDB73F005153AA /* OCCopyObject.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 		CEF17DD624B1CFB000218C27 /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DD524B1CFB000218C27 /* CArray.c */; };
 		CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DDA24B1F5A000218C27 /* CCycle.c */; };
@@ -161,6 +163,10 @@
 		CED28E2624B5E95100AD2D6E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		CEE35E7D24BC78CE00E8E006 /* OCTestExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestExtern.h; sourceTree = "<group>"; };
 		CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestExtern.m; sourceTree = "<group>"; };
+		CEE8FDAF24BD9F97005153AA /* OCCopyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCopyController.h; sourceTree = "<group>"; };
+		CEE8FDB024BD9F97005153AA /* OCCopyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCopyController.m; sourceTree = "<group>"; };
+		CEE8FDB524BDB73F005153AA /* OCCopyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCopyObject.h; sourceTree = "<group>"; };
+		CEE8FDB624BDB73F005153AA /* OCCopyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCopyObject.m; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
 		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
 		CEF17DD424B1CFB000218C27 /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
@@ -253,6 +259,7 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CEE8FDAE24BD9F76005153AA /* Copy */,
 				CEE35E7C24BC655600E8E006 /* Pointer */,
 				CEE35E7B24BC522200E8E006 /* Keywords */,
 				CE6C172C24B87AA20061EB32 /* Import */,
@@ -494,6 +501,17 @@
 			path = Pointer;
 			sourceTree = "<group>";
 		};
+		CEE8FDAE24BD9F76005153AA /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				CEE8FDAF24BD9F97005153AA /* OCCopyController.h */,
+				CEE8FDB024BD9F97005153AA /* OCCopyController.m */,
+				CEE8FDB524BDB73F005153AA /* OCCopyObject.h */,
+				CEE8FDB624BDB73F005153AA /* OCCopyObject.m */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
 		CEF1760824AB4B4F00977E8F /* FrameBounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -657,6 +675,7 @@
 			files = (
 				CED28E1E24B5D1EC00AD2D6E /* OCKeywordsController.m in Sources */,
 				CEF17DE724B232AD00218C27 /* CPointer.c in Sources */,
+				CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */,
 				CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */,
 				CEBE167624B464D200301698 /* OCLocksController.m in Sources */,
 				CE6C171424B848A30061EB32 /* OCLoadInitializeController.m in Sources */,
@@ -694,6 +713,7 @@
 				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
 				CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */,
+				CEE8FDB724BDB73F005153AA /* OCCopyObject.m in Sources */,
 				CED28E1924B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m in Sources */,
 				CED28E1A24B5BDB700AD2D6E /* OC_CrashController+Operation.m in Sources */,
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,
