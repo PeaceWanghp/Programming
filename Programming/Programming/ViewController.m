@@ -88,10 +88,11 @@
     [self.model appendOpenedHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"* #import/#include/@class" class:[OCImportController class]];
     [self.model appendDarkItemWithTitle:@"* const/extern/static/#define" class:[OCKeywordsController class]];
-    [self.model appendDarkItemWithTitle:@"* Pointer (指针)" class:[OCPointerController class]];
+    [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
     [self.model appendItemWithTitle:@"Runtime（运行时）" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"MessageForwarding (消息转发)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"isa" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
     [self.model appendItemWithTitle:@"Lock (锁)" class:[OCLocksController class]];
     [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
