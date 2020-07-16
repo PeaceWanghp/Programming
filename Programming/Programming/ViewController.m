@@ -14,6 +14,7 @@
 
 //iOS
 #import "OC_CrashController.h"
+#import "iOSMemoryLeakController.h"
 
 //CocoaUI
 #import "CUOffScreenController.h"
@@ -32,6 +33,7 @@
 #import "OCProtocolController.h"
 #import "OCLoadInitializeController.h"
 #import "OCCopyController.h"
+#import "OCRetainCountController.h"
 
 @interface ViewController ()
 
@@ -92,6 +94,7 @@
     [self.model appendItemWithTitle:@"Runtime（运行时）" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"MessageForwarding (消息转发)" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"RetainCount (引用计数计)" class:[OCRetainCountController class]];
     [self.model appendItemWithTitle:@"isa" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
     [self.model appendItemWithTitle:@"Lock (锁)" class:[OCLocksController class]];
@@ -102,8 +105,7 @@
     [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
     [self.model appendItemWithTitle:@"Property (属性)" class:[UIViewController class]];
-    [self.model appendDarkItemWithTitle:@"* Copy / MutableCopy (深浅拷贝)" class:[OCCopyController class]];
-    [self.model appendItemWithTitle:@"RetainCount (引用计数计)" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Copy / MutableCopy (深浅拷贝)" class:[OCCopyController class]];
     [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"容器" class:[UIViewController class]];
@@ -136,9 +138,9 @@
     [self.model appendOpenedHeader:@"iOS"];
     [self.model appendItemWithTitle:@"Memory Masonry (内存分布)" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"*Crash(引发崩溃)" class:[OC_CrashController class]];
-    [self.model appendItemWithTitle:@"追踪/捕捉崩溃" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Memory Leak(内存泄漏)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"启动速度" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Get Crash (追踪/捕捉崩溃)" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"* Memory Leak(内存泄漏)" class:[iOSMemoryLeakController class]];
+    [self.model appendItemWithTitle:@"Launch Speed (启动速度)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"耗电" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"安装包瘦身" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"防越狱" class:[UIViewController class]];
@@ -169,6 +171,5 @@
     [self.model appendItemWithTitle:@"单例" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"工厂" class:[UIViewController class]];
 }
-
 
 @end
