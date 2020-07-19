@@ -45,6 +45,11 @@
 		CEBE167624B464D200301698 /* OCLocksController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBE167524B464D200301698 /* OCLocksController.m */; };
 		CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */; };
 		CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */; };
+		CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC7A9CB24C059BE00A3D65B /* OCPropertyController.m */; };
+		CEC7A9D024C05DE900A3D65B /* OCMessageForwardingController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC7A9CF24C05DE900A3D65B /* OCMessageForwardingController.m */; };
+		CED1628C24C1917F003F50F1 /* OCRuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1628B24C1917F003F50F1 /* OCRuntimeController.m */; };
+		CED1628F24C19D2B003F50F1 /* OCRuntimeTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */; };
+		CED1629224C1B352003F50F1 /* OCMsgForwardingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1629124C1B352003F50F1 /* OCMsgForwardingObject.m */; };
 		CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0A24B5B43000AD2D6E /* OCPointerController.m */; };
 		CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */; };
 		CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0F24B5BDB700AD2D6E /* OC_CrashController.m */; };
@@ -155,6 +160,16 @@
 		CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUOffScreenController.m; sourceTree = "<group>"; };
 		CEC0C5DF24ADA6F100E103F5 /* CHomeworkSecond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkSecond.h; sourceTree = "<group>"; };
 		CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHomeworkSecond.c; sourceTree = "<group>"; };
+		CEC7A9CA24C059BE00A3D65B /* OCPropertyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPropertyController.h; sourceTree = "<group>"; };
+		CEC7A9CB24C059BE00A3D65B /* OCPropertyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPropertyController.m; sourceTree = "<group>"; };
+		CEC7A9CE24C05DE900A3D65B /* OCMessageForwardingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMessageForwardingController.h; sourceTree = "<group>"; };
+		CEC7A9CF24C05DE900A3D65B /* OCMessageForwardingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMessageForwardingController.m; sourceTree = "<group>"; };
+		CED1628A24C1917F003F50F1 /* OCRuntimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRuntimeController.h; sourceTree = "<group>"; };
+		CED1628B24C1917F003F50F1 /* OCRuntimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRuntimeController.m; sourceTree = "<group>"; };
+		CED1628D24C19D2B003F50F1 /* OCRuntimeTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRuntimeTestObject.h; sourceTree = "<group>"; };
+		CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRuntimeTestObject.m; sourceTree = "<group>"; };
+		CED1629024C1B352003F50F1 /* OCMsgForwardingObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMsgForwardingObject.h; sourceTree = "<group>"; };
+		CED1629124C1B352003F50F1 /* OCMsgForwardingObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMsgForwardingObject.m; sourceTree = "<group>"; };
 		CED28E0924B5B43000AD2D6E /* OCPointerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPointerController.h; sourceTree = "<group>"; };
 		CED28E0A24B5B43000AD2D6E /* OCPointerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPointerController.m; sourceTree = "<group>"; };
 		CED28E0D24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+EXC_BAD_INSTRUCTION.h"; sourceTree = "<group>"; };
@@ -271,6 +286,9 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CED1628924C19156003F50F1 /* Runtime */,
+				CEC7A9CD24C05DC600A3D65B /* MessageForwarding */,
+				CEC7A9C924C059A500A3D65B /* Property */,
 				CE9C78F324BF03BF00071276 /* RetainCount */,
 				CEE8FDAE24BD9F76005153AA /* Copy */,
 				CEE35E7C24BC655600E8E006 /* Pointer */,
@@ -353,6 +371,7 @@
 		CE56F5AB249B689E00BA9B02 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CEC7A9C824C0578700A3D65B /* Memory */,
 				CE9C790324BF165B00071276 /* MemoryLeak */,
 				CED28E0C24B5BDB700AD2D6E /* Crash */,
 			);
@@ -487,6 +506,44 @@
 				CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */,
 			);
 			path = OffScreen;
+			sourceTree = "<group>";
+		};
+		CEC7A9C824C0578700A3D65B /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		CEC7A9C924C059A500A3D65B /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				CEC7A9CA24C059BE00A3D65B /* OCPropertyController.h */,
+				CEC7A9CB24C059BE00A3D65B /* OCPropertyController.m */,
+			);
+			path = Property;
+			sourceTree = "<group>";
+		};
+		CEC7A9CD24C05DC600A3D65B /* MessageForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				CEC7A9CE24C05DE900A3D65B /* OCMessageForwardingController.h */,
+				CEC7A9CF24C05DE900A3D65B /* OCMessageForwardingController.m */,
+				CED1629024C1B352003F50F1 /* OCMsgForwardingObject.h */,
+				CED1629124C1B352003F50F1 /* OCMsgForwardingObject.m */,
+			);
+			path = MessageForwarding;
+			sourceTree = "<group>";
+		};
+		CED1628924C19156003F50F1 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				CED1628A24C1917F003F50F1 /* OCRuntimeController.h */,
+				CED1628B24C1917F003F50F1 /* OCRuntimeController.m */,
+				CED1628D24C19D2B003F50F1 /* OCRuntimeTestObject.h */,
+				CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 		CED28E0C24B5BDB700AD2D6E /* Crash */ = {
@@ -741,7 +798,9 @@
 				CEFDF92624B33A86003F53CC /* OCOperation.m in Sources */,
 				CE9C78FF24BF150D00071276 /* OCARCObject.m in Sources */,
 				CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */,
+				CED1628F24C19D2B003F50F1 /* OCRuntimeTestObject.m in Sources */,
 				CEFDF91624B324C6003F53CC /* OC_Test_NSTimer.m in Sources */,
+				CEC7A9D024C05DE900A3D65B /* OCMessageForwardingController.m in Sources */,
 				CEFDF91524B324C6003F53CC /* OC_Test_CADisplayLink.m in Sources */,
 				CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */,
 				CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */,
@@ -750,6 +809,7 @@
 				CE6C171D24B857B60061EB32 /* OCLoadInitializeObject+Test2.m in Sources */,
 				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
+				CED1628C24C1917F003F50F1 /* OCRuntimeController.m in Sources */,
 				CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */,
 				CEE8FDB724BDB73F005153AA /* OCCopyObject.m in Sources */,
 				CED28E1924B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m in Sources */,
@@ -765,11 +825,13 @@
 				CE316F732498D4A600AC495A /* main.m in Sources */,
 				CEF17DEA24B2338600218C27 /* CFunction.c in Sources */,
 				CE9C790224BF152200071276 /* OCMRCObject.m in Sources */,
+				CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */,
 				CE56F5B4249B6F4300BA9B02 /* BPresentHeaderView.m in Sources */,
 				CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */,
 				CEFDF92924B33AAE003F53CC /* OCGCDAsync.m in Sources */,
 				CE6C172524B85F390061EB32 /* OCInheritObject.m in Sources */,
 				CE56F5BA249B70CC00BA9B02 /* BPresentHeaderModel.m in Sources */,
+				CED1629224C1B352003F50F1 /* OCMsgForwardingObject.m in Sources */,
 				CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */,
 				CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */,
 				CE9C790624BF169300071276 /* iOSMemoryLeakController.m in Sources */,

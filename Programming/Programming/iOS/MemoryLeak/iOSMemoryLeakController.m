@@ -20,6 +20,7 @@
     [self.model appendDarkItemTitle:@"普通对象互相持有" target:self selector:@selector(objectTakeObject)];
     [self.model appendDarkItemTitle:@"NSTimer" target:self selector:@selector(objectTakeObject)];
     [self.model appendDarkItemTitle:@"Block" target:self selector:@selector(objectTakeObject)];
+    [self.model appendDarkItemTitle:@"Delegate Strong/Weak" target:self selector:@selector(objectTakeObject)];
 }
 
 - (void)objectTakeObject {
