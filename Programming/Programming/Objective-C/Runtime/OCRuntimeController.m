@@ -24,6 +24,7 @@
     [self.model appendDarkItemTitle:@"isa" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"struct class" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"ivar (属性列表)" target:self selector:@selector(getIsa)];
+    [self.model appendDarkItemTitle:@"SEL/IMP" target:self selector:@selector(getIsa)];
     
     [self.model appendOpenedHeader:@"实际应用："];
     [self.model appendItemWithTitle:@"exchangeImplementations (方法交换)" class:[UIViewController class]];

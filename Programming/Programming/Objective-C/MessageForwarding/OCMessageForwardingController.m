@@ -9,6 +9,7 @@
 #import "OCMessageForwardingController.h"
 
 #import "OCMsgForwardingObject.h"
+#import "OCMultiDelegateController.h"
 #import <objc/runtime.h>
 
 @interface OCMessageForwardingController ()
@@ -33,7 +34,7 @@
     [self.model appendDarkItemTitle:@"NO (crash)" target:self selector:@selector(methodSignatureNO)];
     
     [self.model appendOpenedHeader:@"实用案例："];
-    [self.model appendDarkItemTitle:@"..." target:self selector:@selector(todo)];
+    [self.model appendDarkItemWithTitle:@"multiDelegate（多重代理）" class:[OCMultiDelegateController class]];
 }
 
 #pragma mark -

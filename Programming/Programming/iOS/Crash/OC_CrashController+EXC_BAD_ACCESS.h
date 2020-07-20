@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OC_CrashController (EXC_BAD_ACCESS)
 
+- (void)badAccess;
+
 @end
 
 NS_ASSUME_NONNULL_END

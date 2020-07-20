@@ -7,6 +7,7 @@
 //
 
 #import "OC_CrashController.h"
+#import "OC_CrashController+EXC_BAD_ACCESS.h"
 
 @interface OC_CrashController ()
 {
@@ -31,7 +32,7 @@
     [super viewDidLoad];
     
     [self.model appendOpenedHeader:@"EXC_BAD_ACCESS/错误地址访问"];
-    [self.model appendDarkItemTitle:@"__unsafe_unretained" target:self selector:@selector(unsafe_unretained)];
+    [self.model appendDarkItemTitle:@"__unsafe_unretained" target:self selector:@selector(testBadAccess)];
     [self.model appendDarkItemTitle:@"recursion(死递归)" target:self selector:@selector(recursion)];
     [self.model appendDarkItemTitle:@"未实现的block" target:self selector:@selector(notBlock)];
     [self.model appendDarkItemTitle:@"未初始化" target:self selector:@selector(unInitialization)];
@@ -67,6 +68,12 @@
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         
     });
+}
+
+#pragma mark -
+#pragma mark -- BadAccess
+- (void)testBadAccess {
+    [self badAccess];
 }
 
 @end
