@@ -11,6 +11,7 @@
 //C
 #import "CHomeworkController.h"
 #import "CLibsController.h"
+#import "CExamController.h"
 
 //iOS
 #import "OC_CrashController.h"
@@ -121,8 +122,8 @@
     
     [self.model appendHeader:@"C"];
     [self.model appendDarkItemWithTitle:@"Homework" class:[CHomeworkController class]];
+    [self.model appendDarkItemWithTitle:@"Exam" class:[CExamController class]];
     [self.model appendDarkItemWithTitle:@"标准库" class:[CLibsController class]];
-    [self.model appendDarkItemWithTitle:@"Array(数组)" class:[CHomeworkController class]];
     
     [self.model appendHeader:@"CocoaUI"];
     [self.model appendDarkItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];

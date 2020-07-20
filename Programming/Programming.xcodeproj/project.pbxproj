@@ -50,6 +50,8 @@
 		CED1628C24C1917F003F50F1 /* OCRuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1628B24C1917F003F50F1 /* OCRuntimeController.m */; };
 		CED1628F24C19D2B003F50F1 /* OCRuntimeTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */; };
 		CED1629224C1B352003F50F1 /* OCMsgForwardingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1629124C1B352003F50F1 /* OCMsgForwardingObject.m */; };
+		CED1629624C3FC65003F50F1 /* CExamController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1629524C3FC65003F50F1 /* CExamController.m */; };
+		CED1629A24C40B5B003F50F1 /* Exam.c in Sources */ = {isa = PBXBuildFile; fileRef = CED1629924C40B5B003F50F1 /* Exam.c */; };
 		CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0A24B5B43000AD2D6E /* OCPointerController.m */; };
 		CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */; };
 		CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0F24B5BDB700AD2D6E /* OC_CrashController.m */; };
@@ -170,6 +172,10 @@
 		CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRuntimeTestObject.m; sourceTree = "<group>"; };
 		CED1629024C1B352003F50F1 /* OCMsgForwardingObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMsgForwardingObject.h; sourceTree = "<group>"; };
 		CED1629124C1B352003F50F1 /* OCMsgForwardingObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMsgForwardingObject.m; sourceTree = "<group>"; };
+		CED1629424C3FC65003F50F1 /* CExamController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CExamController.h; sourceTree = "<group>"; };
+		CED1629524C3FC65003F50F1 /* CExamController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CExamController.m; sourceTree = "<group>"; };
+		CED1629824C40B5B003F50F1 /* Exam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exam.h; sourceTree = "<group>"; };
+		CED1629924C40B5B003F50F1 /* Exam.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Exam.c; sourceTree = "<group>"; };
 		CED28E0924B5B43000AD2D6E /* OCPointerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPointerController.h; sourceTree = "<group>"; };
 		CED28E0A24B5B43000AD2D6E /* OCPointerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPointerController.m; sourceTree = "<group>"; };
 		CED28E0D24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+EXC_BAD_INSTRUCTION.h"; sourceTree = "<group>"; };
@@ -329,18 +335,8 @@
 		CE316F7D2498D56C00AC495A /* C */ = {
 			isa = PBXGroup;
 			children = (
-				CEF17DE224B2324100218C27 /* COptionAndOperator.h */,
-				CEF17DE324B2324100218C27 /* COptionAndOperator.c */,
-				CEF17DDF24B2320200218C27 /* CDataType.h */,
-				CEF17DE024B2320200218C27 /* CDataType.c */,
-				CEF17DD924B1F5A000218C27 /* CCycle.h */,
-				CEF17DDA24B1F5A000218C27 /* CCycle.c */,
-				CEF17DD424B1CFB000218C27 /* CArray.h */,
-				CEF17DD524B1CFB000218C27 /* CArray.c */,
-				CEF17DE824B2338600218C27 /* CFunction.h */,
-				CEF17DE924B2338600218C27 /* CFunction.c */,
-				CEF17DE524B232AD00218C27 /* CPointer.h */,
-				CEF17DE624B232AD00218C27 /* CPointer.c */,
+				CED1629724C3FC70003F50F1 /* Basic */,
+				CED1629324C3FC27003F50F1 /* Exam */,
 				CEF17DEE24B2365C00218C27 /* Libs */,
 				CEF17DD724B1D03A00218C27 /* Homework */,
 			);
@@ -544,6 +540,36 @@
 				CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */,
 			);
 			path = Runtime;
+			sourceTree = "<group>";
+		};
+		CED1629324C3FC27003F50F1 /* Exam */ = {
+			isa = PBXGroup;
+			children = (
+				CED1629424C3FC65003F50F1 /* CExamController.h */,
+				CED1629524C3FC65003F50F1 /* CExamController.m */,
+				CED1629824C40B5B003F50F1 /* Exam.h */,
+				CED1629924C40B5B003F50F1 /* Exam.c */,
+			);
+			path = Exam;
+			sourceTree = "<group>";
+		};
+		CED1629724C3FC70003F50F1 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				CEF17DE224B2324100218C27 /* COptionAndOperator.h */,
+				CEF17DE324B2324100218C27 /* COptionAndOperator.c */,
+				CEF17DDF24B2320200218C27 /* CDataType.h */,
+				CEF17DE024B2320200218C27 /* CDataType.c */,
+				CEF17DD924B1F5A000218C27 /* CCycle.h */,
+				CEF17DDA24B1F5A000218C27 /* CCycle.c */,
+				CEF17DD424B1CFB000218C27 /* CArray.h */,
+				CEF17DD524B1CFB000218C27 /* CArray.c */,
+				CEF17DE824B2338600218C27 /* CFunction.h */,
+				CEF17DE924B2338600218C27 /* CFunction.c */,
+				CEF17DE524B232AD00218C27 /* CPointer.h */,
+				CEF17DE624B232AD00218C27 /* CPointer.c */,
+			);
+			path = Basic;
 			sourceTree = "<group>";
 		};
 		CED28E0C24B5BDB700AD2D6E /* Crash */ = {
@@ -794,6 +820,7 @@
 				CE6C172824B85F5A0061EB32 /* OCInheritA.m in Sources */,
 				CEFDF91924B324C6003F53CC /* OC_Test_GCDTimer.m in Sources */,
 				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
+				CED1629624C3FC65003F50F1 /* CExamController.m in Sources */,
 				CEFDF91824B324C6003F53CC /* NSWeakTimer.m in Sources */,
 				CEFDF92624B33A86003F53CC /* OCOperation.m in Sources */,
 				CE9C78FF24BF150D00071276 /* OCARCObject.m in Sources */,
@@ -823,6 +850,7 @@
 				CEF17DD624B1CFB000218C27 /* CArray.c in Sources */,
 				CEFDF92324B33A73003F53CC /* OCThread.m in Sources */,
 				CE316F732498D4A600AC495A /* main.m in Sources */,
+				CED1629A24C40B5B003F50F1 /* Exam.c in Sources */,
 				CEF17DEA24B2338600218C27 /* CFunction.c in Sources */,
 				CE9C790224BF152200071276 /* OCMRCObject.m in Sources */,
 				CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */,
