@@ -38,6 +38,19 @@
 #import "OCPropertyController.h"
 #import "OCMessageForwardingController.h"
 #import "OCRuntimeController.h"
+#import "OCBlockController.h"
+
+//Algorithm
+#import "AlgorithmsController.h"
+#import "ALGOtherController.h"
+#import "ALGArrayController.h"
+#import "ALGStackController.h"
+#import "ALGQueueController.h"
+#import "ALGLinkController.h"
+#import "ALGTreeController.h"
+#import "ALGHashController.h"
+#import "ALGHeapController.h"
+#import "ALGGraphController.h"
 
 @interface ViewController ()
 
@@ -52,16 +65,16 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.model appendHeader:@"Algorithms(算法)"];
-    [self.model appendItemWithTitle:@"理论" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Array(数组)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Stack(栈)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Queue(队列)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Link(链表)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Tree(树)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Hash(散列表)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Heap(堆)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Graph(图)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Other(其他)" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"理论" class:[AlgorithmsController class]];
+    [self.model appendItemWithTitle:@"Array(数组)" class:[ALGArrayController class]];
+    [self.model appendItemWithTitle:@"Stack(栈)" class:[ALGStackController class]];
+    [self.model appendItemWithTitle:@"Queue(队列)" class:[ALGQueueController class]];
+    [self.model appendItemWithTitle:@"Link(链表)" class:[ALGLinkController class]];
+    [self.model appendItemWithTitle:@"Tree(树)" class:[ALGTreeController class]];
+    [self.model appendItemWithTitle:@"Hash(散列表)" class:[ALGHashController class]];
+    [self.model appendItemWithTitle:@"Heap(堆)" class:[ALGHeapController class]];
+    [self.model appendItemWithTitle:@"Graph(图)" class:[ALGGraphController class]];
+    [self.model appendDarkItemWithTitle:@"* Other(其他)" class:[ALGOtherController class]];
     
     [self.model appendHeader:@"Internet(网络)"];
     [self.model appendItemWithTitle:@"TCP/IP" class:[UIViewController class]];
@@ -92,23 +105,23 @@
     [self.model appendItemWithTitle:@"CoreData" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"Objective-C"];
-    [self.model appendDarkItemWithTitle:@"* #import/#include/@class" class:[OCImportController class]];
-    [self.model appendDarkItemWithTitle:@"* const/extern/static/#define" class:[OCKeywordsController class]];
-    [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
     [self.model appendDarkItemWithTitle:@"* Runtime（运行时）" class:[OCRuntimeController class]];
     [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
-    [self.model appendDarkItemWithTitle:@"* MessageForwarding (消息转发)" class:[OCMessageForwardingController class]];
+    [self.model appendDarkItemWithTitle:@"MessageForwarding(消息转发)" class:[OCMessageForwardingController class]];
     [self.model appendDarkItemWithTitle:@"RetainCount (引用计数计)" class:[OCRetainCountController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
     [self.model appendItemWithTitle:@"Lock (锁)" class:[OCLocksController class]];
     [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
-    [self.model appendItemWithTitle:@"Block" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"* Block" class:[OCBlockController class]];
     [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
     [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
     [self.model appendDarkItemWithTitle:@"* Property (属性)" class:[OCPropertyController class]];
     [self.model appendDarkItemWithTitle:@"Copy / MutableCopy (深浅拷贝)" class:[OCCopyController class]];
+    [self.model appendDarkItemWithTitle:@"* #import/#include/@class" class:[OCImportController class]];
+    [self.model appendDarkItemWithTitle:@"* const/extern/static/#define" class:[OCKeywordsController class]];
+    [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
     [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"容器" class:[UIViewController class]];
