@@ -65,6 +65,7 @@
 		CEDC038324C58E7000E8734C /* OCMultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038224C58E7000E8734C /* OCMultiDelegate.m */; };
 		CEDC038624C5928500E8734C /* OCMDView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038524C5928500E8734C /* OCMDView.m */; };
 		CEDC038924C5929400E8734C /* OCMDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038824C5929400E8734C /* OCMDObject.m */; };
+		CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038C24C6AD8C00E8734C /* OCBlockController.m */; };
 		CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */; };
 		CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB024BD9F97005153AA /* OCCopyController.m */; };
 		CEE8FDB724BDB73F005153AA /* OCCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB624BDB73F005153AA /* OCCopyObject.m */; };
@@ -206,6 +207,8 @@
 		CEDC038524C5928500E8734C /* OCMDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMDView.m; sourceTree = "<group>"; };
 		CEDC038724C5929400E8734C /* OCMDObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMDObject.h; sourceTree = "<group>"; };
 		CEDC038824C5929400E8734C /* OCMDObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMDObject.m; sourceTree = "<group>"; };
+		CEDC038B24C6AD8C00E8734C /* OCBlockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBlockController.h; sourceTree = "<group>"; };
+		CEDC038C24C6AD8C00E8734C /* OCBlockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockController.m; sourceTree = "<group>"; };
 		CEE35E7D24BC78CE00E8E006 /* OCTestExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestExtern.h; sourceTree = "<group>"; };
 		CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestExtern.m; sourceTree = "<group>"; };
 		CEE8FDAF24BD9F97005153AA /* OCCopyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCopyController.h; sourceTree = "<group>"; };
@@ -632,6 +635,8 @@
 		CEDC038A24C69E1200E8734C /* Block */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC038B24C6AD8C00E8734C /* OCBlockController.h */,
+				CEDC038C24C6AD8C00E8734C /* OCBlockController.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -885,6 +890,7 @@
 				CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */,
 				CED28E2224B5D91B00AD2D6E /* OCCategaryController.m in Sources */,
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,
+				CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */,
 				CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */,
 				CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */,
 				CEF17DD624B1CFB000218C27 /* CArray.c in Sources */,
