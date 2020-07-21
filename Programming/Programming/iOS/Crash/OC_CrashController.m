@@ -55,7 +55,7 @@
     [self.model appendOpenedHeader:@"UI not on Main Thread"];
     [self.model appendDarkItemTitle:@"子线程绘制UI" target:self selector:@selector(uiNotMainThread)];
     
-    [self.model appendOpenedHeader:@"Crash Code Line"];
+    [self.model appendOpenedHeader:@"Get Crash"];
     [self.model appendDarkItemTitle:@"zombi" target:self selector:@selector(testMethod)];
     [self.model appendDarkItemTitle:@"dealloc" target:self selector:@selector(testMethod)];
 }

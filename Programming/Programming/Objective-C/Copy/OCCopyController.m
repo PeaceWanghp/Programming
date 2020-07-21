@@ -11,13 +11,22 @@
 #import "OCCopyObject.h"
 
 @interface OCCopyController ()
-
+@property(nonatomic,copy) NSNumber *number;
+@property(nonatomic,copy) NSMutableArray *array;
 @end
 
 @implementation OCCopyController
 
+@synthesize array = _array;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.model appendOpenedHeader:@"Copy"];
+    [self.model appendDarkItemTitle:@"NSNumber copy" target:self selector:@selector(copyNumber)];
+    [self.model appendDarkItemTitle:@"NSObject copy" target:self selector:@selector(copyObject)];
+    [self.model appendDarkItemTitle:@"UIView copy" target:self selector:@selector(copyUIView)];
+    [self.model appendDarkItemTitle:@"NSArray/_NSArray copy" target:self selector:@selector(copyNSArray)];
     
     [self.model appendDarkItemTitle:@"NString copy" target:self selector:@selector(copyString)];
     [self.model appendDarkItemTitle:@"NString mutableCopy" target:self selector:@selector(copyMutableString)];
@@ -32,6 +41,40 @@
 
 - (void)todo {
     
+}
+
+#pragma mark -
+#pragma mark -- Copy NSObject
+//copy same
+- (void)copyNumber {
+    NSNumber *tmp = [NSNumber numberWithInt:5];
+    NSLog(@"%p",tmp);
+    self.number = tmp;
+    NSLog(@"%p",self.number);
+}
+
+//Crash: unrecongnized selector sent to instance 0x7xbcd890
+- (void)copyObject {
+    NSObject *object = [NSObject new];
+    [object copy];
+}
+
+//Crash: unrecongnized selector sent to instance 0x7xbcd890
+- (void)copyUIView {
+    UIView *view = [UIView new];
+    [view copy];
+}
+
+- (void)copyNSArray {
+    NSMutableArray *mutalbeArray = [NSMutableArray new];
+    self.array = [mutalbeArray copy];
+    NSLog(@"%@:%p, %@:%p, %@:%p",
+          [mutalbeArray class], mutalbeArray,[self.array class],self.array, [_array class],_array);
+    
+    NSMutableArray *mutalbeArray1 = [NSMutableArray new];
+    _array = [mutalbeArray1 copy];
+    NSLog(@"%@:%p, %@:%p, %@:%p",
+    [mutalbeArray1 class], mutalbeArray1,[self.array class],self.array, [_array class],_array);
 }
 
 #pragma mark -

@@ -141,7 +141,6 @@
     [self.model appendOpenedHeader:@"iOS"];
     [self.model appendItemWithTitle:@"Memory Masonry (内存分布)" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"*Crash(引发崩溃)" class:[OC_CrashController class]];
-    [self.model appendItemWithTitle:@"Get Crash (追踪/捕捉崩溃)" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"* Memory Leak(内存泄漏)" class:[iOSMemoryLeakController class]];
     [self.model appendItemWithTitle:@"Launch Speed (启动速度)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"耗电" class:[UIViewController class]];
