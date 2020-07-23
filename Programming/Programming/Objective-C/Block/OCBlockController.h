@@ -6,12 +6,12 @@
 //  Copyright © 2020 Peace. All rights reserved.
 //
 
-#import "BPresentController.h"
+//#import "BPresentController.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface OCBlockController : BPresentController
+//NS_ASSUME_NONNULL_BEGIN
+#import <UIKit/UIKit.h>
+@interface OCBlockController : UIViewController
 
 @end
 
-NS_ASSUME_NONNULL_END
+//NS_ASSUME_NONNULL_END

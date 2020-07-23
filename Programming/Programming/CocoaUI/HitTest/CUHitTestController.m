@@ -11,6 +11,7 @@
 #import "CUHitTestView.h"
 #import "CUHitTestAView.h"
 #import "CUHitTestBView.h"
+#import "CUBigSizeButton.h"
 
 @interface CUHitTestController ()
 
@@ -38,11 +39,22 @@
     CUHitTestBView *bView = [[CUHitTestBView alloc] initWithFrame:CGRectMake(50, 360, 100, 50)];
     bView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:bView];
+    
+    CUBigSizeButton *button = [[CUBigSizeButton alloc] initWithFrame:CGRectMake(50, 450, 120, 50)];
+    [button setBackgroundColor:[UIColor lightGrayColor]];
+    [button setTitle:@"扩大Button响应区域" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"touchesBegan-------[CUHitTestViewController]");
     [super touchesBegan:touches withEvent:event];
+}
+
+- (void)buttonAction:(UIButton *)button {
+    NSLog(@"hit Button");
 }
 
 @end

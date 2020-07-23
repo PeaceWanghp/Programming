@@ -8,6 +8,8 @@
 
 #import "OCPropertyController.h"
 
+#import "OCPropertyObject.h"
+
 @interface OCPropertyController ()
 
 @end
@@ -18,7 +20,7 @@
     [super viewDidLoad];
     
     [self.model appendOpenedHeader:@"1"];
-    [self.model appendItemTitle:@"@property" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"@property" target:self selector:@selector(todo1)];
     [self.model appendItemTitle:@"@synthesize" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"nonatomic" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"atomic" target:self selector:@selector(todo)];
@@ -35,7 +37,31 @@
 }
 
 - (void)todo {
+    OCPropertyObject *object = [OCPropertyObject new];
+    NSLog(@"1.%@",[object valueForKey:@"retainCount"]);
+    __weak typeof(object) weakObject = object;
+    NSLog(@"2.%@",[object valueForKey:@"retainCount"]);
+    NSLog(@"2.%@",[weakObject valueForKey:@"retainCount"]);
+    OCPropertyObject *tmpObject = weakObject;
+    NSLog(@"3.%@",[tmpObject valueForKey:@"retainCount"]);
+    NSLog(@"3.%@",[weakObject valueForKey:@"retainCount"]);
+    NSLog(@"3.%@",[object valueForKey:@"retainCount"]);
+    object = nil;
+    NSLog(@"4.%@",[tmpObject valueForKey:@"retainCount"]);
+    NSLog(@"4.%@",[weakObject valueForKey:@"retainCount"]);
+    NSLog(@"4.%@",[object valueForKey:@"retainCount"]);
     
+}
+
+- (void)todo1 {
+    OCPropertyObject *object = [OCPropertyObject new];
+    NSLog(@"1.%@",[object valueForKey:@"retainCount"]);
+    __weak typeof(object) weakObject = object;
+    NSLog(@"2.%@",[object valueForKey:@"retainCount"]);
+    NSLog(@"2.%@",[weakObject valueForKey:@"retainCount"]);
+    object = nil;
+    NSLog(@"4.%@",[weakObject valueForKey:@"retainCount"]);
+    NSLog(@"4.%@",[object valueForKey:@"retainCount"]);
 }
 
 @end

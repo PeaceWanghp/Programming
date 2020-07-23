@@ -66,12 +66,12 @@
 }
 
 - (void)copyNSArray {
-    NSMutableArray *mutalbeArray = [NSMutableArray new];
+    NSMutableArray *mutalbeArray = [[NSMutableArray alloc] initWithObjects:@"1", nil];
     self.array = [mutalbeArray copy];
     NSLog(@"%@:%p, %@:%p, %@:%p",
           [mutalbeArray class], mutalbeArray,[self.array class],self.array, [_array class],_array);
     
-    NSMutableArray *mutalbeArray1 = [NSMutableArray new];
+    NSMutableArray *mutalbeArray1 = [[NSMutableArray alloc] initWithObjects:@"2", nil];
     _array = [mutalbeArray1 copy];
     NSLog(@"%@:%p, %@:%p, %@:%p",
     [mutalbeArray1 class], mutalbeArray1,[self.array class],self.array, [_array class],_array);
