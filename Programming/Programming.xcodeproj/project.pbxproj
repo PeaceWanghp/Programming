@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A868B24CA917300E24717 /* OCMutableArray.m */; };
 		CE316F622498D4A400AC495A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F612498D4A400AC495A /* AppDelegate.m */; };
 		CE316F682498D4A400AC495A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F672498D4A400AC495A /* ViewController.m */; };
 		CE316F6D2498D4A600AC495A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE316F6C2498D4A600AC495A /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		CEDC03B124C6C60E00E8734C /* ALGHeapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B024C6C60E00E8734C /* ALGHeapController.m */; };
 		CEDC03B424C6C62000E8734C /* ALGGraphController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B324C6C62000E8734C /* ALGGraphController.m */; };
 		CEDC03B724C6C63400E8734C /* ALGOtherController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B624C6C63400E8734C /* ALGOtherController.m */; };
+		CEE306D624CD778700A70DBA /* CBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE306D524CD778700A70DBA /* CBasicController.m */; };
 		CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */; };
 		CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB024BD9F97005153AA /* OCCopyController.m */; };
 		CEE8FDB724BDB73F005153AA /* OCCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB624BDB73F005153AA /* OCCopyObject.m */; };
@@ -102,6 +104,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE1A868A24CA917300E24717 /* OCMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMutableArray.h; sourceTree = "<group>"; };
+		CE1A868B24CA917300E24717 /* OCMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMutableArray.m; sourceTree = "<group>"; };
 		CE316F5D2498D4A400AC495A /* Programming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Programming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE316F602498D4A400AC495A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE316F612498D4A400AC495A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 		CEDC03B324C6C62000E8734C /* ALGGraphController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGGraphController.m; sourceTree = "<group>"; };
 		CEDC03B524C6C63400E8734C /* ALGOtherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGOtherController.h; sourceTree = "<group>"; };
 		CEDC03B624C6C63400E8734C /* ALGOtherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGOtherController.m; sourceTree = "<group>"; };
+		CEE306D424CD778700A70DBA /* CBasicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBasicController.h; sourceTree = "<group>"; };
+		CEE306D524CD778700A70DBA /* CBasicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBasicController.m; sourceTree = "<group>"; };
 		CEE35E7D24BC78CE00E8E006 /* OCTestExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestExtern.h; sourceTree = "<group>"; };
 		CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestExtern.m; sourceTree = "<group>"; };
 		CEE8FDAF24BD9F97005153AA /* OCCopyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCopyController.h; sourceTree = "<group>"; };
@@ -522,6 +528,8 @@
 				CE9C78FE24BF150D00071276 /* OCARCObject.m */,
 				CE9C790024BF152200071276 /* OCMRCObject.h */,
 				CE9C790124BF152200071276 /* OCMRCObject.m */,
+				CE1A868A24CA917300E24717 /* OCMutableArray.h */,
+				CE1A868B24CA917300E24717 /* OCMutableArray.m */,
 			);
 			path = RetainCount;
 			sourceTree = "<group>";
@@ -627,6 +635,8 @@
 		CED1629724C3FC70003F50F1 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				CEE306D424CD778700A70DBA /* CBasicController.h */,
+				CEE306D524CD778700A70DBA /* CBasicController.m */,
 				CEF17DE224B2324100218C27 /* COptionAndOperator.h */,
 				CEF17DE324B2324100218C27 /* COptionAndOperator.c */,
 				CEF17DDF24B2320200218C27 /* CDataType.h */,
@@ -984,7 +994,9 @@
 				CEDC039F24C6C58200E8734C /* ALGArrayController.m in Sources */,
 				CEDC03B724C6C63400E8734C /* ALGOtherController.m in Sources */,
 				CEFDF91C24B328F1003F53CC /* OCTimerController.m in Sources */,
+				CEE306D624CD778700A70DBA /* CBasicController.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
+				CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */,
 				CE6C172F24B87AC90061EB32 /* OCImportController.m in Sources */,
 				CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */,
 				CE6C172024B857CF0061EB32 /* OCLoadInitializeObject+Test3.m in Sources */,

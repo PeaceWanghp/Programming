@@ -46,6 +46,21 @@ extern void _objc_autoreleasePoolPrint();
     [self.model appendDarkItemTitle:@"[object valueForKey:@\"retainCount\"]" target:self selector:@selector(retainCount1)];
     [self.model appendDarkItemTitle:@"OBJC_EXTERN int _objc_rootRetainCount(id)" target:self selector:@selector(retainCount2)];
     [self.model appendDarkItemTitle:@"CFGetRetainCount((__bridge CFTypeRef)(object))" target:self selector:@selector(retainCount3)];
+    
+    OCARCObject *object = [OCARCObject new];
+    object.tag = 111;
+    NSMutableArray *array = [NSMutableArray array];
+    [array addObject:object];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
 }
 
 #pragma mark -

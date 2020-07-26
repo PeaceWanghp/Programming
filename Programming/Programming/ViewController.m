@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 //C
+#import "CBasicController.h"
 #import "CHomeworkController.h"
 #import "CLibsController.h"
 #import "CExamController.h"
@@ -134,8 +135,10 @@
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendHeader:@"C"];
-    [self.model appendDarkItemWithTitle:@"Homework" class:[CHomeworkController class]];
-    [self.model appendDarkItemWithTitle:@"Exam" class:[CExamController class]];
+    
+    [self.model appendDarkItemWithTitle:@"Basic (基础)" class:[CBasicController class]];
+    [self.model appendDarkItemWithTitle:@"Homework (作业)" class:[CHomeworkController class]];
+    [self.model appendDarkItemWithTitle:@"Exam (考试)" class:[CExamController class]];
     [self.model appendDarkItemWithTitle:@"标准库" class:[CLibsController class]];
     
     [self.model appendHeader:@"CocoaUI"];
