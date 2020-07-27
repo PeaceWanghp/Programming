@@ -13,6 +13,7 @@
 		CE316F6D2498D4A600AC495A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE316F6C2498D4A600AC495A /* Assets.xcassets */; };
 		CE316F702498D4A600AC495A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE316F6E2498D4A600AC495A /* LaunchScreen.storyboard */; };
 		CE316F732498D4A600AC495A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F722498D4A600AC495A /* main.m */; };
+		CE4A514024CED9D400198DCA /* CTypeInteger.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4A513F24CED9D400198DCA /* CTypeInteger.c */; };
 		CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */; };
 		CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5AD249B6D2300BA9B02 /* BPresentController.m */; };
 		CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B0249B6E9F00BA9B02 /* BPresentModel.m */; };
@@ -115,6 +116,8 @@
 		CE316F6F2498D4A600AC495A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE316F712498D4A600AC495A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE316F722498D4A600AC495A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE4A513E24CED9D400198DCA /* CTypeInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTypeInteger.h; sourceTree = "<group>"; };
+		CE4A513F24CED9D400198DCA /* CTypeInteger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CTypeInteger.c; sourceTree = "<group>"; };
 		CE50CA8E24AF2A9000BAB483 /* CGGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGradientView.h; sourceTree = "<group>"; };
 		CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGGradientView.m; sourceTree = "<group>"; };
 		CE56F5AC249B6D2300BA9B02 /* BPresentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPresentController.h; sourceTree = "<group>"; };
@@ -639,6 +642,8 @@
 				CEE306D524CD778700A70DBA /* CBasicController.m */,
 				CEF17DE224B2324100218C27 /* COptionAndOperator.h */,
 				CEF17DE324B2324100218C27 /* COptionAndOperator.c */,
+				CE4A513E24CED9D400198DCA /* CTypeInteger.h */,
+				CE4A513F24CED9D400198DCA /* CTypeInteger.c */,
 				CEF17DDF24B2320200218C27 /* CDataType.h */,
 				CEF17DE024B2320200218C27 /* CDataType.c */,
 				CEF17DD924B1F5A000218C27 /* CCycle.h */,
@@ -1024,6 +1029,7 @@
 				CEFAFFE124C808010063A564 /* OCPropertyObject.m in Sources */,
 				CEFDF92624B33A86003F53CC /* OCOperation.m in Sources */,
 				CE9C78FF24BF150D00071276 /* OCARCObject.m in Sources */,
+				CE4A514024CED9D400198DCA /* CTypeInteger.c in Sources */,
 				CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */,
 				CED1628F24C19D2B003F50F1 /* OCRuntimeTestObject.m in Sources */,
 				CEDC038324C58E7000E8734C /* OCMultiDelegate.m in Sources */,

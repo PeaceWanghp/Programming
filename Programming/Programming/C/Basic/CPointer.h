@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 
-void test1();
+void pointerInt(void);
+void swapInt (void);
+void pointerArray(void);
 
 #endif /* CPointer_h */
