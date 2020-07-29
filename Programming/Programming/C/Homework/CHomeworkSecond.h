@@ -11,4 +11,9 @@
 
 #include <stdio.h>
 
+void gcdAndGcp(void);
+void horse(void);
+void stringTransform(void);
+void outputTriangle(void);
+
 #endif /* CHomeworkSecond_h */

@@ -9,6 +9,7 @@
 #import "CHomeworkController.h"
 
 #import "CHomework.h"
+#import "CHomeworkSecond.h"
 
 @interface CHomeworkController ()
 
@@ -25,12 +26,38 @@
     [self.model appendItemTitle:@"score" target:self selector:@selector(score)];
     
     [self.model appendOpenedHeader:@"Second"];
-    [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"1.最大公約數/最小公倍數" target:self selector:@selector(test1)];
+    [self.model appendItemTitle:@"2.一百匹馬馱二百塊磚" target:self selector:@selector(test2)];
+    [self.model appendItemTitle:@"3.字符串小寫轉大寫" target:self selector:@selector(test3)];
+    [self.model appendItemTitle:@"4.輸出下三角在10*10矩陣中" target:self selector:@selector(test4)];
     
     [self.model appendOpenedHeader:@"Third"];
     [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
 }
 
+#pragma mark -
+#pragma mark -- Third
+
+#pragma mark -
+#pragma mark -- Second
+- (void)test1 {
+    gcdAndGcp();
+}
+
+- (void)test2 {
+    horse();
+}
+
+- (void)test3 {
+    stringTransform();
+}
+
+- (void)test4 {
+    outputTriangle();
+}
+
+#pragma mark -
+#pragma mark -- First
 - (void)FtoC {
     NSLog(@"Hit %s",__func__);
     FtoC();
@@ -44,6 +71,8 @@
     score();
 }
 
+#pragma mark -
+#pragma mark -- Public
 - (void)todo {
  
 }
