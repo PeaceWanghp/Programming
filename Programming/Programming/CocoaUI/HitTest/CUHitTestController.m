@@ -39,13 +39,27 @@
     CUHitTestBView *bView = [[CUHitTestBView alloc] initWithFrame:CGRectMake(50, 360, 100, 50)];
     bView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:bView];
+    [UIView animateWithDuration:10 animations:^{
+        CGRect rect = CGRectMake(self.view.frame.size.width - 100,
+                                 self.view.frame.size.height - 50,
+                                 100, 50);
+        [bView setFrame:rect];
+    }];
     
-    CUBigSizeButton *button = [[CUBigSizeButton alloc] initWithFrame:CGRectMake(50, 450, 120, 50)];
+    CUHitTestView *testView = [[CUHitTestView alloc] initWithFrame:CGRectMake(50, 420, 200, 200)];
+    testView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:testView];
+    
+    CUHitTestView *tView = [[CUHitTestView alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
+    tView.backgroundColor = [UIColor greenColor];
+    [testView addSubview:tView];
+    
+    CUBigSizeButton *button = [[CUBigSizeButton alloc] initWithFrame:CGRectMake(10, 40, 100, 50)];
     [button setBackgroundColor:[UIColor lightGrayColor]];
     [button setTitle:@"扩大Button响应区域" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    [tView addSubview:button];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

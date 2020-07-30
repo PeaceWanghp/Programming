@@ -16,7 +16,7 @@
     NSLog(@"1.%@",NSStringFromCGRect(self.bounds));
     NSLog(@"1.1.%@",NSStringFromCGRect(self.frame));
     
-    CGRect bounds = CGRectMake(-20, -20, self.bounds.size.width+40, self.bounds.size.height+40);
+    CGRect bounds = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height+50);
     NSLog(@"2.%@",NSStringFromCGRect(bounds));
     
     return CGRectContainsPoint(bounds, point);

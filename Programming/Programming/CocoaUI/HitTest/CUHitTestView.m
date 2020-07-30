@@ -8,6 +8,8 @@
 
 #import "CUHitTestView.h"
 
+#import "CUBigSizeButton.h"
+
 @implementation CUHitTestView
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
@@ -18,6 +20,15 @@
     }
 
     if (![self pointInside:point withEvent:event]) {
+        int count = (int)self.subviews.count;
+        for (int i = count - 1; i >= 0; i--) {
+            UIView *childView =  self.subviews[i];
+            if ([childView isKindOfClass:[CUBigSizeButton class]]) {
+                if (CGRectContainsPoint(childView.frame, point)) {
+                    return childView;
+                }
+            }
+        }
         return nil;
     }
     

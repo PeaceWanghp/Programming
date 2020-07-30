@@ -13,6 +13,13 @@
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     NSLog(@"hitTest-------[CUHitTest_B]");
     
+    NSLog(@"bounds:%@",NSStringFromCGRect(self.bounds));
+    NSLog(@"frame:%@",NSStringFromCGRect(self.frame));
+    NSLog(@"layer.frame:%@",NSStringFromCGRect(self.layer.frame));
+    NSLog(@"layer.bounds:%@",NSStringFromCGRect(self.layer.bounds));
+    NSLog(@"layer.position:%@",NSStringFromCGPoint(self.layer.position));
+//    NSLog(@"layer.zPosition:%@",NSStringFromCGPoint(self.layer.zPosition));
+    
     if (![self pointInside:point withEvent:event]) {
         return nil;
     }
