@@ -40,6 +40,8 @@
 		CE9C790224BF152200071276 /* OCMRCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C790124BF152200071276 /* OCMRCObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE9C790624BF169300071276 /* iOSMemoryLeakController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C790524BF169300071276 /* iOSMemoryLeakController.m */; };
 		CEB0453024D4081A0045BAA8 /* ALGQueueController+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0452F24D4081A0045BAA8 /* ALGQueueController+Array.m */; };
+		CEB0453324D412570045BAA8 /* ALGTreeController+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453224D412570045BAA8 /* ALGTreeController+Search.m */; };
+		CEB0453624D4127F0045BAA8 /* ALGTreeController+Traversal.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453524D4127F0045BAA8 /* ALGTreeController+Traversal.m */; };
 		CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3969824AC35CC00F5915E /* CUFBView.m */; };
 		CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB3969D24AC5BE600F5915E /* CUHitTestController.m */; };
 		CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A024AC8D7300F5915E /* CUHitTestView.m */; };
@@ -174,6 +176,10 @@
 		CE9C790524BF169300071276 /* iOSMemoryLeakController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMemoryLeakController.m; sourceTree = "<group>"; };
 		CEB0452E24D4081A0045BAA8 /* ALGQueueController+Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGQueueController+Array.h"; sourceTree = "<group>"; };
 		CEB0452F24D4081A0045BAA8 /* ALGQueueController+Array.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ALGQueueController+Array.m"; sourceTree = "<group>"; };
+		CEB0453124D412570045BAA8 /* ALGTreeController+Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGTreeController+Search.h"; sourceTree = "<group>"; };
+		CEB0453224D412570045BAA8 /* ALGTreeController+Search.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ALGTreeController+Search.m"; sourceTree = "<group>"; };
+		CEB0453424D4127F0045BAA8 /* ALGTreeController+Traversal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGTreeController+Traversal.h"; sourceTree = "<group>"; };
+		CEB0453524D4127F0045BAA8 /* ALGTreeController+Traversal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ALGTreeController+Traversal.m"; sourceTree = "<group>"; };
 		CEB3969724AC35CC00F5915E /* CUFBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUFBView.h; sourceTree = "<group>"; };
 		CEB3969824AC35CC00F5915E /* CUFBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUFBView.m; sourceTree = "<group>"; };
 		CEB3969C24AC5BE600F5915E /* CUHitTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUHitTestController.h; sourceTree = "<group>"; };
@@ -758,6 +764,10 @@
 			children = (
 				CEDC03A924C6C5D700E8734C /* ALGTreeController.h */,
 				CEDC03AA24C6C5D700E8734C /* ALGTreeController.m */,
+				CEB0453124D412570045BAA8 /* ALGTreeController+Search.h */,
+				CEB0453224D412570045BAA8 /* ALGTreeController+Search.m */,
+				CEB0453424D4127F0045BAA8 /* ALGTreeController+Traversal.h */,
+				CEB0453524D4127F0045BAA8 /* ALGTreeController+Traversal.m */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -1005,6 +1015,7 @@
 				CEDC03B724C6C63400E8734C /* ALGOtherController.m in Sources */,
 				CEFDF91C24B328F1003F53CC /* OCTimerController.m in Sources */,
 				CEE306D624CD778700A70DBA /* CBasicController.m in Sources */,
+				CEB0453324D412570045BAA8 /* ALGTreeController+Search.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
 				CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */,
 				CE6C172F24B87AC90061EB32 /* OCImportController.m in Sources */,
@@ -1052,6 +1063,7 @@
 				CE6C171D24B857B60061EB32 /* OCLoadInitializeObject+Test2.m in Sources */,
 				CEDC03A524C6C5AE00E8734C /* ALGQueueController.m in Sources */,
 				CEDC03B424C6C62000E8734C /* ALGGraphController.m in Sources */,
+				CEB0453624D4127F0045BAA8 /* ALGTreeController+Traversal.m in Sources */,
 				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
 				CED1628C24C1917F003F50F1 /* OCRuntimeController.m in Sources */,
