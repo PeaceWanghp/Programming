@@ -17,77 +17,90 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self.model appendOpenedHeader:@"链表节点（增/删/查）"];
+    [self.model appendDarkItemTitle:@"✓查倒数第K个" target:self selector:@selector(oppositeKth)];
+    [self.model appendDarkItemTitle:@"✓查中间节点" target:self selector:@selector(middleNode)];
+    [self.model appendDarkItemTitle:@"✓删除节点（穷举O(n)/赋值O(1)）" target:self selector:@selector(deleteNode)];
+    [self.model appendDarkItemTitle:@"✓删除所有等值节点" target:self selector:@selector(deleteNode3)];
+    [self.model appendDarkItemTitle:@"✓删除重复节点中一个" target:self selector:@selector(deleteNode4)];
+    [self.model appendItemTitle:@"删除所有重复节点" target:self selector:@selector(deleteNode5)];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    [self.model appendOpenedHeader:@"链表操作"];
+    [self.model appendDarkItemTitle:@"✓反转" target:self selector:@selector(linkReverse)];
+    [self.model appendDarkItemTitle:@"✓旋转" target:self selector:@selector(spin)];
+    [self.model appendDarkItemTitle:@"✓合并" target:self selector:@selector(mergeLink)];
+    [self.model appendItemTitle:@"复制复杂链表" target:self selector:@selector(freeLinkCopy)];
     
-    // Configure the cell...
+    [self.model appendOpenedHeader:@"链表排序"];
+    [self.model appendItemTitle:@"快速排序" target:self selector:@selector(checkLoop)];
+    [self.model appendItemTitle:@"插入排序" target:self selector:@selector(checkLoop)];
     
-    return cell;
+    [self.model appendOpenedHeader:@"链表结构判断"];
+    [self.model appendDarkItemTitle:@"✓有环(增Bool/穷举/快慢指针)" target:self selector:@selector(checkLoop)];
+    [self.model appendDarkItemTitle:@"✓环长度(快慢指针)" target:self selector:@selector(checkLoopLength)];
+    [self.model appendDarkItemTitle:@"✓环入口" target:self selector:@selector(loopNode)];
+    [self.model appendDarkItemTitle:@"✓同一节点(增Bool/嵌套循环/差值)" target:self selector:@selector(findSameNode)];
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark -
+#pragma mark -- Custom
+- (OC_LinkNode *)createLink {
+    OC_LinkNode *header = NULL;
+    OC_LinkNode *cur = NULL;
+    int count = arc4random_uniform(5) + 10;
+    for(int i = 1; i <= count; ++i) {
+        OC_LinkNode * node = [[OC_LinkNode alloc] init];
+        node.value = i;
+        node.nextNode = NULL;
+        
+        if (header == NULL) {
+            header = node;
+            cur = header;
+        }
+        else {
+            cur.nextNode = node;
+            cur = node;
+        }
+    }
+    
+    return header;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (void)printLink:(OC_LinkNode *)headerNode {
+    NSMutableString *output = [NSMutableString string];
+    while(headerNode != NULL) {
+        [output appendFormat:@"%d",headerNode.value];
+        
+        headerNode = headerNode.nextNode;
+        if (headerNode != NULL) {
+            [output appendString:@"->"];
+        }
+        
+        if (output.length > 100) {//避免死循环，默认100
+            NSLog(@"%@",output);
+            return;
+        }
+    }
+    NSLog(@"%@",output);
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+@end
+
+@implementation OC_LinkNode
+- (instancetype)initWithInt:(int)value {
+    self = [super init];
+    if (self) {
+        self.value = value;
+    }
+    return self;
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+- (instancetype)copyWithZone:(NSZone *)zone {
+    OC_LinkNode *node = [[OC_LinkNode allocWithZone:zone] init];
+    node.value = self.value;
+    node.isLoop = self.isLoop;
+    return node;
 }
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)dealloc {
+    NSLog(@"%s %d",__func__,_value);
 }
-*/
-
 @end
