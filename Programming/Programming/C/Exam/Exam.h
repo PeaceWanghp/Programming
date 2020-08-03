@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void first(void);
+
 #endif /* Exam_h */

@@ -8,6 +8,8 @@
 
 #import "CExamController.h"
 
+#include "Exam.h"
+
 @interface CExamController ()
 
 @end
@@ -17,13 +19,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendDarkItemTitle:@"输出九九表" target:self selector:@selector(multiplicationTable)];
-    [self.model appendDarkItemTitle:@"" target:self selector:@selector(multiplicationTable)];
+    [self.model appendDarkItemTitle:@"1.输出九九表" target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"2." target:self selector:@selector(triangleArea)];
+    [self.model appendItemTitle:@"3." target:self selector:@selector(outLetter)];
+    [self.model appendItemTitle:@"4." target:self selector:@selector(vowelCount)];
+    [self.model appendItemTitle:@"5." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"6." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"7." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"8." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"9." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"10." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"11." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"12." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"13." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"14." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"15." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"16." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"17." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"18." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"19." target:self selector:@selector(multiplicationTable)];
+    [self.model appendItemTitle:@"20." target:self selector:@selector(multiplicationTable)];
 }
 
 //1.输出九九表
 - (void)multiplicationTable {
-    
+    first();
 }
 
 //2.任意输入三条辨（a,b,c），若能构成三角形计算其面积，判断是否为等腰、等边、直角或任意，否则输出“不能构成三角形”
