@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0165E824E646870055E302 /* OCMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0165E724E646870055E302 /* OCMemoryController.m */; };
 		CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A868B24CA917300E24717 /* OCMutableArray.m */; };
 		CE316F622498D4A400AC495A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F612498D4A400AC495A /* AppDelegate.m */; };
 		CE316F682498D4A400AC495A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F672498D4A400AC495A /* ViewController.m */; };
@@ -116,6 +117,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0165E624E646870055E302 /* OCMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMemoryController.h; sourceTree = "<group>"; };
+		CE0165E724E646870055E302 /* OCMemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMemoryController.m; sourceTree = "<group>"; };
 		CE1A868A24CA917300E24717 /* OCMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMutableArray.h; sourceTree = "<group>"; };
 		CE1A868B24CA917300E24717 /* OCMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMutableArray.m; sourceTree = "<group>"; };
 		CE316F5D2498D4A400AC495A /* Programming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Programming.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,6 +346,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0165E524E6462B0055E302 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				CE0165E624E646870055E302 /* OCMemoryController.h */,
+				CE0165E724E646870055E302 /* OCMemoryController.m */,
+				CE9C78F324BF03BF00071276 /* RetainCount */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
 		CE316F542498D4A400AC495A = {
 			isa = PBXGroup;
 			children = (
@@ -388,11 +401,10 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CE0165E524E6462B0055E302 /* Memory */,
 				CED1628924C19156003F50F1 /* Runtime */,
 				CEC7A9CD24C05DC600A3D65B /* MessageForwarding */,
 				CEC7A9C924C059A500A3D65B /* Property */,
-				CE9C78F324BF03BF00071276 /* RetainCount */,
-				CEE8FDAE24BD9F76005153AA /* Copy */,
 				CEDC038A24C69E1200E8734C /* Block */,
 				CEE35E7C24BC655600E8E006 /* Pointer */,
 				CEE35E7B24BC522200E8E006 /* Keywords */,
@@ -630,6 +642,7 @@
 				CEC7A9CB24C059BE00A3D65B /* OCPropertyController.m */,
 				CEFAFFDF24C808010063A564 /* OCPropertyObject.h */,
 				CEFAFFE024C808010063A564 /* OCPropertyObject.m */,
+				CEE8FDAE24BD9F76005153AA /* Copy */,
 			);
 			path = Property;
 			sourceTree = "<group>";
@@ -1077,6 +1090,7 @@
 				CE9C78F624BF046200071276 /* OCRetainCountController.m in Sources */,
 				CEDC039324C6C43300E8734C /* AlgorithmsController.m in Sources */,
 				CEDC03AB24C6C5D700E8734C /* ALGTreeController.m in Sources */,
+				CE0165E824E646870055E302 /* OCMemoryController.m in Sources */,
 				CE6EE49B24B72978008735BC /* OCTestProtocol.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
 				CEDC03A824C6C5C000E8734C /* ALGLinkController.m in Sources */,

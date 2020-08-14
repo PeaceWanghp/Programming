@@ -34,8 +34,6 @@
 #import "OCExtensionController.h"
 #import "OCProtocolController.h"
 #import "OCLoadInitializeController.h"
-#import "OCCopyController.h"
-#import "OCRetainCountController.h"
 #import "OCPropertyController.h"
 #import "OCMessageForwardingController.h"
 #import "OCRuntimeController.h"
@@ -109,7 +107,6 @@
     [self.model appendDarkItemWithTitle:@"* Runtime（运行时）" class:[OCRuntimeController class]];
     [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"MessageForwarding(消息转发)" class:[OCMessageForwardingController class]];
-    [self.model appendDarkItemWithTitle:@"RetainCount (引用计数计)" class:[OCRetainCountController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
     [self.model appendItemWithTitle:@"Lock (锁)" class:[OCLocksController class]];
     [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
@@ -119,7 +116,6 @@
     [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
     [self.model appendDarkItemWithTitle:@"* Property (属性)" class:[OCPropertyController class]];
-    [self.model appendDarkItemWithTitle:@"Copy / MutableCopy (深浅拷贝)" class:[OCCopyController class]];
     [self.model appendDarkItemWithTitle:@"* #import/#include/@class" class:[OCImportController class]];
     [self.model appendDarkItemWithTitle:@"* const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];

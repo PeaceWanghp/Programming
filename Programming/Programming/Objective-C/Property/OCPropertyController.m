@@ -8,6 +8,7 @@
 
 #import "OCPropertyController.h"
 
+#import "OCCopyController.h"
 #import "OCPropertyObject.h"
 
 @interface OCPropertyController ()
@@ -26,7 +27,8 @@
     [self.model appendItemTitle:@"atomic" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"readonly" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"readwrite" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"copy" target:self selector:@selector(todo)];
+//    [self.model appendItemTitle:@"copy" target:self selector:@selector(todo)];
+    [self.model appendDarkItemWithTitle:@"Copy / MutableCopy (深浅拷贝)" class:[OCCopyController class]];
     [self.model appendItemTitle:@"asign" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"strong" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"weak" target:self selector:@selector(todo)];
