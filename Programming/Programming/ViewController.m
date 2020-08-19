@@ -24,6 +24,7 @@
 #import "CUFrameBoundsViewController.h"
 
 //Objective-C
+#import "OCMemoryController.h"
 #import "OCImportController.h"
 #import "OCThreadController.h"
 #import "OCLocksController.h"
@@ -106,6 +107,7 @@
     [self.model appendOpenedHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"* Runtime（运行时）" class:[OCRuntimeController class]];
     [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Memory（内存管理）" class:[OCMemoryController class]];
     [self.model appendDarkItemWithTitle:@"MessageForwarding(消息转发)" class:[OCMessageForwardingController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
     [self.model appendItemWithTitle:@"Lock (锁)" class:[OCLocksController class]];

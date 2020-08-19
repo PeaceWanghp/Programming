@@ -94,6 +94,8 @@
 		CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */; };
 		CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB024BD9F97005153AA /* OCCopyController.m */; };
 		CEE8FDB724BDB73F005153AA /* OCCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB624BDB73F005153AA /* OCCopyObject.m */; };
+		CEE93B4E24ECDB8400790662 /* OCAutoreleaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE93B4D24ECDB8400790662 /* OCAutoreleaseController.m */; };
+		CEE93B5124ECDEB400790662 /* OCAutoreleaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE93B5024ECDEB400790662 /* OCAutoreleaseObject.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 		CEF17DD624B1CFB000218C27 /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DD524B1CFB000218C27 /* CArray.c */; };
 		CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DDA24B1F5A000218C27 /* CCycle.c */; };
@@ -293,6 +295,10 @@
 		CEE8FDB024BD9F97005153AA /* OCCopyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCopyController.m; sourceTree = "<group>"; };
 		CEE8FDB524BDB73F005153AA /* OCCopyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCopyObject.h; sourceTree = "<group>"; };
 		CEE8FDB624BDB73F005153AA /* OCCopyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCopyObject.m; sourceTree = "<group>"; };
+		CEE93B4C24ECDB8400790662 /* OCAutoreleaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAutoreleaseController.h; sourceTree = "<group>"; };
+		CEE93B4D24ECDB8400790662 /* OCAutoreleaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCAutoreleaseController.m; sourceTree = "<group>"; };
+		CEE93B4F24ECDEB400790662 /* OCAutoreleaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAutoreleaseObject.h; sourceTree = "<group>"; };
+		CEE93B5024ECDEB400790662 /* OCAutoreleaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCAutoreleaseObject.m; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
 		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
 		CEF17DD424B1CFB000218C27 /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
@@ -351,6 +357,7 @@
 			children = (
 				CE0165E624E646870055E302 /* OCMemoryController.h */,
 				CE0165E724E646870055E302 /* OCMemoryController.m */,
+				CEE93B4B24ECDB3600790662 /* Autorelease */,
 				CE9C78F324BF03BF00071276 /* RetainCount */,
 			);
 			path = Memory;
@@ -892,6 +899,17 @@
 			path = Copy;
 			sourceTree = "<group>";
 		};
+		CEE93B4B24ECDB3600790662 /* Autorelease */ = {
+			isa = PBXGroup;
+			children = (
+				CEE93B4C24ECDB8400790662 /* OCAutoreleaseController.h */,
+				CEE93B4D24ECDB8400790662 /* OCAutoreleaseController.m */,
+				CEE93B4F24ECDEB400790662 /* OCAutoreleaseObject.h */,
+				CEE93B5024ECDEB400790662 /* OCAutoreleaseObject.m */,
+			);
+			path = Autorelease;
+			sourceTree = "<group>";
+		};
 		CEF1760824AB4B4F00977E8F /* FrameBounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -1133,6 +1151,7 @@
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,
 				CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */,
 				CED28E2224B5D91B00AD2D6E /* OCCategaryController.m in Sources */,
+				CEE93B4E24ECDB8400790662 /* OCAutoreleaseController.m in Sources */,
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,
 				CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */,
 				CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */,
@@ -1142,6 +1161,7 @@
 				CEFDF92324B33A73003F53CC /* OCThread.m in Sources */,
 				CE316F732498D4A600AC495A /* main.m in Sources */,
 				CED1629A24C40B5B003F50F1 /* Exam.c in Sources */,
+				CEE93B5124ECDEB400790662 /* OCAutoreleaseObject.m in Sources */,
 				CEF17DEA24B2338600218C27 /* CFunction.c in Sources */,
 				CE9C790224BF152200071276 /* OCMRCObject.m in Sources */,
 				CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */,

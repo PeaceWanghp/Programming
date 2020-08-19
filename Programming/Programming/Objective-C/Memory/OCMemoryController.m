@@ -9,6 +9,7 @@
 #import "OCMemoryController.h"
 
 #import "OCRetainCountController.h"
+#import "OCAutoreleaseController.h"
 
 @interface OCMemoryController ()
 
@@ -21,10 +22,8 @@
     
     [self.model appendOpenedHeader:@"原理："];
     [self.model appendDarkItemTitle:@"malloc" target:self selector:@selector(todo)];
-    [self.model appendDarkItemTitle:@"strong" target:self selector:@selector(todo)];
-    [self.model appendDarkItemTitle:@"weak" target:self selector:@selector(todo)];
-    [self.model appendDarkItemTitle:@"autorelase" target:self selector:@selector(todo)];
-    [self.model appendDarkItemTitle:@"autoreleaspool" target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"__strong/__weak/__autorelease" target:self selector:@selector(todo)];
+    [self.model appendDarkItemWithTitle:@"autorelease" class:[OCAutoreleaseController class]];
     [self.model appendDarkItemWithTitle:@"RetainCount (引用计数计)" class:[OCRetainCountController class]];
 }
 
