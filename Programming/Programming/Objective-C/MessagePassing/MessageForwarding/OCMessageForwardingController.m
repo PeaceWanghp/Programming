@@ -21,15 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-    [self.model appendOpenedHeader:@"Resolve"];
+    [self.model appendOpenedHeader:@"resolveInstance/ClassMethod"];
     [self.model appendDarkItemTitle:@"YES" target:self selector:@selector(fristYes)];
     [self.model appendDarkItemTitle:@"NO (crash)" target:self selector:@selector(fristNO)];
     
-    [self.model appendOpenedHeader:@"Forwarding"];
+    [self.model appendOpenedHeader:@"forwardingTargetForSelector"];
     [self.model appendDarkItemTitle:@"YES" target:self selector:@selector(forwardYes)];
     [self.model appendDarkItemTitle:@"NO (crash)" target:self selector:@selector(forwardNo)];
     
-    [self.model appendOpenedHeader:@"MethodSignature"];
+    [self.model appendOpenedHeader:@"methodSignatureForSelector"];
     [self.model appendDarkItemTitle:@"YES" target:self selector:@selector(methodSignatureYes)];
     [self.model appendDarkItemTitle:@"NO (crash)" target:self selector:@selector(methodSignatureNO)];
     

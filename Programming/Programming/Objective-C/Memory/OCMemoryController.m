@@ -20,11 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendOpenedHeader:@"原理："];
+    [self.model appendOpenedHeader:@"malloc(开辟内存空间)"];
     [self.model appendDarkItemTitle:@"malloc" target:self selector:@selector(todo)];
-    [self.model appendDarkItemTitle:@"__strong/__weak/__autorelease" target:self selector:@selector(todo)];
-    [self.model appendDarkItemWithTitle:@"autorelease" class:[OCAutoreleaseController class]];
-    [self.model appendDarkItemWithTitle:@"RetainCount (引用计数计)" class:[OCRetainCountController class]];
+    [self.model appendDarkItemTitle:@"copy/mutableCopy" target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"new" target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"duoble/float/int/long int/char" target:self selector:@selector(todo)];
+    
+    [self.model appendOpenedHeader:@"(持有/使用内存)"];
+    [self.model appendDarkItemTitle:@"__strong/__weak/__autorelease/__unsafe_unretain" target:self selector:@selector(todo)];
+    
+    [self.model appendOpenedHeader:@"release(释放内存)"];
+    [self.model appendDarkItemWithTitle:@"outInside(退出作用域)" class:[OCAutoreleaseController class]];
+    [self.model appendDarkItemWithTitle:@"autoreleasepool" class:[OCAutoreleaseController class]];
+    
+    [self.model appendOpenedHeader:@"retainCount(引用计数)"];
+    [self.model appendDarkItemWithTitle:@"retainCount" class:[OCRetainCountController class]];
 }
 
 - (void)todo {

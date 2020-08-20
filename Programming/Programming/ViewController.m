@@ -25,6 +25,7 @@
 
 //Objective-C
 #import "OCMemoryController.h"
+#import "OCMsgPassingController.h"
 #import "OCImportController.h"
 #import "OCThreadController.h"
 #import "OCLocksController.h"
@@ -36,7 +37,6 @@
 #import "OCProtocolController.h"
 #import "OCLoadInitializeController.h"
 #import "OCPropertyController.h"
-#import "OCMessageForwardingController.h"
 #import "OCRuntimeController.h"
 #import "OCBlockController.h"
 
@@ -105,19 +105,19 @@
     [self.model appendItemWithTitle:@"CoreData" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"Objective-C"];
-    [self.model appendDarkItemWithTitle:@"* Runtime（运行时）" class:[OCRuntimeController class]];
+    [self.model appendDarkItemWithTitle:@"Runtime（运行时）" class:[OCRuntimeController class]];
     [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Message Passing(消息机制)" class:[OCMsgPassingController class]];
     [self.model appendDarkItemWithTitle:@"Memory（内存管理）" class:[OCMemoryController class]];
-    [self.model appendDarkItemWithTitle:@"MessageForwarding(消息转发)" class:[OCMessageForwardingController class]];
+    [self.model appendDarkItemWithTitle:@"Property (属性)" class:[OCPropertyController class]];
+    [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
+    [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
+    [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
     [self.model appendItemWithTitle:@"Lock (锁)" class:[OCLocksController class]];
     [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
     [self.model appendDarkItemWithTitle:@"* Block" class:[OCBlockController class]];
-    [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
-    [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
-    [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
-    [self.model appendDarkItemWithTitle:@"* Property (属性)" class:[OCPropertyController class]];
     [self.model appendDarkItemWithTitle:@"* #import/#include/@class" class:[OCImportController class]];
     [self.model appendDarkItemWithTitle:@"* const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
@@ -153,7 +153,6 @@
     [self.model appendItemWithTitle:@"Xib" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"iOS"];
-    [self.model appendItemWithTitle:@"Memory Masonry (内存分布)" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"*Crash(引发崩溃)" class:[OC_CrashController class]];
     [self.model appendDarkItemWithTitle:@"* Memory Leak(内存泄漏)" class:[iOSMemoryLeakController class]];
     [self.model appendItemWithTitle:@"Launch Speed (启动速度)" class:[UIViewController class]];
