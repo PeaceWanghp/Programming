@@ -43,7 +43,7 @@
     [self.model appendItemTitle:@"null_unspecified(默认：未指定)" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"nullable(可为空)" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"nonnull(不能为空)" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"null_resettable(就是调用setter去reset属性时，可以传入nil，但是getter返回值，不为空。UIView下面的tintColor，就是null_resettable。这样就保证，即使赋值为nil，也会返回一个非空的值。\n)" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"null_resettable(就是调用setter传入nil，但是getter返回值不为空)" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"@synthesize(自动合成)"];
     [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
