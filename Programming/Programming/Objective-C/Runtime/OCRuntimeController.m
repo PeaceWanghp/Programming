@@ -10,6 +10,7 @@
 
 #import "OCRuntimeTestObject.h"
 #import <objc/runtime.h>
+#import "OCMessageForwardingController.h"
 
 @interface OCRuntimeController ()
 
@@ -19,6 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.model appendOpenedHeader:@"MessagePassing(消息机制)："];
+    [self.model appendItemTitle:@"msgsend()" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"动态解析" target:self selector:@selector(todo)];
+    [self.model appendDarkItemWithTitle:@"MessageForwarding(消息转发)" class:[OCMessageForwardingController class]];
     
     [self.model appendOpenedHeader:@"原理："];
     [self.model appendDarkItemTitle:@"isa" target:self selector:@selector(getIsa)];

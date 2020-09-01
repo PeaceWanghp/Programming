@@ -25,7 +25,6 @@
 
 //Objective-C
 #import "OCMemoryController.h"
-#import "OCMsgPassingController.h"
 #import "OCImportController.h"
 #import "OCThreadController.h"
 #import "OCLocksController.h"
@@ -107,7 +106,6 @@
     [self.model appendOpenedHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"Runtime（运行时）" class:[OCRuntimeController class]];
     [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
-    [self.model appendDarkItemWithTitle:@"Message Passing(消息机制)" class:[OCMsgPassingController class]];
     [self.model appendDarkItemWithTitle:@"Memory（内存管理）" class:[OCMemoryController class]];
     [self.model appendDarkItemWithTitle:@"Property (属性)" class:[OCPropertyController class]];
     [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
