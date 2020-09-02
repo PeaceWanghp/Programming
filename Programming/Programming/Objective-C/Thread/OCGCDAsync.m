@@ -65,19 +65,23 @@
 - (void)starQueue {
     dispatch_async(_controlQueue, ^{
         NSLog(@"-1");
-        sleep(3);
+//        sleep(3);
         NSLog(@"1");
     });
     dispatch_async(_controlQueue, ^{
         NSLog(@"-2");
-        sleep(3);
+//        sleep(3);
         NSLog(@"2");
     });
     dispatch_async(_controlQueue, ^{
         NSLog(@"-3");
-        sleep(3);
+//        sleep(3);
         NSLog(@"3");
     });
+    
+    NSLog(@"-------");
+    sleep(3);
+    NSLog(@"=======");
 }
 
 - (void)suspend {

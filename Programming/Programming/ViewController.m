@@ -24,20 +24,20 @@
 #import "CUFrameBoundsViewController.h"
 
 //Objective-C
+#import "OCRuntimeController.h"
 #import "OCMemoryController.h"
-#import "OCImportController.h"
 #import "OCThreadController.h"
-#import "OCLocksController.h"
-#import "OCTimerController.h"
-#import "OCPointerController.h"
-#import "OCKeywordsController.h"
+#import "OCBlockController.h"
+#import "OCPropertyController.h"
 #import "OCCategaryController.h"
 #import "OCExtensionController.h"
 #import "OCProtocolController.h"
+#import "OCTimerController.h"
+#import "OCContainerController.h"
+#import "OCImportController.h"
 #import "OCLoadInitializeController.h"
-#import "OCPropertyController.h"
-#import "OCRuntimeController.h"
-#import "OCBlockController.h"
+#import "OCPointerController.h"
+#import "OCKeywordsController.h"
 
 //Algorithm
 #import "AlgorithmsController.h"
@@ -111,10 +111,11 @@
     [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
     [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
+    [self.model appendDarkItemWithTitle:@"Block" class:[OCBlockController class]];
+    [self.model appendDarkItemWithTitle:@"GCD" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
-    [self.model appendItemWithTitle:@"Lock (锁)" class:[OCLocksController class]];
     [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
-    [self.model appendDarkItemWithTitle:@"* Block" class:[OCBlockController class]];
+    [self.model appendItemWithTitle:@"Container (容器)" class:[OCContainerController class]];
     [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
     [self.model appendDarkItemWithTitle:@"* #import/#include/@class" class:[OCImportController class]];
     [self.model appendDarkItemWithTitle:@"* const/extern/static/#define" class:[OCKeywordsController class]];

@@ -22,6 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.model appendOpenedHeader:@"结论："];
+    [self.model appendDarkItemTitle:@"被strong的block:使用了堆区数据则为mallocBlock,未使用则globalBlock" target:self selector:nil];
+    [self.model appendDarkItemTitle:@"未被strong的block:使用了堆区数据则为stackBlock,未使用则globalBlock" target:self selector:nil];
+    
     [self.model appendOpenedHeader:@"Global(全局block)"];
     [self.model appendDarkItemTitle:@"Action" target:self selector:@selector(globalAction)];
     
@@ -81,6 +85,10 @@ void(^intBlock)(void) = ^{
     
     void(^copyBlock)(id) = [block copy];
     NSLog(@"copyBlock = %@",copyBlock);
+    
+    void(^block1)(id) = [self testReturnBlock2];
+    block1(self);
+    NSLog(@"block1 = %@",block1);
 }
 
 - (void(^)(id obj))testReturnBlock {
@@ -92,17 +100,21 @@ void(^intBlock)(void) = ^{
     return block;
 }
 
+- (void(^)(id obj))testReturnBlock2 {
+    void(^block)(id) = ^(id obj) {
+        NSLog(@"obj = %@",obj);
+    };
+    NSLog(@"__block = %@",block);
+    return block;
+}
+
 #pragma mark -
 #pragma mark -- 方法参数
 - (void)copyArgumentAction {
+    //-----------__NSGlobalBlock__------------
      [self testCopyBlock:^{
          
      }];
-       
-    int value = 1;
-    [self testCopyBlock:^{
-        NSLog(@"value = %d",value);
-    }];
     
     static int sValue = 1;
     [self testCopyBlock:^{
@@ -112,6 +124,12 @@ void(^intBlock)(void) = ^{
     const int cValue = 1;
     [self testCopyBlock:^{
         NSLog(@"cValue = %d",cValue);
+    }];
+    
+    //------------__NSMallocBlock__-----------
+    int value = 1;
+    [self testCopyBlock:^{
+        NSLog(@"value = %d",value);
     }];
     
     __block int blockValue = 1;
@@ -148,13 +166,9 @@ void(^intBlock)(void) = ^{
 }
 
 - (void)argumentAction {
+    //------------__NSGlobalBlock__-------------
     [self testBlock:^{
         
-    }];
-    
-    int value = 1;
-    [self testBlock:^{
-        NSLog(@"value = %d",value);
     }];
     
     static int sValue = 1;
@@ -165,6 +179,12 @@ void(^intBlock)(void) = ^{
     const int cValue = 1;
     [self testBlock:^{
         NSLog(@"cValue = %d",cValue);
+    }];
+    
+    //------------__NSStackBlock__-------------
+    int value = 1;
+    [self testBlock:^{
+        NSLog(@"value = %d",value);
     }];
     
     __block int blockValue = 1;
@@ -202,6 +222,7 @@ void(^intBlock)(void) = ^{
 #pragma mark -
 #pragma mark -- 属性block
 - (void)copyBlockAction {
+    //------------__NSGlobalBlock__-------------
     //
     _copyBlock = ^ {
         
@@ -213,14 +234,6 @@ void(^intBlock)(void) = ^{
     _copyBlock = [_copyBlock copy];
     _copyBlock();
     NSLog(@"block2 = %@",_copyBlock);
-    
-    //
-    int value = 1;
-    _copyBlock = ^ {
-        NSLog(@"value = %d",value);
-    };
-    _copyBlock();
-    NSLog(@"block3 = %@",_copyBlock);
     
     //static
     static int sValue = 1;
@@ -237,6 +250,15 @@ void(^intBlock)(void) = ^{
     };
     _copyBlock();
     NSLog(@"block5 = %@",_copyBlock);
+    
+    //------------__NSMallocBlock__-------------
+    //
+    int value = 1;
+    _copyBlock = ^ {
+        NSLog(@"value = %d",value);
+    };
+    _copyBlock();
+    NSLog(@"block3 = %@",_copyBlock);
     
     //__block
     __block int blockValue = 1;
@@ -275,6 +297,7 @@ void(^intBlock)(void) = ^{
 }
 
 - (void)strongBlockAction {
+    //---------__NSGlobalBlock__-----------
     //
     _strongBlock = ^ {
         
@@ -286,14 +309,6 @@ void(^intBlock)(void) = ^{
     _strongBlock = [_strongBlock copy];
     _strongBlock();
     NSLog(@"block2 = %@",_strongBlock);
-    
-    //
-    int value = 1;
-    _strongBlock = ^ {
-        NSLog(@"value = %d",value);
-    };
-    _strongBlock();
-    NSLog(@"block3 = %@",_strongBlock);
     
     //static
     static int sValue = 1;
@@ -310,6 +325,15 @@ void(^intBlock)(void) = ^{
     };
     _strongBlock();
     NSLog(@"block5 = %@",_strongBlock);
+    
+    //---------__NSMallocBlock__-----------
+    //
+    int value = 1;
+    _strongBlock = ^ {
+        NSLog(@"value = %d",value);
+    };
+    _strongBlock();
+    NSLog(@"block3 = %@",_strongBlock);
     
     //__block
     __block int blockValue = 1;
@@ -348,6 +372,7 @@ void(^intBlock)(void) = ^{
 }
 
 - (void)weakBlockAction {
+    //----------__NSGlobalBlock__-----------
     //
     _weakBlock = ^ {
         
@@ -359,14 +384,6 @@ void(^intBlock)(void) = ^{
     _weakBlock = [_weakBlock copy];
     _weakBlock();
     NSLog(@"copyWeakBlock = %@",_weakBlock);
-    
-    //
-    int value = 1;
-    _weakBlock = ^ {
-        NSLog(@"value = %d",value);
-    };
-    _weakBlock();
-    NSLog(@"block1 = %@",_weakBlock);
     
     //static
     static int sValue = 1;
@@ -383,6 +400,15 @@ void(^intBlock)(void) = ^{
     };
     _weakBlock();
     NSLog(@"sblock = %@",_weakBlock);
+    
+    //------------__NSStackBlock__------------
+    //
+    int value = 1;
+    _weakBlock = ^ {
+        NSLog(@"value = %d",value);
+    };
+    _weakBlock();
+    NSLog(@"block1 = %@",_weakBlock);
     
     //__block
     __block int blockValue = 1;
@@ -423,6 +449,7 @@ void(^intBlock)(void) = ^{
 #pragma mark -
 #pragma mark -- 局部block变量
 - (void)localBlock {
+    //------------__NSGlobalBlock__----------
     //
     void(^block)(void) = ^ {
         
@@ -434,14 +461,6 @@ void(^intBlock)(void) = ^{
     void(^copyBlock)(void) = [block copy];
     copyBlock();
     NSLog(@"copyBlock = %@",copyBlock);
-    
-    //
-    int value = 1;
-    void(^block1)(void) = ^ {
-        NSLog(@"value = %d",value);
-    };
-    block1();
-    NSLog(@"block1 = %@",block1);
     
     //static
     static int sValue = 1;
@@ -458,6 +477,15 @@ void(^intBlock)(void) = ^{
     };
     cblock();
     NSLog(@"sblock = %@",cblock);
+    
+    //------------__NSMallocBlock__----------
+    //
+    int value = 1;
+    void(^block1)(void) = ^ {
+        NSLog(@"value = %d",value);
+    };
+    block1();
+    NSLog(@"block1 = %@",block1);
     
     //__block
     __block int blockValue = 1;
@@ -498,6 +526,7 @@ void(^intBlock)(void) = ^{
 #pragma mark -
 #pragma mark -- 类block变量
 - (void)classBlock {
+    //----------__NSGlobalBlock__---------
     //
     _classBlock = ^ {
         
@@ -509,14 +538,6 @@ void(^intBlock)(void) = ^{
     _classBlock = [_classBlock copy];
     _classBlock();
     NSLog(@"copyBlock = %@",_classBlock);
-    
-    //
-    int value = 1;
-    _classBlock = ^ {
-        NSLog(@"value = %d",value);
-    };
-    _classBlock();
-    NSLog(@"block1 = %@",_classBlock);
     
     //static
     static int sValue = 1;
@@ -533,6 +554,15 @@ void(^intBlock)(void) = ^{
     };
     _classBlock();
     NSLog(@"sblock = %@",_classBlock);
+    
+    //----------__NSMallocBlock__---------
+    //
+    int value = 1;
+    _classBlock = ^ {
+        NSLog(@"value = %d",value);
+    };
+    _classBlock();
+    NSLog(@"block1 = %@",_classBlock);
     
     //__block
     __block int blockValue = 1;

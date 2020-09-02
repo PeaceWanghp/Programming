@@ -11,6 +11,7 @@
 #import "OCThread.h"
 #import "OCOperation.h"
 #import "OCGCDAsync.h"
+#import "OCLocksController.h"
 
 @interface OCThreadController ()
 {
@@ -27,6 +28,12 @@
     
     _thread = [[OCThread alloc] init];
     _gcd = [[OCGCDAsync alloc] init];
+    
+    [self.model appendOpenedHeader:@"pthread/GCD async 区别"];
+    [self.model appendItemWithTitle:@"" class:nil];
+    
+    [self.model appendOpenedHeader:@"pthread"];
+    [self.model appendDarkItemTitle:@"(POSIX(Portable Operating System Interface/可移植操作系统接口) threads)" target:_thread selector:nil];
     
     [self.model appendOpenedHeader:@"NSThread"];
     [self.model appendDarkItemTitle:@"Start" target:_thread selector:@selector(began)];
@@ -49,6 +56,9 @@
     [self.model appendOpenedHeader:@"GCD"];
     [self.model appendDarkItemTitle:@"Sync造成主线程上死锁" target:_gcd selector:@selector(sycnDeadlock)];
     [self.model appendDarkItemTitle:@"Sync造成同一子线程上死锁" target:_gcd selector:@selector(sycnDeadlockInSubthread)];
+    
+    [self.model appendOpenedHeader:@"Lock"];
+    [self.model appendItemWithTitle:@"Lock (锁)" class:[OCLocksController class]];
 }
 
 @end
