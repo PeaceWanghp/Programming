@@ -45,6 +45,7 @@
 		CE9C78FF24BF150D00071276 /* OCARCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C78FE24BF150D00071276 /* OCARCObject.m */; };
 		CE9C790224BF152200071276 /* OCMRCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C790124BF152200071276 /* OCMRCObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE9C790624BF169300071276 /* iOSMemoryLeakController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C790524BF169300071276 /* iOSMemoryLeakController.m */; };
+		CEA6E35F25021CC700D2880D /* CUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6E35E25021CC700D2880D /* CUViewController.m */; };
 		CEB0453024D4081A0045BAA8 /* ALGQueueController+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0452F24D4081A0045BAA8 /* ALGQueueController+Array.m */; };
 		CEB0453324D412570045BAA8 /* ALGTreeController+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453224D412570045BAA8 /* ALGTreeController+Search.m */; };
 		CEB0453624D4127F0045BAA8 /* ALGTreeController+Traversal.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453524D4127F0045BAA8 /* ALGTreeController+Traversal.m */; };
@@ -201,6 +202,8 @@
 		CE9C790124BF152200071276 /* OCMRCObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMRCObject.m; sourceTree = "<group>"; };
 		CE9C790424BF169300071276 /* iOSMemoryLeakController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSMemoryLeakController.h; sourceTree = "<group>"; };
 		CE9C790524BF169300071276 /* iOSMemoryLeakController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMemoryLeakController.m; sourceTree = "<group>"; };
+		CEA6E35D25021CC700D2880D /* CUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUViewController.h; sourceTree = "<group>"; };
+		CEA6E35E25021CC700D2880D /* CUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUViewController.m; sourceTree = "<group>"; };
 		CEB0452E24D4081A0045BAA8 /* ALGQueueController+Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGQueueController+Array.h"; sourceTree = "<group>"; };
 		CEB0452F24D4081A0045BAA8 /* ALGQueueController+Array.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ALGQueueController+Array.m"; sourceTree = "<group>"; };
 		CEB0453124D412570045BAA8 /* ALGTreeController+Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGTreeController+Search.h"; sourceTree = "<group>"; };
@@ -653,6 +656,22 @@
 			path = MemoryLeak;
 			sourceTree = "<group>";
 		};
+		CEA6E35C25021C1000D2880D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEA6E35D25021CC700D2880D /* CUViewController.h */,
+				CEA6E35E25021CC700D2880D /* CUViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CEA6E3602502201300D2880D /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
 		CEB3969B24AC5BA800F5915E /* HitTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -997,9 +1016,11 @@
 		CEF6ADDE249904A10061995A /* CocoaUI */ = {
 			isa = PBXGroup;
 			children = (
+				CEA6E35C25021C1000D2880D /* ViewController */,
 				CEC0C5DB24AD852100E103F5 /* OffScreen */,
 				CEB3969B24AC5BA800F5915E /* HitTest */,
 				CEF1760824AB4B4F00977E8F /* FrameBounds */,
+				CEA6E3602502201300D2880D /* Layer */,
 			);
 			path = CocoaUI;
 			sourceTree = "<group>";
@@ -1223,6 +1244,7 @@
 				CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */,
 				CE56F5B4249B6F4300BA9B02 /* BPresentHeaderView.m in Sources */,
 				CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */,
+				CEA6E35F25021CC700D2880D /* CUViewController.m in Sources */,
 				CEFDF92924B33AAE003F53CC /* OCGCDAsync.m in Sources */,
 				CE6C172524B85F390061EB32 /* OCInheritObject.m in Sources */,
 				CEB0453924D4164B0045BAA8 /* ALGLinkController+Reverse.m in Sources */,

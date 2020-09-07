@@ -111,7 +111,7 @@
     [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
     [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
-    [self.model appendDarkItemWithTitle:@"Block" class:[OCBlockController class]];
+    [self.model appendDarkItemWithTitle:@"Block (闭包/代码块)" class:[OCBlockController class]];
     [self.model appendDarkItemWithTitle:@"GCD" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
     [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
