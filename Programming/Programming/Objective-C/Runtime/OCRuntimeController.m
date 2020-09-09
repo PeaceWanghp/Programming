@@ -27,6 +27,7 @@
     [self.model appendDarkItemWithTitle:@"MessageForwarding(消息转发)" class:[OCMessageForwardingController class]];
     
     [self.model appendOpenedHeader:@"原理："];
+    [self.model appendDarkItemTitle:@"Source Code(源码阅读)" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"isa" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"struct class" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"ivar (属性列表)" target:self selector:@selector(getIsa)];

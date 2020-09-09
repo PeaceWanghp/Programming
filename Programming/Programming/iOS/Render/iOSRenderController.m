@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendItemWithTitle:@"cocoa" class:nil];
+    [self.model appendItemWithTitle:@"cocoaUI" class:nil];
     [self.model appendItemWithTitle:@"flutter" class:nil];
     [self.model appendItemWithTitle:@"react native" class:nil];
 }
