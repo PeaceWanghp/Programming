@@ -11,6 +11,7 @@
 #import "OCRuntimeTestObject.h"
 #import <objc/runtime.h>
 #import "OCMessageForwardingController.h"
+#import "OCJSPatchController.h"
 
 @interface OCRuntimeController ()
 
@@ -40,7 +41,7 @@
     [self.model appendItemWithTitle:@"KVO" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"消息转发避免Crash" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"NSCoding (自动归档、解档)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"JSPatch" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"JSPatch" class:[OCJSPatchController class]];
 }
 
 - (void)getIsa {

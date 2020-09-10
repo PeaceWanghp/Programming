@@ -14,6 +14,7 @@
 		CE316F6D2498D4A600AC495A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE316F6C2498D4A600AC495A /* Assets.xcassets */; };
 		CE316F702498D4A600AC495A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE316F6E2498D4A600AC495A /* LaunchScreen.storyboard */; };
 		CE316F732498D4A600AC495A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F722498D4A600AC495A /* main.m */; };
+		CE34F1B02508CC7000BF4BA3 /* OCJSPatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1AF2508CC7000BF4BA3 /* OCJSPatchController.m */; };
 		CE4A514024CED9D400198DCA /* CTypeInteger.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4A513F24CED9D400198DCA /* CTypeInteger.c */; };
 		CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */; };
 		CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5AD249B6D2300BA9B02 /* BPresentController.m */; };
@@ -138,6 +139,8 @@
 		CE316F6F2498D4A600AC495A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE316F712498D4A600AC495A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE316F722498D4A600AC495A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE34F1AE2508CC7000BF4BA3 /* OCJSPatchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCJSPatchController.h; sourceTree = "<group>"; };
+		CE34F1AF2508CC7000BF4BA3 /* OCJSPatchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCJSPatchController.m; sourceTree = "<group>"; };
 		CE4A513E24CED9D400198DCA /* CTypeInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTypeInteger.h; sourceTree = "<group>"; };
 		CE4A513F24CED9D400198DCA /* CTypeInteger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CTypeInteger.c; sourceTree = "<group>"; };
 		CE50CA8E24AF2A9000BAB483 /* CGGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGradientView.h; sourceTree = "<group>"; };
@@ -750,6 +753,8 @@
 				CED1628D24C19D2B003F50F1 /* OCRuntimeTestObject.h */,
 				CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */,
 				CE33623424EE753F00F24ADD /* MessagePassing */,
+				CE34F1AE2508CC7000BF4BA3 /* OCJSPatchController.h */,
+				CE34F1AF2508CC7000BF4BA3 /* OCJSPatchController.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -1192,6 +1197,7 @@
 				CE6EE49B24B72978008735BC /* OCTestProtocol.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
 				CEDC03A824C6C5C000E8734C /* ALGLinkController.m in Sources */,
+				CE34F1B02508CC7000BF4BA3 /* OCJSPatchController.m in Sources */,
 				CEB0454224D416A90045BAA8 /* ALGLinkController+DeleteOne.m in Sources */,
 				CE6C172824B85F5A0061EB32 /* OCInheritA.m in Sources */,
 				CEFDF91924B324C6003F53CC /* OC_Test_GCDTimer.m in Sources */,
