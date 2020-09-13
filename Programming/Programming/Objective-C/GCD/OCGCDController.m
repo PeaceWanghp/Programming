@@ -41,7 +41,7 @@
     [self.model appendItemTitle:@"wait" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"signal" target:self selector:@selector(todo)];
     
-    [self.model appendOpenedHeader:@"time"];
+    [self.model appendOpenedHeader:@"timer"];
     [self.model appendItemTitle:@"dispatch_time" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"dispatch_walltime" target:self selector:@selector(todo)];
     

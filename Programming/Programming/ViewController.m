@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 //C
+#import "COperatorController.h"
 #import "CBasicController.h"
 #import "CHomeworkController.h"
 #import "CLibsController.h"
@@ -25,9 +26,11 @@
 
 //Objective-C
 #import "OCRuntimeController.h"
+#import "OCRunloopController.h"
 #import "OCMemoryController.h"
 #import "OCThreadController.h"
 #import "OCBlockController.h"
+#import "OCGCDController.h"
 #import "OCPropertyController.h"
 #import "OCCategaryController.h"
 #import "OCExtensionController.h"
@@ -105,14 +108,14 @@
     
     [self.model appendOpenedHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"Runtime（运行时）" class:[OCRuntimeController class]];
-    [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[OCRunloopController class]];
     [self.model appendDarkItemWithTitle:@"Memory（内存管理）" class:[OCMemoryController class]];
     [self.model appendDarkItemWithTitle:@"Property (属性)" class:[OCPropertyController class]];
     [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
     [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Block (闭包/代码块)" class:[OCBlockController class]];
-    [self.model appendDarkItemWithTitle:@"GCD" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"GCD (Grand Central Dispatch)" class:[OCGCDController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
     [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
     [self.model appendItemWithTitle:@"Container (容器)" class:[OCContainerController class]];
@@ -122,7 +125,6 @@
     [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
     [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"容器" class:[UIViewController class]];
     
     [self.model appendHeader:@"Swift"];
     [self.model appendItemWithTitle:@"桥接" class:[UIViewController class]];
@@ -132,7 +134,7 @@
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendHeader:@"C"];
-    
+    [self.model appendDarkItemWithTitle:@"Operator (运算符，异或...)" class:[COperatorController class]];
     [self.model appendDarkItemWithTitle:@"Basic (基础)" class:[CBasicController class]];
     [self.model appendDarkItemWithTitle:@"Homework (作业)" class:[CHomeworkController class]];
     [self.model appendDarkItemWithTitle:@"Exam (考试)" class:[CExamController class]];
