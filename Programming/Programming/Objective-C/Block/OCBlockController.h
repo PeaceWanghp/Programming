@@ -9,5 +9,11 @@
 #import "BPresentController.h"
 
 @interface OCBlockController : BPresentController
+{
+    void(^_classBlock)(void);
+}
+@property(nonatomic,weak) void(^weakBlock)(void);
+@property(nonatomic,strong) void(^strongBlock)(void);
+@property(nonatomic,copy) void(^copyBlock)(void);
 
 @end

@@ -17,6 +17,8 @@
 		CE34F1B02508CC7000BF4BA3 /* OCJSPatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1AF2508CC7000BF4BA3 /* OCJSPatchController.m */; };
 		CE34F1B5250A24DB00BF4BA3 /* OCRunloopController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1B4250A24DB00BF4BA3 /* OCRunloopController.m */; };
 		CE34F1B9250DC95700BF4BA3 /* COperatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1B8250DC95700BF4BA3 /* COperatorController.m */; };
+		CE34F1BF250F668100BF4BA3 /* OCBlockController+CatchValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1BE250F668100BF4BA3 /* OCBlockController+CatchValue.m */; };
+		CE34F1C2250F66E400BF4BA3 /* OCBlockController+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1C1250F66E400BF4BA3 /* OCBlockController+Type.m */; };
 		CE4A514024CED9D400198DCA /* CTypeInteger.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4A513F24CED9D400198DCA /* CTypeInteger.c */; };
 		CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */; };
 		CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5AD249B6D2300BA9B02 /* BPresentController.m */; };
@@ -147,6 +149,10 @@
 		CE34F1B4250A24DB00BF4BA3 /* OCRunloopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRunloopController.m; sourceTree = "<group>"; };
 		CE34F1B7250DC95700BF4BA3 /* COperatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COperatorController.h; sourceTree = "<group>"; };
 		CE34F1B8250DC95700BF4BA3 /* COperatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COperatorController.m; sourceTree = "<group>"; };
+		CE34F1BD250F668100BF4BA3 /* OCBlockController+CatchValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCBlockController+CatchValue.h"; sourceTree = "<group>"; };
+		CE34F1BE250F668100BF4BA3 /* OCBlockController+CatchValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCBlockController+CatchValue.m"; sourceTree = "<group>"; };
+		CE34F1C0250F66E400BF4BA3 /* OCBlockController+Type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCBlockController+Type.h"; sourceTree = "<group>"; };
+		CE34F1C1250F66E400BF4BA3 /* OCBlockController+Type.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCBlockController+Type.m"; sourceTree = "<group>"; };
 		CE4A513E24CED9D400198DCA /* CTypeInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTypeInteger.h; sourceTree = "<group>"; };
 		CE4A513F24CED9D400198DCA /* CTypeInteger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CTypeInteger.c; sourceTree = "<group>"; };
 		CE50CA8E24AF2A9000BAB483 /* CGGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGradientView.h; sourceTree = "<group>"; };
@@ -867,6 +873,10 @@
 			children = (
 				CEDC038B24C6AD8C00E8734C /* OCBlockController.h */,
 				CEDC038C24C6AD8C00E8734C /* OCBlockController.m */,
+				CE34F1BD250F668100BF4BA3 /* OCBlockController+CatchValue.h */,
+				CE34F1BE250F668100BF4BA3 /* OCBlockController+CatchValue.m */,
+				CE34F1C0250F66E400BF4BA3 /* OCBlockController+Type.h */,
+				CE34F1C1250F66E400BF4BA3 /* OCBlockController+Type.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -1223,10 +1233,12 @@
 				CE0165E824E646870055E302 /* OCMemoryController.m in Sources */,
 				CE6EE49B24B72978008735BC /* OCTestProtocol.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
+				CE34F1C2250F66E400BF4BA3 /* OCBlockController+Type.m in Sources */,
 				CEDC03A824C6C5C000E8734C /* ALGLinkController.m in Sources */,
 				CE34F1B02508CC7000BF4BA3 /* OCJSPatchController.m in Sources */,
 				CEB0454224D416A90045BAA8 /* ALGLinkController+DeleteOne.m in Sources */,
 				CE6C172824B85F5A0061EB32 /* OCInheritA.m in Sources */,
+				CE34F1BF250F668100BF4BA3 /* OCBlockController+CatchValue.m in Sources */,
 				CEFDF91924B324C6003F53CC /* OC_Test_GCDTimer.m in Sources */,
 				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
 				CED1629624C3FC65003F50F1 /* CExamController.m in Sources */,

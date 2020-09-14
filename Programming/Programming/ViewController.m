@@ -157,6 +157,8 @@
     [self.model appendDarkItemWithTitle:@"*Crash(引发崩溃)" class:[OC_CrashController class]];
     [self.model appendDarkItemWithTitle:@"* Memory Leak(内存泄漏)" class:[iOSMemoryLeakController class]];
     [self.model appendItemWithTitle:@"Launch Speed (启动速度)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"随意调用db而不使用Cache" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"约束过多" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"耗电" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"安装包瘦身" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"防越狱" class:[UIViewController class]];
