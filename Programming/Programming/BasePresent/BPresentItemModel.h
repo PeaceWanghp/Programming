@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign) SEL selector;
 @property (nonatomic,assign) int tag;//default -1,it's closed.
 @property (nonatomic,assign) BOOL dark;//default -1,it's closed.
+@property (nonatomic,assign) float height;
 
 - (void)selected;
 

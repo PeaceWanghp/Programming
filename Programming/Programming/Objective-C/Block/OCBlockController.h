@@ -15,5 +15,6 @@
 @property(nonatomic,weak) void(^weakBlock)(void);
 @property(nonatomic,strong) void(^strongBlock)(void);
 @property(nonatomic,copy) void(^copyBlock)(void);
+@property(nonatomic,strong) void(^weakStrongBlock)(void);
 
 @end

@@ -96,18 +96,7 @@
         itemModel = [_model.dataSource objectAtIndex:indexPath.row];
     }
     
-    CGSize size = CGSizeMake(self.tableView.frame.size.width, MAXFLOAT);
-    CGRect rect = [itemModel.displayTitle boundingRectWithSize:size
-                                                    options:NSStringDrawingUsesLineFragmentOrigin
-                                                 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17]}
-                                                    context:nil];
-    
-    if (rect.size.height > 20.0) {
-        return rect.size.height+24;
-    }
-    else {
-        return 44.0f;
-    }
+    return itemModel.height;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

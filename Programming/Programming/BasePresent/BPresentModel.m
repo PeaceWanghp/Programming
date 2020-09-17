@@ -7,6 +7,7 @@
 //
 
 #import "BPresentModel.h"
+#import <UIKit/UIKit.h>
 
 @interface BPresentModel(){
     
@@ -89,6 +90,19 @@
     itemModel.className = className;
     itemModel.target = target;
     itemModel.selector = selector;
+    
+    CGSize size = CGSizeMake([UIScreen mainScreen].bounds.size.width, MAXFLOAT);
+    CGRect rect = [itemModel.displayTitle boundingRectWithSize:size
+                                                       options:NSStringDrawingUsesLineFragmentOrigin
+                                                    attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17]}
+                                                       context:nil];
+       
+    if (rect.size.height > 20.0) {
+        itemModel.height = rect.size.height+24;
+    }
+    else {
+        itemModel.height = 44.0f;
+    }
     
     if (_groupDataSource.count > 0) {
         BPresentHeaderModel *headerModel = (BPresentHeaderModel *)_groupDataSource.lastObject;

@@ -19,6 +19,8 @@
 		CE34F1B9250DC95700BF4BA3 /* COperatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1B8250DC95700BF4BA3 /* COperatorController.m */; };
 		CE34F1BF250F668100BF4BA3 /* OCBlockController+CatchValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1BE250F668100BF4BA3 /* OCBlockController+CatchValue.m */; };
 		CE34F1C2250F66E400BF4BA3 /* OCBlockController+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1C1250F66E400BF4BA3 /* OCBlockController+Type.m */; };
+		CE415E182511A22100FB386D /* OCBlockController+WeakStrong.m in Sources */ = {isa = PBXBuildFile; fileRef = CE415E172511A22100FB386D /* OCBlockController+WeakStrong.m */; };
+		CE415E1B2511AB8600FB386D /* OCBlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE415E1A2511AB8600FB386D /* OCBlockObject.m */; };
 		CE4A514024CED9D400198DCA /* CTypeInteger.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4A513F24CED9D400198DCA /* CTypeInteger.c */; };
 		CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */; };
 		CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5AD249B6D2300BA9B02 /* BPresentController.m */; };
@@ -153,6 +155,10 @@
 		CE34F1BE250F668100BF4BA3 /* OCBlockController+CatchValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCBlockController+CatchValue.m"; sourceTree = "<group>"; };
 		CE34F1C0250F66E400BF4BA3 /* OCBlockController+Type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCBlockController+Type.h"; sourceTree = "<group>"; };
 		CE34F1C1250F66E400BF4BA3 /* OCBlockController+Type.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCBlockController+Type.m"; sourceTree = "<group>"; };
+		CE415E162511A22100FB386D /* OCBlockController+WeakStrong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCBlockController+WeakStrong.h"; sourceTree = "<group>"; };
+		CE415E172511A22100FB386D /* OCBlockController+WeakStrong.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCBlockController+WeakStrong.m"; sourceTree = "<group>"; };
+		CE415E192511AB8500FB386D /* OCBlockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBlockObject.h; sourceTree = "<group>"; };
+		CE415E1A2511AB8600FB386D /* OCBlockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockObject.m; sourceTree = "<group>"; };
 		CE4A513E24CED9D400198DCA /* CTypeInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTypeInteger.h; sourceTree = "<group>"; };
 		CE4A513F24CED9D400198DCA /* CTypeInteger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CTypeInteger.c; sourceTree = "<group>"; };
 		CE50CA8E24AF2A9000BAB483 /* CGGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGradientView.h; sourceTree = "<group>"; };
@@ -877,6 +883,10 @@
 				CE34F1BE250F668100BF4BA3 /* OCBlockController+CatchValue.m */,
 				CE34F1C0250F66E400BF4BA3 /* OCBlockController+Type.h */,
 				CE34F1C1250F66E400BF4BA3 /* OCBlockController+Type.m */,
+				CE415E162511A22100FB386D /* OCBlockController+WeakStrong.h */,
+				CE415E172511A22100FB386D /* OCBlockController+WeakStrong.m */,
+				CE415E192511AB8500FB386D /* OCBlockObject.h */,
+				CE415E1A2511AB8600FB386D /* OCBlockObject.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -1228,6 +1238,7 @@
 				CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */,
 				CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */,
 				CE9C78F624BF046200071276 /* OCRetainCountController.m in Sources */,
+				CE415E1B2511AB8600FB386D /* OCBlockObject.m in Sources */,
 				CEDC039324C6C43300E8734C /* AlgorithmsController.m in Sources */,
 				CEDC03AB24C6C5D700E8734C /* ALGTreeController.m in Sources */,
 				CE0165E824E646870055E302 /* OCMemoryController.m in Sources */,
@@ -1281,6 +1292,7 @@
 				CED28E2224B5D91B00AD2D6E /* OCCategaryController.m in Sources */,
 				CEE93B4E24ECDB8400790662 /* OCAutoreleaseController.m in Sources */,
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,
+				CE415E182511A22100FB386D /* OCBlockController+WeakStrong.m in Sources */,
 				CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */,
 				CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */,
 				CEDC03A224C6C59500E8734C /* ALGStackController.m in Sources */,

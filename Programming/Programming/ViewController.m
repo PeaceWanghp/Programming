@@ -175,19 +175,8 @@
     [self.model appendHeader:@"ReactNative"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
-    [self.model appendHeader:@"编程思想"];
-    [self.model appendItemWithTitle:@"面向对象" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"面向过程" class:[UIViewController class]];
-    
     [self.model appendHeader:@"音视频"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
-    
-    [self.model appendHeader:@"DesignPattern(设计模式)"];
-    [self.model appendItemWithTitle:@"MVC" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"MVVM" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"MVP" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"单例" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"工厂" class:[UIViewController class]];
 }
 
 @end

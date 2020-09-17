@@ -31,6 +31,11 @@
     [self.model appendDarkItemTitle:@"int" target:self selector:@selector(test__BlockInt)];
     [self.model appendDarkItemTitle:@"NSObject" target:self selector:@selector(test__BlockObject)];
     
+    [self.model appendOpenedHeader:@"Weak/Strong"];
+    [self.model appendDarkItemTitle:@"strong" target:self selector:@selector(testStrong)];
+    [self.model appendDarkItemTitle:@"weak" target:self selector:@selector(testWeak)];
+    [self.model appendDarkItemTitle:@"weak/strong" target:self selector:@selector(testWeakStrong)];
+    
     [self.model appendOpenedHeader:@"Global(全局block)"];
     [self.model appendDarkItemTitle:@"Action" target:self selector:@selector(globalAction)];
     

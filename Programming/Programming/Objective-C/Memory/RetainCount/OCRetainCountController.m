@@ -31,6 +31,7 @@ extern void _objc_autoreleasePoolPrint();
     [self.model appendDarkItemTitle:@"指针超出作用域 -1" target:self selector:@selector(testARC)];
     [self.model appendDarkItemTitle:@"weak +0" target:self selector:@selector(arcWeak)];
     [self.model appendDarkItemTitle:@"autorelease pool -1" target:self selector:@selector(arcAutoreleasePool)];
+    [self.model appendDarkItemTitle:@"weak autorelease" target:self selector:@selector(arcWeakAutorelease)];
     
     //MRC
     [self.model appendOpenedHeader:@"MRC"];
@@ -145,6 +146,25 @@ extern void _objc_autoreleasePoolPrint();
     NSLog(@"7.-------------");
     _objc_autoreleasePoolPrint();
     NSLog(@"end.-------------");
+}
+
+- (void)arcWeakAutorelease {
+    OCARCObject *strongObj = [OCARCObject new];
+    strongObj.tag = 1;
+    
+    __autoreleasing OCARCObject *autoObj = [OCARCObject new];
+    autoObj.tag = 2;
+    
+    NSLog(@"-----------");
+    @autoreleasepool {
+        __weak OCARCObject *weakObj = strongObj;
+        weakObj.tag = 1;
+    }
+    NSLog(@"-----------");
+    
+    NSLog(@"++++++++++++");
+    strongObj = nil;
+    NSLog(@"++++++++++++");
 }
 
 #pragma mark -
