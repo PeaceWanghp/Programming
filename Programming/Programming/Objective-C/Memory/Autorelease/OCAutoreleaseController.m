@@ -25,7 +25,22 @@
 }
 
 - (void)autoreleaseAction {
+    __unsafe_unretained OCAutoreleaseObject *unsafeObj;
+    {
+        OCAutoreleaseObject *obj = [OCAutoreleaseObject new];
+        NSLog(@"%@",[obj valueForKey:@"retainCount"]);
     
+        __autoreleasing OCAutoreleaseObject *autoObj = obj;
+        NSLog(@"%@",[obj valueForKey:@"retainCount"]);
+        NSLog(@"%@",[autoObj valueForKey:@"retainCount"]);
+        
+        unsafeObj = obj;
+        NSLog(@"%@",[obj valueForKey:@"retainCount"]);
+        NSLog(@"%@",[autoObj valueForKey:@"retainCount"]);
+        NSLog(@"%@",[unsafeObj valueForKey:@"retainCount"]);
+    }
+    NSLog(@"%@",[unsafeObj valueForKey:@"retainCount"]);
+    NSLog(@"++++++++++++");
 }
 
 - (void)autoreleasepoolAction {

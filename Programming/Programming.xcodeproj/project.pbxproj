@@ -42,6 +42,8 @@
 		CE6C172824B85F5A0061EB32 /* OCInheritA.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C172724B85F5A0061EB32 /* OCInheritA.m */; };
 		CE6C172B24B85F6D0061EB32 /* OCInheritB.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C172A24B85F6D0061EB32 /* OCInheritB.m */; };
 		CE6C172F24B87AC90061EB32 /* OCImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C172E24B87AC90061EB32 /* OCImportController.m */; };
+		CE6CE33325184A060089A1DA /* OCMWeakController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CE33225184A060089A1DA /* OCMWeakController.m */; };
+		CE6CE337251853B40089A1DA /* OCMWeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CE336251853B40089A1DA /* OCMWeakObject.m */; };
 		CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE48D24B70DA7008735BC /* OCExtensionController.m */; };
 		CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49224B71731008735BC /* OCTestExtension.m */; };
 		CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49724B728FE008735BC /* OCProtocolController.m */; };
@@ -201,6 +203,10 @@
 		CE6C172A24B85F6D0061EB32 /* OCInheritB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCInheritB.m; sourceTree = "<group>"; };
 		CE6C172D24B87AC90061EB32 /* OCImportController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCImportController.h; sourceTree = "<group>"; };
 		CE6C172E24B87AC90061EB32 /* OCImportController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCImportController.m; sourceTree = "<group>"; };
+		CE6CE33125184A060089A1DA /* OCMWeakController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMWeakController.h; sourceTree = "<group>"; };
+		CE6CE33225184A060089A1DA /* OCMWeakController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMWeakController.m; sourceTree = "<group>"; };
+		CE6CE335251853B40089A1DA /* OCMWeakObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMWeakObject.h; sourceTree = "<group>"; };
+		CE6CE336251853B40089A1DA /* OCMWeakObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMWeakObject.m; sourceTree = "<group>"; };
 		CE6EE48C24B70DA7008735BC /* OCExtensionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCExtensionController.h; sourceTree = "<group>"; };
 		CE6EE48D24B70DA7008735BC /* OCExtensionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCExtensionController.m; sourceTree = "<group>"; };
 		CE6EE49024B70F02008735BC /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -396,6 +402,7 @@
 			children = (
 				CE0165E624E646870055E302 /* OCMemoryController.h */,
 				CE0165E724E646870055E302 /* OCMemoryController.m */,
+				CE6CE330251849350089A1DA /* Weak */,
 				CEE93B4B24ECDB3600790662 /* Autorelease */,
 				CE9C78F324BF03BF00071276 /* RetainCount */,
 			);
@@ -649,6 +656,17 @@
 				CE6C172E24B87AC90061EB32 /* OCImportController.m */,
 			);
 			path = Import;
+			sourceTree = "<group>";
+		};
+		CE6CE330251849350089A1DA /* Weak */ = {
+			isa = PBXGroup;
+			children = (
+				CE6CE33125184A060089A1DA /* OCMWeakController.h */,
+				CE6CE33225184A060089A1DA /* OCMWeakController.m */,
+				CE6CE335251853B40089A1DA /* OCMWeakObject.h */,
+				CE6CE336251853B40089A1DA /* OCMWeakObject.m */,
+			);
+			path = Weak;
 			sourceTree = "<group>";
 		};
 		CE6EE48B24B70C6F008735BC /* Extension */ = {
@@ -1204,6 +1222,7 @@
 				CEF17DE724B232AD00218C27 /* CPointer.c in Sources */,
 				CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */,
 				CE34F1B9250DC95700BF4BA3 /* COperatorController.m in Sources */,
+				CE6CE337251853B40089A1DA /* OCMWeakObject.m in Sources */,
 				CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */,
 				CEB0454E24D4171B0045BAA8 /* ALGLinkController+Sort.m in Sources */,
 				CEBE167624B464D200301698 /* OCLocksController.m in Sources */,
@@ -1296,6 +1315,7 @@
 				CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */,
 				CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */,
 				CEDC03A224C6C59500E8734C /* ALGStackController.m in Sources */,
+				CE6CE33325184A060089A1DA /* OCMWeakController.m in Sources */,
 				CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */,
 				CEF17DD624B1CFB000218C27 /* CArray.c in Sources */,
 				CEFDF92324B33A73003F53CC /* OCThread.m in Sources */,
