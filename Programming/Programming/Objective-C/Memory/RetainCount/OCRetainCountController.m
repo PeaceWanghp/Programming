@@ -24,6 +24,15 @@ extern void _objc_autoreleasePoolPrint();
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //总结
+    [self.model appendOpenedHeader:@"总结："];
+    [self.model appendDarkItemTitle:@"1.对象支持使用 TaggedPointer：苹果会直接将对象的指针值作为引用计数返回。"
+                             target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"2.非 TaggedPointer：如果当前设备是 64 位环境并且使用 Objective-C 2.0，那么会使用对象的 isa 指针的一部分空间（bits.extra_rc）来存储它的引用计数；"
+                             target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"3.非 TaggedPointer：否则 Runtime 会使用一张 散列表（SideTables()）来管理引用计数。"
+                             target:self selector:@selector(todo)];
+    
     //ARC
     [self.model appendOpenedHeader:@"ARC"];
     [self.model appendDarkItemTitle:@"new/alloc/strong +1" target:self selector:@selector(testARC)];

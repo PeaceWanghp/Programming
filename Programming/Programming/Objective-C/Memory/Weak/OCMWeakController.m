@@ -35,29 +35,37 @@
     NSLog(@"--------------");
     
     __weak OCMWeakObject *weakObj = nil;
+    __weak OCMWeakObject *weakObj1 = nil;
     
     OCMWeakObject *strongObj = nil;
     
-    
-        OCMWeakObject *object = [OCMWeakObject new];
-        object.tag = 5;
-        NSLog(@"%@",[object valueForKey:@"retainCount"]);
+    OCMWeakObject *object = [OCMWeakObject new];
+    object.tag = 5;
+    NSLog(@"%@",[object valueForKey:@"retainCount"]);
+    NSLog(@"\n");
         
-        weakObj = object;
-        NSLog(@"%@",[weakObj valueForKey:@"retainCount"]);
-        NSLog(@"%@",[object valueForKey:@"retainCount"]);
+    weakObj = object;
+    weakObj1 = object;
+    NSLog(@"%@",[weakObj valueForKey:@"retainCount"]);
+    NSLog(@"%@",[weakObj1 valueForKey:@"retainCount"]);
+    NSLog(@"%@",[object valueForKey:@"retainCount"]);
+    NSLog(@"\n");
         
-        strongObj = object;
+    strongObj = object;
         
-        NSLog(@"%@",[object valueForKey:@"retainCount"]);
-        NSLog(@"%@",[weakObj valueForKey:@"retainCount"]);
-        NSLog(@"%@",[strongObj valueForKey:@"retainCount"]);
+    NSLog(@"%@",[object valueForKey:@"retainCount"]);
+    NSLog(@"%@",[weakObj valueForKey:@"retainCount"]);
+    NSLog(@"%@",[weakObj1 valueForKey:@"retainCount"]);
+    NSLog(@"%@",[strongObj valueForKey:@"retainCount"]);
+    NSLog(@"\n");
     
     NSArray *array = [NSArray arrayWithObjects:object, nil];
     
     NSLog(@"%@",[object valueForKey:@"retainCount"]);
     NSLog(@"%@",[weakObj valueForKey:@"retainCount"]);
+    NSLog(@"%@",[weakObj1 valueForKey:@"retainCount"]);
     NSLog(@"%@",[strongObj valueForKey:@"retainCount"]);
+    NSLog(@"\n");
     
     NSLog(@"+++++++++++++");
 }
