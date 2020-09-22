@@ -53,10 +53,11 @@
     [self.model appendDarkItemTitle:@"7.全部的活动 kCFRunLoopAllActivities" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"应用："];
-    [self.model appendItemTitle:@"创建常驻线程" target:self selector:@selector(runThread)];
-    [self.model appendItemTitle:@"创建Timer" target:self selector:@selector(timerAction)];
-    [self.model appendItemTitle:@"无感知更新UI" target:self selector:@selector(refreshUI)];
-    [self.model appendItemTitle:@"UITableView 与 NSTimer 冲突" target:self selector:@selector(refreshUI)];
+    [self.model appendItemTitle:@"创建常驻线程" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"创建Timer" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"无感知更新UI" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"UITableView 与 NSTimer 冲突" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"检测卡顿（Observer）" target:self selector:@selector(todo)];
 }
 
 #pragma mark -
