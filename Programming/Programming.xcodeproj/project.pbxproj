@@ -44,6 +44,7 @@
 		CE6C172F24B87AC90061EB32 /* OCImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C172E24B87AC90061EB32 /* OCImportController.m */; };
 		CE6CE33325184A060089A1DA /* OCMWeakController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CE33225184A060089A1DA /* OCMWeakController.m */; };
 		CE6CE337251853B40089A1DA /* OCMWeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CE336251853B40089A1DA /* OCMWeakObject.m */; };
+		CE6CE33F2518B1A60089A1DA /* INHttpController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6CE33E2518B1A60089A1DA /* INHttpController.m */; };
 		CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE48D24B70DA7008735BC /* OCExtensionController.m */; };
 		CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49224B71731008735BC /* OCTestExtension.m */; };
 		CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49724B728FE008735BC /* OCProtocolController.m */; };
@@ -207,6 +208,8 @@
 		CE6CE33225184A060089A1DA /* OCMWeakController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMWeakController.m; sourceTree = "<group>"; };
 		CE6CE335251853B40089A1DA /* OCMWeakObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMWeakObject.h; sourceTree = "<group>"; };
 		CE6CE336251853B40089A1DA /* OCMWeakObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMWeakObject.m; sourceTree = "<group>"; };
+		CE6CE33D2518B1A60089A1DA /* INHttpController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INHttpController.h; sourceTree = "<group>"; };
+		CE6CE33E2518B1A60089A1DA /* INHttpController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INHttpController.m; sourceTree = "<group>"; };
 		CE6EE48C24B70DA7008735BC /* OCExtensionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCExtensionController.h; sourceTree = "<group>"; };
 		CE6EE48D24B70DA7008735BC /* OCExtensionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCExtensionController.m; sourceTree = "<group>"; };
 		CE6EE49024B70F02008735BC /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -492,6 +495,7 @@
 		CE316F7C2498D52A00AC495A /* Internet */ = {
 			isa = PBXGroup;
 			children = (
+				CE6CE33C2518B1540089A1DA /* Http */,
 			);
 			path = Internet;
 			sourceTree = "<group>";
@@ -683,6 +687,15 @@
 			children = (
 			);
 			path = async;
+			sourceTree = "<group>";
+		};
+		CE6CE33C2518B1540089A1DA /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				CE6CE33D2518B1A60089A1DA /* INHttpController.h */,
+				CE6CE33E2518B1A60089A1DA /* INHttpController.m */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 		CE6EE48B24B70C6F008735BC /* Extension */ = {
@@ -1331,6 +1344,7 @@
 				CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */,
 				CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */,
 				CEDC03A224C6C59500E8734C /* ALGStackController.m in Sources */,
+				CE6CE33F2518B1A60089A1DA /* INHttpController.m in Sources */,
 				CE6CE33325184A060089A1DA /* OCMWeakController.m in Sources */,
 				CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */,
 				CEF17DD624B1CFB000218C27 /* CArray.c in Sources */,

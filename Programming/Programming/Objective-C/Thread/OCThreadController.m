@@ -30,10 +30,11 @@
     _gcd = [[OCGCDAsync alloc] init];
     
     [self.model appendOpenedHeader:@"pthread/GCD async 区别"];
-    [self.model appendItemWithTitle:@"" class:nil];
+    [self.model appendItemWithTitle:@"pthread 实现原理" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"gcd_async 实现原理" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"pthread"];
-    [self.model appendDarkItemTitle:@"(POSIX(Portable Operating System Interface/可移植操作系统接口) threads)" target:_thread selector:nil];
+    [self.model appendDarkItemTitle:@"(POSIX(Portable Operating System Interface/可移植操作系统接口) threads)" target:_thread selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"NSThread"];
     [self.model appendDarkItemTitle:@"Start" target:_thread selector:@selector(began)];
@@ -43,7 +44,7 @@
     [self.model appendDarkItemTitle:@"Cancel Alive" target:_thread selector:@selector(stop)];
     
     [self.model appendOpenedHeader:@"Operation"];
-    [self.model appendItemTitle:@"..." target:nil selector:nil];
+    [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"GCD Control Queue"];
     [self.model appendDarkItemTitle:@"Start" target:_gcd selector:@selector(starQueue)];

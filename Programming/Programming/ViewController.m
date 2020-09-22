@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+//Network
+#import "INHttpController.h"
+
 //C
 #import "COperatorController.h"
 #import "CBasicController.h"
@@ -86,7 +89,7 @@
     [self.model appendItemWithTitle:@"Ping" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"SSL" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"StartTLS" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Http" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Http" class:[INHttpController class]];
     [self.model appendItemWithTitle:@"Exchange" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Web DAV" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"IMAP" class:[UIViewController class]];
@@ -108,7 +111,7 @@
     
     [self.model appendOpenedHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"Runtime（运行时）" class:[OCRuntimeController class]];
-    [self.model appendItemWithTitle:@"Runloop（运行循环）" class:[OCRunloopController class]];
+    [self.model appendDarkItemWithTitle:@"Runloop（运行循环）" class:[OCRunloopController class]];
     [self.model appendDarkItemWithTitle:@"Memory（内存管理）" class:[OCMemoryController class]];
     [self.model appendDarkItemWithTitle:@"Property (属性)" class:[OCPropertyController class]];
     [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
@@ -156,10 +159,7 @@
     [self.model appendOpenedHeader:@"iOS"];
     [self.model appendDarkItemWithTitle:@"*Crash(引发崩溃)" class:[OC_CrashController class]];
     [self.model appendDarkItemWithTitle:@"* Memory Leak(内存泄漏)" class:[iOSMemoryLeakController class]];
-    [self.model appendItemWithTitle:@"Launch Speed (启动速度)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"随意调用db而不使用Cache" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"约束过多" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"耗电" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"安装包瘦身" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"防越狱" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"防进程调试" class:[UIViewController class]];
@@ -168,6 +168,15 @@
     [self.model appendItemWithTitle:@"沙盒机制" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Playground" class:[UIViewController class]];
+    
+    [self.model appendOpenedHeader:@"性能优化"];
+    [self.model appendItemWithTitle:@"Launch Speed (启动速度优化)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"耗电量优化" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"网络io优化" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"文件io优化" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"内存优化" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"UI流畅度优化" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"随意调用db而不使用Cache" class:[UIViewController class]];
     
     [self.model appendHeader:@"Flutter"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
