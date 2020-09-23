@@ -474,6 +474,7 @@
 				CEE35E7C24BC655600E8E006 /* Pointer */,
 				CEE35E7B24BC522200E8E006 /* Keywords */,
 				CE5DCE4524FFA5760015D96E /* File */,
+				CE6CE3412519BC680089A1DA /* Cache */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -696,6 +697,13 @@
 				CE6CE33E2518B1A60089A1DA /* INHttpController.m */,
 			);
 			path = Http;
+			sourceTree = "<group>";
+		};
+		CE6CE3412519BC680089A1DA /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 		CE6EE48B24B70C6F008735BC /* Extension */ = {

@@ -8,8 +8,12 @@
 
 #import "OCRunloopController.h"
 
-@interface OCRunloopController ()
+#import "NSWeakTimer.h"
 
+@interface OCRunloopController ()
+{
+    NSTimer *_timer;
+}
 @end
 
 @implementation OCRunloopController
@@ -55,9 +59,11 @@
     [self.model appendOpenedHeader:@"应用："];
     [self.model appendItemTitle:@"创建常驻线程" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"创建Timer" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"无感知更新UI" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"UITableView 与 NSTimer 冲突" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"无感知更新UI" target:self selector:@selector(refreshUI)];
+    [self.model appendItemTitle:@"UITableView 与 NSTimer 冲突" target:self selector:@selector(exactTimer)];
+    [self.model appendItemTitle:@"UITableView 与 NSTimer 冲突2" target:self selector:@selector(exactTimer2)];
     [self.model appendItemTitle:@"检测卡顿（Observer）" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"AutoreleasePool" target:self selector:@selector(todo)];
 }
 
 #pragma mark -
@@ -93,13 +99,58 @@
     NSLog(@"5");
 }
 
+- (void)startWeakTimer {
+    NSTimer *timer = [NSWeakTimer timerWithTimeInterval:2.0
+                                             target:self
+                                           selector:@selector(exactTimerAction)
+                                           userInfo:nil
+                                            repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)exactTimer {
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_queue_create(0, 0), ^{
+        [weakSelf startWeakTimer];
+        
+        [[NSRunLoop currentRunLoop] run];
+    });
+}
+
+- (void)exactTimer2 {
+    NSTimer *timer = [NSWeakTimer timerWithTimeInterval:2.0
+                                             target:self
+                                           selector:@selector(exactTimerAction)
+                                           userInfo:nil
+                                            repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+}
+
+- (void)exactTimerAction {
+    NSLog(@"111111");
+}
+
 #pragma mark -
 #pragma mark -- UI
 - (void)refreshUI {
-    [self performSelectorOnMainThread:@selector(reloadData)
-                           withObject:nil
-                        waitUntilDone:NO
-                                modes:@[NSDefaultRunLoopMode]];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"11111111");
+        [self performSelectorOnMainThread:@selector(reloadRunloopData)
+                               withObject:nil
+                            waitUntilDone:NO
+                                    modes:@[NSDefaultRunLoopMode]];
+    });
+}
+
+- (void)reloadRunloopData {
+    NSLog(@"222222222");
+    [self.model appendItemTitle:@"....." target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"....." target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"....." target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"....." target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"....." target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"....." target:self selector:@selector(todo)];
+    [self.tableView reloadData];
 }
 
 @end

@@ -59,6 +59,8 @@
     [self.model appendDarkItemTitle:@"Start" target:_gcdTimer selector:@selector(startTimer)];
     [self.model appendDarkItemTitle:@"Stop" target:_gcdTimer selector:@selector(stopTimer)];
     [self.model appendDarkItemTitle:@"After" target:_gcdTimer selector:@selector(after)];
+    
+    [self.model appendOpenedHeader:@"NSTimer与GCD_timer区别"];
 }
 
 - (void)dealloc {

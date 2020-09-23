@@ -35,11 +35,13 @@
     
     [self.model appendOpenedHeader:@"once"];
     [self.model appendItemTitle:@"dispatch_once" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"dispatch_once 实现方式" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"semaphore"];
     [self.model appendItemTitle:@"create" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"wait" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"signal" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"实现方式" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"timer"];
     [self.model appendItemTitle:@"dispatch_time" target:self selector:@selector(todo)];

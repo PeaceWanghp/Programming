@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.model appendDarkItemTitle:@"ARC Strong一个statckBlock" target:self selector:@selector(globalAction)];
+    [self.model appendDarkItemTitle:@"mrc Strong一个statckBlock" target:self selector:@selector(globalAction)];
+    
     [self.model appendOpenedHeader:@"概述："];
     [self.model appendDarkItemTitle:@"SourceCode(源码)" target:self selector:@selector(globalAction)];
     [self.model appendDarkItemTitle:@"被strong的block:使用了堆区数据则为mallocBlock,未使用则globalBlock" target:self selector:nil];

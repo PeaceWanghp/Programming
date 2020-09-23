@@ -40,6 +40,7 @@
     [self.model appendDarkItemTitle:@"✓环长度(快慢指针)" target:self selector:@selector(checkLoopLength)];
     [self.model appendDarkItemTitle:@"✓环入口" target:self selector:@selector(loopNode)];
     [self.model appendDarkItemTitle:@"✓同一节点(增Bool/嵌套循环/差值)" target:self selector:@selector(findSameNode)];
+    [self.model appendDarkItemTitle:@"两个链表的共同节点" target:self selector:@selector(findSameNode)];
 }
 
 #pragma mark -
