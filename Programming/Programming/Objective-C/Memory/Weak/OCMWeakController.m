@@ -11,7 +11,7 @@
 #import "OCMWeakObject.h"
 
 @interface OCMWeakController ()
-
+@property (nonatomic,copy) void(^block)(void);
 @end
 
 @implementation OCMWeakController
@@ -21,6 +21,7 @@
     
     [self.model appendOpenedHeader:@"__weak底层实现:"];
     [self.model appendDarkItemTitle:@"__weak retainCount" target:self selector:@selector(testRetainCount)];
+    [self.model appendDarkItemTitle:@"避免循环引用" target:self selector:@selector(testRetainCount2)];
     [self.model appendDarkItemTitle:@"__weak 弱引用实现方式" target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"1.weak表其实是一个hash（哈希）表，Key是所指对象的地址，Value是weak指针的地址数组。\n"
                              target:self selector:@selector(todo)];
@@ -68,6 +69,20 @@
     NSLog(@"\n");
     
     NSLog(@"+++++++++++++");
+}
+
+//若引用后再强引用
+- (void)testRetainCount2 {
+    OCMWeakObject *object = [OCMWeakObject new];
+    NSLog(@"%@",[object valueForKey:@"retainCount"]);
+    __weak OCMWeakObject *weakObj = object;
+    self.block = ^ {
+        NSLog(@"---%@",[weakObj valueForKey:@"retainCount"]);
+    };
+    NSLog(@"%@",[object valueForKey:@"retainCount"]);
+    self.block();
+    NSLog(@"%@",[object valueForKey:@"retainCount"]);
+    
 }
 
 @end

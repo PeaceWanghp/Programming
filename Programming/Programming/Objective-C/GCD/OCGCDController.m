@@ -8,6 +8,9 @@
 
 #import "OCGCDController.h"
 
+#import "OCGCDOnceController.h"
+#import "OCSemaphoreController.h"
+
 @interface OCGCDController ()
 
 @end
@@ -21,9 +24,11 @@
     [self.model appendItemTitle:@"queue" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"async" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"sync" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"after" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"apply" target:self selector:@selector(todo)];
+    [self.model appendDarkItemWithTitle:@"once" class:[OCGCDOnceController class]];
+    [self.model appendDarkItemWithTitle:@"semaphore" class:[OCSemaphoreController class]];
     [self.model appendItemTitle:@"barrier" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"after" target:self selector:@selector(afterAction)];
+    [self.model appendItemTitle:@"apply" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"group"];
     [self.model appendItemTitle:@"create" target:self selector:@selector(todo)];
@@ -32,16 +37,6 @@
     [self.model appendItemTitle:@"enter" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"leave" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"notify" target:self selector:@selector(todo)];
-    
-    [self.model appendOpenedHeader:@"once"];
-    [self.model appendItemTitle:@"dispatch_once" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"dispatch_once 实现方式" target:self selector:@selector(todo)];
-    
-    [self.model appendOpenedHeader:@"semaphore"];
-    [self.model appendItemTitle:@"create" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"wait" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"signal" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"实现方式" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"timer"];
     [self.model appendItemTitle:@"dispatch_time" target:self selector:@selector(todo)];
@@ -71,8 +66,10 @@
     [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
 }
 
-- (void)todo {
-    
+- (void)afterAction {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"执行任务");
+    });
 }
 
 @end

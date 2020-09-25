@@ -59,9 +59,9 @@
     [self.model appendOpenedHeader:@"应用："];
     [self.model appendItemTitle:@"创建常驻线程" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"创建Timer" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"无感知更新UI" target:self selector:@selector(refreshUI)];
-    [self.model appendItemTitle:@"UITableView 与 NSTimer 冲突" target:self selector:@selector(exactTimer)];
-    [self.model appendItemTitle:@"UITableView 与 NSTimer 冲突2" target:self selector:@selector(exactTimer2)];
+    [self.model appendDarkItemTitle:@"无感知更新UI" target:self selector:@selector(refreshUI)];
+    [self.model appendDarkItemTitle:@"UITableView 与 NSTimer 冲突" target:self selector:@selector(exactTimer)];
+    [self.model appendDarkItemTitle:@"UITableView 与 NSTimer 冲突2" target:self selector:@selector(exactTimer2)];
     [self.model appendItemTitle:@"检测卡顿（Observer）" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"AutoreleasePool" target:self selector:@selector(todo)];
 }

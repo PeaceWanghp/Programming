@@ -33,6 +33,8 @@
 		CE5DCE4424FF8A0C0015D96E /* OCGCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DCE4324FF8A0C0015D96E /* OCGCDController.m */; };
 		CE5DCE4924FFA7670015D96E /* OCContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DCE4824FFA7670015D96E /* OCContainerController.m */; };
 		CE5DCE4D24FFA94A0015D96E /* iOSRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DCE4C24FFA94A0015D96E /* iOSRenderController.m */; };
+		CE5E560E251B34830086D42A /* OCGCDOnceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E560D251B34830086D42A /* OCGCDOnceController.m */; };
+		CE5E5614251B3BF70086D42A /* OCGCDQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E5613251B3BF70086D42A /* OCGCDQueueController.m */; };
 		CE6C171424B848A30061EB32 /* OCLoadInitializeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C171324B848A30061EB32 /* OCLoadInitializeController.m */; };
 		CE6C171724B849BF0061EB32 /* OCLoadInitializeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C171624B849BF0061EB32 /* OCLoadInitializeObject.m */; };
 		CE6C171A24B84A440061EB32 /* OCLoadInitializeObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C171924B84A440061EB32 /* OCLoadInitializeObject+Test.m */; };
@@ -51,6 +53,8 @@
 		CE6EE49B24B72978008735BC /* OCTestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49A24B72978008735BC /* OCTestProtocol.m */; };
 		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
 		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
+		CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE927381251C2366002C27B5 /* BPWebViewController.m */; };
+		CE927386251C2AD1002C27B5 /* OCSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE927385251C2AD1002C27B5 /* OCSemaphoreController.m */; };
 		CE9C78F624BF046200071276 /* OCRetainCountController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C78F524BF046200071276 /* OCRetainCountController.m */; };
 		CE9C78FF24BF150D00071276 /* OCARCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C78FE24BF150D00071276 /* OCARCObject.m */; };
 		CE9C790224BF152200071276 /* OCMRCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C790124BF152200071276 /* OCMRCObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -72,7 +76,6 @@
 		CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A024AC8D7300F5915E /* CUHitTestView.m */; };
 		CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A324AC8F4900F5915E /* CUHitTestAView.m */; };
 		CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A624AC8F6100F5915E /* CUHitTestBView.m */; };
-		CEB5A6052506399B002C4157 /* OCLockCompareController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB5A6042506399B002C4157 /* OCLockCompareController.m */; };
 		CEBE167624B464D200301698 /* OCLocksController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBE167524B464D200301698 /* OCLocksController.m */; };
 		CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */; };
 		CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */; };
@@ -186,6 +189,10 @@
 		CE5DCE4824FFA7670015D96E /* OCContainerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCContainerController.m; sourceTree = "<group>"; };
 		CE5DCE4B24FFA94A0015D96E /* iOSRenderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSRenderController.h; sourceTree = "<group>"; };
 		CE5DCE4C24FFA94A0015D96E /* iOSRenderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSRenderController.m; sourceTree = "<group>"; };
+		CE5E560C251B34830086D42A /* OCGCDOnceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCGCDOnceController.h; sourceTree = "<group>"; };
+		CE5E560D251B34830086D42A /* OCGCDOnceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGCDOnceController.m; sourceTree = "<group>"; };
+		CE5E5612251B3BF70086D42A /* OCGCDQueueController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCGCDQueueController.h; sourceTree = "<group>"; };
+		CE5E5613251B3BF70086D42A /* OCGCDQueueController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGCDQueueController.m; sourceTree = "<group>"; };
 		CE6C171224B848A30061EB32 /* OCLoadInitializeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLoadInitializeController.h; sourceTree = "<group>"; };
 		CE6C171324B848A30061EB32 /* OCLoadInitializeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLoadInitializeController.m; sourceTree = "<group>"; };
 		CE6C171524B849BF0061EB32 /* OCLoadInitializeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLoadInitializeObject.h; sourceTree = "<group>"; };
@@ -225,6 +232,10 @@
 		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
 		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
 		CE9082E424A9BC7100A471B9 /* CHomework.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHomework.c; sourceTree = "<group>"; };
+		CE927380251C2366002C27B5 /* BPWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPWebViewController.h; sourceTree = "<group>"; };
+		CE927381251C2366002C27B5 /* BPWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPWebViewController.m; sourceTree = "<group>"; };
+		CE927384251C2AD1002C27B5 /* OCSemaphoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSemaphoreController.h; sourceTree = "<group>"; };
+		CE927385251C2AD1002C27B5 /* OCSemaphoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCSemaphoreController.m; sourceTree = "<group>"; };
 		CE9C78F424BF046200071276 /* OCRetainCountController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRetainCountController.h; sourceTree = "<group>"; };
 		CE9C78F524BF046200071276 /* OCRetainCountController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRetainCountController.m; sourceTree = "<group>"; };
 		CE9C78FD24BF150D00071276 /* OCARCObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCARCObject.h; sourceTree = "<group>"; };
@@ -267,8 +278,6 @@
 		CEB396A324AC8F4900F5915E /* CUHitTestAView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestAView.m; sourceTree = "<group>"; };
 		CEB396A524AC8F6100F5915E /* CUHitTestBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUHitTestBView.h; sourceTree = "<group>"; };
 		CEB396A624AC8F6100F5915E /* CUHitTestBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUHitTestBView.m; sourceTree = "<group>"; };
-		CEB5A6032506399B002C4157 /* OCLockCompareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLockCompareController.h; sourceTree = "<group>"; };
-		CEB5A6042506399B002C4157 /* OCLockCompareController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLockCompareController.m; sourceTree = "<group>"; };
 		CEBE167424B464D200301698 /* OCLocksController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLocksController.h; sourceTree = "<group>"; };
 		CEBE167524B464D200301698 /* OCLocksController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLocksController.m; sourceTree = "<group>"; };
 		CEC0C5DC24AD870C00E103F5 /* CUOffScreenController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUOffScreenController.h; sourceTree = "<group>"; };
@@ -586,8 +595,10 @@
 			children = (
 				CE5DCE4224FF8A0C0015D96E /* OCGCDController.h */,
 				CE5DCE4324FF8A0C0015D96E /* OCGCDController.m */,
+				CE5E5611251B3BD30086D42A /* Queue */,
 				CE6CE33A251884860089A1DA /* async */,
 				CE6CE339251884430089A1DA /* Semaphore */,
+				CE5E560B251B34430086D42A /* Once */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -615,6 +626,24 @@
 				CE5DCE4C24FFA94A0015D96E /* iOSRenderController.m */,
 			);
 			path = Render;
+			sourceTree = "<group>";
+		};
+		CE5E560B251B34430086D42A /* Once */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E560C251B34830086D42A /* OCGCDOnceController.h */,
+				CE5E560D251B34830086D42A /* OCGCDOnceController.m */,
+			);
+			path = Once;
+			sourceTree = "<group>";
+		};
+		CE5E5611251B3BD30086D42A /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E5612251B3BF70086D42A /* OCGCDQueueController.h */,
+				CE5E5613251B3BF70086D42A /* OCGCDQueueController.m */,
+			);
+			path = Queue;
 			sourceTree = "<group>";
 		};
 		CE6C170524B848190061EB32 /* LoadInitialize */ = {
@@ -679,6 +708,8 @@
 		CE6CE339251884430089A1DA /* Semaphore */ = {
 			isa = PBXGroup;
 			children = (
+				CE927384251C2AD1002C27B5 /* OCSemaphoreController.h */,
+				CE927385251C2AD1002C27B5 /* OCSemaphoreController.m */,
 			);
 			path = Semaphore;
 			sourceTree = "<group>";
@@ -793,8 +824,6 @@
 			children = (
 				CEBE167424B464D200301698 /* OCLocksController.h */,
 				CEBE167524B464D200301698 /* OCLocksController.m */,
-				CEB5A6032506399B002C4157 /* OCLockCompareController.h */,
-				CEB5A6042506399B002C4157 /* OCLockCompareController.m */,
 			);
 			path = Lock;
 			sourceTree = "<group>";
@@ -1149,6 +1178,8 @@
 				CE56F5B6249B6F7900BA9B02 /* BPresentItemModel.m */,
 				CE56F5B2249B6F4300BA9B02 /* BPresentHeaderView.h */,
 				CE56F5B3249B6F4300BA9B02 /* BPresentHeaderView.m */,
+				CE927380251C2366002C27B5 /* BPWebViewController.h */,
+				CE927381251C2366002C27B5 /* BPWebViewController.m */,
 			);
 			path = BasePresent;
 			sourceTree = "<group>";
@@ -1256,6 +1287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED28E1E24B5D1EC00AD2D6E /* OCKeywordsController.m in Sources */,
+				CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */,
 				CEF17DE724B232AD00218C27 /* CPointer.c in Sources */,
 				CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */,
 				CE34F1B9250DC95700BF4BA3 /* COperatorController.m in Sources */,
@@ -1265,8 +1297,8 @@
 				CEBE167624B464D200301698 /* OCLocksController.m in Sources */,
 				CE6C171424B848A30061EB32 /* OCLoadInitializeController.m in Sources */,
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,
+				CE5E5614251B3BF70086D42A /* OCGCDQueueController.m in Sources */,
 				CEFAFFE724C83B280063A564 /* CUBigSizeButton.m in Sources */,
-				CEB5A6052506399B002C4157 /* OCLockCompareController.m in Sources */,
 				CEDC038624C5928500E8734C /* OCMDView.m in Sources */,
 				CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */,
 				CEF17DE124B2320200218C27 /* CDataType.c in Sources */,
@@ -1319,6 +1351,7 @@
 				CED1628F24C19D2B003F50F1 /* OCRuntimeTestObject.m in Sources */,
 				CE5DCE3D24FCF2170015D96E /* OCPNullObject.m in Sources */,
 				CEDC038324C58E7000E8734C /* OCMultiDelegate.m in Sources */,
+				CE927386251C2AD1002C27B5 /* OCSemaphoreController.m in Sources */,
 				CEDC038024C58DFB00E8734C /* OCMultiDelegateController.m in Sources */,
 				CEFDF91624B324C6003F53CC /* OC_Test_NSTimer.m in Sources */,
 				CEDC03AE24C6C5EE00E8734C /* ALGHashController.m in Sources */,
@@ -1328,6 +1361,7 @@
 				CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */,
 				CEDC038924C5929400E8734C /* OCMDObject.m in Sources */,
 				CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */,
+				CE5E560E251B34830086D42A /* OCGCDOnceController.m in Sources */,
 				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
 				CE6C171A24B84A440061EB32 /* OCLoadInitializeObject+Test.m in Sources */,
 				CE6C171D24B857B60061EB32 /* OCLoadInitializeObject+Test2.m in Sources */,

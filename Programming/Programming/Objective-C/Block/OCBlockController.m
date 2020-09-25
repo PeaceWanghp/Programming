@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendDarkItemTitle:@"ARC Strong一个statckBlock" target:self selector:@selector(globalAction)];
+    [self.model appendOpenedHeader:@"测试"];
+    [self.model appendDarkItemTitle:@"ARC Strong一个statckBlock" target:self selector:@selector(testBlock)];
     [self.model appendDarkItemTitle:@"mrc Strong一个statckBlock" target:self selector:@selector(globalAction)];
     
     [self.model appendOpenedHeader:@"概述："];
@@ -57,6 +58,21 @@
     
     [self.model appendOpenedHeader:@"Method Return(方法返回值)"];
     [self.model appendDarkItemTitle:@"Action" target:self selector:@selector(returnValueAction)];
+}
+
+- (void)testBlock {
+    int age = 1;
+    void (^block1)(void) = ^{
+        NSLog(@"block1");
+    };
+
+    void (^block2)(void) = ^{
+        NSLog(@"block2:%d",age);
+    };
+
+    NSLog(@"%@/%@/%@",[block1 class],[block2 class],[^{
+        NSLog(@"block3:%d",age);
+    } class]);
 }
 
 @end

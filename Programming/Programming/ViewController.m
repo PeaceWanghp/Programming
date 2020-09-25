@@ -123,12 +123,12 @@
     [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
     [self.model appendItemWithTitle:@"Container (容器)" class:[OCContainerController class]];
     [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
-    [self.model appendDarkItemWithTitle:@"* #import/#include/@class" class:[OCImportController class]];
-    [self.model appendDarkItemWithTitle:@"* const/extern/static/#define" class:[OCKeywordsController class]];
-    [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
+    [self.model appendDarkItemWithTitle:@"#import/#include/@class" class:[OCImportController class]];
+    [self.model appendDarkItemWithTitle:@"const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"NSCache" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
     
     [self.model appendHeader:@"Swift"];
     [self.model appendItemWithTitle:@"桥接" class:[UIViewController class]];
@@ -177,7 +177,7 @@
     [self.model appendItemWithTitle:@"网络io优化" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"文件io优化" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"内存优化" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"UI流畅度优化" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"UI流畅度--监控卡顿Qi_ObjcMsgHook" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"随意调用db而不使用Cache" class:[UIViewController class]];
     
     [self.model appendHeader:@"Flutter"];
