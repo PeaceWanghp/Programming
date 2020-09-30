@@ -21,6 +21,7 @@
 //iOS
 #import "OC_CrashController.h"
 #import "iOSMemoryLeakController.h"
+#import "iOSMonitorController.h"
 
 //CocoaUI
 #import "CUOffScreenController.h"
@@ -126,6 +127,7 @@
     [self.model appendDarkItemWithTitle:@"#import/#include/@class" class:[OCImportController class]];
     [self.model appendDarkItemWithTitle:@"const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"NSCache" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"NSPort" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
@@ -153,6 +155,7 @@
     [self.model appendItemWithTitle:@"约束" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"DispalyLink" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"UITableView" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"UITableView+ScrollViewHeader" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"转场" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"StoryBoard" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Xib" class:[UIViewController class]];
@@ -161,6 +164,7 @@
     [self.model appendOpenedHeader:@"iOS"];
     [self.model appendDarkItemWithTitle:@"*Crash(引发崩溃)" class:[OC_CrashController class]];
     [self.model appendDarkItemWithTitle:@"* Memory Leak(内存泄漏)" class:[iOSMemoryLeakController class]];
+    [self.model appendDarkItemWithTitle:@"Monitor(监视器)" class:[iOSMonitorController class]];
     [self.model appendItemWithTitle:@"约束过多" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"安装包瘦身" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"防越狱" class:[UIViewController class]];

@@ -116,6 +116,11 @@
 		CEE8FDB724BDB73F005153AA /* OCCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB624BDB73F005153AA /* OCCopyObject.m */; };
 		CEE93B4E24ECDB8400790662 /* OCAutoreleaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE93B4D24ECDB8400790662 /* OCAutoreleaseController.m */; };
 		CEE93B5124ECDEB400790662 /* OCAutoreleaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE93B5024ECDEB400790662 /* OCAutoreleaseObject.m */; };
+		CEEAD9D5252184C2007E491C /* iOSDelayMonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9D4252184C2007E491C /* iOSDelayMonitorController.m */; };
+		CEEAD9D925218602007E491C /* HPDelayMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9D825218602007E491C /* HPDelayMonitor.m */; };
+		CEEAD9DD25218E60007E491C /* iOSMonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9DC25218E60007E491C /* iOSMonitorController.m */; };
+		CEEAD9E22521966B007E491C /* testAutoreleaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9E12521966B007E491C /* testAutoreleaseObject.m */; };
+		CEEAD9EB252312A8007E491C /* QiCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9E8252312A8007E491C /* QiCallStack.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 		CEF17DD624B1CFB000218C27 /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DD524B1CFB000218C27 /* CArray.c */; };
 		CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DDA24B1F5A000218C27 /* CCycle.c */; };
@@ -358,6 +363,17 @@
 		CEE93B4D24ECDB8400790662 /* OCAutoreleaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCAutoreleaseController.m; sourceTree = "<group>"; };
 		CEE93B4F24ECDEB400790662 /* OCAutoreleaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAutoreleaseObject.h; sourceTree = "<group>"; };
 		CEE93B5024ECDEB400790662 /* OCAutoreleaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCAutoreleaseObject.m; sourceTree = "<group>"; };
+		CEEAD9D3252184C2007E491C /* iOSDelayMonitorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSDelayMonitorController.h; sourceTree = "<group>"; };
+		CEEAD9D4252184C2007E491C /* iOSDelayMonitorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSDelayMonitorController.m; sourceTree = "<group>"; };
+		CEEAD9D725218602007E491C /* HPDelayMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPDelayMonitor.h; sourceTree = "<group>"; };
+		CEEAD9D825218602007E491C /* HPDelayMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPDelayMonitor.m; sourceTree = "<group>"; };
+		CEEAD9DB25218E60007E491C /* iOSMonitorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSMonitorController.h; sourceTree = "<group>"; };
+		CEEAD9DC25218E60007E491C /* iOSMonitorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMonitorController.m; sourceTree = "<group>"; };
+		CEEAD9E02521966B007E491C /* testAutoreleaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testAutoreleaseObject.h; sourceTree = "<group>"; };
+		CEEAD9E12521966B007E491C /* testAutoreleaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAutoreleaseObject.m; sourceTree = "<group>"; };
+		CEEAD9E8252312A8007E491C /* QiCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCallStack.m; sourceTree = "<group>"; };
+		CEEAD9E9252312A8007E491C /* QiCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallStack.h; sourceTree = "<group>"; };
+		CEEAD9EA252312A8007E491C /* QiCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallLib.h; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
 		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
 		CEF17DD424B1CFB000218C27 /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
@@ -583,6 +599,7 @@
 		CE56F5AB249B689E00BA9B02 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CEEAD9D125218284007E491C /* Monitor */,
 				CE5DCE4A24FFA90C0015D96E /* Render */,
 				CE9C790324BF165B00071276 /* MemoryLeak */,
 				CED28E0C24B5BDB700AD2D6E /* Crash */,
@@ -1120,6 +1137,32 @@
 			path = Autorelease;
 			sourceTree = "<group>";
 		};
+		CEEAD9D125218284007E491C /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAD9DB25218E60007E491C /* iOSMonitorController.h */,
+				CEEAD9DC25218E60007E491C /* iOSMonitorController.m */,
+				CEEAD9D2252183C5007E491C /* Delay */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		CEEAD9D2252183C5007E491C /* Delay */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAD9D3252184C2007E491C /* iOSDelayMonitorController.h */,
+				CEEAD9D4252184C2007E491C /* iOSDelayMonitorController.m */,
+				CEEAD9D725218602007E491C /* HPDelayMonitor.h */,
+				CEEAD9D825218602007E491C /* HPDelayMonitor.m */,
+				CEEAD9E02521966B007E491C /* testAutoreleaseObject.h */,
+				CEEAD9E12521966B007E491C /* testAutoreleaseObject.m */,
+				CEEAD9EA252312A8007E491C /* QiCallLib.h */,
+				CEEAD9E9252312A8007E491C /* QiCallStack.h */,
+				CEEAD9E8252312A8007E491C /* QiCallStack.m */,
+			);
+			path = Delay;
+			sourceTree = "<group>";
+		};
 		CEF1760824AB4B4F00977E8F /* FrameBounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -1310,8 +1353,11 @@
 				CE5DCE4924FFA7670015D96E /* OCContainerController.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
 				CEB0454524D416C40045BAA8 /* ALGLinkController+Merge.m in Sources */,
+				CEEAD9DD25218E60007E491C /* iOSMonitorController.m in Sources */,
+				CEEAD9EB252312A8007E491C /* QiCallStack.m in Sources */,
 				CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */,
 				CE6C172F24B87AC90061EB32 /* OCImportController.m in Sources */,
+				CEEAD9D925218602007E491C /* HPDelayMonitor.m in Sources */,
 				CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */,
 				CE5DCE4024FD02CD0015D96E /* OCPSetterGetterObject.m in Sources */,
 				CE6C172024B857CF0061EB32 /* OCLoadInitializeObject+Test3.m in Sources */,
@@ -1347,6 +1393,7 @@
 				CEFDF92624B33A86003F53CC /* OCOperation.m in Sources */,
 				CE9C78FF24BF150D00071276 /* OCARCObject.m in Sources */,
 				CE4A514024CED9D400198DCA /* CTypeInteger.c in Sources */,
+				CEEAD9E22521966B007E491C /* testAutoreleaseObject.m in Sources */,
 				CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */,
 				CED1628F24C19D2B003F50F1 /* OCRuntimeTestObject.m in Sources */,
 				CE5DCE3D24FCF2170015D96E /* OCPNullObject.m in Sources */,
@@ -1409,6 +1456,7 @@
 				CEB0454B24D416FA0045BAA8 /* ALGLinkController+FindOne.m in Sources */,
 				CEB0454824D416E10045BAA8 /* ALGLinkController+Copy.m in Sources */,
 				CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */,
+				CEEAD9D5252184C2007E491C /* iOSDelayMonitorController.m in Sources */,
 				CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */,
 				CE9C790624BF169300071276 /* iOSMemoryLeakController.m in Sources */,
 				CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */,
