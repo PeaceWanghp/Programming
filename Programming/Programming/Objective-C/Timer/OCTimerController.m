@@ -41,6 +41,11 @@
     [self.model appendDarkItemTitle:@"Stop" target:_timer selector:@selector(invalidateTimer)];
     [self.model appendDarkItemTitle:@"Fire(手动触发)" target:_timer selector:@selector(fireTimer)];
     
+    [self.model appendOpenedHeader:@"Block NSTimer"];
+    [self.model appendDarkItemTitle:@"Start" target:_timer selector:@selector(blockTimer)];
+    [self.model appendDarkItemTitle:@"Stop" target:_timer selector:@selector(invalidateTimer)];
+    [self.model appendDarkItemTitle:@"Fire(手动触发)" target:_timer selector:@selector(fireTimer)];
+    
     [self.model appendOpenedHeader:@"NSTimer（手动 Weak）"];
     [self.model appendDarkItemTitle:@"Start" target:_weakTimer selector:@selector(startWeakTimer)];
     [self.model appendDarkItemTitle:@"Stop" target:_weakTimer selector:@selector(invalidateTimer)];

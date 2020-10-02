@@ -121,6 +121,8 @@
 		CEEAD9DD25218E60007E491C /* iOSMonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9DC25218E60007E491C /* iOSMonitorController.m */; };
 		CEEAD9E22521966B007E491C /* testAutoreleaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9E12521966B007E491C /* testAutoreleaseObject.m */; };
 		CEEAD9EB252312A8007E491C /* QiCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9E8252312A8007E491C /* QiCallStack.m */; };
+		CEEAD9F225243431007E491C /* OCGCDGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9F125243431007E491C /* OCGCDGroupController.m */; };
+		CEEAD9F825243CBF007E491C /* OCGCDTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9F725243CBF007E491C /* OCGCDTimerController.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
 		CEF17DD624B1CFB000218C27 /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DD524B1CFB000218C27 /* CArray.c */; };
 		CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DDA24B1F5A000218C27 /* CCycle.c */; };
@@ -374,6 +376,10 @@
 		CEEAD9E8252312A8007E491C /* QiCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCallStack.m; sourceTree = "<group>"; };
 		CEEAD9E9252312A8007E491C /* QiCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallStack.h; sourceTree = "<group>"; };
 		CEEAD9EA252312A8007E491C /* QiCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCallLib.h; sourceTree = "<group>"; };
+		CEEAD9F025243431007E491C /* OCGCDGroupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCGCDGroupController.h; sourceTree = "<group>"; };
+		CEEAD9F125243431007E491C /* OCGCDGroupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGCDGroupController.m; sourceTree = "<group>"; };
+		CEEAD9F625243CBF007E491C /* OCGCDTimerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCGCDTimerController.h; sourceTree = "<group>"; };
+		CEEAD9F725243CBF007E491C /* OCGCDTimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGCDTimerController.m; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
 		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
 		CEF17DD424B1CFB000218C27 /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
@@ -613,9 +619,11 @@
 				CE5DCE4224FF8A0C0015D96E /* OCGCDController.h */,
 				CE5DCE4324FF8A0C0015D96E /* OCGCDController.m */,
 				CE5E5611251B3BD30086D42A /* Queue */,
-				CE6CE33A251884860089A1DA /* async */,
+				CE6CE33A251884860089A1DA /* SyncOrAsync */,
 				CE6CE339251884430089A1DA /* Semaphore */,
 				CE5E560B251B34430086D42A /* Once */,
+				CEEAD9EF25243406007E491C /* Group */,
+				CEEAD9F525243C7E007E491C /* Timer */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -731,11 +739,11 @@
 			path = Semaphore;
 			sourceTree = "<group>";
 		};
-		CE6CE33A251884860089A1DA /* async */ = {
+		CE6CE33A251884860089A1DA /* SyncOrAsync */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = async;
+			path = SyncOrAsync;
 			sourceTree = "<group>";
 		};
 		CE6CE33C2518B1540089A1DA /* Http */ = {
@@ -1163,6 +1171,24 @@
 			path = Delay;
 			sourceTree = "<group>";
 		};
+		CEEAD9EF25243406007E491C /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAD9F025243431007E491C /* OCGCDGroupController.h */,
+				CEEAD9F125243431007E491C /* OCGCDGroupController.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		CEEAD9F525243C7E007E491C /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				CEEAD9F625243CBF007E491C /* OCGCDTimerController.h */,
+				CEEAD9F725243CBF007E491C /* OCGCDTimerController.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		CEF1760824AB4B4F00977E8F /* FrameBounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -1416,6 +1442,7 @@
 				CEDC03B424C6C62000E8734C /* ALGGraphController.m in Sources */,
 				CEB0453624D4127F0045BAA8 /* ALGTreeController+Traversal.m in Sources */,
 				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
+				CEEAD9F825243CBF007E491C /* OCGCDTimerController.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
 				CE5DCE4D24FFA94A0015D96E /* iOSRenderController.m in Sources */,
 				CEB0453F24D4167F0045BAA8 /* ALGLinkController+SameOne.m in Sources */,
@@ -1435,6 +1462,7 @@
 				CEDC03A224C6C59500E8734C /* ALGStackController.m in Sources */,
 				CE6CE33F2518B1A60089A1DA /* INHttpController.m in Sources */,
 				CE6CE33325184A060089A1DA /* OCMWeakController.m in Sources */,
+				CEEAD9F225243431007E491C /* OCGCDGroupController.m in Sources */,
 				CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */,
 				CEF17DD624B1CFB000218C27 /* CArray.c in Sources */,
 				CEFDF92324B33A73003F53CC /* OCThread.m in Sources */,

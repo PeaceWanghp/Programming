@@ -34,6 +34,20 @@
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSDefaultRunLoopMode];
 }
 
+//阻塞计时器
+- (void)blockTimer {
+    [NSThread detachNewThreadWithBlock:^{
+        self->_timer = [NSTimer timerWithTimeInterval:2.0
+                                                 target:self
+                                               selector:@selector(blockTimerRun)
+                                               userInfo:nil
+                                                repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:self->_timer forMode:NSRunLoopCommonModes];
+//        [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+        [[NSRunLoop currentRunLoop] run];
+    }];
+}
+
 #pragma mark -
 #pragma mark -- Weak Timer
 - (void)startWeakTimer {
@@ -73,6 +87,12 @@
     dispatch_async(dispatch_queue_create("xxxx", DISPATCH_QUEUE_SERIAL), ^{
         sleep(4);
     });
+}
+
+- (void)blockTimerRun {
+    NSLog(@"1.%s",__func__);
+    sleep(4);
+    NSLog(@"2.%s",__func__);
 }
 
 @end

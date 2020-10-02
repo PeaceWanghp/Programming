@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OC_Test_NSTimer : NSObject
 
 - (void)startTimer;
+- (void)blockTimer;
 - (void)startWeakTimer;
 - (void)startExactTimer;
 
