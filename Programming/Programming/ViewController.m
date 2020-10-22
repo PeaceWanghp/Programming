@@ -50,13 +50,8 @@
 #import "AlgorithmsController.h"
 #import "ALGOtherController.h"
 #import "ALGArrayController.h"
-#import "ALGStackController.h"
-#import "ALGQueueController.h"
 #import "ALGLinkController.h"
 #import "ALGTreeController.h"
-#import "ALGHashController.h"
-#import "ALGHeapController.h"
-#import "ALGGraphController.h"
 
 @interface ViewController ()
 
@@ -73,13 +68,8 @@
     [self.model appendHeader:@"Algorithms(算法)"];
     [self.model appendDarkItemWithTitle:@"理论" class:[AlgorithmsController class]];
     [self.model appendDarkItemWithTitle:@"Array(数组)" class:[ALGArrayController class]];
-    [self.model appendItemWithTitle:@"Stack(栈)" class:[ALGStackController class]];
-    [self.model appendDarkItemWithTitle:@"Queue(队列)" class:[ALGQueueController class]];
     [self.model appendDarkItemWithTitle:@"Link(链表)" class:[ALGLinkController class]];
     [self.model appendDarkItemWithTitle:@"Tree(树)" class:[ALGTreeController class]];
-    [self.model appendItemWithTitle:@"Hash(散列表)" class:[ALGHashController class]];
-    [self.model appendItemWithTitle:@"Heap(堆)" class:[ALGHeapController class]];
-    [self.model appendItemWithTitle:@"Graph(图)" class:[ALGGraphController class]];
     [self.model appendDarkItemWithTitle:@"* Other(其他)" class:[ALGOtherController class]];
     
     [self.model appendHeader:@"Internet(网络)"];

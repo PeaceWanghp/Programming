@@ -60,7 +60,6 @@
 		CE9C790224BF152200071276 /* OCMRCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C790124BF152200071276 /* OCMRCObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE9C790624BF169300071276 /* iOSMemoryLeakController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C790524BF169300071276 /* iOSMemoryLeakController.m */; };
 		CEA6E35F25021CC700D2880D /* CUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6E35E25021CC700D2880D /* CUViewController.m */; };
-		CEB0453024D4081A0045BAA8 /* ALGQueueController+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0452F24D4081A0045BAA8 /* ALGQueueController+Array.m */; };
 		CEB0453324D412570045BAA8 /* ALGTreeController+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453224D412570045BAA8 /* ALGTreeController+Search.m */; };
 		CEB0453624D4127F0045BAA8 /* ALGTreeController+Traversal.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453524D4127F0045BAA8 /* ALGTreeController+Traversal.m */; };
 		CEB0453924D4164B0045BAA8 /* ALGLinkController+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453824D4164B0045BAA8 /* ALGLinkController+Reverse.m */; };
@@ -102,13 +101,8 @@
 		CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038C24C6AD8C00E8734C /* OCBlockController.m */; };
 		CEDC039324C6C43300E8734C /* AlgorithmsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC039224C6C43300E8734C /* AlgorithmsController.m */; };
 		CEDC039F24C6C58200E8734C /* ALGArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC039E24C6C58200E8734C /* ALGArrayController.m */; };
-		CEDC03A224C6C59500E8734C /* ALGStackController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03A124C6C59500E8734C /* ALGStackController.m */; };
-		CEDC03A524C6C5AE00E8734C /* ALGQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03A424C6C5AE00E8734C /* ALGQueueController.m */; };
 		CEDC03A824C6C5C000E8734C /* ALGLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03A724C6C5C000E8734C /* ALGLinkController.m */; };
 		CEDC03AB24C6C5D700E8734C /* ALGTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AA24C6C5D700E8734C /* ALGTreeController.m */; };
-		CEDC03AE24C6C5EE00E8734C /* ALGHashController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AD24C6C5EE00E8734C /* ALGHashController.m */; };
-		CEDC03B124C6C60E00E8734C /* ALGHeapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B024C6C60E00E8734C /* ALGHeapController.m */; };
-		CEDC03B424C6C62000E8734C /* ALGGraphController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B324C6C62000E8734C /* ALGGraphController.m */; };
 		CEDC03B724C6C63400E8734C /* ALGOtherController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B624C6C63400E8734C /* ALGOtherController.m */; };
 		CEE306D624CD778700A70DBA /* CBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE306D524CD778700A70DBA /* CBasicController.m */; };
 		CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */; };
@@ -253,8 +247,6 @@
 		CE9C790524BF169300071276 /* iOSMemoryLeakController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMemoryLeakController.m; sourceTree = "<group>"; };
 		CEA6E35D25021CC700D2880D /* CUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUViewController.h; sourceTree = "<group>"; };
 		CEA6E35E25021CC700D2880D /* CUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUViewController.m; sourceTree = "<group>"; };
-		CEB0452E24D4081A0045BAA8 /* ALGQueueController+Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGQueueController+Array.h"; sourceTree = "<group>"; };
-		CEB0452F24D4081A0045BAA8 /* ALGQueueController+Array.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ALGQueueController+Array.m"; sourceTree = "<group>"; };
 		CEB0453124D412570045BAA8 /* ALGTreeController+Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGTreeController+Search.h"; sourceTree = "<group>"; };
 		CEB0453224D412570045BAA8 /* ALGTreeController+Search.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ALGTreeController+Search.m"; sourceTree = "<group>"; };
 		CEB0453424D4127F0045BAA8 /* ALGTreeController+Traversal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGTreeController+Traversal.h"; sourceTree = "<group>"; };
@@ -337,20 +329,10 @@
 		CEDC039224C6C43300E8734C /* AlgorithmsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmsController.m; sourceTree = "<group>"; };
 		CEDC039D24C6C58200E8734C /* ALGArrayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGArrayController.h; sourceTree = "<group>"; };
 		CEDC039E24C6C58200E8734C /* ALGArrayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGArrayController.m; sourceTree = "<group>"; };
-		CEDC03A024C6C59500E8734C /* ALGStackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGStackController.h; sourceTree = "<group>"; };
-		CEDC03A124C6C59500E8734C /* ALGStackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGStackController.m; sourceTree = "<group>"; };
-		CEDC03A324C6C5AE00E8734C /* ALGQueueController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGQueueController.h; sourceTree = "<group>"; };
-		CEDC03A424C6C5AE00E8734C /* ALGQueueController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGQueueController.m; sourceTree = "<group>"; };
 		CEDC03A624C6C5C000E8734C /* ALGLinkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGLinkController.h; sourceTree = "<group>"; };
 		CEDC03A724C6C5C000E8734C /* ALGLinkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGLinkController.m; sourceTree = "<group>"; };
 		CEDC03A924C6C5D700E8734C /* ALGTreeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGTreeController.h; sourceTree = "<group>"; };
 		CEDC03AA24C6C5D700E8734C /* ALGTreeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGTreeController.m; sourceTree = "<group>"; };
-		CEDC03AC24C6C5EE00E8734C /* ALGHashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGHashController.h; sourceTree = "<group>"; };
-		CEDC03AD24C6C5EE00E8734C /* ALGHashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGHashController.m; sourceTree = "<group>"; };
-		CEDC03AF24C6C60E00E8734C /* ALGHeapController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGHeapController.h; sourceTree = "<group>"; };
-		CEDC03B024C6C60E00E8734C /* ALGHeapController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGHeapController.m; sourceTree = "<group>"; };
-		CEDC03B224C6C62000E8734C /* ALGGraphController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGGraphController.h; sourceTree = "<group>"; };
-		CEDC03B324C6C62000E8734C /* ALGGraphController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGGraphController.m; sourceTree = "<group>"; };
 		CEDC03B524C6C63400E8734C /* ALGOtherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGOtherController.h; sourceTree = "<group>"; };
 		CEDC03B624C6C63400E8734C /* ALGOtherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGOtherController.m; sourceTree = "<group>"; };
 		CEE306D424CD778700A70DBA /* CBasicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBasicController.h; sourceTree = "<group>"; };
@@ -562,13 +544,8 @@
 			isa = PBXGroup;
 			children = (
 				CEDC039C24C6C50100E8734C /* Other */,
-				CEDC039B24C6C4F800E8734C /* Graph */,
-				CEDC039A24C6C4F000E8734C /* Heap */,
-				CEDC039924C6C4E500E8734C /* Hash */,
 				CEDC039824C6C4DE00E8734C /* Tree */,
 				CEDC039724C6C4D400E8734C /* Link */,
-				CEDC039624C6C4C800E8734C /* Queue */,
-				CEDC039524C6C4BE00E8734C /* Stack */,
 				CEDC039424C6C4B600E8734C /* Array */,
 				CEDC039124C6C43300E8734C /* AlgorithmsController.h */,
 				CEDC039224C6C43300E8734C /* AlgorithmsController.m */,
@@ -1009,26 +986,6 @@
 			path = Array;
 			sourceTree = "<group>";
 		};
-		CEDC039524C6C4BE00E8734C /* Stack */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC03A024C6C59500E8734C /* ALGStackController.h */,
-				CEDC03A124C6C59500E8734C /* ALGStackController.m */,
-			);
-			path = Stack;
-			sourceTree = "<group>";
-		};
-		CEDC039624C6C4C800E8734C /* Queue */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC03A324C6C5AE00E8734C /* ALGQueueController.h */,
-				CEDC03A424C6C5AE00E8734C /* ALGQueueController.m */,
-				CEB0452E24D4081A0045BAA8 /* ALGQueueController+Array.h */,
-				CEB0452F24D4081A0045BAA8 /* ALGQueueController+Array.m */,
-			);
-			path = Queue;
-			sourceTree = "<group>";
-		};
 		CEDC039724C6C4D400E8734C /* Link */ = {
 			isa = PBXGroup;
 			children = (
@@ -1065,33 +1022,6 @@
 				CEB0453524D4127F0045BAA8 /* ALGTreeController+Traversal.m */,
 			);
 			path = Tree;
-			sourceTree = "<group>";
-		};
-		CEDC039924C6C4E500E8734C /* Hash */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC03AC24C6C5EE00E8734C /* ALGHashController.h */,
-				CEDC03AD24C6C5EE00E8734C /* ALGHashController.m */,
-			);
-			path = Hash;
-			sourceTree = "<group>";
-		};
-		CEDC039A24C6C4F000E8734C /* Heap */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC03AF24C6C60E00E8734C /* ALGHeapController.h */,
-				CEDC03B024C6C60E00E8734C /* ALGHeapController.m */,
-			);
-			path = Heap;
-			sourceTree = "<group>";
-		};
-		CEDC039B24C6C4F800E8734C /* Graph */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC03B224C6C62000E8734C /* ALGGraphController.h */,
-				CEDC03B324C6C62000E8734C /* ALGGraphController.m */,
-			);
-			path = Graph;
 			sourceTree = "<group>";
 		};
 		CEDC039C24C6C50100E8734C /* Other */ = {
@@ -1390,9 +1320,7 @@
 				CE6C171724B849BF0061EB32 /* OCLoadInitializeObject.m in Sources */,
 				CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */,
 				CEF17DF124B2369C00218C27 /* CLibsController.m in Sources */,
-				CEB0453024D4081A0045BAA8 /* ALGQueueController+Array.m in Sources */,
 				CE6C172B24B85F6D0061EB32 /* OCInheritB.m in Sources */,
-				CEDC03B124C6C60E00E8734C /* ALGHeapController.m in Sources */,
 				CEFDF92024B3391C003F53CC /* OCThreadController.m in Sources */,
 				CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */,
 				CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */,
@@ -1427,7 +1355,6 @@
 				CE927386251C2AD1002C27B5 /* OCSemaphoreController.m in Sources */,
 				CEDC038024C58DFB00E8734C /* OCMultiDelegateController.m in Sources */,
 				CEFDF91624B324C6003F53CC /* OC_Test_NSTimer.m in Sources */,
-				CEDC03AE24C6C5EE00E8734C /* ALGHashController.m in Sources */,
 				CEC7A9D024C05DE900A3D65B /* OCMessageForwardingController.m in Sources */,
 				CE34F1B5250A24DB00BF4BA3 /* OCRunloopController.m in Sources */,
 				CEFDF91524B324C6003F53CC /* OC_Test_CADisplayLink.m in Sources */,
@@ -1438,8 +1365,6 @@
 				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
 				CE6C171A24B84A440061EB32 /* OCLoadInitializeObject+Test.m in Sources */,
 				CE6C171D24B857B60061EB32 /* OCLoadInitializeObject+Test2.m in Sources */,
-				CEDC03A524C6C5AE00E8734C /* ALGQueueController.m in Sources */,
-				CEDC03B424C6C62000E8734C /* ALGGraphController.m in Sources */,
 				CEB0453624D4127F0045BAA8 /* ALGTreeController+Traversal.m in Sources */,
 				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
 				CEEAD9F825243CBF007E491C /* OCGCDTimerController.m in Sources */,
@@ -1459,7 +1384,6 @@
 				CE415E182511A22100FB386D /* OCBlockController+WeakStrong.m in Sources */,
 				CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */,
 				CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */,
-				CEDC03A224C6C59500E8734C /* ALGStackController.m in Sources */,
 				CE6CE33F2518B1A60089A1DA /* INHttpController.m in Sources */,
 				CE6CE33325184A060089A1DA /* OCMWeakController.m in Sources */,
 				CEEAD9F225243431007E491C /* OCGCDGroupController.m in Sources */,

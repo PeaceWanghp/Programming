@@ -31,7 +31,7 @@
     [self.model appendDarkItemWithTitle:@"group" class:[OCGCDGroupController class]];
     [self.model appendDarkItemWithTitle:@"timer" class:[OCGCDTimerController class]];
     [self.model appendItemTitle:@"barrier" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"after" target:self selector:@selector(afterAction)];
+    [self.model appendDarkItemTitle:@"after" target:self selector:@selector(afterAction)];
     [self.model appendItemTitle:@"apply" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"io"];
@@ -59,9 +59,11 @@
 }
 
 - (void)afterAction {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSLog(@"执行任务");
-    });
+    for (int i = 0; i < 1000; i++) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"执行任务 = %d",i);
+        });
+    }
 }
 
 @end
