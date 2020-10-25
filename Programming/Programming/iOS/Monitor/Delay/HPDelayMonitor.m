@@ -113,6 +113,8 @@ static void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActi
     monitor->_runLoopActivity = activity;
     
     [monitor monitorSemaphore];
+    
+//    [[NSMachPort port] sendBeforeDate:[NSDate date] components:nil from:nil reserved:0];
 }
 
 /*

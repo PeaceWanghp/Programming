@@ -55,17 +55,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendOpenedHeader:@"排序"];
-    [self.model appendItemTitle:@"插入排序" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"希尔排序" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"选择排序" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"堆排序" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"冒泡排序" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"快速排序" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"归并排序" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"计数排序" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"基数排序" target:self selector:@selector(todo)];
-    
     [self.model appendOpenedHeader:@"顺序表查找"];
     [self.model appendDarkItemTitle:@"顺序查找" target:self selector:@selector(eachSearch)];
     [self.model appendDarkItemTitle:@"二分查找" target:self selector:@selector(halfSearch)];

@@ -9,6 +9,7 @@
 #import "OCRunloopController.h"
 
 #import "NSWeakTimer.h"
+#import "OCMachPortController.h"
 
 @interface OCRunloopController ()
 {
@@ -57,6 +58,7 @@
     [self.model appendDarkItemTitle:@"7.全部的活动 kCFRunLoopAllActivities" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"应用："];
+    [self.model appendDarkItemWithTitle:@"NSMachPort" class:[OCMachPortController class]];
     [self.model appendItemTitle:@"创建常驻线程" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"创建Timer" target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"无感知更新UI" target:self selector:@selector(refreshUI)];
