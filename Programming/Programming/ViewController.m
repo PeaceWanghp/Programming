@@ -49,7 +49,6 @@
 //Algorithm
 #import "AlgorithmsController.h"
 #import "ALGOtherController.h"
-#import "ALGArrayController.h"
 #import "ALGLinkController.h"
 #import "ALGTreeController.h"
 
@@ -67,7 +66,6 @@
     
     [self.model appendHeader:@"Algorithms(算法)"];
     [self.model appendDarkItemWithTitle:@"理论" class:[AlgorithmsController class]];
-    [self.model appendDarkItemWithTitle:@"Array(数组)" class:[ALGArrayController class]];
     [self.model appendDarkItemWithTitle:@"Link(链表)" class:[ALGLinkController class]];
     [self.model appendDarkItemWithTitle:@"Tree(树)" class:[ALGTreeController class]];
     [self.model appendDarkItemWithTitle:@"* Other(其他)" class:[ALGOtherController class]];
@@ -104,7 +102,6 @@
     [self.model appendDarkItemWithTitle:@"Runtime（运行时）" class:[OCRuntimeController class]];
     [self.model appendDarkItemWithTitle:@"Runloop（运行循环）" class:[OCRunloopController class]];
     [self.model appendDarkItemWithTitle:@"Memory（内存管理）" class:[OCMemoryController class]];
-    [self.model appendDarkItemWithTitle:@"Property (属性)" class:[OCPropertyController class]];
     [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
     [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
@@ -112,14 +109,14 @@
     [self.model appendDarkItemWithTitle:@"GCD (Grand Central Dispatch)" class:[OCGCDController class]];
     [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
     [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
-    [self.model appendItemWithTitle:@"Container (容器)" class:[OCContainerController class]];
+    [self.model appendDarkItemWithTitle:@"Property (属性)" class:[OCPropertyController class]];
     [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
     [self.model appendDarkItemWithTitle:@"#import/#include/@class" class:[OCImportController class]];
     [self.model appendDarkItemWithTitle:@"const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"NSCache" class:[UIViewController class]];
-    [self.model appendDarkItemWithTitle:@"NSPort" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Container (容器)" class:[OCContainerController class]];
     [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
     
     [self.model appendHeader:@"Swift"];
@@ -152,11 +149,8 @@
     [self.model appendItemWithTitle:@"needDisplay,dispaly区别" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"iOS"];
-    [self.model appendDarkItemWithTitle:@"*Crash(引发崩溃)" class:[OC_CrashController class]];
-    [self.model appendDarkItemWithTitle:@"* Memory Leak(内存泄漏)" class:[iOSMemoryLeakController class]];
+    [self.model appendDarkItemWithTitle:@"Crash(引发崩溃)" class:[OC_CrashController class]];
     [self.model appendDarkItemWithTitle:@"Monitor(监视器)" class:[iOSMonitorController class]];
-    [self.model appendItemWithTitle:@"约束过多" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"安装包瘦身" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"防越狱" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"防进程调试" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"反编译" class:[UIViewController class]];
@@ -164,23 +158,21 @@
     [self.model appendItemWithTitle:@"沙盒机制" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Playground" class:[UIViewController class]];
-    
-    [self.model appendOpenedHeader:@"性能优化"];
     [self.model appendItemWithTitle:@"Launch Speed (启动速度优化)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"耗电量优化" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"网络io优化" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"文件io优化" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"内存优化" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"UI流畅度--监控卡顿Qi_ObjcMsgHook" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"随意调用db而不使用Cache" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"文件io优化/随意调用db而不使用Cache" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Memory Leak(内存泄漏)/内存优化" class:[iOSMemoryLeakController class]];
+    [self.model appendItemWithTitle:@"安装包瘦身" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"FPS(FramesPerSecond)/--监控卡顿Qi_ObjcMsgHook/约束过多" class:[UIViewController class]];
     
-    [self.model appendHeader:@"Flutter"];
-    [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
+    [self.model appendHeader:@"Hybrid(混合开发)"];
+    [self.model appendItemWithTitle:@"Flutter" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"ReactNative" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Weex" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Html" class:[UIViewController class]];
     
-    [self.model appendHeader:@"ReactNative"];
-    [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
-    
-    [self.model appendHeader:@"音视频"];
+    [self.model appendHeader:@"音视频协议"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
 }
 

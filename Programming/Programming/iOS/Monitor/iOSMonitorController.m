@@ -19,7 +19,8 @@
     [super viewDidLoad];
     
     [self.model appendOpenedHeader:@"Monitor:"];
-    [self.model appendDarkItemWithTitle:@"Thread" class:[iOSDelayMonitorController class]];
+    [self.model appendDarkItemWithTitle:@"fps_runloop" class:[iOSDelayMonitorController class]];
+    [self.model appendDarkItemWithTitle:@"fps_displaylink" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"CPU" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"Method" class:[UIViewController class]];
 }
