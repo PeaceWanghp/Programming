@@ -65,7 +65,7 @@
     [self.model appendDarkItemTitle:@"UITableView 与 NSTimer 冲突" target:self selector:@selector(exactTimer)];
     [self.model appendDarkItemTitle:@"UITableView 与 NSTimer 冲突2" target:self selector:@selector(exactTimer2)];
     [self.model appendItemTitle:@"检测卡顿（Observer）" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"AutoreleasePool" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"AutoreleasePool 生命周期" target:self selector:@selector(todo)];
 }
 
 #pragma mark -

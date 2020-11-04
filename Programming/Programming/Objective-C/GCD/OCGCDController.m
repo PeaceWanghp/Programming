@@ -13,6 +13,7 @@
 #import "OCSemaphoreController.h"
 #import "OCGCDGroupController.h"
 #import "OCGCDTimerController.h"
+#import "OCSyncAsyncController.h"
 
 @interface OCGCDController ()
 
@@ -25,7 +26,7 @@
     
     [self.model appendOpenedHeader:@"queue"];
     [self.model appendDarkItemWithTitle:@"queue" class:[OCGCDQueueController class]];
-    [self.model appendItemTitle:@"sync/async" target:self selector:@selector(todo)];
+    [self.model appendDarkItemWithTitle:@"sync/async" class:[OCSyncAsyncController class]];
     [self.model appendDarkItemWithTitle:@"once" class:[OCGCDOnceController class]];
     [self.model appendDarkItemWithTitle:@"semaphore" class:[OCSemaphoreController class]];
     [self.model appendDarkItemWithTitle:@"group" class:[OCGCDGroupController class]];

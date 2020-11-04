@@ -52,6 +52,7 @@
 		CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49224B71731008735BC /* OCTestExtension.m */; };
 		CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49724B728FE008735BC /* OCProtocolController.m */; };
 		CE6EE49B24B72978008735BC /* OCTestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EE49A24B72978008735BC /* OCTestProtocol.m */; };
+		CE745BC62552E35700BEF903 /* OCSyncAsyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BC52552E35700BEF903 /* OCSyncAsyncController.m */; };
 		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
 		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
 		CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE927381251C2366002C27B5 /* BPWebViewController.m */; };
@@ -231,6 +232,8 @@
 		CE6EE49924B72929008735BC /* OCTestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestProtocol.h; sourceTree = "<group>"; };
 		CE6EE49A24B72978008735BC /* OCTestProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestProtocol.m; sourceTree = "<group>"; };
 		CE6EE49C24B729C5008735BC /* OCTestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestDelegate.h; sourceTree = "<group>"; };
+		CE745BC42552E35700BEF903 /* OCSyncAsyncController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSyncAsyncController.h; sourceTree = "<group>"; };
+		CE745BC52552E35700BEF903 /* OCSyncAsyncController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCSyncAsyncController.m; sourceTree = "<group>"; };
 		CE9082E024A9B4F600A471B9 /* CHomeworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkController.h; sourceTree = "<group>"; };
 		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
 		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
@@ -704,6 +707,8 @@
 		CE6CE33A251884860089A1DA /* SyncOrAsync */ = {
 			isa = PBXGroup;
 			children = (
+				CE745BC42552E35700BEF903 /* OCSyncAsyncController.h */,
+				CE745BC52552E35700BEF903 /* OCSyncAsyncController.m */,
 			);
 			path = SyncOrAsync;
 			sourceTree = "<group>";
@@ -1264,6 +1269,7 @@
 				CED28E1E24B5D1EC00AD2D6E /* OCKeywordsController.m in Sources */,
 				CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */,
 				CEF17DE724B232AD00218C27 /* CPointer.c in Sources */,
+				CE745BC62552E35700BEF903 /* OCSyncAsyncController.m in Sources */,
 				CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */,
 				CE34F1B9250DC95700BF4BA3 /* COperatorController.m in Sources */,
 				CE457F7125452BE3005A4A1B /* OCMachPortController.m in Sources */,
