@@ -14,6 +14,7 @@
 #import "OCGCDGroupController.h"
 #import "OCGCDTimerController.h"
 #import "OCSyncAsyncController.h"
+#import "OCBarrierController.h"
 
 @interface OCGCDController ()
 
@@ -24,14 +25,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendOpenedHeader:@"queue"];
+    [self.model appendOpenedHeader:@"Use"];
     [self.model appendDarkItemWithTitle:@"queue" class:[OCGCDQueueController class]];
     [self.model appendDarkItemWithTitle:@"sync/async" class:[OCSyncAsyncController class]];
     [self.model appendDarkItemWithTitle:@"once" class:[OCGCDOnceController class]];
     [self.model appendDarkItemWithTitle:@"semaphore" class:[OCSemaphoreController class]];
-    [self.model appendDarkItemWithTitle:@"group" class:[OCGCDGroupController class]];
+    [self.model appendDarkItemWithTitle:@"group/notify" class:[OCGCDGroupController class]];
     [self.model appendDarkItemWithTitle:@"timer" class:[OCGCDTimerController class]];
-    [self.model appendItemTitle:@"barrier" target:self selector:@selector(todo)];
+    [self.model appendDarkItemWithTitle:@"barrier" class:[OCBarrierController class]];
     [self.model appendDarkItemTitle:@"after" target:self selector:@selector(afterAction)];
     [self.model appendItemTitle:@"apply" target:self selector:@selector(todo)];
     
@@ -40,7 +41,6 @@
     [self.model appendItemTitle:@"read" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"write" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"close" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"barrier" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"block"];
     [self.model appendItemTitle:@"create" target:self selector:@selector(todo)];
