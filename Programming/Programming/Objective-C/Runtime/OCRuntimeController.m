@@ -13,6 +13,7 @@
 #import "OCMessageForwardingController.h"
 #import "OCJSPatchController.h"
 #import "OCCategaryController.h"
+#import "OCMessagePassingController.h"
 
 @interface OCRuntimeController ()
 
@@ -23,19 +24,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendOpenedHeader:@"MessagePassing(消息机制)："];
-    [self.model appendItemTitle:@"msgsend()" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"动态解析" target:self selector:@selector(todo)];
-    [self.model appendDarkItemWithTitle:@"MessageForwarding(消息转发)" class:[OCMessageForwardingController class]];
-    
     [self.model appendOpenedHeader:@"原理："];
     [self.model appendDarkItemTitle:@"Source Code(源码阅读)" target:self selector:@selector(getIsa)];
+    [self.model appendDarkItemWithTitle:@"Message Passing(消息传递机制)" class:[OCMessagePassingController class]];
     [self.model appendDarkItemTitle:@"isa" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"struct class" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"ivar (属性列表)" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"SEL/IMP" target:self selector:@selector(getIsa)];
     
-    [self.model appendOpenedHeader:@"实际应用："];
+    [self.model appendOpenedHeader:@"应用实例："];
     [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
     [self.model appendItemWithTitle:@"exchangeImplementations (方法交换)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"addMethod (添加方法)" class:[UIViewController class]];

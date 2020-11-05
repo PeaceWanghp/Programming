@@ -58,6 +58,7 @@
 		CE745BD52553FF4B00BEF903 /* OCGCDAfterController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BD42553FF4B00BEF903 /* OCGCDAfterController.m */; };
 		CE745BDD2554023300BEF903 /* OCGCDApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BDC2554023300BEF903 /* OCGCDApplyController.m */; };
 		CE745BE725540FD900BEF903 /* OCDisplayLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BE625540FD900BEF903 /* OCDisplayLinkController.m */; };
+		CE745BFE255419E500BEF903 /* OCMessagePassingController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BFD255419E500BEF903 /* OCMessagePassingController.m */; };
 		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
 		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
 		CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE927381251C2366002C27B5 /* BPWebViewController.m */; };
@@ -247,6 +248,8 @@
 		CE745BDC2554023300BEF903 /* OCGCDApplyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGCDApplyController.m; sourceTree = "<group>"; };
 		CE745BE525540FD900BEF903 /* OCDisplayLinkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCDisplayLinkController.h; sourceTree = "<group>"; };
 		CE745BE625540FD900BEF903 /* OCDisplayLinkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDisplayLinkController.m; sourceTree = "<group>"; };
+		CE745BFC255419E500BEF903 /* OCMessagePassingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMessagePassingController.h; sourceTree = "<group>"; };
+		CE745BFD255419E500BEF903 /* OCMessagePassingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMessagePassingController.m; sourceTree = "<group>"; };
 		CE9082E024A9B4F600A471B9 /* CHomeworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkController.h; sourceTree = "<group>"; };
 		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
 		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
@@ -557,6 +560,8 @@
 		CE33623424EE753F00F24ADD /* MessagePassing */ = {
 			isa = PBXGroup;
 			children = (
+				CE745BFC255419E500BEF903 /* OCMessagePassingController.h */,
+				CE745BFD255419E500BEF903 /* OCMessagePassingController.m */,
 				CEC7A9CD24C05DC600A3D65B /* MessageForwarding */,
 			);
 			path = MessagePassing;
@@ -893,6 +898,13 @@
 			path = NSOperation;
 			sourceTree = "<group>";
 		};
+		CE745BF42554193700BEF903 /* isa */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = isa;
+			sourceTree = "<group>";
+		};
 		CE9C78F324BF03BF00071276 /* RetainCount */ = {
 			isa = PBXGroup;
 			children = (
@@ -1005,10 +1017,11 @@
 				CED1628B24C1917F003F50F1 /* OCRuntimeController.m */,
 				CED1628D24C19D2B003F50F1 /* OCRuntimeTestObject.h */,
 				CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */,
+				CE33623424EE753F00F24ADD /* MessagePassing */,
+				CE745BF42554193700BEF903 /* isa */,
 				CE745BEB2554127A00BEF903 /* KVC */,
 				CE745BEA2554127300BEF903 /* KVO */,
 				CED28E1F24B5D8FF00AD2D6E /* Categary */,
-				CE33623424EE753F00F24ADD /* MessagePassing */,
 				CE745BEC2554129600BEF903 /* JSPatch */,
 			);
 			path = Runtime;
@@ -1358,7 +1371,7 @@
 		CE316F552498D4A400AC495A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = Peace;
 				TargetAttributes = {
 					CE316F5C2498D4A400AC495A = {
@@ -1436,6 +1449,7 @@
 				CE6C172024B857CF0061EB32 /* OCLoadInitializeObject+Test3.m in Sources */,
 				CE6C171724B849BF0061EB32 /* OCLoadInitializeObject.m in Sources */,
 				CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */,
+				CE745BFE255419E500BEF903 /* OCMessagePassingController.m in Sources */,
 				CEF17DF124B2369C00218C27 /* CLibsController.m in Sources */,
 				CE6C172B24B85F6D0061EB32 /* OCInheritB.m in Sources */,
 				CEFDF92024B3391C003F53CC /* OCThreadController.m in Sources */,
@@ -1575,6 +1589,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1599,7 +1614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1633,6 +1648,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1651,7 +1667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
