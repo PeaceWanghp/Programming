@@ -10,7 +10,7 @@
 
 #import "OC_Test_NSTimer.h"
 #import "OC_Test_CADisplayLink.h"
-#import "OC_Test_GCDTimer.h"
+#import "OCGCDTimer.h"
 
 @interface OCTimerController ()
 {
@@ -18,7 +18,7 @@
     OC_Test_NSTimer *_weakTimer;
     OC_Test_NSTimer *_exactWeakTimer;
     OC_Test_CADisplayLink *_displayLink;
-    OC_Test_GCDTimer *_gcdTimer;
+    OCGCDTimer *_gcdTimer;
 }
 @end
 
@@ -34,7 +34,7 @@
     _weakTimer = [[OC_Test_NSTimer alloc] init];
     _exactWeakTimer = [[OC_Test_NSTimer alloc] init];
     _displayLink = [[OC_Test_CADisplayLink alloc] init];
-    _gcdTimer = [[OC_Test_GCDTimer alloc] init];
+    _gcdTimer = [[OCGCDTimer alloc] init];
     
     [self.model appendOpenedHeader:@"NSTimer（默认 Strong）"];
     [self.model appendDarkItemTitle:@"Start" target:_timer selector:@selector(startTimer)];
@@ -63,7 +63,6 @@
     [self.model appendOpenedHeader:@"GCD Timer"];
     [self.model appendDarkItemTitle:@"Start" target:_gcdTimer selector:@selector(startTimer)];
     [self.model appendDarkItemTitle:@"Stop" target:_gcdTimer selector:@selector(stopTimer)];
-    [self.model appendDarkItemTitle:@"After" target:_gcdTimer selector:@selector(after)];
     
     [self.model appendOpenedHeader:@"NSTimer与GCD_timer区别"];
 }

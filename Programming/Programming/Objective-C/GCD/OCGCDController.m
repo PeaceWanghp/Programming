@@ -15,6 +15,7 @@
 #import "OCGCDTimerController.h"
 #import "OCSyncAsyncController.h"
 #import "OCBarrierController.h"
+#import "OCGCDAfterController.h"
 
 @interface OCGCDController ()
 
@@ -33,7 +34,7 @@
     [self.model appendDarkItemWithTitle:@"group/notify" class:[OCGCDGroupController class]];
     [self.model appendDarkItemWithTitle:@"timer" class:[OCGCDTimerController class]];
     [self.model appendDarkItemWithTitle:@"barrier" class:[OCBarrierController class]];
-    [self.model appendDarkItemTitle:@"after" target:self selector:@selector(afterAction)];
+    [self.model appendDarkItemWithTitle:@"after" class:[OCGCDAfterController class]];
     [self.model appendItemTitle:@"apply" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"io"];
