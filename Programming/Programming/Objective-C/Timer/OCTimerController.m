@@ -9,7 +9,6 @@
 #import "OCTimerController.h"
 
 #import "OC_Test_NSTimer.h"
-#import "OC_Test_CADisplayLink.h"
 #import "OCGCDTimer.h"
 
 @interface OCTimerController ()
@@ -17,7 +16,6 @@
     OC_Test_NSTimer *_timer;
     OC_Test_NSTimer *_weakTimer;
     OC_Test_NSTimer *_exactWeakTimer;
-    OC_Test_CADisplayLink *_displayLink;
     OCGCDTimer *_gcdTimer;
 }
 @end
@@ -33,7 +31,6 @@
     _timer = [[OC_Test_NSTimer alloc] init];
     _weakTimer = [[OC_Test_NSTimer alloc] init];
     _exactWeakTimer = [[OC_Test_NSTimer alloc] init];
-    _displayLink = [[OC_Test_CADisplayLink alloc] init];
     _gcdTimer = [[OCGCDTimer alloc] init];
     
     [self.model appendOpenedHeader:@"NSTimer（默认 Strong）"];
@@ -55,10 +52,6 @@
     [self.model appendDarkItemTitle:@"Start" target:_exactWeakTimer selector:@selector(startExactTimer)];
     [self.model appendDarkItemTitle:@"Stop" target:_exactWeakTimer selector:@selector(invalidateTimer)];
     [self.model appendDarkItemTitle:@"Fire(手动触发)" target:_exactWeakTimer selector:@selector(fireTimer)];
-    
-    [self.model appendOpenedHeader:@"CADisplayLink"];
-    [self.model appendDarkItemTitle:@"Start" target:_displayLink selector:@selector(startLink)];
-    [self.model appendDarkItemTitle:@"Cancel" target:_displayLink selector:@selector(cancel)];
     
     [self.model appendOpenedHeader:@"GCD Timer"];
     [self.model appendDarkItemTitle:@"Start" target:_gcdTimer selector:@selector(startTimer)];

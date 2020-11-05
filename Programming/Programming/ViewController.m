@@ -36,7 +36,6 @@
 #import "OCBlockController.h"
 #import "OCGCDController.h"
 #import "OCPropertyController.h"
-#import "OCCategaryController.h"
 #import "OCExtensionController.h"
 #import "OCProtocolController.h"
 #import "OCTimerController.h"
@@ -102,7 +101,6 @@
     [self.model appendDarkItemWithTitle:@"Runtime（运行时）" class:[OCRuntimeController class]];
     [self.model appendDarkItemWithTitle:@"Runloop（运行循环）" class:[OCRunloopController class]];
     [self.model appendDarkItemWithTitle:@"Memory（内存管理）" class:[OCMemoryController class]];
-    [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
     [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Block (闭包/代码块)" class:[OCBlockController class]];
@@ -114,8 +112,6 @@
     [self.model appendDarkItemWithTitle:@"#import/#include/@class" class:[OCImportController class]];
     [self.model appendDarkItemWithTitle:@"const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"NSCache" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Container (容器)" class:[OCContainerController class]];
     [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
     

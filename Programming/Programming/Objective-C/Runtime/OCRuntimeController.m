@@ -12,6 +12,7 @@
 #import <objc/runtime.h>
 #import "OCMessageForwardingController.h"
 #import "OCJSPatchController.h"
+#import "OCCategaryController.h"
 
 @interface OCRuntimeController ()
 
@@ -35,11 +36,13 @@
     [self.model appendDarkItemTitle:@"SEL/IMP" target:self selector:@selector(getIsa)];
     
     [self.model appendOpenedHeader:@"实际应用："];
+    [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
     [self.model appendItemWithTitle:@"exchangeImplementations (方法交换)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"addMethod (添加方法)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"addProperty (添加属性) setAssociated/getAssociated" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"KVO" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"消息转发避免Crash" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Message passing(消息转发)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"NSCoding (自动归档、解档)" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"JSPatch" class:[OCJSPatchController class]];
 }
