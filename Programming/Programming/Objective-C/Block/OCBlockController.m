@@ -60,6 +60,10 @@
     [self.model appendDarkItemTitle:@"Action" target:self selector:@selector(returnValueAction)];
 }
 
+- (void)xxx:(BOOL(^)(NSString *))block {
+    
+}
+
 - (void)testBlock {
     int age = 1;
     void (^block1)(void) = ^{
@@ -73,6 +77,20 @@
     NSLog(@"%@/%@/%@",[block1 class],[block2 class],[^{
         NSLog(@"block3:%d",age);
     } class]);
+}
+
+- (void)searchFiles {
+    [self pathsWithEachSubpathsForPath:nil filterBlock:^BOOL(NSString *xx) {
+        return YES;
+    }];
+    NSLog(@"%@",[self pathsWithEachSubpathsForPath:@"root" filterBlock:^BOOL(NSString *path){
+        return NO;
+    }]);
+}
+
+- (NSArray *)pathsWithEachSubpathsForPath:(NSString *)path filterBlock:(BOOL(^)(NSString *))filter {
+    
+    return nil;
 }
 
 @end
