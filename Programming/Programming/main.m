@@ -15,6 +15,5 @@ int main(int argc, char * argv[]) {
         // Setup code that might create autoreleased objects goes here.
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
-    NSLog(@"Hello World!");
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }
