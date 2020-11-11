@@ -499,7 +499,6 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
-				CED55695255B72BE00C386C9 /* MessageForwarding */,
 				CED1628924C19156003F50F1 /* Runtime */,
 				CE34F1B2250A249000BF4BA3 /* Runloop */,
 				CE0165E524E6462B0055E302 /* Memory */,
@@ -1137,13 +1136,6 @@
 				CED55697255B731200C386C9 /* OCAddMethodController.m */,
 			);
 			path = AddMethod;
-			sourceTree = "<group>";
-		};
-		CED55695255B72BE00C386C9 /* MessageForwarding */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MessageForwarding;
 			sourceTree = "<group>";
 		};
 		CEDC037D24C58D5600E8734C /* MultiDelegate */ = {
