@@ -8,12 +8,20 @@
 
 #import "OCRuntimeController.h"
 
-#import "OCRuntimeTestObject.h"
 #import <objc/runtime.h>
-#import "OCMessageForwardingController.h"
-#import "OCJSPatchController.h"
-#import "OCCategaryController.h"
+
+#import "OCRuntimeTestObject.h"
+
 #import "OCMessagePassingController.h"
+#import "OCCategaryController.h"
+#import "OCMessageForwardingController.h"
+#import "OCSwizzleController.h"
+#import "OCAddPropertyController.h"
+#import "OCAddMethodController.h"
+
+#import "OCJSPatchController.h"
+#import "OCKVCController.h"
+#import "OCKVOController.h"
 
 @interface OCRuntimeController ()
 
@@ -26,20 +34,18 @@
     
     [self.model appendOpenedHeader:@"原理："];
     [self.model appendDarkItemTitle:@"Source Code(源码阅读)" target:self selector:@selector(getIsa)];
-    [self.model appendDarkItemWithTitle:@"Message Passing(消息传递机制)" class:[OCMessagePassingController class]];
     [self.model appendDarkItemTitle:@"isa" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"struct class" target:self selector:@selector(getIsa)];
     [self.model appendDarkItemTitle:@"ivar (属性列表)" target:self selector:@selector(getIsa)];
-    [self.model appendDarkItemTitle:@"SEL/IMP" target:self selector:@selector(getIsa)];
+    [self.model appendDarkItemWithTitle:@"Message Passing(消息传递机制)" class:[OCMessagePassingController class]];
     
-    [self.model appendOpenedHeader:@"应用实例："];
-    [self.model appendDarkItemWithTitle:@"Categray (分类)" class:[OCCategaryController class]];
-    [self.model appendItemWithTitle:@"exchangeImplementations (方法交换)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"addMethod (添加方法)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"addProperty (添加属性) setAssociated/getAssociated" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Message passing(消息转发)" class:[UIViewController class]];
+    [self.model appendOpenedHeader:@"Example/应用实例："];
+    [self.model appendItemWithTitle:@"Swizzle" class:[OCSwizzleController class]];
+    [self.model appendDarkItemWithTitle:@"Categray" class:[OCCategaryController class]];
+    [self.model appendItemWithTitle:@"addMethod (添加方法)" class:[OCAddMethodController class]];
+    [self.model appendItemWithTitle:@"addProperty (添加属性)" class:[OCAddPropertyController class]];
+    [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[OCKVCController class]];
+    [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[OCKVOController class]];
     [self.model appendItemWithTitle:@"NSCoding (自动归档、解档)" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"JSPatch" class:[OCJSPatchController class]];
 }

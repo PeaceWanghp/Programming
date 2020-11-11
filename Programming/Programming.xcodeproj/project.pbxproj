@@ -102,6 +102,11 @@
 		CED28E1E24B5D1EC00AD2D6E /* OCKeywordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1D24B5D1EC00AD2D6E /* OCKeywordsController.m */; };
 		CED28E2224B5D91B00AD2D6E /* OCCategaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2124B5D91B00AD2D6E /* OCCategaryController.m */; };
 		CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2624B5E95100AD2D6E /* UIView+Frame.m */; };
+		CED5568E255B685000C386C9 /* OCSwizzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5568D255B685000C386C9 /* OCSwizzleController.m */; };
+		CED55693255B701B00C386C9 /* OCAddPropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED55692255B701B00C386C9 /* OCAddPropertyController.m */; };
+		CED55698255B731200C386C9 /* OCAddMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED55697255B731200C386C9 /* OCAddMethodController.m */; };
+		CED5569C255B734600C386C9 /* OCKVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5569B255B734600C386C9 /* OCKVCController.m */; };
+		CED556A0255B737800C386C9 /* OCKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5569F255B737800C386C9 /* OCKVOController.m */; };
 		CEDC038024C58DFB00E8734C /* OCMultiDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC037F24C58DFB00E8734C /* OCMultiDelegateController.m */; };
 		CEDC038324C58E7000E8734C /* OCMultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038224C58E7000E8734C /* OCMultiDelegate.m */; };
 		CEDC038624C5928500E8734C /* OCMDView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038524C5928500E8734C /* OCMDView.m */; };
@@ -336,6 +341,16 @@
 		CED28E2124B5D91B00AD2D6E /* OCCategaryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCategaryController.m; sourceTree = "<group>"; };
 		CED28E2324B5E95100AD2D6E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		CED28E2624B5E95100AD2D6E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		CED5568C255B685000C386C9 /* OCSwizzleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSwizzleController.h; sourceTree = "<group>"; };
+		CED5568D255B685000C386C9 /* OCSwizzleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCSwizzleController.m; sourceTree = "<group>"; };
+		CED55691255B701B00C386C9 /* OCAddPropertyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAddPropertyController.h; sourceTree = "<group>"; };
+		CED55692255B701B00C386C9 /* OCAddPropertyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCAddPropertyController.m; sourceTree = "<group>"; };
+		CED55696255B731200C386C9 /* OCAddMethodController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAddMethodController.h; sourceTree = "<group>"; };
+		CED55697255B731200C386C9 /* OCAddMethodController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCAddMethodController.m; sourceTree = "<group>"; };
+		CED5569A255B734600C386C9 /* OCKVCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCKVCController.h; sourceTree = "<group>"; };
+		CED5569B255B734600C386C9 /* OCKVCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCKVCController.m; sourceTree = "<group>"; };
+		CED5569E255B737800C386C9 /* OCKVOController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCKVOController.h; sourceTree = "<group>"; };
+		CED5569F255B737800C386C9 /* OCKVOController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCKVOController.m; sourceTree = "<group>"; };
 		CEDC037E24C58DFB00E8734C /* OCMultiDelegateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMultiDelegateController.h; sourceTree = "<group>"; };
 		CEDC037F24C58DFB00E8734C /* OCMultiDelegateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMultiDelegateController.m; sourceTree = "<group>"; };
 		CEDC038124C58E7000E8734C /* OCMultiDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMultiDelegate.h; sourceTree = "<group>"; };
@@ -484,6 +499,7 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				CED55695255B72BE00C386C9 /* MessageForwarding */,
 				CED1628924C19156003F50F1 /* Runtime */,
 				CE34F1B2250A249000BF4BA3 /* Runloop */,
 				CE0165E524E6462B0055E302 /* Memory */,
@@ -496,10 +512,10 @@
 				CE6C170524B848190061EB32 /* LoadInitialize */,
 				CEFDF90A24B324C6003F53CC /* Timer */,
 				CE6C172C24B87AA20061EB32 /* Import */,
-				CE5DCE4624FFA6CE0015D96E /* Container */,
 				CEE35E7C24BC655600E8E006 /* Pointer */,
 				CEE35E7B24BC522200E8E006 /* Keywords */,
 				CE6CE3412519BC680089A1DA /* Cache */,
+				CE5DCE4624FFA6CE0015D96E /* Container */,
 			);
 			path = "Objective-C";
 			sourceTree = "<group>";
@@ -860,6 +876,8 @@
 		CE745BEA2554127300BEF903 /* KVO */ = {
 			isa = PBXGroup;
 			children = (
+				CED5569E255B737800C386C9 /* OCKVOController.h */,
+				CED5569F255B737800C386C9 /* OCKVOController.m */,
 			);
 			path = KVO;
 			sourceTree = "<group>";
@@ -867,6 +885,8 @@
 		CE745BEB2554127A00BEF903 /* KVC */ = {
 			isa = PBXGroup;
 			children = (
+				CED5569A255B734600C386C9 /* OCKVCController.h */,
+				CED5569B255B734600C386C9 /* OCKVCController.m */,
 			);
 			path = KVC;
 			sourceTree = "<group>";
@@ -1017,6 +1037,9 @@
 				CED1628B24C1917F003F50F1 /* OCRuntimeController.m */,
 				CED1628D24C19D2B003F50F1 /* OCRuntimeTestObject.h */,
 				CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */,
+				CED5568A255B680C00C386C9 /* AddProperty */,
+				CED5568B255B681A00C386C9 /* AddMethod */,
+				CED55689255B626800C386C9 /* Swizzle */,
 				CE33623424EE753F00F24ADD /* MessagePassing */,
 				CE745BF42554193700BEF903 /* isa */,
 				CE745BEB2554127A00BEF903 /* KVC */,
@@ -1087,6 +1110,40 @@
 				CED28E2624B5E95100AD2D6E /* UIView+Frame.m */,
 			);
 			path = Categary;
+			sourceTree = "<group>";
+		};
+		CED55689255B626800C386C9 /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				CED5568C255B685000C386C9 /* OCSwizzleController.h */,
+				CED5568D255B685000C386C9 /* OCSwizzleController.m */,
+			);
+			path = Swizzle;
+			sourceTree = "<group>";
+		};
+		CED5568A255B680C00C386C9 /* AddProperty */ = {
+			isa = PBXGroup;
+			children = (
+				CED55691255B701B00C386C9 /* OCAddPropertyController.h */,
+				CED55692255B701B00C386C9 /* OCAddPropertyController.m */,
+			);
+			path = AddProperty;
+			sourceTree = "<group>";
+		};
+		CED5568B255B681A00C386C9 /* AddMethod */ = {
+			isa = PBXGroup;
+			children = (
+				CED55696255B731200C386C9 /* OCAddMethodController.h */,
+				CED55697255B731200C386C9 /* OCAddMethodController.m */,
+			);
+			path = AddMethod;
+			sourceTree = "<group>";
+		};
+		CED55695255B72BE00C386C9 /* MessageForwarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MessageForwarding;
 			sourceTree = "<group>";
 		};
 		CEDC037D24C58D5600E8734C /* MultiDelegate */ = {
@@ -1427,6 +1484,7 @@
 				CEBE167624B464D200301698 /* OCLocksController.m in Sources */,
 				CE6C171424B848A30061EB32 /* OCLoadInitializeController.m in Sources */,
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,
+				CED5568E255B685000C386C9 /* OCSwizzleController.m in Sources */,
 				CE5E5614251B3BF70086D42A /* OCGCDQueueController.m in Sources */,
 				CEFAFFE724C83B280063A564 /* CUBigSizeButton.m in Sources */,
 				CEDC038624C5928500E8734C /* OCMDView.m in Sources */,
@@ -1443,6 +1501,7 @@
 				CEEAD9EB252312A8007E491C /* QiCallStack.m in Sources */,
 				CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */,
 				CE6C172F24B87AC90061EB32 /* OCImportController.m in Sources */,
+				CED5569C255B734600C386C9 /* OCKVCController.m in Sources */,
 				CEEAD9D925218602007E491C /* HPDelayMonitor.m in Sources */,
 				CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */,
 				CE5DCE4024FD02CD0015D96E /* OCPSetterGetterObject.m in Sources */,
@@ -1475,6 +1534,7 @@
 				CEFDF91824B324C6003F53CC /* NSWeakTimer.m in Sources */,
 				CEFAFFE124C808010063A564 /* OCPropertyObject.m in Sources */,
 				CEFDF92624B33A86003F53CC /* OCOperation.m in Sources */,
+				CED55698255B731200C386C9 /* OCAddMethodController.m in Sources */,
 				CE9C78FF24BF150D00071276 /* OCARCObject.m in Sources */,
 				CE4A514024CED9D400198DCA /* CTypeInteger.c in Sources */,
 				CEEAD9E22521966B007E491C /* testAutoreleaseObject.m in Sources */,
@@ -1488,6 +1548,7 @@
 				CEC7A9D024C05DE900A3D65B /* OCMessageForwardingController.m in Sources */,
 				CE34F1B5250A24DB00BF4BA3 /* OCRunloopController.m in Sources */,
 				CEFDF91524B324C6003F53CC /* OC_Test_CADisplayLink.m in Sources */,
+				CED556A0255B737800C386C9 /* OCKVOController.m in Sources */,
 				CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */,
 				CEDC038924C5929400E8734C /* OCMDObject.m in Sources */,
 				CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */,
@@ -1531,6 +1592,7 @@
 				CEF17DEA24B2338600218C27 /* CFunction.c in Sources */,
 				CE9C790224BF152200071276 /* OCMRCObject.m in Sources */,
 				CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */,
+				CED55693255B701B00C386C9 /* OCAddPropertyController.m in Sources */,
 				CE56F5B4249B6F4300BA9B02 /* BPresentHeaderView.m in Sources */,
 				CEB396A124AC8D7300F5915E /* CUHitTestView.m in Sources */,
 				CEA6E35F25021CC700D2880D /* CUViewController.m in Sources */,
