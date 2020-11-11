@@ -16,5 +16,6 @@ int main(int argc, char * argv[]) {
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
     NSLog(@"Test 1");
+    NSLog(@"Test 2");
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }
