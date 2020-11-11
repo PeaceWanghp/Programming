@@ -17,6 +17,5 @@ int main(int argc, char * argv[]) {
     }
     NSLog(@"Hello World!");
     NSLog(@"Hello World2!");
-    NSLog(@"Hello World3!");
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
 }
