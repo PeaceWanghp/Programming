@@ -7,7 +7,6 @@
 //
 
 #import "OC_CrashController.h"
-#import "OC_CrashController+EXC_BAD_ACCESS.h"
 
 @interface OC_CrashController ()
 {
@@ -73,7 +72,7 @@
 #pragma mark -
 #pragma mark -- BadAccess
 - (void)testBadAccess {
-    [self badAccess];
+    
 }
 
 @end

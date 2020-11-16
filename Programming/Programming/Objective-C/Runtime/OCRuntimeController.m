@@ -40,10 +40,10 @@
     [self.model appendDarkItemWithTitle:@"Message Passing(消息传递机制)" class:[OCMessagePassingController class]];
     
     [self.model appendOpenedHeader:@"Example/应用实例："];
+    [self.model appendDarkItemWithTitle:@"addProperty (添加属性)" class:[OCAddPropertyController class]];
+    [self.model appendItemWithTitle:@"addMethod (添加方法)" class:[OCAddMethodController class]];
     [self.model appendItemWithTitle:@"Swizzle" class:[OCSwizzleController class]];
     [self.model appendDarkItemWithTitle:@"Categray" class:[OCCategaryController class]];
-    [self.model appendItemWithTitle:@"addMethod (添加方法)" class:[OCAddMethodController class]];
-    [self.model appendItemWithTitle:@"addProperty (添加属性)" class:[OCAddPropertyController class]];
     [self.model appendItemWithTitle:@"KVC (Key-Value Coding)" class:[OCKVCController class]];
     [self.model appendItemWithTitle:@"KVO (Key-Value Observer)" class:[OCKVOController class]];
     [self.model appendItemWithTitle:@"NSCoding (自动归档、解档)" class:[UIViewController class]];

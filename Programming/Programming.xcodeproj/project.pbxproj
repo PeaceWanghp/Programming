@@ -59,6 +59,7 @@
 		CE745BDD2554023300BEF903 /* OCGCDApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BDC2554023300BEF903 /* OCGCDApplyController.m */; };
 		CE745BE725540FD900BEF903 /* OCDisplayLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BE625540FD900BEF903 /* OCDisplayLinkController.m */; };
 		CE745BFE255419E500BEF903 /* OCMessagePassingController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BFD255419E500BEF903 /* OCMessagePassingController.m */; };
+		CE8896BD25602A30004881BE /* NSObject+Weak.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896BC25602A30004881BE /* NSObject+Weak.m */; };
 		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
 		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
 		CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE927381251C2366002C27B5 /* BPWebViewController.m */; };
@@ -96,9 +97,7 @@
 		CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0A24B5B43000AD2D6E /* OCPointerController.m */; };
 		CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */; };
 		CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0F24B5BDB700AD2D6E /* OC_CrashController.m */; };
-		CED28E1924B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1024B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m */; };
 		CED28E1A24B5BDB700AD2D6E /* OC_CrashController+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1124B5BDB700AD2D6E /* OC_CrashController+Operation.m */; };
-		CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1224B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m */; };
 		CED28E1E24B5D1EC00AD2D6E /* OCKeywordsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E1D24B5D1EC00AD2D6E /* OCKeywordsController.m */; };
 		CED28E2224B5D91B00AD2D6E /* OCCategaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2124B5D91B00AD2D6E /* OCCategaryController.m */; };
 		CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E2624B5E95100AD2D6E /* UIView+Frame.m */; };
@@ -255,6 +254,8 @@
 		CE745BE625540FD900BEF903 /* OCDisplayLinkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDisplayLinkController.m; sourceTree = "<group>"; };
 		CE745BFC255419E500BEF903 /* OCMessagePassingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMessagePassingController.h; sourceTree = "<group>"; };
 		CE745BFD255419E500BEF903 /* OCMessagePassingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMessagePassingController.m; sourceTree = "<group>"; };
+		CE8896BB25602A30004881BE /* NSObject+Weak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Weak.h"; sourceTree = "<group>"; };
+		CE8896BC25602A30004881BE /* NSObject+Weak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Weak.m"; sourceTree = "<group>"; };
 		CE9082E024A9B4F600A471B9 /* CHomeworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkController.h; sourceTree = "<group>"; };
 		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
 		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
@@ -325,15 +326,11 @@
 		CED1629924C40B5B003F50F1 /* Exam.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Exam.c; sourceTree = "<group>"; };
 		CED28E0924B5B43000AD2D6E /* OCPointerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPointerController.h; sourceTree = "<group>"; };
 		CED28E0A24B5B43000AD2D6E /* OCPointerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPointerController.m; sourceTree = "<group>"; };
-		CED28E0D24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+EXC_BAD_INSTRUCTION.h"; sourceTree = "<group>"; };
 		CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_CrashController+Unrecognized.m"; sourceTree = "<group>"; };
 		CED28E0F24B5BDB700AD2D6E /* OC_CrashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OC_CrashController.m; sourceTree = "<group>"; };
-		CED28E1024B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_CrashController+EXC_BAD_ACCESS.m"; sourceTree = "<group>"; };
 		CED28E1124B5BDB700AD2D6E /* OC_CrashController+Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_CrashController+Operation.m"; sourceTree = "<group>"; };
-		CED28E1224B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_CrashController+EXC_BAD_INSTRUCTION.m"; sourceTree = "<group>"; };
 		CED28E1324B5BDB700AD2D6E /* OC_CrashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OC_CrashController.h; sourceTree = "<group>"; };
 		CED28E1424B5BDB700AD2D6E /* OC_CrashController+Unrecognized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+Unrecognized.h"; sourceTree = "<group>"; };
-		CED28E1524B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+EXC_BAD_ACCESS.h"; sourceTree = "<group>"; };
 		CED28E1624B5BDB700AD2D6E /* OC_CrashController+Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC_CrashController+Operation.h"; sourceTree = "<group>"; };
 		CED28E1C24B5D1EC00AD2D6E /* OCKeywordsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCKeywordsController.h; sourceTree = "<group>"; };
 		CED28E1D24B5D1EC00AD2D6E /* OCKeywordsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCKeywordsController.m; sourceTree = "<group>"; };
@@ -1090,10 +1087,6 @@
 				CED28E0F24B5BDB700AD2D6E /* OC_CrashController.m */,
 				CED28E1424B5BDB700AD2D6E /* OC_CrashController+Unrecognized.h */,
 				CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */,
-				CED28E0D24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.h */,
-				CED28E1224B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m */,
-				CED28E1524B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.h */,
-				CED28E1024B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m */,
 				CED28E1624B5BDB700AD2D6E /* OC_CrashController+Operation.h */,
 				CED28E1124B5BDB700AD2D6E /* OC_CrashController+Operation.m */,
 			);
@@ -1125,6 +1118,8 @@
 			children = (
 				CED55691255B701B00C386C9 /* OCAddPropertyController.h */,
 				CED55692255B701B00C386C9 /* OCAddPropertyController.m */,
+				CE8896BB25602A30004881BE /* NSObject+Weak.h */,
+				CE8896BC25602A30004881BE /* NSObject+Weak.m */,
 			);
 			path = AddProperty;
 			sourceTree = "<group>";
@@ -1476,6 +1471,7 @@
 				CEBE167624B464D200301698 /* OCLocksController.m in Sources */,
 				CE6C171424B848A30061EB32 /* OCLoadInitializeController.m in Sources */,
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,
+				CE8896BD25602A30004881BE /* NSObject+Weak.m in Sources */,
 				CED5568E255B685000C386C9 /* OCSwizzleController.m in Sources */,
 				CE5E5614251B3BF70086D42A /* OCGCDQueueController.m in Sources */,
 				CEFAFFE724C83B280063A564 /* CUBigSizeButton.m in Sources */,
@@ -1550,7 +1546,6 @@
 				CE6C171A24B84A440061EB32 /* OCLoadInitializeObject+Test.m in Sources */,
 				CE6C171D24B857B60061EB32 /* OCLoadInitializeObject+Test2.m in Sources */,
 				CEB0453624D4127F0045BAA8 /* ALGTreeController+Traversal.m in Sources */,
-				CED28E1B24B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_INSTRUCTION.m in Sources */,
 				CE745BCF2553FD9400BEF903 /* OCGCDTimer.m in Sources */,
 				CEEAD9F825243CBF007E491C /* OCGCDTimerController.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
@@ -1560,7 +1555,6 @@
 				CE6EE49324B71731008735BC /* OCTestExtension.m in Sources */,
 				CE745BE725540FD900BEF903 /* OCDisplayLinkController.m in Sources */,
 				CEE8FDB724BDB73F005153AA /* OCCopyObject.m in Sources */,
-				CED28E1924B5BDB700AD2D6E /* OC_CrashController+EXC_BAD_ACCESS.m in Sources */,
 				CE745BD52553FF4B00BEF903 /* OCGCDAfterController.m in Sources */,
 				CED28E1A24B5BDB700AD2D6E /* OC_CrashController+Operation.m in Sources */,
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,
