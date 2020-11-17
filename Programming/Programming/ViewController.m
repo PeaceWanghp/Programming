@@ -138,7 +138,6 @@
     [self.model appendItemWithTitle:@"重签名" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"沙盒机制" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Playground" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Launch Speed (启动速度优化)" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"耗电量优化" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"网络io优化" class:[UIViewController class]];
