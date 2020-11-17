@@ -73,8 +73,6 @@
 		CE9C790224BF152200071276 /* OCMRCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C790124BF152200071276 /* OCMRCObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE9C790624BF169300071276 /* iOSMemoryLeakController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C790524BF169300071276 /* iOSMemoryLeakController.m */; };
 		CEA6E35F25021CC700D2880D /* CUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6E35E25021CC700D2880D /* CUViewController.m */; };
-		CEB0453324D412570045BAA8 /* ALGTreeController+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453224D412570045BAA8 /* ALGTreeController+Search.m */; };
-		CEB0453624D4127F0045BAA8 /* ALGTreeController+Traversal.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453524D4127F0045BAA8 /* ALGTreeController+Traversal.m */; };
 		CEB0453924D4164B0045BAA8 /* ALGLinkController+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453824D4164B0045BAA8 /* ALGLinkController+Reverse.m */; };
 		CEB0453C24D4166F0045BAA8 /* ALGLinkController+Loop.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453B24D4166F0045BAA8 /* ALGLinkController+Loop.m */; };
 		CEB0453F24D4167F0045BAA8 /* ALGLinkController+SameOne.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0453E24D4167F0045BAA8 /* ALGLinkController+SameOne.m */; };
@@ -116,7 +114,6 @@
 		CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038C24C6AD8C00E8734C /* OCBlockController.m */; };
 		CEDC039324C6C43300E8734C /* AlgorithmsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC039224C6C43300E8734C /* AlgorithmsController.m */; };
 		CEDC03A824C6C5C000E8734C /* ALGLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03A724C6C5C000E8734C /* ALGLinkController.m */; };
-		CEDC03AB24C6C5D700E8734C /* ALGTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03AA24C6C5D700E8734C /* ALGTreeController.m */; };
 		CEDC03B724C6C63400E8734C /* ALGOtherController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B624C6C63400E8734C /* ALGOtherController.m */; };
 		CEE306D624CD778700A70DBA /* CBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE306D524CD778700A70DBA /* CBasicController.m */; };
 		CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */; };
@@ -285,10 +282,6 @@
 		CE9C790524BF169300071276 /* iOSMemoryLeakController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMemoryLeakController.m; sourceTree = "<group>"; };
 		CEA6E35D25021CC700D2880D /* CUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUViewController.h; sourceTree = "<group>"; };
 		CEA6E35E25021CC700D2880D /* CUViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUViewController.m; sourceTree = "<group>"; };
-		CEB0453124D412570045BAA8 /* ALGTreeController+Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGTreeController+Search.h"; sourceTree = "<group>"; };
-		CEB0453224D412570045BAA8 /* ALGTreeController+Search.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ALGTreeController+Search.m"; sourceTree = "<group>"; };
-		CEB0453424D4127F0045BAA8 /* ALGTreeController+Traversal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGTreeController+Traversal.h"; sourceTree = "<group>"; };
-		CEB0453524D4127F0045BAA8 /* ALGTreeController+Traversal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ALGTreeController+Traversal.m"; sourceTree = "<group>"; };
 		CEB0453724D4164B0045BAA8 /* ALGLinkController+Reverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGLinkController+Reverse.h"; sourceTree = "<group>"; };
 		CEB0453824D4164B0045BAA8 /* ALGLinkController+Reverse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ALGLinkController+Reverse.m"; sourceTree = "<group>"; };
 		CEB0453A24D4166F0045BAA8 /* ALGLinkController+Loop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALGLinkController+Loop.h"; sourceTree = "<group>"; };
@@ -371,8 +364,6 @@
 		CEDC039224C6C43300E8734C /* AlgorithmsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmsController.m; sourceTree = "<group>"; };
 		CEDC03A624C6C5C000E8734C /* ALGLinkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGLinkController.h; sourceTree = "<group>"; };
 		CEDC03A724C6C5C000E8734C /* ALGLinkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGLinkController.m; sourceTree = "<group>"; };
-		CEDC03A924C6C5D700E8734C /* ALGTreeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGTreeController.h; sourceTree = "<group>"; };
-		CEDC03AA24C6C5D700E8734C /* ALGTreeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGTreeController.m; sourceTree = "<group>"; };
 		CEDC03B524C6C63400E8734C /* ALGOtherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGOtherController.h; sourceTree = "<group>"; };
 		CEDC03B624C6C63400E8734C /* ALGOtherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGOtherController.m; sourceTree = "<group>"; };
 		CEE306D424CD778700A70DBA /* CBasicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBasicController.h; sourceTree = "<group>"; };
@@ -570,7 +561,6 @@
 			isa = PBXGroup;
 			children = (
 				CEDC039C24C6C50100E8734C /* Other */,
-				CEDC039824C6C4DE00E8734C /* Tree */,
 				CEDC039724C6C4D400E8734C /* Link */,
 				CEDC039124C6C43300E8734C /* AlgorithmsController.h */,
 				CEDC039224C6C43300E8734C /* AlgorithmsController.m */,
@@ -1205,19 +1195,6 @@
 			path = Link;
 			sourceTree = "<group>";
 		};
-		CEDC039824C6C4DE00E8734C /* Tree */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC03A924C6C5D700E8734C /* ALGTreeController.h */,
-				CEDC03AA24C6C5D700E8734C /* ALGTreeController.m */,
-				CEB0453124D412570045BAA8 /* ALGTreeController+Search.h */,
-				CEB0453224D412570045BAA8 /* ALGTreeController+Search.m */,
-				CEB0453424D4127F0045BAA8 /* ALGTreeController+Traversal.h */,
-				CEB0453524D4127F0045BAA8 /* ALGTreeController+Traversal.m */,
-			);
-			path = Tree;
-			sourceTree = "<group>";
-		};
 		CEDC039C24C6C50100E8734C /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -1497,7 +1474,6 @@
 				CEDC03B724C6C63400E8734C /* ALGOtherController.m in Sources */,
 				CEFDF91C24B328F1003F53CC /* OCTimerController.m in Sources */,
 				CEE306D624CD778700A70DBA /* CBasicController.m in Sources */,
-				CEB0453324D412570045BAA8 /* ALGTreeController+Search.m in Sources */,
 				CE5DCE4924FFA7670015D96E /* OCContainerController.m in Sources */,
 				CE8896CB256379EF004881BE /* OCSwizzleObject+One.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
@@ -1523,7 +1499,6 @@
 				CE9C78F624BF046200071276 /* OCRetainCountController.m in Sources */,
 				CE415E1B2511AB8600FB386D /* OCBlockObject.m in Sources */,
 				CEDC039324C6C43300E8734C /* AlgorithmsController.m in Sources */,
-				CEDC03AB24C6C5D700E8734C /* ALGTreeController.m in Sources */,
 				CE0165E824E646870055E302 /* OCMemoryController.m in Sources */,
 				CE6EE49B24B72978008735BC /* OCTestProtocol.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
@@ -1564,7 +1539,6 @@
 				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
 				CE6C171A24B84A440061EB32 /* OCLoadInitializeObject+Test.m in Sources */,
 				CE6C171D24B857B60061EB32 /* OCLoadInitializeObject+Test2.m in Sources */,
-				CEB0453624D4127F0045BAA8 /* ALGTreeController+Traversal.m in Sources */,
 				CE745BCF2553FD9400BEF903 /* OCGCDTimer.m in Sources */,
 				CEEAD9F825243CBF007E491C /* OCGCDTimerController.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,

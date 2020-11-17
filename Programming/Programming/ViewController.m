@@ -49,7 +49,6 @@
 #import "AlgorithmsController.h"
 #import "ALGOtherController.h"
 #import "ALGLinkController.h"
-#import "ALGTreeController.h"
 
 @interface ViewController ()
 
@@ -66,7 +65,6 @@
     [self.model appendHeader:@"Algorithms(算法)"];
     [self.model appendDarkItemWithTitle:@"理论" class:[AlgorithmsController class]];
     [self.model appendDarkItemWithTitle:@"Link(链表)" class:[ALGLinkController class]];
-    [self.model appendDarkItemWithTitle:@"Tree(树)" class:[ALGTreeController class]];
     [self.model appendDarkItemWithTitle:@"* Other(其他)" class:[ALGOtherController class]];
     
     [self.model appendHeader:@"Internet(网络)"];
