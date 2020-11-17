@@ -61,6 +61,9 @@
 		CE745BFE255419E500BEF903 /* OCMessagePassingController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BFD255419E500BEF903 /* OCMessagePassingController.m */; };
 		CE8896BD25602A30004881BE /* NSObject+Weak.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896BC25602A30004881BE /* NSObject+Weak.m */; };
 		CE8896C22563619F004881BE /* OCCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896C12563619F004881BE /* OCCategoryController.m */; };
+		CE8896C725636539004881BE /* OCSwizzleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896C625636539004881BE /* OCSwizzleObject.m */; };
+		CE8896CB256379EF004881BE /* OCSwizzleObject+One.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896CA256379EF004881BE /* OCSwizzleObject+One.m */; };
+		CE8896CF25637A02004881BE /* OCSwizzleObject+Two.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896CE25637A02004881BE /* OCSwizzleObject+Two.m */; };
 		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
 		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
 		CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE927381251C2366002C27B5 /* BPWebViewController.m */; };
@@ -258,6 +261,12 @@
 		CE8896BC25602A30004881BE /* NSObject+Weak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Weak.m"; sourceTree = "<group>"; };
 		CE8896C02563619F004881BE /* OCCategoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCategoryController.h; sourceTree = "<group>"; };
 		CE8896C12563619F004881BE /* OCCategoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCCategoryController.m; sourceTree = "<group>"; };
+		CE8896C525636539004881BE /* OCSwizzleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSwizzleObject.h; sourceTree = "<group>"; };
+		CE8896C625636539004881BE /* OCSwizzleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCSwizzleObject.m; sourceTree = "<group>"; };
+		CE8896C9256379EF004881BE /* OCSwizzleObject+One.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCSwizzleObject+One.h"; sourceTree = "<group>"; };
+		CE8896CA256379EF004881BE /* OCSwizzleObject+One.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCSwizzleObject+One.m"; sourceTree = "<group>"; };
+		CE8896CD25637A02004881BE /* OCSwizzleObject+Two.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCSwizzleObject+Two.h"; sourceTree = "<group>"; };
+		CE8896CE25637A02004881BE /* OCSwizzleObject+Two.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCSwizzleObject+Two.m"; sourceTree = "<group>"; };
 		CE9082E024A9B4F600A471B9 /* CHomeworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkController.h; sourceTree = "<group>"; };
 		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
 		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
@@ -1109,6 +1118,12 @@
 			children = (
 				CED5568C255B685000C386C9 /* OCSwizzleController.h */,
 				CED5568D255B685000C386C9 /* OCSwizzleController.m */,
+				CE8896C525636539004881BE /* OCSwizzleObject.h */,
+				CE8896C625636539004881BE /* OCSwizzleObject.m */,
+				CE8896C9256379EF004881BE /* OCSwizzleObject+One.h */,
+				CE8896CA256379EF004881BE /* OCSwizzleObject+One.m */,
+				CE8896CD25637A02004881BE /* OCSwizzleObject+Two.h */,
+				CE8896CE25637A02004881BE /* OCSwizzleObject+Two.m */,
 			);
 			path = Swizzle;
 			sourceTree = "<group>";
@@ -1461,6 +1476,7 @@
 				CED28E1E24B5D1EC00AD2D6E /* OCKeywordsController.m in Sources */,
 				CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */,
 				CEF17DE724B232AD00218C27 /* CPointer.c in Sources */,
+				CE8896C725636539004881BE /* OCSwizzleObject.m in Sources */,
 				CE745BC62552E35700BEF903 /* OCSyncAsyncController.m in Sources */,
 				CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */,
 				CE34F1B9250DC95700BF4BA3 /* COperatorController.m in Sources */,
@@ -1483,6 +1499,7 @@
 				CEE306D624CD778700A70DBA /* CBasicController.m in Sources */,
 				CEB0453324D412570045BAA8 /* ALGTreeController+Search.m in Sources */,
 				CE5DCE4924FFA7670015D96E /* OCContainerController.m in Sources */,
+				CE8896CB256379EF004881BE /* OCSwizzleObject+One.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
 				CEB0454524D416C40045BAA8 /* ALGLinkController+Merge.m in Sources */,
 				CEEAD9DD25218E60007E491C /* iOSMonitorController.m in Sources */,
@@ -1521,6 +1538,7 @@
 				CED1629624C3FC65003F50F1 /* CExamController.m in Sources */,
 				CEB0453C24D4166F0045BAA8 /* ALGLinkController+Loop.m in Sources */,
 				CEFDF91824B324C6003F53CC /* NSWeakTimer.m in Sources */,
+				CE8896CF25637A02004881BE /* OCSwizzleObject+Two.m in Sources */,
 				CEFAFFE124C808010063A564 /* OCPropertyObject.m in Sources */,
 				CEFDF92624B33A86003F53CC /* OCOperation.m in Sources */,
 				CED55698255B731200C386C9 /* OCAddMethodController.m in Sources */,
