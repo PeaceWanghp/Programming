@@ -20,7 +20,8 @@
     
     [self.model appendItemTitle:@"msgsend()" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"缓存查找" target:self selector:@selector(todo)];
-    [self.model appendItemTitle:@"实力方法列表查找" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"Category方法列表查找" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"本类方法列表查找" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"父类方法列表查找" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"动态解析" target:self selector:@selector(todo)];
     [self.model appendDarkItemWithTitle:@"MessageForwarding(消息转发)" class:[OCMessageForwardingController class]];

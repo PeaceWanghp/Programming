@@ -1,20 +1,20 @@
 //
-//  OCCategaryController.m
+//  OCCategoryController.m
 //  Programming
 //
-//  Created by Peace on 7/8/20.
+//  Created by Peace on 11/17/20.
 //  Copyright © 2020 Peace. All rights reserved.
 //
 
-#import "OCCategaryController.h"
+#import "OCCategoryController.h"
 
 #import "UIView+Frame.h"
 
-@interface OCCategaryController ()
+@interface OCCategoryController ()
 
 @end
 
-@implementation OCCategaryController
+@implementation OCCategoryController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

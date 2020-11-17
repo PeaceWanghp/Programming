@@ -1,8 +1,8 @@
 //
-//  OCCategaryController.h
+//  OCCategoryController.h
 //  Programming
 //
-//  Created by Peace on 7/8/20.
+//  Created by Peace on 11/17/20.
 //  Copyright © 2020 Peace. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCCategaryController : BPresentController
+@interface OCCategoryController : BPresentController
 
 @end
 
