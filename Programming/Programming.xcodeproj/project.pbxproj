@@ -114,7 +114,6 @@
 		CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038C24C6AD8C00E8734C /* OCBlockController.m */; };
 		CEDC039324C6C43300E8734C /* AlgorithmsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC039224C6C43300E8734C /* AlgorithmsController.m */; };
 		CEDC03A824C6C5C000E8734C /* ALGLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03A724C6C5C000E8734C /* ALGLinkController.m */; };
-		CEDC03B724C6C63400E8734C /* ALGOtherController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03B624C6C63400E8734C /* ALGOtherController.m */; };
 		CEE306D624CD778700A70DBA /* CBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE306D524CD778700A70DBA /* CBasicController.m */; };
 		CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */; };
 		CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB024BD9F97005153AA /* OCCopyController.m */; };
@@ -364,8 +363,6 @@
 		CEDC039224C6C43300E8734C /* AlgorithmsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmsController.m; sourceTree = "<group>"; };
 		CEDC03A624C6C5C000E8734C /* ALGLinkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGLinkController.h; sourceTree = "<group>"; };
 		CEDC03A724C6C5C000E8734C /* ALGLinkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGLinkController.m; sourceTree = "<group>"; };
-		CEDC03B524C6C63400E8734C /* ALGOtherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGOtherController.h; sourceTree = "<group>"; };
-		CEDC03B624C6C63400E8734C /* ALGOtherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGOtherController.m; sourceTree = "<group>"; };
 		CEE306D424CD778700A70DBA /* CBasicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBasicController.h; sourceTree = "<group>"; };
 		CEE306D524CD778700A70DBA /* CBasicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBasicController.m; sourceTree = "<group>"; };
 		CEE35E7D24BC78CE00E8E006 /* OCTestExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestExtern.h; sourceTree = "<group>"; };
@@ -560,7 +557,6 @@
 		CE316F802498D7FE00AC495A /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				CEDC039C24C6C50100E8734C /* Other */,
 				CEDC039724C6C4D400E8734C /* Link */,
 				CEDC039124C6C43300E8734C /* AlgorithmsController.h */,
 				CEDC039224C6C43300E8734C /* AlgorithmsController.m */,
@@ -1195,15 +1191,6 @@
 			path = Link;
 			sourceTree = "<group>";
 		};
-		CEDC039C24C6C50100E8734C /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				CEDC03B524C6C63400E8734C /* ALGOtherController.h */,
-				CEDC03B624C6C63400E8734C /* ALGOtherController.m */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
 		CEE35E7B24BC522200E8E006 /* Keywords */ = {
 			isa = PBXGroup;
 			children = (
@@ -1471,7 +1458,6 @@
 				CEDC038624C5928500E8734C /* OCMDView.m in Sources */,
 				CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */,
 				CEF17DE124B2320200218C27 /* CDataType.c in Sources */,
-				CEDC03B724C6C63400E8734C /* ALGOtherController.m in Sources */,
 				CEFDF91C24B328F1003F53CC /* OCTimerController.m in Sources */,
 				CEE306D624CD778700A70DBA /* CBasicController.m in Sources */,
 				CE5DCE4924FFA7670015D96E /* OCContainerController.m in Sources */,
