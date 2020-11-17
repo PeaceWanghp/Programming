@@ -16,13 +16,11 @@
 		CE316F732498D4A600AC495A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F722498D4A600AC495A /* main.m */; };
 		CE34F1B02508CC7000BF4BA3 /* OCJSPatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1AF2508CC7000BF4BA3 /* OCJSPatchController.m */; };
 		CE34F1B5250A24DB00BF4BA3 /* OCRunloopController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1B4250A24DB00BF4BA3 /* OCRunloopController.m */; };
-		CE34F1B9250DC95700BF4BA3 /* COperatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1B8250DC95700BF4BA3 /* COperatorController.m */; };
 		CE34F1BF250F668100BF4BA3 /* OCBlockController+CatchValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1BE250F668100BF4BA3 /* OCBlockController+CatchValue.m */; };
 		CE34F1C2250F66E400BF4BA3 /* OCBlockController+Type.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34F1C1250F66E400BF4BA3 /* OCBlockController+Type.m */; };
 		CE415E182511A22100FB386D /* OCBlockController+WeakStrong.m in Sources */ = {isa = PBXBuildFile; fileRef = CE415E172511A22100FB386D /* OCBlockController+WeakStrong.m */; };
 		CE415E1B2511AB8600FB386D /* OCBlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE415E1A2511AB8600FB386D /* OCBlockObject.m */; };
 		CE457F7125452BE3005A4A1B /* OCMachPortController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE457F7025452BE3005A4A1B /* OCMachPortController.m */; };
-		CE4A514024CED9D400198DCA /* CTypeInteger.c in Sources */ = {isa = PBXBuildFile; fileRef = CE4A513F24CED9D400198DCA /* CTypeInteger.c */; };
 		CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */; };
 		CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5AD249B6D2300BA9B02 /* BPresentController.m */; };
 		CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B0249B6E9F00BA9B02 /* BPresentModel.m */; };
@@ -64,8 +62,6 @@
 		CE8896C725636539004881BE /* OCSwizzleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896C625636539004881BE /* OCSwizzleObject.m */; };
 		CE8896CB256379EF004881BE /* OCSwizzleObject+One.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896CA256379EF004881BE /* OCSwizzleObject+One.m */; };
 		CE8896CF25637A02004881BE /* OCSwizzleObject+Two.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896CE25637A02004881BE /* OCSwizzleObject+Two.m */; };
-		CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E124A9B4F600A471B9 /* CHomeworkController.m */; };
-		CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */ = {isa = PBXBuildFile; fileRef = CE9082E424A9BC7100A471B9 /* CHomework.c */; };
 		CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE927381251C2366002C27B5 /* BPWebViewController.m */; };
 		CE927386251C2AD1002C27B5 /* OCSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE927385251C2AD1002C27B5 /* OCSemaphoreController.m */; };
 		CE9C78F624BF046200071276 /* OCRetainCountController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C78F524BF046200071276 /* OCRetainCountController.m */; };
@@ -88,14 +84,11 @@
 		CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB396A624AC8F6100F5915E /* CUHitTestBView.m */; };
 		CEBE167624B464D200301698 /* OCLocksController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBE167524B464D200301698 /* OCLocksController.m */; };
 		CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */; };
-		CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */; };
 		CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC7A9CB24C059BE00A3D65B /* OCPropertyController.m */; };
 		CEC7A9D024C05DE900A3D65B /* OCMessageForwardingController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC7A9CF24C05DE900A3D65B /* OCMessageForwardingController.m */; };
 		CED1628C24C1917F003F50F1 /* OCRuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1628B24C1917F003F50F1 /* OCRuntimeController.m */; };
 		CED1628F24C19D2B003F50F1 /* OCRuntimeTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */; };
 		CED1629224C1B352003F50F1 /* OCMsgForwardingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1629124C1B352003F50F1 /* OCMsgForwardingObject.m */; };
-		CED1629624C3FC65003F50F1 /* CExamController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1629524C3FC65003F50F1 /* CExamController.m */; };
-		CED1629A24C40B5B003F50F1 /* Exam.c in Sources */ = {isa = PBXBuildFile; fileRef = CED1629924C40B5B003F50F1 /* Exam.c */; };
 		CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0A24B5B43000AD2D6E /* OCPointerController.m */; };
 		CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */; };
 		CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED28E0F24B5BDB700AD2D6E /* OC_CrashController.m */; };
@@ -114,7 +107,6 @@
 		CEDC038D24C6AD8D00E8734C /* OCBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC038C24C6AD8C00E8734C /* OCBlockController.m */; };
 		CEDC039324C6C43300E8734C /* AlgorithmsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC039224C6C43300E8734C /* AlgorithmsController.m */; };
 		CEDC03A824C6C5C000E8734C /* ALGLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC03A724C6C5C000E8734C /* ALGLinkController.m */; };
-		CEE306D624CD778700A70DBA /* CBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE306D524CD778700A70DBA /* CBasicController.m */; };
 		CEE35E7F24BC78CE00E8E006 /* OCTestExtern.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */; };
 		CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB024BD9F97005153AA /* OCCopyController.m */; };
 		CEE8FDB724BDB73F005153AA /* OCCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE8FDB624BDB73F005153AA /* OCCopyObject.m */; };
@@ -128,13 +120,6 @@
 		CEEAD9F225243431007E491C /* OCGCDGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9F125243431007E491C /* OCGCDGroupController.m */; };
 		CEEAD9F825243CBF007E491C /* OCGCDTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEAD9F725243CBF007E491C /* OCGCDTimerController.m */; };
 		CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */; };
-		CEF17DD624B1CFB000218C27 /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DD524B1CFB000218C27 /* CArray.c */; };
-		CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DDA24B1F5A000218C27 /* CCycle.c */; };
-		CEF17DE124B2320200218C27 /* CDataType.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE024B2320200218C27 /* CDataType.c */; };
-		CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE324B2324100218C27 /* COptionAndOperator.c */; };
-		CEF17DE724B232AD00218C27 /* CPointer.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE624B232AD00218C27 /* CPointer.c */; };
-		CEF17DEA24B2338600218C27 /* CFunction.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DE924B2338600218C27 /* CFunction.c */; };
-		CEF17DF124B2369C00218C27 /* CLibsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF17DF024B2369C00218C27 /* CLibsController.m */; };
 		CEFAFFE124C808010063A564 /* OCPropertyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAFFE024C808010063A564 /* OCPropertyObject.m */; };
 		CEFAFFE724C83B280063A564 /* CUBigSizeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAFFE624C83B280063A564 /* CUBigSizeButton.m */; };
 		CEFDF91524B324C6003F53CC /* OC_Test_CADisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDF90C24B324C6003F53CC /* OC_Test_CADisplayLink.m */; };
@@ -164,8 +149,6 @@
 		CE34F1AF2508CC7000BF4BA3 /* OCJSPatchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCJSPatchController.m; sourceTree = "<group>"; };
 		CE34F1B3250A24DB00BF4BA3 /* OCRunloopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRunloopController.h; sourceTree = "<group>"; };
 		CE34F1B4250A24DB00BF4BA3 /* OCRunloopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRunloopController.m; sourceTree = "<group>"; };
-		CE34F1B7250DC95700BF4BA3 /* COperatorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COperatorController.h; sourceTree = "<group>"; };
-		CE34F1B8250DC95700BF4BA3 /* COperatorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COperatorController.m; sourceTree = "<group>"; };
 		CE34F1BD250F668100BF4BA3 /* OCBlockController+CatchValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCBlockController+CatchValue.h"; sourceTree = "<group>"; };
 		CE34F1BE250F668100BF4BA3 /* OCBlockController+CatchValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCBlockController+CatchValue.m"; sourceTree = "<group>"; };
 		CE34F1C0250F66E400BF4BA3 /* OCBlockController+Type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCBlockController+Type.h"; sourceTree = "<group>"; };
@@ -176,8 +159,6 @@
 		CE415E1A2511AB8600FB386D /* OCBlockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockObject.m; sourceTree = "<group>"; };
 		CE457F6F25452BE3005A4A1B /* OCMachPortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMachPortController.h; sourceTree = "<group>"; };
 		CE457F7025452BE3005A4A1B /* OCMachPortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMachPortController.m; sourceTree = "<group>"; };
-		CE4A513E24CED9D400198DCA /* CTypeInteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTypeInteger.h; sourceTree = "<group>"; };
-		CE4A513F24CED9D400198DCA /* CTypeInteger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CTypeInteger.c; sourceTree = "<group>"; };
 		CE50CA8E24AF2A9000BAB483 /* CGGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGradientView.h; sourceTree = "<group>"; };
 		CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGGradientView.m; sourceTree = "<group>"; };
 		CE56F5AC249B6D2300BA9B02 /* BPresentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPresentController.h; sourceTree = "<group>"; };
@@ -263,10 +244,6 @@
 		CE8896CA256379EF004881BE /* OCSwizzleObject+One.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCSwizzleObject+One.m"; sourceTree = "<group>"; };
 		CE8896CD25637A02004881BE /* OCSwizzleObject+Two.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCSwizzleObject+Two.h"; sourceTree = "<group>"; };
 		CE8896CE25637A02004881BE /* OCSwizzleObject+Two.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OCSwizzleObject+Two.m"; sourceTree = "<group>"; };
-		CE9082E024A9B4F600A471B9 /* CHomeworkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkController.h; sourceTree = "<group>"; };
-		CE9082E124A9B4F600A471B9 /* CHomeworkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHomeworkController.m; sourceTree = "<group>"; };
-		CE9082E324A9BC7100A471B9 /* CHomework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomework.h; sourceTree = "<group>"; };
-		CE9082E424A9BC7100A471B9 /* CHomework.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHomework.c; sourceTree = "<group>"; };
 		CE927380251C2366002C27B5 /* BPWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPWebViewController.h; sourceTree = "<group>"; };
 		CE927381251C2366002C27B5 /* BPWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPWebViewController.m; sourceTree = "<group>"; };
 		CE927384251C2AD1002C27B5 /* OCSemaphoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSemaphoreController.h; sourceTree = "<group>"; };
@@ -311,8 +288,6 @@
 		CEBE167524B464D200301698 /* OCLocksController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLocksController.m; sourceTree = "<group>"; };
 		CEC0C5DC24AD870C00E103F5 /* CUOffScreenController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUOffScreenController.h; sourceTree = "<group>"; };
 		CEC0C5DD24AD870C00E103F5 /* CUOffScreenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUOffScreenController.m; sourceTree = "<group>"; };
-		CEC0C5DF24ADA6F100E103F5 /* CHomeworkSecond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHomeworkSecond.h; sourceTree = "<group>"; };
-		CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CHomeworkSecond.c; sourceTree = "<group>"; };
 		CEC7A9CA24C059BE00A3D65B /* OCPropertyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPropertyController.h; sourceTree = "<group>"; };
 		CEC7A9CB24C059BE00A3D65B /* OCPropertyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPropertyController.m; sourceTree = "<group>"; };
 		CEC7A9CE24C05DE900A3D65B /* OCMessageForwardingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMessageForwardingController.h; sourceTree = "<group>"; };
@@ -323,10 +298,6 @@
 		CED1628E24C19D2B003F50F1 /* OCRuntimeTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRuntimeTestObject.m; sourceTree = "<group>"; };
 		CED1629024C1B352003F50F1 /* OCMsgForwardingObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMsgForwardingObject.h; sourceTree = "<group>"; };
 		CED1629124C1B352003F50F1 /* OCMsgForwardingObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMsgForwardingObject.m; sourceTree = "<group>"; };
-		CED1629424C3FC65003F50F1 /* CExamController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CExamController.h; sourceTree = "<group>"; };
-		CED1629524C3FC65003F50F1 /* CExamController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CExamController.m; sourceTree = "<group>"; };
-		CED1629824C40B5B003F50F1 /* Exam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exam.h; sourceTree = "<group>"; };
-		CED1629924C40B5B003F50F1 /* Exam.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Exam.c; sourceTree = "<group>"; };
 		CED28E0924B5B43000AD2D6E /* OCPointerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPointerController.h; sourceTree = "<group>"; };
 		CED28E0A24B5B43000AD2D6E /* OCPointerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPointerController.m; sourceTree = "<group>"; };
 		CED28E0E24B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OC_CrashController+Unrecognized.m"; sourceTree = "<group>"; };
@@ -363,8 +334,6 @@
 		CEDC039224C6C43300E8734C /* AlgorithmsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmsController.m; sourceTree = "<group>"; };
 		CEDC03A624C6C5C000E8734C /* ALGLinkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALGLinkController.h; sourceTree = "<group>"; };
 		CEDC03A724C6C5C000E8734C /* ALGLinkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALGLinkController.m; sourceTree = "<group>"; };
-		CEE306D424CD778700A70DBA /* CBasicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBasicController.h; sourceTree = "<group>"; };
-		CEE306D524CD778700A70DBA /* CBasicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBasicController.m; sourceTree = "<group>"; };
 		CEE35E7D24BC78CE00E8E006 /* OCTestExtern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestExtern.h; sourceTree = "<group>"; };
 		CEE35E7E24BC78CE00E8E006 /* OCTestExtern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestExtern.m; sourceTree = "<group>"; };
 		CEE8FDAF24BD9F97005153AA /* OCCopyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCopyController.h; sourceTree = "<group>"; };
@@ -392,20 +361,6 @@
 		CEEAD9F725243CBF007E491C /* OCGCDTimerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGCDTimerController.m; sourceTree = "<group>"; };
 		CEF1760B24AB4B4F00977E8F /* CUFrameBoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUFrameBoundsViewController.h; sourceTree = "<group>"; };
 		CEF1760E24AB4B4F00977E8F /* CUFrameBoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUFrameBoundsViewController.m; sourceTree = "<group>"; };
-		CEF17DD424B1CFB000218C27 /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
-		CEF17DD524B1CFB000218C27 /* CArray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CArray.c; sourceTree = "<group>"; };
-		CEF17DD924B1F5A000218C27 /* CCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCycle.h; sourceTree = "<group>"; };
-		CEF17DDA24B1F5A000218C27 /* CCycle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CCycle.c; sourceTree = "<group>"; };
-		CEF17DDF24B2320200218C27 /* CDataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDataType.h; sourceTree = "<group>"; };
-		CEF17DE024B2320200218C27 /* CDataType.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CDataType.c; sourceTree = "<group>"; };
-		CEF17DE224B2324100218C27 /* COptionAndOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COptionAndOperator.h; sourceTree = "<group>"; };
-		CEF17DE324B2324100218C27 /* COptionAndOperator.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = COptionAndOperator.c; sourceTree = "<group>"; };
-		CEF17DE524B232AD00218C27 /* CPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPointer.h; sourceTree = "<group>"; };
-		CEF17DE624B232AD00218C27 /* CPointer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CPointer.c; sourceTree = "<group>"; };
-		CEF17DE824B2338600218C27 /* CFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFunction.h; sourceTree = "<group>"; };
-		CEF17DE924B2338600218C27 /* CFunction.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFunction.c; sourceTree = "<group>"; };
-		CEF17DEF24B2369C00218C27 /* CLibsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLibsController.h; sourceTree = "<group>"; };
-		CEF17DF024B2369C00218C27 /* CLibsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLibsController.m; sourceTree = "<group>"; };
 		CEFAFFDF24C808010063A564 /* OCPropertyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPropertyObject.h; sourceTree = "<group>"; };
 		CEFAFFE024C808010063A564 /* OCPropertyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPropertyObject.m; sourceTree = "<group>"; };
 		CEFAFFE524C83B280063A564 /* CUBigSizeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUBigSizeButton.h; sourceTree = "<group>"; };
@@ -484,7 +439,6 @@
 				CE316F792498D4E700AC495A /* Objective-C */,
 				CE316F7A2498D50600AC495A /* Swift */,
 				CE316F7E2498D57700AC495A /* C++ */,
-				CE316F7D2498D56C00AC495A /* C */,
 				CE316F7B2498D51C00AC495A /* SQL */,
 			);
 			path = Programming;
@@ -535,18 +489,6 @@
 			path = Internet;
 			sourceTree = "<group>";
 		};
-		CE316F7D2498D56C00AC495A /* C */ = {
-			isa = PBXGroup;
-			children = (
-				CE34F1B6250DC92200BF4BA3 /* Operator */,
-				CED1629724C3FC70003F50F1 /* Basic */,
-				CED1629324C3FC27003F50F1 /* Exam */,
-				CEF17DEE24B2365C00218C27 /* Libs */,
-				CEF17DD724B1D03A00218C27 /* Homework */,
-			);
-			path = C;
-			sourceTree = "<group>";
-		};
 		CE316F7E2498D57700AC495A /* C++ */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,15 +529,6 @@
 				CE745BD82554008100BEF903 /* DisplayLink */,
 			);
 			path = Runloop;
-			sourceTree = "<group>";
-		};
-		CE34F1B6250DC92200BF4BA3 /* Operator */ = {
-			isa = PBXGroup;
-			children = (
-				CE34F1B7250DC95700BF4BA3 /* COperatorController.h */,
-				CE34F1B8250DC95700BF4BA3 /* COperatorController.m */,
-			);
-			path = Operator;
 			sourceTree = "<group>";
 		};
 		CE56F5AB249B689E00BA9B02 /* iOS */ = {
@@ -1041,40 +974,6 @@
 			path = Runtime;
 			sourceTree = "<group>";
 		};
-		CED1629324C3FC27003F50F1 /* Exam */ = {
-			isa = PBXGroup;
-			children = (
-				CED1629424C3FC65003F50F1 /* CExamController.h */,
-				CED1629524C3FC65003F50F1 /* CExamController.m */,
-				CED1629824C40B5B003F50F1 /* Exam.h */,
-				CED1629924C40B5B003F50F1 /* Exam.c */,
-			);
-			path = Exam;
-			sourceTree = "<group>";
-		};
-		CED1629724C3FC70003F50F1 /* Basic */ = {
-			isa = PBXGroup;
-			children = (
-				CEE306D424CD778700A70DBA /* CBasicController.h */,
-				CEE306D524CD778700A70DBA /* CBasicController.m */,
-				CEF17DE224B2324100218C27 /* COptionAndOperator.h */,
-				CEF17DE324B2324100218C27 /* COptionAndOperator.c */,
-				CE4A513E24CED9D400198DCA /* CTypeInteger.h */,
-				CE4A513F24CED9D400198DCA /* CTypeInteger.c */,
-				CEF17DDF24B2320200218C27 /* CDataType.h */,
-				CEF17DE024B2320200218C27 /* CDataType.c */,
-				CEF17DD924B1F5A000218C27 /* CCycle.h */,
-				CEF17DDA24B1F5A000218C27 /* CCycle.c */,
-				CEF17DD424B1CFB000218C27 /* CArray.h */,
-				CEF17DD524B1CFB000218C27 /* CArray.c */,
-				CEF17DE824B2338600218C27 /* CFunction.h */,
-				CEF17DE924B2338600218C27 /* CFunction.c */,
-				CEF17DE524B232AD00218C27 /* CPointer.h */,
-				CEF17DE624B232AD00218C27 /* CPointer.c */,
-			);
-			path = Basic;
-			sourceTree = "<group>";
-		};
 		CED28E0C24B5BDB700AD2D6E /* Crash */ = {
 			isa = PBXGroup;
 			children = (
@@ -1290,28 +1189,6 @@
 			path = FrameBounds;
 			sourceTree = "<group>";
 		};
-		CEF17DD724B1D03A00218C27 /* Homework */ = {
-			isa = PBXGroup;
-			children = (
-				CE9082E024A9B4F600A471B9 /* CHomeworkController.h */,
-				CE9082E124A9B4F600A471B9 /* CHomeworkController.m */,
-				CE9082E324A9BC7100A471B9 /* CHomework.h */,
-				CE9082E424A9BC7100A471B9 /* CHomework.c */,
-				CEC0C5DF24ADA6F100E103F5 /* CHomeworkSecond.h */,
-				CEC0C5E024ADA6F100E103F5 /* CHomeworkSecond.c */,
-			);
-			path = Homework;
-			sourceTree = "<group>";
-		};
-		CEF17DEE24B2365C00218C27 /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-				CEF17DEF24B2369C00218C27 /* CLibsController.h */,
-				CEF17DF024B2369C00218C27 /* CLibsController.m */,
-			);
-			path = Libs;
-			sourceTree = "<group>";
-		};
 		CEF6ADDE249904A10061995A /* CocoaUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -1439,11 +1316,9 @@
 			files = (
 				CED28E1E24B5D1EC00AD2D6E /* OCKeywordsController.m in Sources */,
 				CE927382251C2366002C27B5 /* BPWebViewController.m in Sources */,
-				CEF17DE724B232AD00218C27 /* CPointer.c in Sources */,
 				CE8896C725636539004881BE /* OCSwizzleObject.m in Sources */,
 				CE745BC62552E35700BEF903 /* OCSyncAsyncController.m in Sources */,
 				CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */,
-				CE34F1B9250DC95700BF4BA3 /* COperatorController.m in Sources */,
 				CE457F7125452BE3005A4A1B /* OCMachPortController.m in Sources */,
 				CE6CE337251853B40089A1DA /* OCMWeakObject.m in Sources */,
 				CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */,
@@ -1457,9 +1332,7 @@
 				CEFAFFE724C83B280063A564 /* CUBigSizeButton.m in Sources */,
 				CEDC038624C5928500E8734C /* OCMDView.m in Sources */,
 				CEB3969924AC35CC00F5915E /* CUFBView.m in Sources */,
-				CEF17DE124B2320200218C27 /* CDataType.c in Sources */,
 				CEFDF91C24B328F1003F53CC /* OCTimerController.m in Sources */,
-				CEE306D624CD778700A70DBA /* CBasicController.m in Sources */,
 				CE5DCE4924FFA7670015D96E /* OCContainerController.m in Sources */,
 				CE8896CB256379EF004881BE /* OCSwizzleObject+One.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
@@ -1470,13 +1343,11 @@
 				CE6C172F24B87AC90061EB32 /* OCImportController.m in Sources */,
 				CED5569C255B734600C386C9 /* OCKVCController.m in Sources */,
 				CEEAD9D925218602007E491C /* HPDelayMonitor.m in Sources */,
-				CEF17DDB24B1F5A000218C27 /* CCycle.c in Sources */,
 				CE5DCE4024FD02CD0015D96E /* OCPSetterGetterObject.m in Sources */,
 				CE6C172024B857CF0061EB32 /* OCLoadInitializeObject+Test3.m in Sources */,
 				CE6C171724B849BF0061EB32 /* OCLoadInitializeObject.m in Sources */,
 				CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */,
 				CE745BFE255419E500BEF903 /* OCMessagePassingController.m in Sources */,
-				CEF17DF124B2369C00218C27 /* CLibsController.m in Sources */,
 				CE6C172B24B85F6D0061EB32 /* OCInheritB.m in Sources */,
 				CEFDF92024B3391C003F53CC /* OCThreadController.m in Sources */,
 				CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */,
@@ -1495,8 +1366,6 @@
 				CEB0454224D416A90045BAA8 /* ALGLinkController+DeleteOne.m in Sources */,
 				CE6C172824B85F5A0061EB32 /* OCInheritA.m in Sources */,
 				CE34F1BF250F668100BF4BA3 /* OCBlockController+CatchValue.m in Sources */,
-				CE9082E224A9B4F600A471B9 /* CHomeworkController.m in Sources */,
-				CED1629624C3FC65003F50F1 /* CExamController.m in Sources */,
 				CEB0453C24D4166F0045BAA8 /* ALGLinkController+Loop.m in Sources */,
 				CEFDF91824B324C6003F53CC /* NSWeakTimer.m in Sources */,
 				CE8896CF25637A02004881BE /* OCSwizzleObject+Two.m in Sources */,
@@ -1504,9 +1373,7 @@
 				CEFDF92624B33A86003F53CC /* OCOperation.m in Sources */,
 				CED55698255B731200C386C9 /* OCAddMethodController.m in Sources */,
 				CE9C78FF24BF150D00071276 /* OCARCObject.m in Sources */,
-				CE4A514024CED9D400198DCA /* CTypeInteger.c in Sources */,
 				CEEAD9E22521966B007E491C /* testAutoreleaseObject.m in Sources */,
-				CEC0C5E124ADA6F100E103F5 /* CHomeworkSecond.c in Sources */,
 				CED1628F24C19D2B003F50F1 /* OCRuntimeTestObject.m in Sources */,
 				CE5DCE3D24FCF2170015D96E /* OCPNullObject.m in Sources */,
 				CEDC038324C58E7000E8734C /* OCMultiDelegate.m in Sources */,
@@ -1522,7 +1389,6 @@
 				CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */,
 				CE5E560E251B34830086D42A /* OCGCDOnceController.m in Sources */,
 				CE745BCB2552F22500BEF903 /* OCBarrierController.m in Sources */,
-				CEF17DE424B2324100218C27 /* COptionAndOperator.c in Sources */,
 				CE6C171A24B84A440061EB32 /* OCLoadInitializeObject+Test.m in Sources */,
 				CE6C171D24B857B60061EB32 /* OCLoadInitializeObject+Test2.m in Sources */,
 				CE745BCF2553FD9400BEF903 /* OCGCDTimer.m in Sources */,
@@ -1537,7 +1403,6 @@
 				CE745BD52553FF4B00BEF903 /* OCGCDAfterController.m in Sources */,
 				CED28E1A24B5BDB700AD2D6E /* OC_CrashController+Operation.m in Sources */,
 				CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */,
-				CE9082E524A9BC7100A471B9 /* CHomework.c in Sources */,
 				CEE93B4E24ECDB8400790662 /* OCAutoreleaseController.m in Sources */,
 				CE316F622498D4A400AC495A /* AppDelegate.m in Sources */,
 				CE415E182511A22100FB386D /* OCBlockController+WeakStrong.m in Sources */,
@@ -1547,13 +1412,10 @@
 				CE6CE33325184A060089A1DA /* OCMWeakController.m in Sources */,
 				CEEAD9F225243431007E491C /* OCGCDGroupController.m in Sources */,
 				CED28E1824B5BDB700AD2D6E /* OC_CrashController.m in Sources */,
-				CEF17DD624B1CFB000218C27 /* CArray.c in Sources */,
 				CEFDF92324B33A73003F53CC /* OCThread.m in Sources */,
 				CE316F732498D4A600AC495A /* main.m in Sources */,
-				CED1629A24C40B5B003F50F1 /* Exam.c in Sources */,
 				CE5DCE4424FF8A0C0015D96E /* OCGCDController.m in Sources */,
 				CEE93B5124ECDEB400790662 /* OCAutoreleaseObject.m in Sources */,
-				CEF17DEA24B2338600218C27 /* CFunction.c in Sources */,
 				CE9C790224BF152200071276 /* OCMRCObject.m in Sources */,
 				CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */,
 				CED55693255B701B00C386C9 /* OCAddPropertyController.m in Sources */,

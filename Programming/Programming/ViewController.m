@@ -11,13 +11,6 @@
 //Network
 #import "INHttpController.h"
 
-//C
-#import "COperatorController.h"
-#import "CBasicController.h"
-#import "CHomeworkController.h"
-#import "CLibsController.h"
-#import "CExamController.h"
-
 //iOS
 #import "OC_CrashController.h"
 #import "iOSMemoryLeakController.h"
@@ -119,11 +112,7 @@
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendHeader:@"C"];
-    [self.model appendDarkItemWithTitle:@"Operator (运算符，异或...)" class:[COperatorController class]];
-    [self.model appendDarkItemWithTitle:@"Basic (基础)" class:[CBasicController class]];
-    [self.model appendDarkItemWithTitle:@"Homework (作业)" class:[CHomeworkController class]];
-    [self.model appendDarkItemWithTitle:@"Exam (考试)" class:[CExamController class]];
-    [self.model appendDarkItemWithTitle:@"标准库" class:[CLibsController class]];
+    [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendHeader:@"CocoaUI"];
     [self.model appendDarkItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
