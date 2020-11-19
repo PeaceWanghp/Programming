@@ -53,24 +53,29 @@
 }
 
 - (void)weakAction {
-    NSObject *obj1 = [NSObject new];
-    NSObject *obj2 = [NSObject new];
     
     NSObject *obj3 = [NSObject new];
-    NSLog(@"%@%@%@",[obj1 description],[obj2 description],[obj3 description]);
-    NSLog(@"%lu,%lu,%lu",(unsigned long)[obj1 hash],(unsigned long)[obj2 hash],(unsigned long)[obj3 hash]);
-    
-    obj1.weakObj = obj3;
-    obj1.weakObj = obj3;
-    obj2.weakObj = obj3;
-    NSLog(@"%@", obj1.weakObj);
-    NSLog(@"%@", obj2.weakObj);
-    obj3 = nil;
-    NSLog(@"%@", obj1.weakObj);
-    NSLog(@"%@", obj2.weakObj);
-    
-    [obj2.weakObj copy];
-    [obj1.weakObj copy];
+//    {
+        NSObject *obj1 = [NSObject new];
+        NSObject *obj2 = [NSObject new];
+        
+        
+        NSLog(@"%@%@%@",[obj1 description],[obj2 description],[obj3 description]);
+        NSLog(@"%lu,%lu,%lu",(unsigned long)[obj1 hash],(unsigned long)[obj2 hash],(unsigned long)[obj3 hash]);
+        
+        obj1.weakObj = obj3;
+        obj1.weakObj = obj3;
+        obj2.weakObj = obj3;
+        NSLog(@"%@", obj1.weakObj);
+        NSLog(@"%@", obj2.weakObj);
+        obj3 = nil;
+        NSLog(@"%@", obj1.weakObj);
+        NSLog(@"%@", obj2.weakObj);
+        
+        [obj2.weakObj testLog];
+        [obj1.weakObj testLog];
+//    }
+    NSLog(@"-----");
 }
 
 @end

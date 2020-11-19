@@ -57,6 +57,8 @@
 		CE745BDD2554023300BEF903 /* OCGCDApplyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BDC2554023300BEF903 /* OCGCDApplyController.m */; };
 		CE745BE725540FD900BEF903 /* OCDisplayLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BE625540FD900BEF903 /* OCDisplayLinkController.m */; };
 		CE745BFE255419E500BEF903 /* OCMessagePassingController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE745BFD255419E500BEF903 /* OCMessagePassingController.m */; };
+		CE78A7462564E15500E9AAAD /* OCTestAddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CE78A7452564E15500E9AAAD /* OCTestAddProperty.m */; };
+		CE78A74B256511F300E9AAAD /* OCLaunchController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE78A74A256511F300E9AAAD /* OCLaunchController.m */; };
 		CE8896BD25602A30004881BE /* NSObject+Weak.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896BC25602A30004881BE /* NSObject+Weak.m */; };
 		CE8896C22563619F004881BE /* OCCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896C12563619F004881BE /* OCCategoryController.m */; };
 		CE8896C725636539004881BE /* OCSwizzleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8896C625636539004881BE /* OCSwizzleObject.m */; };
@@ -234,6 +236,10 @@
 		CE745BE625540FD900BEF903 /* OCDisplayLinkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDisplayLinkController.m; sourceTree = "<group>"; };
 		CE745BFC255419E500BEF903 /* OCMessagePassingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMessagePassingController.h; sourceTree = "<group>"; };
 		CE745BFD255419E500BEF903 /* OCMessagePassingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMessagePassingController.m; sourceTree = "<group>"; };
+		CE78A7442564E15500E9AAAD /* OCTestAddProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTestAddProperty.h; sourceTree = "<group>"; };
+		CE78A7452564E15500E9AAAD /* OCTestAddProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTestAddProperty.m; sourceTree = "<group>"; };
+		CE78A749256511F300E9AAAD /* OCLaunchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLaunchController.h; sourceTree = "<group>"; };
+		CE78A74A256511F300E9AAAD /* OCLaunchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLaunchController.m; sourceTree = "<group>"; };
 		CE8896BB25602A30004881BE /* NSObject+Weak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Weak.h"; sourceTree = "<group>"; };
 		CE8896BC25602A30004881BE /* NSObject+Weak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Weak.m"; sourceTree = "<group>"; };
 		CE8896C02563619F004881BE /* OCCategoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCCategoryController.h; sourceTree = "<group>"; };
@@ -534,6 +540,7 @@
 		CE56F5AB249B689E00BA9B02 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CE78A748256511A000E9AAAD /* Launch */,
 				CEEAD9D125218284007E491C /* Monitor */,
 				CE5DCE4A24FFA90C0015D96E /* Render */,
 				CE9C790324BF165B00071276 /* MemoryLeak */,
@@ -849,6 +856,15 @@
 			path = isa;
 			sourceTree = "<group>";
 		};
+		CE78A748256511A000E9AAAD /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				CE78A749256511F300E9AAAD /* OCLaunchController.h */,
+				CE78A74A256511F300E9AAAD /* OCLaunchController.m */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		CE9C78F324BF03BF00071276 /* RetainCount */ = {
 			isa = PBXGroup;
 			children = (
@@ -1020,6 +1036,8 @@
 				CED55692255B701B00C386C9 /* OCAddPropertyController.m */,
 				CE8896BB25602A30004881BE /* NSObject+Weak.h */,
 				CE8896BC25602A30004881BE /* NSObject+Weak.m */,
+				CE78A7442564E15500E9AAAD /* OCTestAddProperty.h */,
+				CE78A7452564E15500E9AAAD /* OCTestAddProperty.m */,
 			);
 			path = AddProperty;
 			sourceTree = "<group>";
@@ -1392,6 +1410,7 @@
 				CE6C171A24B84A440061EB32 /* OCLoadInitializeObject+Test.m in Sources */,
 				CE6C171D24B857B60061EB32 /* OCLoadInitializeObject+Test2.m in Sources */,
 				CE745BCF2553FD9400BEF903 /* OCGCDTimer.m in Sources */,
+				CE78A7462564E15500E9AAAD /* OCTestAddProperty.m in Sources */,
 				CEEAD9F825243CBF007E491C /* OCGCDTimerController.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
 				CE5DCE4D24FFA94A0015D96E /* iOSRenderController.m in Sources */,
@@ -1433,6 +1452,7 @@
 				CEEAD9D5252184C2007E491C /* iOSDelayMonitorController.m in Sources */,
 				CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */,
 				CE9C790624BF169300071276 /* iOSMemoryLeakController.m in Sources */,
+				CE78A74B256511F300E9AAAD /* OCLaunchController.m in Sources */,
 				CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
