@@ -15,6 +15,7 @@
 #import "OC_CrashController.h"
 #import "iOSMemoryLeakController.h"
 #import "iOSMonitorController.h"
+#import "OCLaunchController.h"
 
 //CocoaUI
 #import "CUOffScreenController.h"
@@ -53,38 +54,6 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [self.model appendHeader:@"Algorithms(算法)"];
-    [self.model appendDarkItemWithTitle:@"理论" class:[AlgorithmsController class]];
-    [self.model appendDarkItemWithTitle:@"Link(链表)" class:[ALGLinkController class]];
-    
-    [self.model appendHeader:@"Internet(网络)"];
-    [self.model appendItemWithTitle:@"TCP/IP" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Socket" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Web Socket" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"DNS" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Ping" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"SSL" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"StartTLS" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Http" class:[INHttpController class]];
-    [self.model appendItemWithTitle:@"Exchange" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Web DAV" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"IMAP" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"POP" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"SMTP" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"BlueTooth(蓝牙)" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"JSON" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"SOAP" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"XML" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"HTML" class:[UIViewController class]];
-    
-    [self.model appendHeader:@"DataBase(数据库)"];
-    [self.model appendItemWithTitle:@"Sqlite3" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"SQL" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Cipher" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"FMDB" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"LKDBHelper" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"CoreData" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"Runtime（运行时）" class:[OCRuntimeController class]];
@@ -138,7 +107,7 @@
     [self.model appendItemWithTitle:@"重签名" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"沙盒机制" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Launch Speed (启动速度优化)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Launch Speed (启动速度优化)" class:[OCLaunchController class]];
     [self.model appendItemWithTitle:@"耗电量优化" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"网络io优化" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"文件io优化/随意调用db而不使用Cache" class:[UIViewController class]];
@@ -146,11 +115,43 @@
     [self.model appendItemWithTitle:@"安装包瘦身" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"FPS(FramesPerSecond)/--监控卡顿Qi_ObjcMsgHook/约束过多" class:[UIViewController class]];
     
+    [self.model appendHeader:@"Internet(网络)"];
+    [self.model appendItemWithTitle:@"TCP/IP" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Socket" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Web Socket" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"DNS" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Ping" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"SSL" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"StartTLS" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Http" class:[INHttpController class]];
+    [self.model appendItemWithTitle:@"Exchange" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Web DAV" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"IMAP" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"POP" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"SMTP" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"BlueTooth(蓝牙)" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"JSON" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"SOAP" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"XML" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"HTML" class:[UIViewController class]];
+    
+    [self.model appendHeader:@"DataBase(数据库)"];
+    [self.model appendItemWithTitle:@"Sqlite3" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"SQL" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Cipher" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"FMDB" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"LKDBHelper" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"CoreData" class:[UIViewController class]];
+    
     [self.model appendHeader:@"Hybrid(混合开发)"];
     [self.model appendItemWithTitle:@"Flutter" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"ReactNative" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Weex" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Html" class:[UIViewController class]];
+    
+    [self.model appendHeader:@"Algorithms(算法)"];
+    [self.model appendDarkItemWithTitle:@"理论" class:[AlgorithmsController class]];
+    [self.model appendDarkItemWithTitle:@"Link(链表)" class:[ALGLinkController class]];
     
     [self.model appendHeader:@"音视频协议"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];

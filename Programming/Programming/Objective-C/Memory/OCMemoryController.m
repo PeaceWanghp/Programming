@@ -27,6 +27,7 @@
     [self.model appendDarkItemTitle:@"copy/mutableCopy" target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"new" target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"duoble/float/int/long int/char" target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"Tagged Pointer" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"(持有/使用内存)"];
     [self.model appendDarkItemTitle:@"__strong/__autorelease/__unsafe_unretain" target:self selector:@selector(todo)];
