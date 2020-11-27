@@ -527,10 +527,6 @@
 			children = (
 				CE34F1B3250A24DB00BF4BA3 /* OCRunloopController.h */,
 				CE34F1B4250A24DB00BF4BA3 /* OCRunloopController.m */,
-				CE745BE425540F0900BEF903 /* Timer */,
-				CE745BE325540E3200BEF903 /* Thread */,
-				CE745BE225540DF700BEF903 /* Observer */,
-				CE745BE125540DD900BEF903 /* AutoreleasePool */,
 				CE745BE025540DC900BEF903 /* Port */,
 				CE745BD82554008100BEF903 /* DisplayLink */,
 			);
@@ -563,7 +559,6 @@
 				CEEAD9F525243C7E007E491C /* Timer */,
 				CE745BD12553FEAA00BEF903 /* After */,
 				CE745BDA2554016A00BEF903 /* Apply */,
-				CE745BDF25540DA900BEF903 /* IO */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -760,13 +755,6 @@
 			path = Apply;
 			sourceTree = "<group>";
 		};
-		CE745BDF25540DA900BEF903 /* IO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IO;
-			sourceTree = "<group>";
-		};
 		CE745BE025540DC900BEF903 /* Port */ = {
 			isa = PBXGroup;
 			children = (
@@ -774,34 +762,6 @@
 				CE457F7025452BE3005A4A1B /* OCMachPortController.m */,
 			);
 			path = Port;
-			sourceTree = "<group>";
-		};
-		CE745BE125540DD900BEF903 /* AutoreleasePool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AutoreleasePool;
-			sourceTree = "<group>";
-		};
-		CE745BE225540DF700BEF903 /* Observer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Observer;
-			sourceTree = "<group>";
-		};
-		CE745BE325540E3200BEF903 /* Thread */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Thread;
-			sourceTree = "<group>";
-		};
-		CE745BE425540F0900BEF903 /* Timer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Timer;
 			sourceTree = "<group>";
 		};
 		CE745BEA2554127300BEF903 /* KVO */ = {

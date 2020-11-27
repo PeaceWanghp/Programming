@@ -21,8 +21,10 @@
     [self.model appendOpenedHeader:@"Monitor:"];
     [self.model appendDarkItemWithTitle:@"fps_runloop" class:[iOSDelayMonitorController class]];
     [self.model appendDarkItemWithTitle:@"fps_displaylink" class:[UIViewController class]];
-    [self.model appendDarkItemWithTitle:@"CPU" class:[UIViewController class]];
-    [self.model appendDarkItemWithTitle:@"Method" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"CPU" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"Method" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"FPS(FramesPerSecond)/--监控卡顿Qi_ObjcMsgHook/约束过多"
+                              class:[UIViewController class]];
 }
 
 @end

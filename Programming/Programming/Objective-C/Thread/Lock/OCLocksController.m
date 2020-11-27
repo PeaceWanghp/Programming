@@ -23,14 +23,15 @@
     [self.model appendItemTitle:@"自旋锁/互斥锁" target:self selector:@selector(linkWebView)];
 
     [self.model appendOpenedHeader:@"自旋锁优缺点:"];
-    [self.model appendItemTitle:@"自旋锁/互斥锁" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"互斥锁优缺点:"];
-    [self.model appendItemTitle:@"自旋锁/互斥锁" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"锁分类："];
     [self.model appendItemTitle:@"OSSpinLock 自旋锁" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"pthread_mutex 互斥锁（C语言）" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"semaphore" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"NSLock 对象锁" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"NSRecursiveLock 递归锁" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"NSCondition 条件锁" target:self selector:@selector(todo)];

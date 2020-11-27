@@ -24,6 +24,8 @@
     [super viewDidLoad];
     
     [self.model appendOpenedHeader:@"CFRunLoopRef"];
+    [self.model appendDarkItemTitle:@"AutoreleasePoolPage"
+                             target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"线程和RunLoop是一对一,映射关系是保存在一个全局的 hashTable 里"
                              target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"其实它内部就是do-while循环,在这个循环内部不断的处理各种任务(比如Source、Timer、Observer)"
