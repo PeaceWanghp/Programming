@@ -16,6 +16,7 @@
 #import "iOSMemoryLeakController.h"
 #import "iOSMonitorController.h"
 #import "OCLaunchController.h"
+#import "iOSThinController.h"
 
 //CocoaUI
 #import "CUOffScreenController.h"
@@ -99,11 +100,13 @@
     [self.model appendItemWithTitle:@"needDisplay,dispaly区别" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"iOS"];
-    [self.model appendItemWithTitle:@"Launch Speed (启动速度优化)" class:[OCLaunchController class]];
+    [self.model appendDarkItemWithTitle:@"Launch Speed (启动速度优化)" class:[OCLaunchController class]];
     [self.model appendItemWithTitle:@"耗电量优化" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"安装包瘦身" class:[iOSThinController class]];
     [self.model appendItemWithTitle:@"网络io优化" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"文件io优化/随意调用db而不使用Cache" class:[UIViewController class]];
-    [self.model appendDarkItemWithTitle:@"Memory Leak(内存泄漏)/内存优化" class:[iOSMemoryLeakController class]];
+    [self.model appendItemWithTitle:@"内存优化" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Memory Leak(内存泄漏)" class:[iOSMemoryLeakController class]];
     [self.model appendDarkItemWithTitle:@"Crash(引发崩溃)" class:[OC_CrashController class]];
     [self.model appendDarkItemWithTitle:@"Monitor(监视器)" class:[iOSMonitorController class]];
     [self.model appendItemWithTitle:@"防越狱" class:[UIViewController class]];
@@ -112,7 +115,6 @@
     [self.model appendItemWithTitle:@"重签名" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"沙盒机制" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"InBackground" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"安装包瘦身" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"动态列表" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"自动化测试" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"自动化打包" class:[UIViewController class]];

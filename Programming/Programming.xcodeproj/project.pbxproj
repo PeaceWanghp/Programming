@@ -21,6 +21,7 @@
 		CE415E182511A22100FB386D /* OCBlockController+WeakStrong.m in Sources */ = {isa = PBXBuildFile; fileRef = CE415E172511A22100FB386D /* OCBlockController+WeakStrong.m */; };
 		CE415E1B2511AB8600FB386D /* OCBlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE415E1A2511AB8600FB386D /* OCBlockObject.m */; };
 		CE457F7125452BE3005A4A1B /* OCMachPortController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE457F7025452BE3005A4A1B /* OCMachPortController.m */; };
+		CE4B3EF2257347690045F51F /* iOSThinController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B3EF1257347690045F51F /* iOSThinController.m */; };
 		CE50CA9024AF2A9000BAB483 /* CGGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */; };
 		CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5AD249B6D2300BA9B02 /* BPresentController.m */; };
 		CE56F5B1249B6E9F00BA9B02 /* BPresentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE56F5B0249B6E9F00BA9B02 /* BPresentModel.m */; };
@@ -161,6 +162,8 @@
 		CE415E1A2511AB8600FB386D /* OCBlockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockObject.m; sourceTree = "<group>"; };
 		CE457F6F25452BE3005A4A1B /* OCMachPortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMachPortController.h; sourceTree = "<group>"; };
 		CE457F7025452BE3005A4A1B /* OCMachPortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMachPortController.m; sourceTree = "<group>"; };
+		CE4B3EF0257347690045F51F /* iOSThinController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSThinController.h; sourceTree = "<group>"; };
+		CE4B3EF1257347690045F51F /* iOSThinController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSThinController.m; sourceTree = "<group>"; };
 		CE50CA8E24AF2A9000BAB483 /* CGGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGGradientView.h; sourceTree = "<group>"; };
 		CE50CA8F24AF2A9000BAB483 /* CGGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGGradientView.m; sourceTree = "<group>"; };
 		CE56F5AC249B6D2300BA9B02 /* BPresentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPresentController.h; sourceTree = "<group>"; };
@@ -533,9 +536,19 @@
 			path = Runloop;
 			sourceTree = "<group>";
 		};
+		CE4B3EEF257346FB0045F51F /* Thin */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B3EF0257347690045F51F /* iOSThinController.h */,
+				CE4B3EF1257347690045F51F /* iOSThinController.m */,
+			);
+			path = Thin;
+			sourceTree = "<group>";
+		};
 		CE56F5AB249B689E00BA9B02 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CE4B3EEF257346FB0045F51F /* Thin */,
 				CE78A748256511A000E9AAAD /* Launch */,
 				CEEAD9D125218284007E491C /* Monitor */,
 				CE5DCE4A24FFA90C0015D96E /* Render */,
@@ -1326,6 +1339,7 @@
 				CE6C171724B849BF0061EB32 /* OCLoadInitializeObject.m in Sources */,
 				CEB396A424AC8F4900F5915E /* CUHitTestAView.m in Sources */,
 				CE745BFE255419E500BEF903 /* OCMessagePassingController.m in Sources */,
+				CE4B3EF2257347690045F51F /* iOSThinController.m in Sources */,
 				CE6C172B24B85F6D0061EB32 /* OCInheritB.m in Sources */,
 				CEFDF92024B3391C003F53CC /* OCThreadController.m in Sources */,
 				CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */,
