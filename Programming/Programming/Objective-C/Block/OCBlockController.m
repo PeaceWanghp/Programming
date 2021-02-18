@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.typedefBlock = ^{
+        
+    };
+    self.typedefBlock();
+    
     [self.model appendOpenedHeader:@"测试"];
     [self.model appendDarkItemTitle:@"ARC Strong一个statckBlock" target:self selector:@selector(testBlock)];
     [self.model appendDarkItemTitle:@"mrc Strong一个statckBlock" target:self selector:@selector(globalAction)];
@@ -25,6 +30,29 @@
     [self.model appendDarkItemTitle:@"SourceCode(源码)" target:self selector:@selector(globalAction)];
     [self.model appendDarkItemTitle:@"被strong的block:使用了堆区数据则为mallocBlock,未使用则globalBlock" target:self selector:nil];
     [self.model appendDarkItemTitle:@"未被strong的block:使用了堆区数据则为stackBlock,未使用则globalBlock" target:self selector:nil];
+    
+    [self.model appendOpenedHeader:@"使用："];
+    [self.model appendDarkItemTitle:@"定义/实现1：\nvoid (^block)(void) = ^ {\n \n};"
+                             target:nil
+                           selector:nil];
+    [self.model appendDarkItemTitle:@"定义/实现2：\nint (^block)(float val) = ^int(float val) {\n \n};"
+                             target:nil
+                           selector:nil];
+    [self.model appendDarkItemTitle:@"作为变量：\nvoid (^block)(void) = ^{\n \n};\nblock();"
+                             target:nil
+                           selector:nil];
+    [self.model appendDarkItemTitle:@"作为参数：\n- (void)xxx:(BOOL(^)(NSString *))block {\n    block(@\"hi\");\n}\n[self xxx:^BOOL(NSString *value) {\n    return YES;\n}];"
+                             target:nil
+                           selector:nil];
+    [self.model appendDarkItemTitle:@"作为返回值：\n- (void(^)(id obj))xxx {\n    return ^(id obj) {\n \n    };\n}\nvoid(^block)(id) = [self xxx];\nblock(@\"hi\");"
+                             target:nil
+                           selector:nil];
+    [self.model appendDarkItemTitle:@"作为属性1：\n@property(copy) void(^copyBlock)(void);\nself.copyBlock = ^ {\n \n};\nself.copyBlock();"
+                             target:nil
+                           selector:nil];
+    [self.model appendDarkItemTitle:@"作为属性2：\ntypedef void(^TypedefBlock)(void);\n@property(copy) TypedefBlock typedefBlock;\nself.typedefBlock = ^ {\n \n};\nself.typedefBlock();"
+                             target:nil
+                           selector:nil];
     
     [self.model appendOpenedHeader:@"!__block"];
     [self.model appendDarkItemTitle:@"self" target:self selector:@selector(testSelf)];

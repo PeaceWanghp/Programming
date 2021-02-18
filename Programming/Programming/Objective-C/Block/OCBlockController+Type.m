@@ -61,7 +61,10 @@ void(^intBlock)(void) = ^{
         NSLog(@"self = %@",self);
     };
     NSLog(@"__block = %@",block);
-    return block;
+    return ^(id obj) {
+        NSLog(@"obj = %@",obj);
+        NSLog(@"self = %@",self);
+    };
 }
 
 - (void(^)(id obj))testReturnBlock2 {
