@@ -1,17 +1,76 @@
 //
-//  OCBlockController+WeakStrong.m
+//  OCBlockWeakStrongVController.m
 //  Programming
 //
-//  Created by Peace on 9/16/20.
-//  Copyright © 2020 Peace. All rights reserved.
+//  Created by wangheping on 2021/2/18.
+//  Copyright © 2021 Peace. All rights reserved.
 //
 
-#import "OCBlockController+WeakStrong.h"
+#import "OCBlockWeakStrongVController.h"
 
+#import "OCBlockWeakStrongObject.h"
 #import "OCBlockObject.h"
 
-@implementation OCBlockController (WeakStrong)
+@interface OCBlockWeakStrongVController ()
+{
+    OCBlockWeakStrongObject *_obj;
+}
+@property(nonatomic,strong) void(^weakStrongBlock)(void);
+@end
 
+@implementation OCBlockWeakStrongVController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.model appendOpenedHeader:@"Life Cycle:"];
+    [self.model appendDarkItemTitle:@"Self" target:self selector:@selector(selfBlock)];
+    [self.model appendDarkItemTitle:@"Weak Self" target:self selector:@selector(weakSelfBlock)];
+    [self.model appendDarkItemTitle:@"Strong Self" target:self selector:@selector(strongSelfBlock)];
+    
+    [self.model appendOpenedHeader:@"RetainCount:"];
+    [self.model appendDarkItemTitle:@"strong" target:self selector:@selector(testStrong)];
+    [self.model appendDarkItemTitle:@"weak" target:self selector:@selector(testWeak)];
+    [self.model appendDarkItemTitle:@"weak/strong" target:self selector:@selector(testWeakStrong)];
+}
+
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
+
+- (void)selfBlock {
+    if (!_obj) {
+        _obj = [OCBlockWeakStrongObject new];
+        [_obj selfBlock];
+    }
+    else {
+        _obj = nil;
+    }
+}
+
+- (void)weakSelfBlock {
+    if (!_obj) {
+        _obj = [OCBlockWeakStrongObject new];
+        [_obj weakSelfBlock];
+    }
+    else {
+        _obj = nil;
+    }
+}
+
+- (void)strongSelfBlock {
+    if (!_obj) {
+        _obj = [OCBlockWeakStrongObject new];
+        [_obj weakStrongSelfBlock];
+    }
+    else {
+        _obj = nil;
+    }
+}
+
+
+#pragma mark -
+#pragma mark -- RetainCount
 - (void)testStrong {
     OCBlockObject *object = [OCBlockObject new];
     NSLog(@"1.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(object)));
@@ -70,5 +129,6 @@
     NSLog(@"6.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(object)));
     NSLog(@"6.1.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(weakObject)));
 }
+
 
 @end

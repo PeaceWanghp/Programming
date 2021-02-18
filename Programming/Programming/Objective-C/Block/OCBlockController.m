@@ -8,6 +8,8 @@
 
 #import "OCBlockController.h"
 
+#import "OCBlockWeakStrongVController.h"
+
 @interface OCBlockController ()
 
 @end
@@ -16,11 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.typedefBlock = ^{
-        
-    };
-    self.typedefBlock();
     
     [self.model appendOpenedHeader:@"测试"];
     [self.model appendDarkItemTitle:@"ARC Strong一个statckBlock" target:self selector:@selector(testBlock)];
@@ -53,6 +50,7 @@
     [self.model appendDarkItemTitle:@"作为属性2：\ntypedef void(^TypedefBlock)(void);\n@property(copy) TypedefBlock typedefBlock;\nself.typedefBlock = ^ {\n \n};\nself.typedefBlock();"
                              target:nil
                            selector:nil];
+    [self.model appendDarkItemWithTitle:@"Weak/Strong Self" class:[OCBlockWeakStrongVController class]];
     
     [self.model appendOpenedHeader:@"!__block"];
     [self.model appendDarkItemTitle:@"self" target:self selector:@selector(testSelf)];
@@ -62,11 +60,6 @@
     [self.model appendOpenedHeader:@"__block"];
     [self.model appendDarkItemTitle:@"int" target:self selector:@selector(test__BlockInt)];
     [self.model appendDarkItemTitle:@"NSObject" target:self selector:@selector(test__BlockObject)];
-    
-    [self.model appendOpenedHeader:@"Weak/Strong"];
-    [self.model appendDarkItemTitle:@"strong" target:self selector:@selector(testStrong)];
-    [self.model appendDarkItemTitle:@"weak" target:self selector:@selector(testWeak)];
-    [self.model appendDarkItemTitle:@"weak/strong" target:self selector:@selector(testWeakStrong)];
     
     [self.model appendOpenedHeader:@"Global(全局block)"];
     [self.model appendDarkItemTitle:@"Action" target:self selector:@selector(globalAction)];
@@ -86,6 +79,10 @@
     
     [self.model appendOpenedHeader:@"Method Return(方法返回值)"];
     [self.model appendDarkItemTitle:@"Action" target:self selector:@selector(returnValueAction)];
+}
+
+- (void)dealloc {
+    
 }
 
 - (void)xxx:(BOOL(^)(NSString *))block {
