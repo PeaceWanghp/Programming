@@ -40,7 +40,9 @@
 
 - (void)entrustAction {
     NSLog(@"Entrust:---------1");
-    [_delegate testEntrustTag:2];
+    if (_delegate && [_delegate respondsToSelector:@selector(testEntrustTag:)]) {
+        [_delegate testEntrustTag:2];
+    }
     NSLog(@"Entrust:---------3");
 }
 

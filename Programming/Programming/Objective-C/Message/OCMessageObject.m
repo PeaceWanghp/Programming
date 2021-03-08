@@ -15,12 +15,13 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        //Notification
-        [self addNotification];
-        //Delegate
         
     }
     return self;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark -
@@ -49,11 +50,21 @@
 #pragma mark -
 #pragma mark -- Delegate
 - (void)delegateAction {
-    [self.delegate testDelegateTag:2];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(testDelegateTag:)]) {
+        [self.delegate testDelegateTag:2];
+    }
 }
 
 - (void)testEntrustTag:(int)tag {
     NSLog(@"Entrust:---------%d",tag);
+}
+
+#pragma mark -
+#pragma mark -- Target/Action
+- (void)taAction {
+    if (self.target && [self.target respondsToSelector:self.action]) {
+        [self.target performSelector:self.action];
+    }
 }
 
 @end

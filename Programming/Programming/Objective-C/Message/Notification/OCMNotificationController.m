@@ -26,14 +26,9 @@
     [self.model appendDarkItemTitle:@"Sub Thread Post" target:self selector:@selector(subPost)];
     
     _messageObject = [OCMessageObject new];
+    [_messageObject addNotification];
 }
 
-#pragma mark -
-#pragma mark -- Notification
-
-
-#pragma mark -
-#pragma mark -- mainAction
 - (void)mainPost {
     _messageObject.tag = 2;
     
@@ -42,8 +37,6 @@
     NSLog(@"MainThread:---------3");
 }
 
-#pragma mark -
-#pragma mark -- subAction
 - (void)subPost {
     _messageObject.tag = 2;
     
