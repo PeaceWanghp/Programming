@@ -9,6 +9,7 @@
 #import "OCMessageController.h"
 
 #import "OCMNotificationController.h"
+#import "OCMDelegateController.h"
 
 @interface OCMessageController ()
 
@@ -23,10 +24,10 @@
     
     [self.model appendOpenedHeader:@"Message"];
     [self.model appendDarkItemWithTitle:@"NSNotificationCenter" class:[OCMNotificationController class]];
-    [self.model appendDarkItemWithTitle:@"Delegate" class:[UIViewController class]];
-    [self.model appendDarkItemWithTitle:@"KVO" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Delegate" class:[OCMDelegateController class]];
     [self.model appendDarkItemWithTitle:@"Target/Action" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"Block" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"KVO" class:[UIViewController class]];
 }
 
 - (void)dealloc {
