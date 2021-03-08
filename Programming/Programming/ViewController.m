@@ -39,6 +39,7 @@
 #import "OCLoadInitializeController.h"
 #import "OCPointerController.h"
 #import "OCKeywordsController.h"
+#import "OCMessageController.h"
 
 //Algorithm
 #import "AlgorithmsController.h"
@@ -57,22 +58,23 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.model appendOpenedHeader:@"Objective-C"];
-    [self.model appendDarkItemWithTitle:@"Runtime（运行时）" class:[OCRuntimeController class]];
-    [self.model appendDarkItemWithTitle:@"Runloop（运行循环）" class:[OCRunloopController class]];
-    [self.model appendDarkItemWithTitle:@"Memory（内存管理）" class:[OCMemoryController class]];
-    [self.model appendDarkItemWithTitle:@"Extension (扩展/延展)" class:[OCExtensionController class]];
-    [self.model appendDarkItemWithTitle:@"Protocol (接口)" class:[OCProtocolController class]];
-    [self.model appendDarkItemWithTitle:@"Block (闭包/代码块)" class:[OCBlockController class]];
+    [self.model appendDarkItemWithTitle:@"Runtime" class:[OCRuntimeController class]];
+    [self.model appendDarkItemWithTitle:@"Runloop" class:[OCRunloopController class]];
+    [self.model appendDarkItemWithTitle:@"Memory" class:[OCMemoryController class]];
+    [self.model appendDarkItemWithTitle:@"Extension" class:[OCExtensionController class]];
+    [self.model appendDarkItemWithTitle:@"Protocol" class:[OCProtocolController class]];
+    [self.model appendDarkItemWithTitle:@"Block" class:[OCBlockController class]];
     [self.model appendDarkItemWithTitle:@"GCD (Grand Central Dispatch)" class:[OCGCDController class]];
-    [self.model appendDarkItemWithTitle:@"Thread (多线程)" class:[OCThreadController class]];
-    [self.model appendDarkItemWithTitle:@"Timer (计时器)" class:[OCTimerController class]];
-    [self.model appendDarkItemWithTitle:@"Property (属性)" class:[OCPropertyController class]];
-    [self.model appendDarkItemWithTitle:@"Load/Initialize (加载/初始化)" class:[OCLoadInitializeController class]];
+    [self.model appendDarkItemWithTitle:@"Thread" class:[OCThreadController class]];
+    [self.model appendDarkItemWithTitle:@"Timer" class:[OCTimerController class]];
+    [self.model appendDarkItemWithTitle:@"Property" class:[OCPropertyController class]];
+    [self.model appendDarkItemWithTitle:@"Load/Initialize" class:[OCLoadInitializeController class]];
+    [self.model appendDarkItemWithTitle:@"Message" class:[OCMessageController class]];
     [self.model appendDarkItemWithTitle:@"#import/#include/@class" class:[OCImportController class]];
     [self.model appendDarkItemWithTitle:@"const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"NSCache" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"Container (容器)" class:[OCContainerController class]];
-    [self.model appendDarkItemWithTitle:@"Pointer (指针)" class:[OCPointerController class]];
+    [self.model appendItemWithTitle:@"Container" class:[OCContainerController class]];
+    [self.model appendDarkItemWithTitle:@"Pointer" class:[OCPointerController class]];
     
     [self.model appendHeader:@"Swift"];
     [self.model appendItemWithTitle:@"桥接" class:[UIViewController class]];

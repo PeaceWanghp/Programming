@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		176C1DD225F6238C002316BD /* OCMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DD125F6238C002316BD /* OCMessageController.m */; };
+		176C1DD825F62C14002316BD /* OCMNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DD725F62C14002316BD /* OCMNotificationController.m */; };
 		178C5CDC25DE46D80054F584 /* OCBlockWeakStrongVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C5CDB25DE46D80054F584 /* OCBlockWeakStrongVController.m */; };
 		178C5CE025DE52BC0054F584 /* OCBlockWeakStrongObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C5CDF25DE52BC0054F584 /* OCBlockWeakStrongObject.m */; };
 		CE0165E824E646870055E302 /* OCMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0165E724E646870055E302 /* OCMemoryController.m */; };
@@ -136,6 +138,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		176C1DD025F6238C002316BD /* OCMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMessageController.h; sourceTree = "<group>"; };
+		176C1DD125F6238C002316BD /* OCMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMessageController.m; sourceTree = "<group>"; };
+		176C1DD625F62C14002316BD /* OCMNotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMNotificationController.h; sourceTree = "<group>"; };
+		176C1DD725F62C14002316BD /* OCMNotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMNotificationController.m; sourceTree = "<group>"; };
 		178C5CDA25DE46D80054F584 /* OCBlockWeakStrongVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBlockWeakStrongVController.h; sourceTree = "<group>"; };
 		178C5CDB25DE46D80054F584 /* OCBlockWeakStrongVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockWeakStrongVController.m; sourceTree = "<group>"; };
 		178C5CDE25DE52BC0054F584 /* OCBlockWeakStrongObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBlockWeakStrongObject.h; sourceTree = "<group>"; };
@@ -404,6 +410,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		176C1DCB25F62232002316BD /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				176C1DD025F6238C002316BD /* OCMessageController.h */,
+				176C1DD125F6238C002316BD /* OCMessageController.m */,
+				176C1DD525F62BEB002316BD /* Notification */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		176C1DD525F62BEB002316BD /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				176C1DD625F62C14002316BD /* OCMNotificationController.h */,
+				176C1DD725F62C14002316BD /* OCMNotificationController.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		CE0165E524E6462B0055E302 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +496,7 @@
 				CE6C170524B848190061EB32 /* LoadInitialize */,
 				CEFDF90A24B324C6003F53CC /* Timer */,
 				CE6C172C24B87AA20061EB32 /* Import */,
+				176C1DCB25F62232002316BD /* Message */,
 				CEE35E7C24BC655600E8E006 /* Pointer */,
 				CEE35E7B24BC522200E8E006 /* Keywords */,
 				CE6CE3412519BC680089A1DA /* Cache */,
@@ -1358,6 +1384,7 @@
 				CE6EE49B24B72978008735BC /* OCTestProtocol.m in Sources */,
 				178C5CDC25DE46D80054F584 /* OCBlockWeakStrongVController.m in Sources */,
 				CE56F5B7249B6F7900BA9B02 /* BPresentItemModel.m in Sources */,
+				176C1DD825F62C14002316BD /* OCMNotificationController.m in Sources */,
 				CE8896C22563619F004881BE /* OCCategoryController.m in Sources */,
 				CE34F1C2250F66E400BF4BA3 /* OCBlockController+Type.m in Sources */,
 				CEDC03A824C6C5C000E8734C /* ALGLinkController.m in Sources */,
@@ -1431,6 +1458,7 @@
 				CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */,
 				CEEAD9D5252184C2007E491C /* iOSDelayMonitorController.m in Sources */,
 				CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */,
+				176C1DD225F6238C002316BD /* OCMessageController.m in Sources */,
 				CE9C790624BF169300071276 /* iOSMemoryLeakController.m in Sources */,
 				CE78A74B256511F300E9AAAD /* OCLaunchController.m in Sources */,
 				CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */,

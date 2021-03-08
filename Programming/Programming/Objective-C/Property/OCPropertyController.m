@@ -22,16 +22,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendOpenedHeader:@"@property"];
-    
-    [self.model appendItemTitle:@"class(不自动合成存取方法，需手动实现；不声明实例变量因为它是类变量)" target:self selector:@selector(todo)];
-    
+    [self.model appendOpenedHeader:@"Thread Safy"];
     [self.model appendItemTitle:@"atomic(原子性操作，线程安全【默认值】)" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"nonatomic(非原子性操作，线程不安全)" target:self selector:@selector(todo)];
     
+    [self.model appendOpenedHeader:@"Read Write"];
     [self.model appendItemTitle:@"readonly" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"readwrite" target:self selector:@selector(todo)];
     
+    [self.model appendOpenedHeader:@"Retain Counter"];
     [self.model appendDarkItemWithTitle:@"copy" class:[OCCopyController class]];
     [self.model appendItemTitle:@"strong(持有对象,ARC,默认值)" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"retain(持有对象,MRC)" target:self selector:@selector(todo)];
@@ -39,19 +38,20 @@
     [self.model appendItemTitle:@"weak(弱引用,ARC,release后置nil)" target:self selector:@selector(todo)];
     [self.model appendItemTitle:@"assign" target:self selector:@selector(todo)];
     
+    [self.model appendOpenedHeader:@"Get/Set"];
     [self.model appendDarkItemTitle:@"getter=isUserInteractionEnabled(修改默认生成的方法名)" target:self selector:@selector(testSetterGetter)];
     [self.model appendDarkItemTitle:@"setter=isUserInteractionEnabled(修改默认生成的方法名)" target:self selector:@selector(testSetterGetter)];
     
+    [self.model appendOpenedHeader:@"Null"];
     [self.model appendDarkItemTitle:@"null_unspecified(默认：未指定)" target:self selector:@selector(testNull_unspecified)];
     [self.model appendDarkItemTitle:@"nullable(可为空)" target:self selector:@selector(testNullable)];
     [self.model appendDarkItemTitle:@"nonnull(不能为空)" target:self selector:@selector(testNonnull)];
     [self.model appendDarkItemTitle:@"null_resettable(就是调用setter传入nil，但是getter返回值不为空)" target:self selector:@selector(testNull_resettable)];
     
-    [self.model appendOpenedHeader:@"@synthesize(自动合成)"];
-    [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
-    
-    [self.model appendOpenedHeader:@"@dynamic(非自动合成)"];
-    [self.model appendItemTitle:@"..." target:self selector:@selector(todo)];
+    [self.model appendOpenedHeader:@"..."];
+    [self.model appendItemTitle:@"class(不自动合成存取方法，需手动实现；不声明实例变量因为它是类变量)" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"@synthesize(自动合成)" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"@dynamic(非自动合成)" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"Apply(应用):"];
     [self.model appendItemTitle:@"getter (atomic/nonatomic)" target:self selector:@selector(todo)];
