@@ -29,7 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)taAction;
 
 //Block
-@property (nonatomic,copy) void(^tapBlock)(void);
+@property (nonatomic,copy) void(^tapBlock)(int tag);
+- (void)testBlockAction;
 
 @end
 

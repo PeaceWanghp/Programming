@@ -67,4 +67,13 @@
     }
 }
 
+#pragma mark -
+#pragma mark -- Block
+- (void)testBlockAction {
+    if (self.tapBlock) {
+        self.tapBlock(2);
+    }
+}
+
 @end
+
