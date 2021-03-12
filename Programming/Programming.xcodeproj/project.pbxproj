@@ -15,6 +15,7 @@
 		176C1DF225F7A870002316BD /* OCMBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DF125F7A86F002316BD /* OCMBlockController.m */; };
 		178C5CDC25DE46D80054F584 /* OCBlockWeakStrongVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C5CDB25DE46D80054F584 /* OCBlockWeakStrongVController.m */; };
 		178C5CE025DE52BC0054F584 /* OCBlockWeakStrongObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C5CDF25DE52BC0054F584 /* OCBlockWeakStrongObject.m */; };
+		17BE603D25FB85330063212A /* OCMkvoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BE603C25FB85330063212A /* OCMkvoController.m */; };
 		CE0165E824E646870055E302 /* OCMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0165E724E646870055E302 /* OCMemoryController.m */; };
 		CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A868B24CA917300E24717 /* OCMutableArray.m */; };
 		CE316F622498D4A400AC495A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F612498D4A400AC495A /* AppDelegate.m */; };
@@ -159,6 +160,8 @@
 		178C5CDB25DE46D80054F584 /* OCBlockWeakStrongVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockWeakStrongVController.m; sourceTree = "<group>"; };
 		178C5CDE25DE52BC0054F584 /* OCBlockWeakStrongObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBlockWeakStrongObject.h; sourceTree = "<group>"; };
 		178C5CDF25DE52BC0054F584 /* OCBlockWeakStrongObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockWeakStrongObject.m; sourceTree = "<group>"; };
+		17BE603B25FB85330063212A /* OCMkvoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMkvoController.h; sourceTree = "<group>"; };
+		17BE603C25FB85330063212A /* OCMkvoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMkvoController.m; sourceTree = "<group>"; };
 		CE0165E624E646870055E302 /* OCMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMemoryController.h; sourceTree = "<group>"; };
 		CE0165E724E646870055E302 /* OCMemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMemoryController.m; sourceTree = "<group>"; };
 		CE1A868A24CA917300E24717 /* OCMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMutableArray.h; sourceTree = "<group>"; };
@@ -434,6 +437,7 @@
 				176C1DE025F649D0002316BD /* Delegate */,
 				176C1DE925F65448002316BD /* TargetAction */,
 				176C1DEF25F7A84E002316BD /* Block */,
+				17BE603A25FB84AE0063212A /* KVO */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -473,6 +477,15 @@
 				176C1DF125F7A86F002316BD /* OCMBlockController.m */,
 			);
 			path = Block;
+			sourceTree = "<group>";
+		};
+		17BE603A25FB84AE0063212A /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				17BE603B25FB85330063212A /* OCMkvoController.h */,
+				17BE603C25FB85330063212A /* OCMkvoController.m */,
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 		CE0165E524E6462B0055E302 /* Memory */ = {
@@ -1460,6 +1473,7 @@
 				CED28E2824B5E95100AD2D6E /* UIView+Frame.m in Sources */,
 				CEDC038924C5929400E8734C /* OCMDObject.m in Sources */,
 				CE6EE49824B728FE008735BC /* OCProtocolController.m in Sources */,
+				17BE603D25FB85330063212A /* OCMkvoController.m in Sources */,
 				CE5E560E251B34830086D42A /* OCGCDOnceController.m in Sources */,
 				176C1DEC25F65473002316BD /* OCMTargetActionController.m in Sources */,
 				CE745BCB2552F22500BEF903 /* OCBarrierController.m in Sources */,
