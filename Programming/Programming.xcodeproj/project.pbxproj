@@ -15,6 +15,8 @@
 		176C1DF225F7A870002316BD /* OCMBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DF125F7A86F002316BD /* OCMBlockController.m */; };
 		178C5CDC25DE46D80054F584 /* OCBlockWeakStrongVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C5CDB25DE46D80054F584 /* OCBlockWeakStrongVController.m */; };
 		178C5CE025DE52BC0054F584 /* OCBlockWeakStrongObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C5CDF25DE52BC0054F584 /* OCBlockWeakStrongObject.m */; };
+		17AF33B1264A649600E87943 /* CUContentModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF33B0264A649600E87943 /* CUContentModeViewController.m */; };
+		17AF33B5264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17AF33B4264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg */; };
 		17BE603D25FB85330063212A /* OCMkvoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BE603C25FB85330063212A /* OCMkvoController.m */; };
 		CE0165E824E646870055E302 /* OCMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0165E724E646870055E302 /* OCMemoryController.m */; };
 		CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A868B24CA917300E24717 /* OCMutableArray.m */; };
@@ -160,6 +162,9 @@
 		178C5CDB25DE46D80054F584 /* OCBlockWeakStrongVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockWeakStrongVController.m; sourceTree = "<group>"; };
 		178C5CDE25DE52BC0054F584 /* OCBlockWeakStrongObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBlockWeakStrongObject.h; sourceTree = "<group>"; };
 		178C5CDF25DE52BC0054F584 /* OCBlockWeakStrongObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockWeakStrongObject.m; sourceTree = "<group>"; };
+		17AF33AF264A649600E87943 /* CUContentModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUContentModeViewController.h; sourceTree = "<group>"; };
+		17AF33B0264A649600E87943 /* CUContentModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUContentModeViewController.m; sourceTree = "<group>"; };
+		17AF33B4264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 912f77f36e0c4b13a761fa46af0ec674.jpg; sourceTree = "<group>"; };
 		17BE603B25FB85330063212A /* OCMkvoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMkvoController.h; sourceTree = "<group>"; };
 		17BE603C25FB85330063212A /* OCMkvoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMkvoController.m; sourceTree = "<group>"; };
 		CE0165E624E646870055E302 /* OCMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMemoryController.h; sourceTree = "<group>"; };
@@ -477,6 +482,16 @@
 				176C1DF125F7A86F002316BD /* OCMBlockController.m */,
 			);
 			path = Block;
+			sourceTree = "<group>";
+		};
+		17AF33AE264A646100E87943 /* UIViewContentMode */ = {
+			isa = PBXGroup;
+			children = (
+				17AF33B4264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg */,
+				17AF33AF264A649600E87943 /* CUContentModeViewController.h */,
+				17AF33B0264A649600E87943 /* CUContentModeViewController.m */,
+			);
+			path = UIViewContentMode;
 			sourceTree = "<group>";
 		};
 		17BE603A25FB84AE0063212A /* KVO */ = {
@@ -1273,6 +1288,7 @@
 		CEF6ADDE249904A10061995A /* CocoaUI */ = {
 			isa = PBXGroup;
 			children = (
+				17AF33AE264A646100E87943 /* UIViewContentMode */,
 				CEA6E35C25021C1000D2880D /* ViewController */,
 				CEC0C5DB24AD852100E103F5 /* OffScreen */,
 				CEB3969B24AC5BA800F5915E /* HitTest */,
@@ -1385,6 +1401,7 @@
 			files = (
 				CE316F702498D4A600AC495A /* LaunchScreen.storyboard in Resources */,
 				CE316F6D2498D4A600AC495A /* Assets.xcassets in Resources */,
+				17AF33B5264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1506,6 +1523,7 @@
 				CE316F732498D4A600AC495A /* main.m in Sources */,
 				CE5DCE4424FF8A0C0015D96E /* OCGCDController.m in Sources */,
 				CEE93B5124ECDEB400790662 /* OCAutoreleaseObject.m in Sources */,
+				17AF33B1264A649600E87943 /* CUContentModeViewController.m in Sources */,
 				CE9C790224BF152200071276 /* OCMRCObject.m in Sources */,
 				CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */,
 				CED55693255B701B00C386C9 /* OCAddPropertyController.m in Sources */,

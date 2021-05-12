@@ -19,6 +19,7 @@
 #import "iOSThinController.h"
 
 //CocoaUI
+#import "CUContentModeViewController.h"
 #import "CUOffScreenController.h"
 #import "CUHitTestController.h"
 #import "CUFrameBoundsViewController.h"
@@ -87,6 +88,7 @@
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendHeader:@"CocoaUI"];
+    [self.model appendDarkItemWithTitle:@"ContentMode" class:[CUContentModeViewController class]];
     [self.model appendDarkItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
     [self.model appendDarkItemWithTitle:@"HitTest" class:[CUHitTestController class]];
     [self.model appendDarkItemWithTitle:@"Frame/Bounds" class:[CUFrameBoundsViewController class]];
