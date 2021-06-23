@@ -13,6 +13,9 @@
 #import "OCRetainCountController.h"
 #import "OCAutoreleaseController.h"
 
+#import <objc/runtime.h>
+#import <malloc/malloc.h>
+
 @interface OCMemoryController ()
 
 @end
@@ -27,6 +30,7 @@
     [self.model appendDarkItemTitle:@"copy/mutableCopy" target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"new" target:self selector:@selector(todo)];
     [self.model appendDarkItemTitle:@"duoble/float/int/long int/char" target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"int/NString" target:self selector:@selector(compareIntAndString)];
     [self.model appendItemTitle:@"Tagged Pointer" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"(持有/使用内存)"];
@@ -45,6 +49,19 @@
 }
 
 - (void)todo {
+    
+}
+
+- (void)compareIntAndString {
+    NSObject *obj = [[NSObject alloc] init];
+    NSLog(@"obj : %lu,%zu,%lu",sizeof(obj),class_getInstanceSize([NSObject class]),malloc_size((__bridge const void *)(obj)));
+    
+    NSString *string = @"21";
+    int value = 1;
+    NSInteger value1 = 1;
+    BOOL isValue = YES;
+    NSLog(@"value : %zu,%lu",class_getInstanceSize([NSString class]),malloc_size((__bridge const void *)string));
+    NSLog(@"value : %lu,%lu,%lu,%lu",sizeof(string),sizeof(value),sizeof(value1),sizeof(isValue));
     
 }
 
