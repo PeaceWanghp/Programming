@@ -38,14 +38,19 @@
 
 #pragma mark -
 #pragma mark -- UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSLog(@"bbbbbbbb");
+    return [super tableView:tableView numberOfRowsInSection:section];
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (_isDelay) {
-//        sleep(3);
-        __autoreleasing testAutoreleaseObject *obj = [testAutoreleaseObject new];
-        for (int i=0; i<100000000; i++) {
-            obj.tag = 5;
-        }
-    }
+    NSLog(@"aaaaaaaaaaaa");
+//    if (_isDelay) {
+////        sleep(3);
+//        __autoreleasing testAutoreleaseObject *obj = [testAutoreleaseObject new];
+//        for (int i=0; i<100000000; i++) {
+//            obj.tag = 5;
+//        }
+//    }
     return [super tableView:tableView cellForRowAtIndexPath:indexPath];
 }
 
@@ -53,7 +58,10 @@
 #pragma mark -- Monitor
 - (void)createDelay {
     _isDelay = YES;
+    NSLog(@"1111");
     [self.tableView reloadData];
+//    [self.tableView layoutIfNeeded];
+    NSLog(@"2222");
 }
 
 - (void)cancelDelay {
