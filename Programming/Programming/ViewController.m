@@ -59,6 +59,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     NSLog(@"111");
     NSLog(@"222");
+    NSLog(@"333");
     [self.model appendOpenedHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"Runtime" class:[OCRuntimeController class]];
     [self.model appendDarkItemWithTitle:@"Runloop" class:[OCRunloopController class]];
