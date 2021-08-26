@@ -37,10 +37,22 @@
     [self.model appendDarkItemTitle:@"NSArray copy" target:self selector:@selector(copyArray)];
     [self.model appendDarkItemTitle:@"NSArray mutablCopy" target:self selector:@selector(mutableCopyArray)];
     [self.model appendDarkItemTitle:@"NSArray copyItmes" target:self selector:@selector(copyItmes)];
+    
+    [self.model appendDarkItemTitle:@"测试1" target:self selector:@selector(copyComplex)];
 }
 
 - (void)todo {
     
+}
+
+#pragma mark -
+#pragma mark -- Copy Container
+- (void)copyComplex {
+    NSString *string = @"1111111111111";
+    NSDictionary *dictionary = @{@"key":string,@"key1":self.model};
+    NSDictionary *copyDictionary = [dictionary copy];
+    NSDictionary *mutableCopyDictionary = [dictionary mutableCopy];
+    NSLog(@"%p,%p,%p",dictionary,copyDictionary,mutableCopyDictionary);
 }
 
 #pragma mark -
