@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
+    [self.model appendDarkItemTitle:@"NSString * string = @\"aaa\";\n"
+                                     "NSLog(@\"%p\", &string);  //指针地址\n"
+                                     "NSLog(@\"%p\", string);    //指针值地址\n"
+                                     "NSLog(@\"%@\", string);   //指针值"
+                             target:self selector:@selector(todo)];
+    
     [self.model appendDarkItemTitle:@"int (p:指针地址, *p:指针值, &p:指针值地址)"
                              target:self selector:@selector(pointerInt)];
     [self.model appendDarkItemTitle:@"NSString (%@--p:值, %p--p:值地址, %p--&p:指针地址)"
