@@ -548,9 +548,6 @@
 				CEF6ADDE249904A10061995A /* CocoaUI */,
 				CE56F5AB249B689E00BA9B02 /* iOS */,
 				CE316F792498D4E700AC495A /* Objective-C */,
-				CE316F7A2498D50600AC495A /* Swift */,
-				CE316F7E2498D57700AC495A /* C++ */,
-				CE316F7B2498D51C00AC495A /* SQL */,
 			);
 			path = Programming;
 			sourceTree = "<group>";
@@ -579,33 +576,12 @@
 			path = "Objective-C";
 			sourceTree = "<group>";
 		};
-		CE316F7A2498D50600AC495A /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Swift;
-			sourceTree = "<group>";
-		};
-		CE316F7B2498D51C00AC495A /* SQL */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SQL;
-			sourceTree = "<group>";
-		};
 		CE316F7C2498D52A00AC495A /* Internet */ = {
 			isa = PBXGroup;
 			children = (
 				CE6CE33C2518B1540089A1DA /* Http */,
 			);
 			path = Internet;
-			sourceTree = "<group>";
-		};
-		CE316F7E2498D57700AC495A /* C++ */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "C++";
 			sourceTree = "<group>";
 		};
 		CE316F802498D7FE00AC495A /* Algorithms */ = {
