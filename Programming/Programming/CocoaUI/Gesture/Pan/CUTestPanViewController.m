@@ -36,8 +36,7 @@
         self.backgroundColor = [UIColor grayColor];
         self.pagingEnabled = YES;
         self.showsVerticalScrollIndicator = NO;
-        self.alwaysBounceVertical = NO;
-        self.alwaysBounceHorizontal = NO;
+        
     }
     return self;
 }
@@ -66,7 +65,7 @@
     CGFloat h = self.view.frame.size.height;
     
     CUHorizontalScrollView *horizontalScrollView = [[CUHorizontalScrollView alloc] initWithFrame:CGRectMake(0, 0, w, h)];
-    horizontalScrollView.contentSize = CGSizeMake(w*5, h);
+    horizontalScrollView.contentSize = CGSizeMake(w*5, 0);
     [self.view addSubview:horizontalScrollView];
     
     for (int i=0; i<5; i++) {
