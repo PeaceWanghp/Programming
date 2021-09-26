@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1717B4DD26FDFDE600204DDE /* CUTestPanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1717B4DC26FDFDE600204DDE /* CUTestPanViewController.m */; };
+		175B445626FDFC6F009D1A47 /* CUGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175B445526FDFC6F009D1A47 /* CUGestureViewController.m */; };
 		176C1DD225F6238C002316BD /* OCMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DD125F6238C002316BD /* OCMessageController.m */; };
 		176C1DD825F62C14002316BD /* OCMNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DD725F62C14002316BD /* OCMNotificationController.m */; };
 		176C1DDD25F645F2002316BD /* OCMessageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DDC25F645F2002316BD /* OCMessageObject.m */; };
@@ -145,6 +147,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1717B4DB26FDFDE600204DDE /* CUTestPanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUTestPanViewController.h; sourceTree = "<group>"; };
+		1717B4DC26FDFDE600204DDE /* CUTestPanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUTestPanViewController.m; sourceTree = "<group>"; };
+		175B445426FDFC6F009D1A47 /* CUGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUGestureViewController.h; sourceTree = "<group>"; };
+		175B445526FDFC6F009D1A47 /* CUGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUGestureViewController.m; sourceTree = "<group>"; };
 		176C1DD025F6238C002316BD /* OCMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMessageController.h; sourceTree = "<group>"; };
 		176C1DD125F6238C002316BD /* OCMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMessageController.m; sourceTree = "<group>"; };
 		176C1DD625F62C14002316BD /* OCMNotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMNotificationController.h; sourceTree = "<group>"; };
@@ -431,6 +437,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17364AB026FE00E8000ADDDD /* Pan */ = {
+			isa = PBXGroup;
+			children = (
+				1717B4DB26FDFDE600204DDE /* CUTestPanViewController.h */,
+				1717B4DC26FDFDE600204DDE /* CUTestPanViewController.m */,
+			);
+			path = Pan;
+			sourceTree = "<group>";
+		};
+		175B445326FDFB99009D1A47 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				175B445426FDFC6F009D1A47 /* CUGestureViewController.h */,
+				175B445526FDFC6F009D1A47 /* CUGestureViewController.m */,
+				17364AB026FE00E8000ADDDD /* Pan */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
 		176C1DCB25F62232002316BD /* Message */ = {
 			isa = PBXGroup;
 			children = (
@@ -1264,6 +1289,7 @@
 		CEF6ADDE249904A10061995A /* CocoaUI */ = {
 			isa = PBXGroup;
 			children = (
+				175B445326FDFB99009D1A47 /* Gesture */,
 				17AF33AE264A646100E87943 /* UIViewContentMode */,
 				CEA6E35C25021C1000D2880D /* ViewController */,
 				CEC0C5DB24AD852100E103F5 /* OffScreen */,
@@ -1474,6 +1500,7 @@
 				CE6C171A24B84A440061EB32 /* OCLoadInitializeObject+Test.m in Sources */,
 				CE6C171D24B857B60061EB32 /* OCLoadInitializeObject+Test2.m in Sources */,
 				CE745BCF2553FD9400BEF903 /* OCGCDTimer.m in Sources */,
+				175B445626FDFC6F009D1A47 /* CUGestureViewController.m in Sources */,
 				CE78A7462564E15500E9AAAD /* OCTestAddProperty.m in Sources */,
 				CEEAD9F825243CBF007E491C /* OCGCDTimerController.m in Sources */,
 				CE316F682498D4A400AC495A /* ViewController.m in Sources */,
@@ -1513,6 +1540,7 @@
 				CED1629224C1B352003F50F1 /* OCMsgForwardingObject.m in Sources */,
 				CEB0454B24D416FA0045BAA8 /* ALGLinkController+FindOne.m in Sources */,
 				CEB0454824D416E10045BAA8 /* ALGLinkController+Copy.m in Sources */,
+				1717B4DD26FDFDE600204DDE /* CUTestPanViewController.m in Sources */,
 				CE6EE48E24B70DA7008735BC /* OCExtensionController.m in Sources */,
 				CEEAD9D5252184C2007E491C /* iOSDelayMonitorController.m in Sources */,
 				CEB396A724AC8F6100F5915E /* CUHitTestBView.m in Sources */,
@@ -1653,14 +1681,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 86NC63YY5X;
 				INFOPLIST_FILE = Programming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.com.Programming;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soyoung.qingyang.medical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = SoyoungQingYangMedicalDev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1669,13 +1700,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 86NC63YY5X;
 				INFOPLIST_FILE = Programming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.com.Programming;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soyoung.qingyang.medical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

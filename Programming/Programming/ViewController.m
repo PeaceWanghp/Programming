@@ -23,6 +23,7 @@
 #import "CUOffScreenController.h"
 #import "CUHitTestController.h"
 #import "CUFrameBoundsViewController.h"
+#import "CUGestureViewController.h"
 
 //Objective-C
 #import "OCRuntimeController.h"
@@ -90,6 +91,7 @@
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendHeader:@"CocoaUI"];
+    [self.model appendDarkItemWithTitle:@"Gesture" class:[CUGestureViewController class]];
     [self.model appendDarkItemWithTitle:@"ContentMode" class:[CUContentModeViewController class]];
     [self.model appendDarkItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
     [self.model appendDarkItemWithTitle:@"HitTest" class:[CUHitTestController class]];
