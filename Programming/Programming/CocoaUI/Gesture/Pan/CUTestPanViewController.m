@@ -42,10 +42,29 @@
 }
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)panGestureRecognizer {
 //    return NO;
+    
+    NSDate *date = [NSDate date];
+    NSLog(@"111111111111111 = %f",date.timeIntervalSinceNow);
     CGPoint velocity = [panGestureRecognizer velocityInView:self];
-    NSLog(@"velocity = %@",NSStringFromCGPoint(velocity));
-    return fabs(velocity.x)-50 > fabs(velocity.y);
+    NSLog(@"2222222222222222 = %f",date.timeIntervalSinceNow);
+//    NSLog(@"velocity = %@",NSStringFromCGPoint(velocity));
+//    BOOL value = fabs(velocity.x)-50 > fabs(velocity.y);
+    
+    NSLog(@"3333333333333333 = %f",date.timeIntervalSinceNow);
+    return YES;
+//    return value;
+    
+//    NSDate *date = [NSDate date];
+//    NSLog(@"111111111111111 = %f",date.timeIntervalSinceNow);
+//    CGPoint velocity = [panGestureRecognizer velocityInView:self];
+//    NSLog(@"2222222222222222 = %f",date.timeIntervalSinceNow);
+//    NSLog(@"velocity = %@",NSStringFromCGPoint(velocity));
+////    BOOL value = fabs(velocity.x)-50 > fabs(velocity.y);
+//    NSLog(@"3333333333333333 = %f",date.timeIntervalSinceNow);
+//    return YES;
+//    return value;
 }
+
 @end
 
 #pragma mark -

@@ -12,6 +12,7 @@
 
 #import "OCRetainCountController.h"
 #import "OCAutoreleaseController.h"
+#import "OCMemoryInfoController.h"
 
 #import <objc/runtime.h>
 #import <malloc/malloc.h>
@@ -24,6 +25,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.model appendOpenedHeader:@"统计"];
+    [self.model appendDarkItemWithTitle:@"Info" class:[OCMemoryInfoController class]];
     
     [self.model appendOpenedHeader:@"malloc(开辟内存空间)"];
     [self.model appendDarkItemTitle:@"malloc" target:self selector:@selector(todo)];
@@ -46,6 +50,8 @@
     [self.model appendOpenedHeader:@"retainCount(引用计数)"];
     [self.model appendDarkItemWithTitle:@"retainCount" class:[OCRetainCountController class]];
     [self.model appendDarkItemWithTitle:@"retainCount实现原理" class:[OCRetainCountController class]];
+    
+    
 }
 
 - (void)todo {

@@ -17,6 +17,8 @@
 		176C1DF225F7A870002316BD /* OCMBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DF125F7A86F002316BD /* OCMBlockController.m */; };
 		178C5CDC25DE46D80054F584 /* OCBlockWeakStrongVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C5CDB25DE46D80054F584 /* OCBlockWeakStrongVController.m */; };
 		178C5CE025DE52BC0054F584 /* OCBlockWeakStrongObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C5CDF25DE52BC0054F584 /* OCBlockWeakStrongObject.m */; };
+		17AEB2E92735605100A22A6F /* OCMemoryInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AEB2E82735605000A22A6F /* OCMemoryInfoController.m */; };
+		17AEB2EC2735616100A22A6F /* OCMemoryInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AEB2EB2735616100A22A6F /* OCMemoryInfoModel.m */; };
 		17AF33B1264A649600E87943 /* CUContentModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF33B0264A649600E87943 /* CUContentModeViewController.m */; };
 		17AF33B5264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17AF33B4264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg */; };
 		17BE603D25FB85330063212A /* OCMkvoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BE603C25FB85330063212A /* OCMkvoController.m */; };
@@ -168,6 +170,10 @@
 		178C5CDB25DE46D80054F584 /* OCBlockWeakStrongVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockWeakStrongVController.m; sourceTree = "<group>"; };
 		178C5CDE25DE52BC0054F584 /* OCBlockWeakStrongObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBlockWeakStrongObject.h; sourceTree = "<group>"; };
 		178C5CDF25DE52BC0054F584 /* OCBlockWeakStrongObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockWeakStrongObject.m; sourceTree = "<group>"; };
+		17AEB2E72735605000A22A6F /* OCMemoryInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMemoryInfoController.h; sourceTree = "<group>"; };
+		17AEB2E82735605000A22A6F /* OCMemoryInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMemoryInfoController.m; sourceTree = "<group>"; };
+		17AEB2EA2735616100A22A6F /* OCMemoryInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMemoryInfoModel.h; sourceTree = "<group>"; };
+		17AEB2EB2735616100A22A6F /* OCMemoryInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMemoryInfoModel.m; sourceTree = "<group>"; };
 		17AF33AF264A649600E87943 /* CUContentModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUContentModeViewController.h; sourceTree = "<group>"; };
 		17AF33B0264A649600E87943 /* CUContentModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUContentModeViewController.m; sourceTree = "<group>"; };
 		17AF33B4264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 912f77f36e0c4b13a761fa46af0ec674.jpg; sourceTree = "<group>"; };
@@ -509,6 +515,17 @@
 			path = Block;
 			sourceTree = "<group>";
 		};
+		17AEB2E62735601200A22A6F /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				17AEB2E72735605000A22A6F /* OCMemoryInfoController.h */,
+				17AEB2E82735605000A22A6F /* OCMemoryInfoController.m */,
+				17AEB2EA2735616100A22A6F /* OCMemoryInfoModel.h */,
+				17AEB2EB2735616100A22A6F /* OCMemoryInfoModel.m */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
 		17AF33AE264A646100E87943 /* UIViewContentMode */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +550,7 @@
 			children = (
 				CE0165E624E646870055E302 /* OCMemoryController.h */,
 				CE0165E724E646870055E302 /* OCMemoryController.m */,
+				17AEB2E62735601200A22A6F /* Info */,
 				CE6CE330251849350089A1DA /* Weak */,
 				CEE93B4B24ECDB3600790662 /* Autorelease */,
 				CE9C78F324BF03BF00071276 /* RetainCount */,
@@ -1436,6 +1454,7 @@
 				CE5DCE4924FFA7670015D96E /* OCContainerController.m in Sources */,
 				CE8896CB256379EF004881BE /* OCSwizzleObject+One.m in Sources */,
 				CEF1761124AB4B4F00977E8F /* CUFrameBoundsViewController.m in Sources */,
+				17AEB2EC2735616100A22A6F /* OCMemoryInfoModel.m in Sources */,
 				CEB0454524D416C40045BAA8 /* ALGLinkController+Merge.m in Sources */,
 				CEEAD9DD25218E60007E491C /* iOSMonitorController.m in Sources */,
 				CEEAD9EB252312A8007E491C /* QiCallStack.m in Sources */,
@@ -1482,6 +1501,7 @@
 				CED1628F24C19D2B003F50F1 /* OCRuntimeTestObject.m in Sources */,
 				CE5DCE3D24FCF2170015D96E /* OCPNullObject.m in Sources */,
 				CEDC038324C58E7000E8734C /* OCMultiDelegate.m in Sources */,
+				17AEB2E92735605100A22A6F /* OCMemoryInfoController.m in Sources */,
 				CE927386251C2AD1002C27B5 /* OCSemaphoreController.m in Sources */,
 				CEDC038024C58DFB00E8734C /* OCMultiDelegateController.m in Sources */,
 				CEFDF91624B324C6003F53CC /* OC_Test_NSTimer.m in Sources */,
