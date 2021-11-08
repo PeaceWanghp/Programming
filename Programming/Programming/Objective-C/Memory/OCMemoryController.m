@@ -26,8 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendOpenedHeader:@"统计"];
-    [self.model appendDarkItemWithTitle:@"Info" class:[OCMemoryInfoController class]];
+    [self.model appendOpenedHeader:@"内存大小(总数/已用/剩余)"];
+    [self.model appendDarkItemWithTitle:@"info" class:[OCMemoryInfoController class]];
     
     [self.model appendOpenedHeader:@"malloc(开辟内存空间)"];
     [self.model appendDarkItemTitle:@"malloc" target:self selector:@selector(todo)];

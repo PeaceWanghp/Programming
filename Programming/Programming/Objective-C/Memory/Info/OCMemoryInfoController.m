@@ -15,9 +15,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendDarkItemTitle:@"total(总数)" target:self selector:@selector(memoryTotal)];
-    [self.model appendDarkItemTitle:@"usage(使用)" target:self selector:@selector(memoryUsage)];
-    [self.model appendDarkItemTitle:@"free(剩余)" target:self selector:@selector(memoryFree)];
+    [self.model appendDarkItemTitle:@"memory total" target:self selector:@selector(memoryTotal)];
+    [self.model appendDarkItemTitle:@"memory usage" target:self selector:@selector(memoryUsage)];
+    [self.model appendDarkItemTitle:@"memory free" target:self selector:@selector(memoryFree)];
 }
 
 - (void)memoryTotal {

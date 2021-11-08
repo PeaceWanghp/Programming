@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OCMemoryInfoModel : NSObject
 
 + (long long)totalMemorySize;
-+ (double)getMemoryUsage;
++ (long long)getMemoryUsage;
 + (long long)getAvailableMemorySize;
 
 @end

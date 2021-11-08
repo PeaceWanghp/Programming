@@ -19,14 +19,15 @@
 }
 
 // 获取当前应用的内存占用情况，和Xcode数值相近
-+ (double)getMemoryUsage {
++ (long long)getMemoryUsage {
     task_vm_info_data_t vmInfo;
     mach_msg_type_number_t count = TASK_VM_INFO_COUNT;
-    if(task_info(mach_task_self(), TASK_VM_INFO, (task_info_t) &vmInfo, &count) == KERN_SUCCESS) {
-        return (long long)vmInfo.phys_footprint;
-    } else {
+    kern_return_t kernReturn = task_info(mach_task_self(), TASK_VM_INFO, (task_info_t) &vmInfo, &count);
+    if(kernReturn != KERN_SUCCESS) {
         return 0;
     }
+    
+    return (long long)vmInfo.phys_footprint;
 }
 
 + (long long)getAvailableMemorySize {
