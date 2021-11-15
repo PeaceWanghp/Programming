@@ -18,8 +18,19 @@
 
 #pragma mark -
 #pragma mark -- Life Cycle
+
+- (instancetype)initWithStyle:(UITableViewStyle)style {
+    self = [super initWithStyle:style];
+    if (self) {
+        NSLog(@"1111111111111");
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"22222222222222222");
     
     _model = [[BPresentModel alloc] init];
 }
@@ -131,6 +142,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    NSLog(@"0000000000000000");
     BPresentItemModel *itemModel;
     if (_model.groupDataSource.count > 0) {
         BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:indexPath.section];
