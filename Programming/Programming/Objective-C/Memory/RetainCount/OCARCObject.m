@@ -14,4 +14,9 @@
     NSLog(@"%ld : %s",(long)_tag,__func__);
 }
 
+- (void)test {
+    self.tag = 5;
+    NSLog(@"%s",__func__);
+}
+
 @end

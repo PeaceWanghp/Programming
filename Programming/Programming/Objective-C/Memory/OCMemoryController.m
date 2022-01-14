@@ -17,6 +17,8 @@
 #import <objc/runtime.h>
 #import <malloc/malloc.h>
 
+#import "OCARCObject.h"
+
 @interface OCMemoryController ()
 
 @end
@@ -37,9 +39,16 @@
     [self.model appendDarkItemTitle:@"int/NString" target:self selector:@selector(compareIntAndString)];
     [self.model appendItemTitle:@"Tagged Pointer" target:self selector:@selector(todo)];
     
-    [self.model appendOpenedHeader:@"(持有/使用内存)"];
-    [self.model appendDarkItemTitle:@"__strong/__autorelease/__unsafe_unretain" target:self selector:@selector(todo)];
-    [self.model appendDarkItemWithTitle:@"__weak" class:[OCMWeakController class]];
+    [self.model appendOpenedHeader:@"type modifier(修饰变量)"];
+    [self.model appendDarkItemWithTitle:@"__weak info" class:[OCMWeakController class]];
+    [self.model appendDarkItemTitle:@"__weak" target:self selector:@selector(__weakAction)];
+    [self.model appendDarkItemTitle:@"__unsafe_unretained" target:self selector:@selector(__unsafe__unretainAction)];
+    [self.model appendDarkItemTitle:@"default strong" target:self selector:@selector(defaultAction)];
+    [self.model appendDarkItemTitle:@"__strong" target:self selector:@selector(__strongAction)];
+    [self.model appendDarkItemTitle:@"__autoreleasing" target:self selector:@selector(__autoreleasingAction)];
+    [self.model appendDarkItemTitle:@"__autoreleasing use" target:self selector:@selector(__autoreleasingUseAction)];
+    [self.model appendItemTitle:@"__bridge_retained" target:self selector:@selector(todo)];
+    [self.model appendItemTitle:@"__bridge_transfer" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"release(释放内存)"];
     [self.model appendDarkItemWithTitle:@"outInside(退出作用域)" class:[OCAutoreleaseController class]];
@@ -50,8 +59,6 @@
     [self.model appendOpenedHeader:@"retainCount(引用计数)"];
     [self.model appendDarkItemWithTitle:@"retainCount" class:[OCRetainCountController class]];
     [self.model appendDarkItemWithTitle:@"retainCount实现原理" class:[OCRetainCountController class]];
-    
-    
 }
 
 - (void)todo {
@@ -69,6 +76,115 @@
     NSLog(@"value : %zu,%lu",class_getInstanceSize([NSString class]),malloc_size((__bridge const void *)string));
     NSLog(@"value : %lu,%lu,%lu,%lu",sizeof(string),sizeof(value),sizeof(value1),sizeof(isValue));
     
+}
+
+- (void)__unsafe__unretainAction {
+    __unsafe_unretained OCARCObject *obj = nil;
+    {
+        OCARCObject *obj1 = [OCARCObject new];
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        obj = obj1;
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        [obj1 test];
+    }
+    
+    NSLog(@"obj1 = %@, %@",obj,[obj valueForKey:@"retainCount"]);
+    [obj test];
+}
+
+- (void)__weakAction {
+    __weak OCARCObject *obj = nil;
+    {
+        OCARCObject *obj1 = [OCARCObject new];
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        obj = obj1;
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        [obj1 test];
+    }
+    
+    NSLog(@"obj1 = %@, %@",obj,[obj valueForKey:@"retainCount"]);
+    [obj test];
+}
+
+- (void)defaultAction {
+    OCARCObject *obj = nil;
+    {
+        OCARCObject *obj1 = [OCARCObject new];
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        obj = obj1;
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        [obj1 test];
+    }
+    
+    NSLog(@"obj1 = %@, %@",obj,[obj valueForKey:@"retainCount"]);
+    [obj test];
+}
+
+- (void)__strongAction {
+    __strong OCARCObject *obj = nil;
+    {
+        OCARCObject *obj1 = [OCARCObject new];
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        obj = obj1;
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        [obj1 test];
+    }
+    
+    NSLog(@"obj1 = %@, %@",obj,[obj valueForKey:@"retainCount"]);
+    [obj test];
+}
+
+- (void)__autoreleasingAction {
+    @autoreleasepool {
+        __autoreleasing OCARCObject *obj = nil;
+        {
+            OCARCObject *obj1 = [OCARCObject new];
+            NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+            obj = obj1;
+            NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+            [obj1 test];
+        }
+        
+        NSLog(@"obj1 = %@, %@",obj,[obj valueForKey:@"retainCount"]);
+        [obj test];
+    }
+    NSLog(@"------------------------");
+    
+    __autoreleasing OCARCObject *obj = nil;
+    {
+        OCARCObject *obj1 = [OCARCObject new];
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        obj = obj1;
+        NSLog(@"obj1 = %@, %@",obj1,[obj1 valueForKey:@"retainCount"]);
+        [obj1 test];
+    }
+    
+    NSLog(@"obj1 = %@, %@",obj,[obj valueForKey:@"retainCount"]);
+    [obj test];
+    NSLog(@"------------------------");
+}
+
+- (void)__autoreleasingUseAction {
+    // autoreleasingpool
+    @autoreleasepool {
+        NSMutableArray *mutableArray = [NSMutableArray array];
+        for (int i=0; i<10; i++) {
+            OCARCObject *obj1 = [OCARCObject new];
+            obj1.tag = i;
+            [mutableArray addObject:obj1];
+        }
+        NSLog(@"1------------------------");
+    }
+    NSLog(@"2------------------------");
+    
+    // 非autoreleasingpool
+    NSMutableArray *mutableArray = [NSMutableArray array];
+    for (int i=0; i<10; i++) {
+        OCARCObject *obj1 = [OCARCObject new];
+        obj1.tag = i;
+        [mutableArray addObject:obj1];
+    }
+    NSLog(@"a------------------------");
 }
 
 @end
