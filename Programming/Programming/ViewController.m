@@ -58,24 +58,22 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
-    NSLog(@"111");
-    NSLog(@"222");
-    NSLog(@"333");
+    
     [self.model appendOpenedHeader:@"Objective-C"];
+    [self.model appendDarkItemWithTitle:@"#import/#include/@class" class:[OCImportController class]];
+    [self.model appendDarkItemWithTitle:@"const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"Runtime" class:[OCRuntimeController class]];
     [self.model appendDarkItemWithTitle:@"Runloop" class:[OCRunloopController class]];
-    [self.model appendDarkItemWithTitle:@"Memory" class:[OCMemoryController class]];
+    [self.model appendDarkItemWithTitle:@"Property" class:[OCPropertyController class]];
+    [self.model appendDarkItemWithTitle:@"RetainCount" class:[OCMemoryController class]];
     [self.model appendDarkItemWithTitle:@"Extension" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Protocol" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Block" class:[OCBlockController class]];
     [self.model appendDarkItemWithTitle:@"GCD (Grand Central Dispatch)" class:[OCGCDController class]];
     [self.model appendDarkItemWithTitle:@"Thread" class:[OCThreadController class]];
     [self.model appendDarkItemWithTitle:@"Timer" class:[OCTimerController class]];
-    [self.model appendDarkItemWithTitle:@"Property" class:[OCPropertyController class]];
     [self.model appendDarkItemWithTitle:@"Load/Initialize" class:[OCLoadInitializeController class]];
     [self.model appendDarkItemWithTitle:@"Message" class:[OCMessageController class]];
-    [self.model appendDarkItemWithTitle:@"#import/#include/@class" class:[OCImportController class]];
-    [self.model appendDarkItemWithTitle:@"const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"NSCache" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Container" class:[OCContainerController class]];
     [self.model appendDarkItemWithTitle:@"Pointer" class:[OCPointerController class]];
