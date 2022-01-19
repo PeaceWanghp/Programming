@@ -10,6 +10,7 @@
 
 #import "OC_Test_NSTimer.h"
 #import "OCGCDTimer.h"
+#import "OCARCObject.h"
 
 @interface OCTimerController ()
 {
@@ -32,6 +33,11 @@
     _weakTimer = [[OC_Test_NSTimer alloc] init];
     _exactWeakTimer = [[OC_Test_NSTimer alloc] init];
     _gcdTimer = [[OCGCDTimer alloc] init];
+    
+    [self.model appendOpenedHeader:@"NSTimer"];
+    [self.model appendDarkItemTitle:@"timer强引用原因" target:self selector:@selector(strongPrinciple)];
+    [self.model appendDarkItemTitle:@"weak timerTarget为什么不能解决timer的强引用" target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"timer强引用3种解决方法" target:self selector:@selector(todo)];
     
     [self.model appendOpenedHeader:@"NSTimer（默认 Strong）"];
     [self.model appendDarkItemTitle:@"Start" target:_timer selector:@selector(startTimer)];
@@ -62,6 +68,25 @@
 
 - (void)dealloc {
     NSLog(@"%s",__func__);
+}
+
+#pragma mark -
+#pragma mark -- TIMER
+- (void)strongPrinciple {
+    OCARCObject *obj = [OCARCObject new];
+    NSLog(@"1.%@",[obj valueForKey:@"retainCount"]);
+    __weak typeof(obj) weakObj = obj;
+    NSLog(@"2.%@",[obj valueForKey:@"retainCount"]);
+    id obj1 = weakObj;
+    NSLog(@"3.%@",[obj valueForKey:@"retainCount"]);
+    
+    OCARCObject *obj_a = [OCARCObject new];
+    NSLog(@"4.%@",[obj_a valueForKey:@"retainCount"]);
+    OCARCObject *__strong *ppointer = &obj_a;
+    NSLog(@"4.%@",[obj_a valueForKey:@"retainCount"]);
+    __strong OCARCObject **ppointer1 = &obj_a;
+    NSLog(@"4.%@",[obj_a valueForKey:@"retainCount"]);
+    
 }
 
 @end
