@@ -24,6 +24,7 @@
 #import "CUHitTestController.h"
 #import "CUFrameBoundsViewController.h"
 #import "CUGestureViewController.h"
+#import "CUScrollViewController.h"
 
 //Objective-C
 #import "OCRuntimeController.h"
@@ -98,6 +99,7 @@
     [self.model appendItemWithTitle:@"手势" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"约束" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"DispalyLink" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"UIScrollView" class:[CUScrollViewController class]];
     [self.model appendItemWithTitle:@"UITableView" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"UITableView+ScrollViewHeader" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"转场" class:[UIViewController class]];

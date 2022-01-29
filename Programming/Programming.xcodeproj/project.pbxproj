@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1717B4DD26FDFDE600204DDE /* CUTestPanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1717B4DC26FDFDE600204DDE /* CUTestPanViewController.m */; };
+		174140B927A525F100D87C45 /* CUInsetScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174140B827A525F100D87C45 /* CUInsetScrollViewController.m */; };
+		174E3E6527A3CDB40075122E /* CUScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174E3E6427A3CDB40075122E /* CUScrollViewController.m */; };
+		174E3E6A27A3CEF70075122E /* CUNestingScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174E3E6927A3CEF70075122E /* CUNestingScrollViewController.m */; };
 		175B445626FDFC6F009D1A47 /* CUGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175B445526FDFC6F009D1A47 /* CUGestureViewController.m */; };
 		176C1DD225F6238C002316BD /* OCMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DD125F6238C002316BD /* OCMessageController.m */; };
 		176C1DD825F62C14002316BD /* OCMNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DD725F62C14002316BD /* OCMNotificationController.m */; };
@@ -151,6 +154,12 @@
 /* Begin PBXFileReference section */
 		1717B4DB26FDFDE600204DDE /* CUTestPanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUTestPanViewController.h; sourceTree = "<group>"; };
 		1717B4DC26FDFDE600204DDE /* CUTestPanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUTestPanViewController.m; sourceTree = "<group>"; };
+		174140B727A525F100D87C45 /* CUInsetScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUInsetScrollViewController.h; sourceTree = "<group>"; };
+		174140B827A525F100D87C45 /* CUInsetScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUInsetScrollViewController.m; sourceTree = "<group>"; };
+		174E3E6327A3CDB40075122E /* CUScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUScrollViewController.h; sourceTree = "<group>"; };
+		174E3E6427A3CDB40075122E /* CUScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUScrollViewController.m; sourceTree = "<group>"; };
+		174E3E6827A3CEF70075122E /* CUNestingScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUNestingScrollViewController.h; sourceTree = "<group>"; };
+		174E3E6927A3CEF70075122E /* CUNestingScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUNestingScrollViewController.m; sourceTree = "<group>"; };
 		175B445426FDFC6F009D1A47 /* CUGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUGestureViewController.h; sourceTree = "<group>"; };
 		175B445526FDFC6F009D1A47 /* CUGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUGestureViewController.m; sourceTree = "<group>"; };
 		176C1DD025F6238C002316BD /* OCMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMessageController.h; sourceTree = "<group>"; };
@@ -450,6 +459,35 @@
 				1717B4DC26FDFDE600204DDE /* CUTestPanViewController.m */,
 			);
 			path = Pan;
+			sourceTree = "<group>";
+		};
+		174140B627A524E300D87C45 /* ContentInset */ = {
+			isa = PBXGroup;
+			children = (
+				174140B727A525F100D87C45 /* CUInsetScrollViewController.h */,
+				174140B827A525F100D87C45 /* CUInsetScrollViewController.m */,
+			);
+			name = ContentInset;
+			sourceTree = "<group>";
+		};
+		174E3E6227A3CD6A0075122E /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				174E3E6327A3CDB40075122E /* CUScrollViewController.h */,
+				174E3E6427A3CDB40075122E /* CUScrollViewController.m */,
+				174140B627A524E300D87C45 /* ContentInset */,
+				174E3E6627A3CE460075122E /* Nesting */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		174E3E6627A3CE460075122E /* Nesting */ = {
+			isa = PBXGroup;
+			children = (
+				174E3E6827A3CEF70075122E /* CUNestingScrollViewController.h */,
+				174E3E6927A3CEF70075122E /* CUNestingScrollViewController.m */,
+			);
+			name = Nesting;
 			sourceTree = "<group>";
 		};
 		175B445326FDFB99009D1A47 /* Gesture */ = {
@@ -1307,6 +1345,7 @@
 		CEF6ADDE249904A10061995A /* CocoaUI */ = {
 			isa = PBXGroup;
 			children = (
+				174E3E6227A3CD6A0075122E /* UIScrollView */,
 				175B445326FDFB99009D1A47 /* Gesture */,
 				17AF33AE264A646100E87943 /* UIViewContentMode */,
 				CEA6E35C25021C1000D2880D /* ViewController */,
@@ -1437,6 +1476,7 @@
 				CE8896C725636539004881BE /* OCSwizzleObject.m in Sources */,
 				CE745BC62552E35700BEF903 /* OCSyncAsyncController.m in Sources */,
 				CEE8FDB124BD9F97005153AA /* OCCopyController.m in Sources */,
+				174140B927A525F100D87C45 /* CUInsetScrollViewController.m in Sources */,
 				CE457F7125452BE3005A4A1B /* OCMachPortController.m in Sources */,
 				CE6CE337251853B40089A1DA /* OCMWeakObject.m in Sources */,
 				CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */,
@@ -1463,6 +1503,7 @@
 				CED5569C255B734600C386C9 /* OCKVCController.m in Sources */,
 				CEEAD9D925218602007E491C /* HPDelayMonitor.m in Sources */,
 				CE5DCE4024FD02CD0015D96E /* OCPSetterGetterObject.m in Sources */,
+				174E3E6527A3CDB40075122E /* CUScrollViewController.m in Sources */,
 				178C5CE025DE52BC0054F584 /* OCBlockWeakStrongObject.m in Sources */,
 				CE6C172024B857CF0061EB32 /* OCLoadInitializeObject+Test3.m in Sources */,
 				CE6C171724B849BF0061EB32 /* OCLoadInitializeObject.m in Sources */,
@@ -1547,6 +1588,7 @@
 				CE5DCE4424FF8A0C0015D96E /* OCGCDController.m in Sources */,
 				CEE93B5124ECDEB400790662 /* OCAutoreleaseObject.m in Sources */,
 				17AF33B1264A649600E87943 /* CUContentModeViewController.m in Sources */,
+				174E3E6A27A3CEF70075122E /* CUNestingScrollViewController.m in Sources */,
 				CE9C790224BF152200071276 /* OCMRCObject.m in Sources */,
 				CEC7A9CC24C059BE00A3D65B /* OCPropertyController.m in Sources */,
 				CED55693255B701B00C386C9 /* OCAddPropertyController.m in Sources */,
