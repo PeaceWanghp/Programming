@@ -9,6 +9,7 @@
 #import "CUScrollViewController.h"
 
 #import "CUNestingScrollViewController.h"
+#import "CUInsetScrollViewController.h"
 
 @interface CUScrollViewController ()
 
@@ -19,8 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendDarkItemWithTitle:@"两个ScrollView上下嵌套" class:[CUNestingScrollViewController class]];
-    [self.model appendDarkItemWithTitle:@"ScrollView" class:[CUNestingScrollViewController class]];
+    [self.model appendDarkItemWithTitle:@"ScrollView上下嵌套" class:[CUNestingScrollViewController class]];
+    [self.model appendDarkItemWithTitle:@"ScrollView Inset" class:[CUInsetScrollViewController class]];
 }
 
 @end
