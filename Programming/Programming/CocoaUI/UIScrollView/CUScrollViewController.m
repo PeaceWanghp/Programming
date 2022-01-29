@@ -20,8 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"UIScrollView";
+    
     [self.model appendDarkItemWithTitle:@"ScrollView上下嵌套" class:[CUNestingScrollViewController class]];
-    [self.model appendDarkItemWithTitle:@"ScrollView Inset" class:[CUInsetScrollViewController class]];
+    [self.model appendDarkItemWithTitle:@"Inset下拉刷新" class:[CUInsetScrollViewController class]];
 }
 
 @end
