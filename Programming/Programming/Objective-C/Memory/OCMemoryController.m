@@ -28,8 +28,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendOpenedHeader:@"内存大小(总数/已用/剩余)"];
-    [self.model appendDarkItemWithTitle:@"info" class:[OCMemoryInfoController class]];
+    [self.model appendOpenedHeader:@"Distributed(分布五大区)："];
+    [self.model appendDarkItemTitle:@"内存地址由高-->低：\n(内核区)、栈区、堆区、全局/静态区、常量区、代码区、(预留区)"
+                             target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"内核区：\nCPU调度的一块内存区域"
+                             target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"stack(栈区)：\n其使用SP寄存器寻址，所以速度很快，存的是函数的局部变量和形参"
+                             target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"heap(堆区)：\n频繁的new/delete势必会造成内存空间的不连续，从而造成大量碎片，使程序效率降低，其不能安名字访问，只能通过地址指针访问"
+                             target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@".bbs(全局/静态区)：\n(Block Started by Symbol)存放的是未初始化的全局变量和静态变量"
+                             target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@".data(常量区)：\n是只读数据段/读写数据段，存的是已初始化的全局变量和静态变量"
+                             target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@".text(代码区)：\n也叫text段，只读存储区，代码从磁盘加载进内存的区域"
+                             target:self selector:@selector(todo)];
+    [self.model appendDarkItemTitle:@"预留区：\n"
+                             target:self selector:@selector(todo)];
+    
+    [self.model appendOpenedHeader:@"Size(总数/已用/剩余)"];
+    [self.model appendDarkItemWithTitle:@"size info" class:[OCMemoryInfoController class]];
     
     [self.model appendOpenedHeader:@"malloc(开辟内存空间)"];
     [self.model appendDarkItemTitle:@"malloc" target:self selector:@selector(todo)];

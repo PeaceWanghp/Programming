@@ -45,7 +45,6 @@
     [self.view addSubview:self.fatherscrollView];
     [self.fatherscrollView addSubview:self.headerView];
     [self.fatherscrollView addSubview:self.childScrollView];
-    [self.fatherscrollView addGestureRecognizer:self.childScrollView.panGestureRecognizer];
     
     [self configSubviews];
 }
@@ -125,6 +124,7 @@
         _fatherscrollView.bounces = YES;
         _fatherscrollView.backgroundColor = UIColor.grayColor;
         _fatherscrollView.contentSize = CGSizeMake(0, self.view.bounds.size.height+1000);
+        [_fatherscrollView addGestureRecognizer:self.childScrollView.panGestureRecognizer];
     }
     return _fatherscrollView;
 }
