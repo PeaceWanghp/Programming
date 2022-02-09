@@ -601,7 +601,6 @@
 				17AEB2E62735601200A22A6F /* Info */,
 				CE6CE330251849350089A1DA /* Weak */,
 				CEE93B4B24ECDB3600790662 /* Autorelease */,
-				CE9C78F324BF03BF00071276 /* RetainCount */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -649,10 +648,12 @@
 				CED1628924C19156003F50F1 /* Runtime */,
 				CE34F1B2250A249000BF4BA3 /* Runloop */,
 				CE0165E524E6462B0055E302 /* Memory */,
+				CE9C78F324BF03BF00071276 /* RetainCount */,
 				CEFDF91D24B338DD003F53CC /* Thread */,
 				CE5DCE4124FDE3830015D96E /* GCD */,
 				CEDC038A24C69E1200E8734C /* Block */,
 				CEC7A9C924C059A500A3D65B /* Property */,
+				CED28E1F24B5D8FF00AD2D6E /* Category */,
 				CE6EE48B24B70C6F008735BC /* Extension */,
 				CE6EE49524B728D4008735BC /* Protocol */,
 				CE6C170524B848190061EB32 /* LoadInitialize */,
@@ -1127,7 +1128,6 @@
 				CE745BF42554193700BEF903 /* isa */,
 				CE745BEB2554127A00BEF903 /* KVC */,
 				CE745BEA2554127300BEF903 /* KVO */,
-				CED28E1F24B5D8FF00AD2D6E /* Category */,
 				CE745BEC2554129600BEF903 /* JSPatch */,
 			);
 			path = Runtime;
@@ -1154,7 +1154,8 @@
 				CED28E2324B5E95100AD2D6E /* UIView+Frame.h */,
 				CED28E2624B5E95100AD2D6E /* UIView+Frame.m */,
 			);
-			path = Category;
+			name = Category;
+			path = Runtime/Category;
 			sourceTree = "<group>";
 		};
 		CED55689255B626800C386C9 /* Swizzle */ = {
