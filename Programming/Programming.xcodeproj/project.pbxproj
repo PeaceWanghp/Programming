@@ -14,6 +14,7 @@
 		174E3E6527A3CDB40075122E /* CUScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174E3E6427A3CDB40075122E /* CUScrollViewController.m */; };
 		174E3E6A27A3CEF70075122E /* CUNestingScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174E3E6927A3CEF70075122E /* CUNestingScrollViewController.m */; };
 		175B445626FDFC6F009D1A47 /* CUGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 175B445526FDFC6F009D1A47 /* CUGestureViewController.m */; };
+		1765474C27B55A6300D3E5E0 /* OCTaggedPointerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1765474B27B55A6300D3E5E0 /* OCTaggedPointerController.m */; };
 		176C1DD225F6238C002316BD /* OCMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DD125F6238C002316BD /* OCMessageController.m */; };
 		176C1DD825F62C14002316BD /* OCMNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DD725F62C14002316BD /* OCMNotificationController.m */; };
 		176C1DDD25F645F2002316BD /* OCMessageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 176C1DDC25F645F2002316BD /* OCMessageObject.m */; };
@@ -168,6 +169,8 @@
 		174E3E6927A3CEF70075122E /* CUNestingScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUNestingScrollViewController.m; sourceTree = "<group>"; };
 		175B445426FDFC6F009D1A47 /* CUGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUGestureViewController.h; sourceTree = "<group>"; };
 		175B445526FDFC6F009D1A47 /* CUGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUGestureViewController.m; sourceTree = "<group>"; };
+		1765474A27B55A6300D3E5E0 /* OCTaggedPointerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTaggedPointerController.h; sourceTree = "<group>"; };
+		1765474B27B55A6300D3E5E0 /* OCTaggedPointerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTaggedPointerController.m; sourceTree = "<group>"; };
 		176C1DD025F6238C002316BD /* OCMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMessageController.h; sourceTree = "<group>"; };
 		176C1DD125F6238C002316BD /* OCMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMessageController.m; sourceTree = "<group>"; };
 		176C1DD625F62C14002316BD /* OCMNotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMNotificationController.h; sourceTree = "<group>"; };
@@ -510,6 +513,15 @@
 			path = Gesture;
 			sourceTree = "<group>";
 		};
+		1765474927B556C400D3E5E0 /* TaggedPointer */ = {
+			isa = PBXGroup;
+			children = (
+				1765474A27B55A6300D3E5E0 /* OCTaggedPointerController.h */,
+				1765474B27B55A6300D3E5E0 /* OCTaggedPointerController.m */,
+			);
+			path = TaggedPointer;
+			sourceTree = "<group>";
+		};
 		176C1DCB25F62232002316BD /* Message */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +657,7 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				1765474927B556C400D3E5E0 /* TaggedPointer */,
 				CED1628924C19156003F50F1 /* Runtime */,
 				CE34F1B2250A249000BF4BA3 /* Runloop */,
 				CE33623424EE753F00F24ADD /* MessagePassing */,
@@ -1493,6 +1506,7 @@
 				CE6CE337251853B40089A1DA /* OCMWeakObject.m in Sources */,
 				CEB3969E24AC5BE600F5915E /* CUHitTestController.m in Sources */,
 				CEB0454E24D4171B0045BAA8 /* ALGLinkController+Sort.m in Sources */,
+				1765474C27B55A6300D3E5E0 /* OCTaggedPointerController.m in Sources */,
 				CEBE167624B464D200301698 /* OCLocksController.m in Sources */,
 				CE6C171424B848A30061EB32 /* OCLoadInitializeController.m in Sources */,
 				CE56F5AE249B6D2300BA9B02 /* BPresentController.m in Sources */,

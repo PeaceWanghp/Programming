@@ -71,7 +71,7 @@
     [self.model appendDarkItemWithTitle:@"Protocol" class:[OCProtocolController class]];
     [self.model appendDarkItemWithTitle:@"Extension" class:[OCExtensionController class]];
     [self.model appendDarkItemWithTitle:@"Block" class:[OCBlockController class]];
-    [self.model appendDarkItemWithTitle:@"Tagged Pointer" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Tagged Pointer" class:NSClassFromString(@"OCTaggedPointerController")];
     [self.model appendDarkItemWithTitle:@"GCD (Grand Central Dispatch)" class:[OCGCDController class]];
     [self.model appendDarkItemWithTitle:@"Thread" class:[OCThreadController class]];
     [self.model appendDarkItemWithTitle:@"Timer" class:[OCTimerController class]];
