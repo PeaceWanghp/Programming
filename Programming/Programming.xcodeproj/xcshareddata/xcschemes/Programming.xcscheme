@@ -57,6 +57,11 @@
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
+            key = "OBJC_DISABLE_TAG_OBFUSCATION"
+            value = "YES"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
             key = "DYLD_PRINT_LIBRARIES"
             value = "1"
             isEnabled = "YES">

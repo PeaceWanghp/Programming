@@ -29,7 +29,7 @@
     [self.model appendOpenedHeader:@"@import"];
     [self.model appendDarkItemWithTitle:@"xxx" class:[UIViewController class]];
     
-    [self.model appendOpenedHeader:@"Include"];
+    [self.model appendOpenedHeader:@"#include"];
     [self.model appendDarkItemWithTitle:@"#include : 是C语言的预处理指令之一，所谓预处理，就是在编译之前做的处理，预处理指令一般以 # 开头\n\n#include 指令后面会跟着一个文件名，预处理器发现 #include 指令后，就会根据文件名去查找文件，并把这个文件的内容包含到当前文件中。被包含文件中的文本将替换源文件中的 #include 指令，就像你把被包含文件中的全部内容拷贝到这个 #include 指令所在的位置一样。所以第一行指令的作用是将stdio.h文件里面的所有内容拷贝到第一行中。\n\n如果被包含的文件拓展名为.h，我们称之为\"头文件\"(Header File)，头文件可以用来声明函数，要想使用这些函数，就必须先用 #include 指令包含函数所在的头文件\n\n#include 指令不仅仅限于.h头文件，可以包含任何编译器能识别的C/C++代码文件，包括.c、.hpp、.cpp等，甚至.txt、.abc等等都可以\n\n\n" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"#include \"\" : 当包含我们自己写的文件就是使用" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"#include <> : 包含系统􏰀供头文件的时候使用" class:[UIViewController class]];
