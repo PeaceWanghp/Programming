@@ -104,6 +104,7 @@
     [self.model appendDarkItemWithTitle:@"UIScrollView" class:[CUScrollViewController class]];
     [self.model appendItemWithTitle:@"UITableView" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"UITableView+ScrollViewHeader" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"addChildViewController" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"转场" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"StoryBoard" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Xib" class:[UIViewController class]];

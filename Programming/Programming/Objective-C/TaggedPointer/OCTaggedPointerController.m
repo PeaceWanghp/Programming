@@ -80,16 +80,18 @@
 }
 
 #pragma mark - NSString
-- (void)stringAction {
-    NSString *a = @"a";
-    NSMutableString *b = [a mutableCopy];
-    NSString *c = [a copy];
-    NSString *d = [[a mutableCopy] copy];
-    NSString *e = [NSString stringWithString:a];
-    NSString *f = [NSString stringWithFormat:@"f"];
-    NSString *string1 = [NSString stringWithFormat:@"abcdefg"];
-    NSString *string2 = [NSString stringWithFormat:@"abcdefghi"];
-    NSString *string3 = [NSString stringWithFormat:@"abcdefghij"];
+- (void)stringAction
+{
+    NSString *a = @"a";                                             //a, 0x1025cd668, __NSCFConstantString
+    NSMutableString *b = [a mutableCopy];                           //a, 0x280cbd290, __NSCFString
+    NSString *c = [a copy];                                         //a, 0x1025cd668, __NSCFConstantString
+    NSString *d = [[a mutableCopy] copy];                           //a, 0x800000000000308a, NSTaggedPointerString
+    NSString *e = [NSString stringWithString:a];                    //a, 0x1025cd668, __NSCFConstantString
+    NSString *f = [NSString stringWithFormat:@"f"];                 //f, 0x800000000000330a, NSTaggedPointerString
+    NSString *string1 = [NSString stringWithFormat:@"abcdefg"];     //abcdefg: 0xb3b332b231b130ba, NSTaggedPointerString
+    NSString *string2 = [NSString stringWithFormat:@"abcdefghi"];   //abcdefghi: 0x8440714022d2a0ca, NSTaggedPointerString
+    NSString *string3 = [NSString stringWithFormat:@"abcdefghij"];  //abcdefghij: 0x2802c9200, __NSCFString
+    
     NSLog(@"\n");
     [self log:a];
     [self log:b];
