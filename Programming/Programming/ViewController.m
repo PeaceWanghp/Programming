@@ -105,6 +105,7 @@
     [self.model appendItemWithTitle:@"UITableView" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"UITableView+ScrollViewHeader" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"addChildViewController" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"presendViewController在基于navigationVC和currentVC区别" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"转场" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"StoryBoard" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Xib" class:[UIViewController class]];
