@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1717B4DD26FDFDE600204DDE /* CUTestPanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1717B4DC26FDFDE600204DDE /* CUTestPanViewController.m */; };
+		173C59D12862CB31008B8768 /* OCPTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 173C59D02862CB31008B8768 /* OCPTestObject.m */; };
 		174140B927A525F100D87C45 /* CUInsetScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 174140B827A525F100D87C45 /* CUInsetScrollViewController.m */; };
 		174140BC27A5350E00D87C45 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 174140BB27A5350E00D87C45 /* UIScrollView+Refresh.m */; };
 		174140BF27A535CF00D87C45 /* CustomRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 174140BE27A535CF00D87C45 /* CustomRefreshView.m */; };
@@ -157,6 +158,8 @@
 /* Begin PBXFileReference section */
 		1717B4DB26FDFDE600204DDE /* CUTestPanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUTestPanViewController.h; sourceTree = "<group>"; };
 		1717B4DC26FDFDE600204DDE /* CUTestPanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUTestPanViewController.m; sourceTree = "<group>"; };
+		173C59CF2862CB31008B8768 /* OCPTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPTestObject.h; sourceTree = "<group>"; };
+		173C59D02862CB31008B8768 /* OCPTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPTestObject.m; sourceTree = "<group>"; };
 		174140B727A525F100D87C45 /* CUInsetScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUInsetScrollViewController.h; sourceTree = "<group>"; };
 		174140B827A525F100D87C45 /* CUInsetScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUInsetScrollViewController.m; sourceTree = "<group>"; };
 		174140BA27A5350E00D87C45 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
@@ -1283,6 +1286,8 @@
 			children = (
 				CED28E0924B5B43000AD2D6E /* OCPointerController.h */,
 				CED28E0A24B5B43000AD2D6E /* OCPointerController.m */,
+				173C59CF2862CB31008B8768 /* OCPTestObject.h */,
+				173C59D02862CB31008B8768 /* OCPTestObject.m */,
 			);
 			path = Pointer;
 			sourceTree = "<group>";
@@ -1538,6 +1543,7 @@
 				CE745BFE255419E500BEF903 /* OCMessagePassingController.m in Sources */,
 				CE4B3EF2257347690045F51F /* iOSThinController.m in Sources */,
 				CE6C172B24B85F6D0061EB32 /* OCInheritB.m in Sources */,
+				173C59D12862CB31008B8768 /* OCPTestObject.m in Sources */,
 				CEFDF92024B3391C003F53CC /* OCThreadController.m in Sources */,
 				CED28E1724B5BDB700AD2D6E /* OC_CrashController+Unrecognized.m in Sources */,
 				CEC0C5DE24AD870C00E103F5 /* CUOffScreenController.m in Sources */,
@@ -1772,6 +1778,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 86NC63YY5X;
 				INFOPLIST_FILE = Programming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

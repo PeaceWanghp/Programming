@@ -81,12 +81,12 @@
     header.title = headerModel.title;
     header.subTitle = headerModel.status ? @"收起":@"展开";
     header.index = section;
-    __weak typeof(self) weakSelf = self;
-    header.block = ^ (NSInteger index){
-        BPresentHeaderModel *headerModel = [weakSelf.model.groupDataSource objectAtIndex:index];
-        headerModel.status = !headerModel.status;
-        [weakSelf.tableView reloadData];
-    };
+//    __weak typeof(self) weakSelf = self;
+//    header.block = ^ (NSInteger index){
+//        BPresentHeaderModel *headerModel = [weakSelf.model.groupDataSource objectAtIndex:index];
+//        headerModel.status = !headerModel.status;
+//        [weakSelf.tableView reloadData];
+//    };
     
     return header;
 }

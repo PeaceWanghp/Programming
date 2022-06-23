@@ -19,8 +19,8 @@
 }
 
 - (void)setTitle:(NSString *)title {
-    _title = title;
-    _displayTitle = title;
+    _title = [title copy];
+    _displayTitle = [title copy];
 }
 
 - (void)selected {

@@ -34,6 +34,7 @@
         [_button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:_button];
         
+//        __block typeof(_button) weakButton = _button;
         [[self.contentView subviews] enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj isKindOfClass:[UIButton class]]) {
                 _button = (UIButton *)obj;
@@ -49,11 +50,17 @@
 }
 
 - (void)setTitle:(NSString *)title {
-    self.textLabel.text = title;
+    _title = [title mutableCopy];
+    self.textLabel.text = _title;
+    
+    title = nil;
 }
 
 - (void)setSubTitle:(NSString *)subTitle {
-    [_button setTitle:subTitle forState:UIControlStateNormal];
+    _subTitle = [subTitle copy];
+    [_button setTitle:[subTitle mutableCopy] forState:UIControlStateNormal];
+    
+    subTitle = nil;
 }
 
 - (void)buttonAction:(UIButton *)button {
