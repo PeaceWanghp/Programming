@@ -20,20 +20,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-    [self.model appendDarkItemTitle:@"NSString * string = @\"aaa\";\n"
-                                     "NSLog(@\"%p\", &string);  //指针地址\n"
-                                     "NSLog(@\"%p\", string);    //指针值地址\n"
-                                     "NSLog(@\"%@\", string);   //指针值"
-                             target:self selector:@selector(todo)];
+//    [self.model appendDarkItemTitle:@"NSString * string = @\"aaa\";\n"
+//                                     "NSLog(@\"%p\", &string);  //指针地址\n"
+//                                     "NSLog(@\"%p\", string);    //指针值地址\n"
+//                                     "NSLog(@\"%@\", string);   //指针值"
+//                             target:self selector:@selector(todo)];
+//
+//    [self.model appendDarkItemTitle:@"int (p:指针地址, *p:指针值, &p:指针值地址)"
+//                             target:self selector:@selector(pointerInt)];
+//    [self.model appendDarkItemTitle:@"NSString (%@--p:值, %p--p:值地址, %p--&p:指针地址)"
+//                             target:self selector:@selector(pointerNSString)];
+//
+//    [self.model appendDarkItemTitle:@"指针的指针(String)" target:self selector:@selector(pointerToPointer)];
+//    [self.model appendDarkItemTitle:@"指针的指针(自定义对象)" target:self selector:@selector(pointerToPointerObject)];
+//    [self.model appendDarkItemTitle:@"指针的指针(自定义对象1)" target:self selector:@selector(pointerToPointerObject1)];
     
-    [self.model appendDarkItemTitle:@"int (p:指针地址, *p:指针值, &p:指针值地址)"
-                             target:self selector:@selector(pointerInt)];
-    [self.model appendDarkItemTitle:@"NSString (%@--p:值, %p--p:值地址, %p--&p:指针地址)"
-                             target:self selector:@selector(pointerNSString)];
-    
-    [self.model appendDarkItemTitle:@"指针的指针(String)" target:self selector:@selector(pointerToPointer)];
-    [self.model appendDarkItemTitle:@"指针的指针(自定义对象)" target:self selector:@selector(pointerToPointerObject)];
-    [self.model appendDarkItemTitle:@"指针的指针(自定义对象1)" target:self selector:@selector(pointerToPointerObject1)];
+}
+
+- (void)dealloc {
+    NSLog(@"%s",__func__);
+}
+
+- (void)backAction {
+    self.model = nil;
+    [super backAction];
     
 }
 

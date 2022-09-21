@@ -13,19 +13,19 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _tag = -1;
+        self.tag = -1;
     }
     return self;
 }
 
 - (void)setTitle:(NSString *)title {
     _title = [title copy];
-    _displayTitle = [title copy];
+    self.displayTitle = [title copy];
 }
 
 - (void)selected {
-    ++_tag;
-    _displayTitle = [NSString stringWithFormat:@"%@ - %d",_title,_tag];
+    ++self.tag;
+    self.displayTitle = [NSString stringWithFormat:@"%@ - %d",self.title,self.tag];
 }
 
 - (void)dealloc {

@@ -8,7 +8,8 @@
 
 #import "BPresentController.h"
 
-#import "BPresentHeaderView.h"
+//#import "BPresentHeaderView.h"
+//#import "BPresentAction.h"
 
 @interface BPresentController ()
 
@@ -32,7 +33,20 @@
     
     NSLog(@"22222222222222222");
     
-    _model = [[BPresentModel alloc] init];
+    self.model = [[BPresentModel alloc] init];
+    
+    // 返回按钮
+//    UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"bt_navigationBar_back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
+    UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"< 返回"
+                                                                          style:UIBarButtonItemStylePlain
+                                                                         target:self
+                                                                         action:@selector(backAction)];
+    self.navigationItem.leftBarButtonItem = backBarButtonItem;
+}
+
+// 返回按钮的回调方法
+- (void)backAction {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)dealloc {
@@ -46,11 +60,11 @@
 }
 
 - (void)refrushData:(NSInteger)index {
-    if (_model.groupDataSource.count == 0) {
+    if (self.model.groupDataSource.count == 0) {
         return;
     }
     
-    BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:index];
+    BPresentHeaderModel *headerModel = [self.model.groupDataSource objectAtIndex:index];
     headerModel.status = !headerModel.status;
     [self.tableView reloadData];
 }
@@ -58,8 +72,8 @@
 #pragma mark -
 #pragma mark -- TabelView DataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    if (_model.groupDataSource.count > 0) {
-        return _model.groupDataSource.count;
+    if (self.model.groupDataSource.count > 0) {
+        return self.model.groupDataSource.count;
     }
     else {
         return 1;
@@ -67,48 +81,59 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    if (_model.groupDataSource.count == 0) {
+    if (self.model.groupDataSource.count == 0) {
         return nil;
     }
     
+    BPresentHeaderModel *headerModel = [self.model.groupDataSource objectAtIndex:section];
+    
     static NSString *headerIdentifier = @"headerIdentifier";
-    BPresentHeaderView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerIdentifier];
+    UITableViewHeaderFooterView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:headerIdentifier];
     if (!header) {
-        header = [[BPresentHeaderView alloc] initWithIdentifier:headerIdentifier];
+        header = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:headerIdentifier];
+        BPresentAction *pAction = [BPresentAction new];
+        headerModel.action = pAction;
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:pAction action:@selector(tapHeaderAction:)];
+        [header addGestureRecognizer:tapGesture];
     }
     
-    BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:section];
-    header.title = headerModel.title;
-    header.subTitle = headerModel.status ? @"收起":@"展开";
-    header.index = section;
-//    __weak typeof(self) weakSelf = self;
-//    header.block = ^ (NSInteger index){
-//        BPresentHeaderModel *headerModel = [weakSelf.model.groupDataSource objectAtIndex:index];
-//        headerModel.status = !headerModel.status;
-//        [weakSelf.tableView reloadData];
-//    };
+    if (headerModel.status) {
+        header.contentView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
+    }
+    else {
+        header.contentView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
+    }
+    header.textLabel.text = headerModel.title;
+    header.tag = section;
+    
+    __weak typeof(self) weakSelf = self;
+    headerModel.action.block = ^(NSInteger index) {
+        BPresentHeaderModel *headerModel = [weakSelf.model.groupDataSource objectAtIndex:index];
+        headerModel.status = !headerModel.status;
+        [weakSelf.tableView reloadData];
+    };
     
     return header;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (_model.groupDataSource.count > 0) {
-        BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:section];
+    if (self.model.groupDataSource.count > 0) {
+        BPresentHeaderModel *headerModel = [self.model.groupDataSource objectAtIndex:section];
         return headerModel.status ? headerModel.items.count:0;
     }
     else {
-        return _model.dataSource.count;
+        return self.model.dataSource.count;
     }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     BPresentItemModel *itemModel;
-    if (_model.groupDataSource.count > 0) {
-        BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:indexPath.section];
+    if (self.model.groupDataSource.count > 0) {
+        BPresentHeaderModel *headerModel = [self.model.groupDataSource objectAtIndex:indexPath.section];
         itemModel = headerModel.items[indexPath.row];
     }
     else {
-        itemModel = [_model.dataSource objectAtIndex:indexPath.row];
+        itemModel = [self.model.dataSource objectAtIndex:indexPath.row];
     }
     
     return itemModel.height;
@@ -120,19 +145,24 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
+//    BPresentItemModel *itemModel;
+//    if (self.model.groupDataSource.count > 0) {
+//        BPresentHeaderModel *headerModel = [self.model.groupDataSource objectAtIndex:indexPath.section];
+//        itemModel = headerModel.items[indexPath.row];
+//    }
+//    else {
+//        itemModel = [self.model.dataSource objectAtIndex:indexPath.row];
+//    }
     
-    BPresentItemModel *itemModel;
-    if (_model.groupDataSource.count > 0) {
-        BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:indexPath.section];
-        itemModel = headerModel.items[indexPath.row];
-    }
-    else {
-        itemModel = [_model.dataSource objectAtIndex:indexPath.row];
-    }
+//    cell.textLabel.text = itemModel.displayTitle;
+//    cell.textLabel.numberOfLines = 0;
+//    cell.textLabel.textColor = itemModel.dark ? [UIColor blackColor]:[UIColor grayColor];
     
-    cell.textLabel.text = itemModel.displayTitle;
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.textColor = itemModel.dark ? [UIColor blackColor]:[UIColor grayColor];
+//    cell.textLabel.text = @"xxxx";
+    UILabel *label = [[UILabel alloc] initWithFrame:cell.frame];
+    label.textColor = [UIColor blueColor];
+    label.text = @"lllll";
+    [cell addSubview:label];
     
     return cell;
 }
@@ -144,12 +174,12 @@
     
     NSLog(@"0000000000000000");
     BPresentItemModel *itemModel;
-    if (_model.groupDataSource.count > 0) {
-        BPresentHeaderModel *headerModel = [_model.groupDataSource objectAtIndex:indexPath.section];
+    if (self.model.groupDataSource.count > 0) {
+        BPresentHeaderModel *headerModel = [self.model.groupDataSource objectAtIndex:indexPath.section];
         itemModel = headerModel.items[indexPath.row];
     }
     else {
-        itemModel = [_model.dataSource objectAtIndex:indexPath.row];
+        itemModel = [self.model.dataSource objectAtIndex:indexPath.row];
     }
  
     if (itemModel.className) {
