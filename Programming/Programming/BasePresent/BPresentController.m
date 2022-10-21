@@ -145,24 +145,18 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-//    BPresentItemModel *itemModel;
-//    if (self.model.groupDataSource.count > 0) {
-//        BPresentHeaderModel *headerModel = [self.model.groupDataSource objectAtIndex:indexPath.section];
-//        itemModel = headerModel.items[indexPath.row];
-//    }
-//    else {
-//        itemModel = [self.model.dataSource objectAtIndex:indexPath.row];
-//    }
+    BPresentItemModel *itemModel;
+    if (self.model.groupDataSource.count > 0) {
+        BPresentHeaderModel *headerModel = [self.model.groupDataSource objectAtIndex:indexPath.section];
+        itemModel = headerModel.items[indexPath.row];
+    }
+    else {
+        itemModel = [self.model.dataSource objectAtIndex:indexPath.row];
+    }
     
-//    cell.textLabel.text = itemModel.displayTitle;
-//    cell.textLabel.numberOfLines = 0;
-//    cell.textLabel.textColor = itemModel.dark ? [UIColor blackColor]:[UIColor grayColor];
-    
-//    cell.textLabel.text = @"xxxx";
-    UILabel *label = [[UILabel alloc] initWithFrame:cell.frame];
-    label.textColor = [UIColor blueColor];
-    label.text = @"lllll";
-    [cell addSubview:label];
+    cell.textLabel.text = itemModel.displayTitle;
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.textColor = itemModel.dark ? [UIColor blackColor]:[UIColor grayColor];
     
     return cell;
 }

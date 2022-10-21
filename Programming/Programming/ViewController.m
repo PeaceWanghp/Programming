@@ -92,6 +92,7 @@
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendHeader:@"CocoaUI"];
+    [self.model appendDarkItemWithTitle:@"Animation" class:NSClassFromString(@"CUAnimationViewController")];
     [self.model appendDarkItemWithTitle:@"Gesture" class:[CUGestureViewController class]];
     [self.model appendDarkItemWithTitle:@"ContentMode" class:[CUContentModeViewController class]];
     [self.model appendDarkItemWithTitle:@"OffScreenRendered(离屏渲染)" class:[CUOffScreenController class]];
