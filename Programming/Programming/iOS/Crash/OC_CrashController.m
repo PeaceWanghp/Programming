@@ -35,6 +35,7 @@
     [self.model appendDarkItemTitle:@"recursion(死递归)" target:self selector:@selector(recursion)];
     [self.model appendDarkItemTitle:@"未实现的block" target:self selector:@selector(notBlock)];
     [self.model appendDarkItemTitle:@"未初始化" target:self selector:@selector(unInitialization)];
+    [self.model appendDarkItemTitle:@"除0" target:self selector:@selector(divisionZero)];
     
     [self.model appendOpenedHeader:@"EXC_BAD_INSTRUCTION/错误指令"];
     [self.model appendDarkItemTitle:@"Aync_Main_Queue" target:self selector:@selector(dispatchAyncMainQueue)];
@@ -73,6 +74,13 @@
 #pragma mark -- BadAccess
 - (void)testBadAccess {
     
+}
+
+- (void)divisionZero {
+//    NSString *string = [NSObject new];
+    float division = 0.0f;
+    int value = 3.f/division;
+    NSLog(@"value = %d",value);
 }
 
 @end

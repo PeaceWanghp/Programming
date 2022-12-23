@@ -31,9 +31,14 @@ static CGFloat viewHeight = 20;
     //    UIViewAnimationOptionTransitionCrossDissolve   //转场交叉消失
     //    UIViewAnimationOptionTransitionFlipFromTop     //转场从上翻转
     //    UIViewAnimationOptionTransitionFlipFromBottom  //转场从下翻转
-        [self transitionAnimationColor:[UIColor redColor] index:0 option:UIViewAnimationOptionTransitionNone];
-        [self transitionAnimationColor:[UIColor blackColor] index:1 option:UIViewAnimationOptionTransitionFlipFromLeft];
-        
+    [self transitionAnimationColor:[UIColor redColor] index:0 option:UIViewAnimationOptionTransitionNone];
+    [self transitionAnimationColor:[UIColor blackColor] index:1 option:UIViewAnimationOptionTransitionFlipFromLeft];
+    [self transitionAnimationColor:[UIColor yellowColor] index:2 option:UIViewAnimationOptionTransitionFlipFromRight];
+    [self transitionAnimationColor:[UIColor purpleColor] index:3 option:UIViewAnimationOptionTransitionCurlUp];
+    [self transitionAnimationColor:[UIColor grayColor] index:4 option:UIViewAnimationOptionTransitionCurlDown];
+    [self transitionAnimationColor:[UIColor greenColor] index:5 option:UIViewAnimationOptionTransitionCrossDissolve];
+    [self transitionAnimationColor:[UIColor blueColor] index:6 option:UIViewAnimationOptionTransitionFlipFromTop];
+    [self transitionAnimationColor:[UIColor orangeColor] index:7 option:UIViewAnimationOptionTransitionFlipFromBottom];
 }
 
 // Transition animation

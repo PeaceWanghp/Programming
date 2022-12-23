@@ -22,6 +22,7 @@
     [self.model appendOpenedHeader:@"测试"];
     [self.model appendDarkItemTitle:@"ARC Strong一个statckBlock" target:self selector:@selector(testBlock)];
     [self.model appendDarkItemTitle:@"mrc Strong一个statckBlock" target:self selector:@selector(globalAction)];
+    [self.model appendDarkItemWithTitle:@"解循环引用" class:NSClassFromString(@"OCBlockTestTableViewController")];
     
     [self.model appendOpenedHeader:@"概述："];
     [self.model appendDarkItemTitle:@"SourceCode(源码)" target:self selector:@selector(globalAction)];
