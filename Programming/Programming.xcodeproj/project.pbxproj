@@ -39,6 +39,7 @@
 		17AF33B1264A649600E87943 /* CUContentModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF33B0264A649600E87943 /* CUContentModeViewController.m */; };
 		17AF33B5264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17AF33B4264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg */; };
 		17BE603D25FB85330063212A /* OCMkvoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17BE603C25FB85330063212A /* OCMkvoController.m */; };
+		2B2CDA7A29C9DBE300927ACF /* CToStringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CDA7929C9DBE300927ACF /* CToStringController.m */; };
 		CE0165E824E646870055E302 /* OCMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0165E724E646870055E302 /* OCMemoryController.m */; };
 		CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A868B24CA917300E24717 /* OCMutableArray.m */; };
 		CE316F622498D4A400AC495A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F612498D4A400AC495A /* AppDelegate.m */; };
@@ -229,6 +230,8 @@
 		17AF33B4264A653100E87943 /* 912f77f36e0c4b13a761fa46af0ec674.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 912f77f36e0c4b13a761fa46af0ec674.jpg; sourceTree = "<group>"; };
 		17BE603B25FB85330063212A /* OCMkvoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMkvoController.h; sourceTree = "<group>"; };
 		17BE603C25FB85330063212A /* OCMkvoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMkvoController.m; sourceTree = "<group>"; };
+		2B2CDA7829C9DBE300927ACF /* CToStringController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CToStringController.h; sourceTree = "<group>"; };
+		2B2CDA7929C9DBE300927ACF /* CToStringController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CToStringController.m; sourceTree = "<group>"; };
 		CE0165E624E646870055E302 /* OCMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMemoryController.h; sourceTree = "<group>"; };
 		CE0165E724E646870055E302 /* OCMemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMemoryController.m; sourceTree = "<group>"; };
 		CE1A868A24CA917300E24717 /* OCMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMutableArray.h; sourceTree = "<group>"; };
@@ -713,6 +716,15 @@
 			path = KVO;
 			sourceTree = "<group>";
 		};
+		2B2CDA7729C9DBB100927ACF /* C */ = {
+			isa = PBXGroup;
+			children = (
+				2B2CDA7829C9DBE300927ACF /* CToStringController.h */,
+				2B2CDA7929C9DBE300927ACF /* CToStringController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		CE0165E524E6462B0055E302 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
@@ -756,6 +768,7 @@
 				CE316F802498D7FE00AC495A /* Algorithms */,
 				CE316F7C2498D52A00AC495A /* Internet */,
 				CEF6ADDE249904A10061995A /* CocoaUI */,
+				2B2CDA7729C9DBB100927ACF /* C */,
 				CE56F5AB249B689E00BA9B02 /* iOS */,
 				CE316F792498D4E700AC495A /* Objective-C */,
 			);
@@ -1705,6 +1718,7 @@
 				17BE603D25FB85330063212A /* OCMkvoController.m in Sources */,
 				CE5E560E251B34830086D42A /* OCGCDOnceController.m in Sources */,
 				176C1DEC25F65473002316BD /* OCMTargetActionController.m in Sources */,
+				2B2CDA7A29C9DBE300927ACF /* CToStringController.m in Sources */,
 				CE745BCB2552F22500BEF903 /* OCBarrierController.m in Sources */,
 				176C1DE325F649FD002316BD /* OCMDelegateController.m in Sources */,
 				CE6C171A24B84A440061EB32 /* OCLoadInitializeObject+Test.m in Sources */,

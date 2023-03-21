@@ -60,7 +60,9 @@
 }
 
 - (void)optionAction {
-    _messageObject.tag = 4;
+    int count = arc4random_uniform(5) + 10;
+    NSLog(@"--%d--",count);
+    _messageObject.tag = count;
 }
 
 - (void)removeAction {

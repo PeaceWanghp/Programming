@@ -21,6 +21,7 @@
 }
 
 - (void)dealloc {
+    printf("%s",__func__);
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -29,7 +30,7 @@
 - (void)addNotification {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(mainPostAction)
+                                                 selector:@selector(mainPostAction:)
                                                      name:@"MainThread"
                                                    object:nil];
         
@@ -39,8 +40,9 @@
                                                    object:nil];
     });
 }
-- (void)mainPostAction {
-    NSLog(@"MainThread:---------%d,%@",self.tag,[NSThread currentThread]);
+
+- (void)mainPostAction:(NSNotification *)notification {
+    NSLog(@"MainThread:---------%d,%@, %@",self.tag,[NSThread currentThread],notification.object);
 }
 
 - (void)subPostAction {

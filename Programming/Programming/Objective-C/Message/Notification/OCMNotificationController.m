@@ -21,7 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.model appendOpenedHeader:@"Notification"];
+    [self.model appendOpenedHeader:@"特点:"];
+    [self.model appendItemWithTitle:@"" class:nil];
+    
+    [self.model appendOpenedHeader:@"线程时序问题"];
     [self.model appendDarkItemTitle:@"Main Thread Post" target:self selector:@selector(mainPost)];
     [self.model appendDarkItemTitle:@"Sub Thread Post" target:self selector:@selector(subPost)];
     
@@ -33,8 +36,9 @@
     _messageObject.tag = 2;
     
     NSLog(@"MainThread:---------1");
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"MainThread" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MainThread" object:@{@"one":@"two"}];
     NSLog(@"MainThread:---------3");
+    _messageObject = nil;
 }
 
 - (void)subPost {

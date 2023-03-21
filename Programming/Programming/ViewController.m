@@ -89,7 +89,7 @@
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
     
     [self.model appendHeader:@"C"];
-    [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"C" class:NSClassFromString(@"CToStringController")];
     
     [self.model appendHeader:@"CocoaUI"];
     [self.model appendDarkItemWithTitle:@"Animation" class:NSClassFromString(@"CUAnimationViewController")];
@@ -113,6 +113,7 @@
     [self.model appendItemWithTitle:@"needDisplay,dispaly区别" class:[UIViewController class]];
     
     [self.model appendOpenedHeader:@"iOS"];
+    [self.model appendDarkItemWithTitle:@"消息传递" class:NSClassFromString(@"iOSMessagePassingController")];
     [self.model appendDarkItemWithTitle:@"Launch Speed (启动速度优化)" class:[OCLaunchController class]];
     [self.model appendItemWithTitle:@"耗电量优化" class:[UIViewController class]];
     [self.model appendDarkItemWithTitle:@"安装包瘦身" class:[iOSThinController class]];
