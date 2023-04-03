@@ -60,7 +60,16 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self.model appendOpenedHeader:@"Objective-C"];
+    [self.model appendHeader:@"Programming Paradigm (编程范式)"];
+    [self.model appendDarkItemWithTitle:@"面向对象" class:NSClassFromString(@"UIViewController")];
+    [self.model appendDarkItemWithTitle:@"面向过程" class:NSClassFromString(@"UIViewController")];
+    [self.model appendDarkItemWithTitle:@"函数试" class:NSClassFromString(@"UIViewController")];
+    [self.model appendDarkItemWithTitle:@"命令式" class:NSClassFromString(@"UIViewController")];
+    [self.model appendDarkItemWithTitle:@"响应式" class:NSClassFromString(@"UIViewController")];
+    [self.model appendDarkItemWithTitle:@"声明式" class:NSClassFromString(@"UIViewController")];
+    [self.model appendDarkItemWithTitle:@"链式" class:NSClassFromString(@"UIViewController")];
+    
+    [self.model appendHeader:@"Objective-C"];
     [self.model appendDarkItemWithTitle:@"#import/#include/@class/@import" class:[OCImportController class]];
     [self.model appendDarkItemWithTitle:@"const/extern/static/#define" class:[OCKeywordsController class]];
     [self.model appendDarkItemWithTitle:@"Runtime" class:[OCRuntimeController class]];
@@ -82,7 +91,7 @@
     [self.model appendItemWithTitle:@"Container" class:[OCContainerController class]];
     
     [self.model appendHeader:@"Swift"];
-    [self.model appendItemWithTitle:@"桥接" class:[UIViewController class]];
+    [self.model appendItemWithTitle:@"桥接" class:NSClassFromString(@"SwiftController")];
     [self.model appendItemWithTitle:@"基本语法" class:[UIViewController class]];
     
     [self.model appendHeader:@"C++"];
@@ -107,12 +116,12 @@
     [self.model appendItemWithTitle:@"UITableView+ScrollViewHeader" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"addChildViewController" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"presendViewController在基于navigationVC和currentVC区别" class:[UIViewController class]];
-    [self.model appendItemWithTitle:@"转场" class:[UIViewController class]];
+    [self.model appendDarkItemWithTitle:@"Transition (转场动画)" class:NSClassFromString(@"CUTransitionController")];
     [self.model appendItemWithTitle:@"StoryBoard" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Xib" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"needDisplay,dispaly区别" class:[UIViewController class]];
     
-    [self.model appendOpenedHeader:@"iOS"];
+    [self.model appendHeader:@"iOS"];
     [self.model appendDarkItemWithTitle:@"消息传递" class:NSClassFromString(@"iOSMessagePassingController")];
     [self.model appendDarkItemWithTitle:@"Launch Speed (启动速度优化)" class:[OCLaunchController class]];
     [self.model appendItemWithTitle:@"耗电量优化" class:[UIViewController class]];
@@ -170,7 +179,9 @@
     
     [self.model appendHeader:@"Algorithms(算法)"];
     [self.model appendDarkItemWithTitle:@"理论" class:[AlgorithmsController class]];
+    [self.model appendDarkItemWithTitle:@"BigO (时间/空间复杂度)" class:NSClassFromString(@"ALGBigOController")];
     [self.model appendDarkItemWithTitle:@"Link(链表)" class:[ALGLinkController class]];
+    [self.model appendDarkItemWithTitle:@"List" class:NSClassFromString(@"ALListController")];
     
     [self.model appendHeader:@"音视频协议"];
     [self.model appendItemWithTitle:@"..." class:[UIViewController class]];
