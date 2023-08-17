@@ -24,13 +24,15 @@
     [self.model appendOpenedHeader:@"应用："];
     
     [self.model appendDarkItemTitle:@"Sync做栅栏" target:self selector:@selector(todo)];
-    [self.model appendDarkItemTitle:@"同一线程Sync死锁" target:self selector:@selector(todo1)];
+    [self.model appendDarkItemTitle:@"同一队列Sync死锁" target:self selector:@selector(todo1)];
     
     [self.model appendDarkItemTitle:@"同一线程死锁" target:self selector:@selector(todo2)];
     [self.model appendDarkItemTitle:@"" target:self selector:@selector(todo3)];
 }
 
 - (void)todo {
+//    _queue = dispatch_queue_create("xxxx", DISPATCH_QUEUE_SERIAL);
+    _queue = dispatch_queue_create("xxxx", DISPATCH_QUEUE_CONCURRENT);
     NSLog(@"000000 %@",[NSThread currentThread]);
     
     dispatch_async(_queue, ^{
@@ -39,19 +41,31 @@
         NSLog(@"1111 %@",[NSThread currentThread]);
     });
     
-    dispatch_sync(_queue, ^{
-        NSLog(@"_2222");
+    dispatch_async(_queue, ^{
+        NSLog(@"_22222");
         sleep(1);
-        NSLog(@"2222 %@",[NSThread currentThread]);
+        NSLog(@"22222 %@",[NSThread currentThread]);
+    });
+    
+    dispatch_sync(_queue, ^{
+        NSLog(@"_33333");
+        sleep(2);
+        NSLog(@"33333 %@",[NSThread currentThread]);
     });
     
     dispatch_async(_queue, ^{
-        NSLog(@"_33333");
+        NSLog(@"_44444");
         sleep(1);
-        NSLog(@"3333 %@",[NSThread currentThread]);
+        NSLog(@"44444 %@",[NSThread currentThread]);
     });
     
-    NSLog(@"44444 %@",[NSThread currentThread]);
+    dispatch_async(_queue, ^{
+        NSLog(@"_55555");
+        sleep(1);
+        NSLog(@"55555 %@",[NSThread currentThread]);
+    });
+    
+    NSLog(@"-------- %@",[NSThread currentThread]);
 }
 
 - (void)todo1 {

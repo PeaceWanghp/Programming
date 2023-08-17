@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
+    
     [self didAction];
 }
 
@@ -33,6 +33,18 @@
         charString = [ocString cStringUsingEncoding:NSUTF8StringEncoding];
     }
     NSLog(@"%@===%s",ocString,charString);
+    
+    NSLog(@"test1 = %d, test2 = %d",[self test1],[self test2]);
+}
+
+- (int)test1 {
+    int a = 1;
+    return a ++;
+}
+
+- (int)test2 {
+    int a = 1;
+    return ++a;
 }
 
 @end

@@ -62,6 +62,7 @@
     
     [self.model appendHeader:@"Programming Paradigm (编程范式)"];
     [self.model appendDarkItemWithTitle:@"面向对象" class:NSClassFromString(@"UIViewController")];
+    [self.model appendDarkItemWithTitle:@"面向切片" class:NSClassFromString(@"UIViewController")];
     [self.model appendDarkItemWithTitle:@"面向过程" class:NSClassFromString(@"UIViewController")];
     [self.model appendDarkItemWithTitle:@"函数试" class:NSClassFromString(@"UIViewController")];
     [self.model appendDarkItemWithTitle:@"命令式" class:NSClassFromString(@"UIViewController")];
@@ -89,6 +90,8 @@
     [self.model appendDarkItemWithTitle:@"Pointer" class:[OCPointerController class]];
     [self.model appendDarkItemWithTitle:@"NSCache" class:[UIViewController class]];
     [self.model appendItemWithTitle:@"Container" class:[OCContainerController class]];
+    [self.model appendDarkItemWithTitle:@"ASCII" class:NSClassFromString(@"OCASCIIController")];
+    
     
     [self.model appendHeader:@"Swift"];
     [self.model appendItemWithTitle:@"桥接" class:NSClassFromString(@"SwiftController")];
@@ -122,6 +125,7 @@
     [self.model appendItemWithTitle:@"needDisplay,dispaly区别" class:[UIViewController class]];
     
     [self.model appendHeader:@"iOS"];
+    [self.model appendDarkItemWithTitle:@"递归" class:NSClassFromString(@"iOSRecursionController")];
     [self.model appendDarkItemWithTitle:@"消息传递" class:NSClassFromString(@"iOSMessagePassingController")];
     [self.model appendDarkItemWithTitle:@"Launch Speed (启动速度优化)" class:[OCLaunchController class]];
     [self.model appendItemWithTitle:@"耗电量优化" class:[UIViewController class]];

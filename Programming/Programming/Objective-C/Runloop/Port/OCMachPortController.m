@@ -33,12 +33,12 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(processNotification:)
-                                                 name:@"NotificationName"
+                                                 name:@"NotificationName111"
                                                object:nil];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSLog(@"post notificaton thread1 = %@", [NSThread currentThread]);
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"NotificationName" object:nil userInfo:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"NotificationName111" object:nil userInfo:nil];
     });
 }
 

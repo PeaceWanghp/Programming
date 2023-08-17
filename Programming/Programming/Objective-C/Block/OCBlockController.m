@@ -29,6 +29,10 @@
     [self.model appendDarkItemTitle:@"被strong的block:使用了堆区数据则为mallocBlock,未使用则globalBlock" target:self selector:nil];
     [self.model appendDarkItemTitle:@"未被strong的block:使用了堆区数据则为stackBlock,未使用则globalBlock" target:self selector:nil];
     
+    [self.model appendDarkItemTitle:@"Recursion block"
+                             target:self
+                           selector:@selector(testBlockRecursion)];
+    
     [self.model appendOpenedHeader:@"使用："];
     [self.model appendDarkItemTitle:@"定义/实现1：\nvoid (^block)(void) = ^ {\n \n};"
                              target:nil
@@ -52,6 +56,7 @@
                              target:nil
                            selector:nil];
     [self.model appendDarkItemWithTitle:@"Weak/Strong Self" class:[OCBlockWeakStrongVController class]];
+    [self.model appendDarkItemTitle:@"不增加循环引用" target:self selector:@selector(testNoRetain)];
     
     [self.model appendOpenedHeader:@"!__block"];
     [self.model appendDarkItemTitle:@"self" target:self selector:@selector(testSelf)];
@@ -86,6 +91,39 @@
     
 }
 
+- (void)testNoRetain {
+    {
+        NSLog(@"1.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(self)));
+        
+        __weak typeof(self) weakSelf = self;
+        void (^block)(void) = ^(void){
+            NSLog(@"11.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(weakSelf)));
+            weakSelf.view.backgroundColor = [UIColor redColor];
+        };
+        block();
+        
+        NSLog(@"2.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(self)));
+    }
+    NSLog(@"3.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(self)));
+    NSLog(@"\n\n");
+    {
+        NSLog(@"1.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(self)));
+        
+        typeof(self) *object = &self;
+        void (^block)(void) = ^(void){
+            
+            NSLog(@"11.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(*object)));
+//            id *object = blockController;
+            OCBlockController *blockController = *object;
+            blockController.view.backgroundColor = [UIColor redColor];
+        };
+        block();
+        
+        NSLog(@"2.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(self)));
+    }
+    NSLog(@"3.retainCount = %ld",(long)CFGetRetainCount((__bridge CFTypeRef)(self)));
+}
+
 - (void)xxx:(BOOL(^)(NSString *))block {
     
 }
@@ -117,6 +155,18 @@
 - (NSArray *)pathsWithEachSubpathsForPath:(NSString *)path filterBlock:(BOOL(^)(NSString *))filter {
     
     return nil;
+}
+
+- (void)testBlockRecursion {
+    __block int a = 0;
+    int (^aBlock)(int) = ^(int num) {
+        a += num;
+        if (a < 5) {
+            aBlock(a);
+        }
+        return a++;
+    };
+    NSLog(@"value = %d", aBlock(1));
 }
 
 @end

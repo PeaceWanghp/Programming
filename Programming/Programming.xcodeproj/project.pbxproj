@@ -52,6 +52,8 @@
 		2B2CDAAC29D40CA300927ACF /* CUTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CDAAB29D40CA300927ACF /* CUTransitionController.m */; };
 		2B2CDAB029D6AECA00927ACF /* SwiftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CDAAF29D6AECA00927ACF /* SwiftController.m */; };
 		2B2CDAB329D6AF3B00927ACF /* HelloWorldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CDAB229D6AF3B00927ACF /* HelloWorldController.swift */; };
+		2BDE74B129E79A1F0052E062 /* OCASCIIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE74B029E79A1F0052E062 /* OCASCIIController.m */; };
+		2BDE74B529E7DFBF0052E062 /* iOSRecursionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE74B429E7DFBF0052E062 /* iOSRecursionController.m */; };
 		CE0165E824E646870055E302 /* OCMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0165E724E646870055E302 /* OCMemoryController.m */; };
 		CE1A868C24CA917300E24717 /* OCMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A868B24CA917300E24717 /* OCMutableArray.m */; };
 		CE316F622498D4A400AC495A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE316F612498D4A400AC495A /* AppDelegate.m */; };
@@ -268,6 +270,11 @@
 		2B2CDAAF29D6AECA00927ACF /* SwiftController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftController.m; sourceTree = "<group>"; };
 		2B2CDAB129D6AF3A00927ACF /* Programming-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Programming-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B2CDAB229D6AF3B00927ACF /* HelloWorldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldController.swift; sourceTree = "<group>"; };
+		2B614F5129DAB992004C6A1D /* Programming.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Programming.entitlements; sourceTree = "<group>"; };
+		2BDE74AF29E79A1F0052E062 /* OCASCIIController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCASCIIController.h; sourceTree = "<group>"; };
+		2BDE74B029E79A1F0052E062 /* OCASCIIController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCASCIIController.m; sourceTree = "<group>"; };
+		2BDE74B329E7DFBF0052E062 /* iOSRecursionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSRecursionController.h; sourceTree = "<group>"; };
+		2BDE74B429E7DFBF0052E062 /* iOSRecursionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSRecursionController.m; sourceTree = "<group>"; };
 		CE0165E624E646870055E302 /* OCMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMemoryController.h; sourceTree = "<group>"; };
 		CE0165E724E646870055E302 /* OCMemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMemoryController.m; sourceTree = "<group>"; };
 		CE1A868A24CA917300E24717 /* OCMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMutableArray.h; sourceTree = "<group>"; };
@@ -821,6 +828,31 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		2B614F4E29DAB988004C6A1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BDE74AE29E799DC0052E062 /* ASCII */ = {
+			isa = PBXGroup;
+			children = (
+				2BDE74AF29E79A1F0052E062 /* OCASCIIController.h */,
+				2BDE74B029E79A1F0052E062 /* OCASCIIController.m */,
+			);
+			path = ASCII;
+			sourceTree = "<group>";
+		};
+		2BDE74B229E7DF900052E062 /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
+				2BDE74B329E7DFBF0052E062 /* iOSRecursionController.h */,
+				2BDE74B429E7DFBF0052E062 /* iOSRecursionController.m */,
+			);
+			path = Recursion;
+			sourceTree = "<group>";
+		};
 		CE0165E524E6462B0055E302 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
@@ -838,6 +870,7 @@
 			children = (
 				CE316F5F2498D4A400AC495A /* Programming */,
 				CE316F5E2498D4A400AC495A /* Products */,
+				2B614F4E29DAB988004C6A1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -852,6 +885,7 @@
 		CE316F5F2498D4A400AC495A /* Programming */ = {
 			isa = PBXGroup;
 			children = (
+				2B614F5129DAB992004C6A1D /* Programming.entitlements */,
 				CE316F602498D4A400AC495A /* AppDelegate.h */,
 				CE316F612498D4A400AC495A /* AppDelegate.m */,
 				CE316F662498D4A400AC495A /* ViewController.h */,
@@ -875,6 +909,7 @@
 		CE316F792498D4E700AC495A /* Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				2BDE74AE29E799DC0052E062 /* ASCII */,
 				1765474927B556C400D3E5E0 /* TaggedPointer */,
 				CED1628924C19156003F50F1 /* Runtime */,
 				CE34F1B2250A249000BF4BA3 /* Runloop */,
@@ -953,6 +988,7 @@
 		CE56F5AB249B689E00BA9B02 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2BDE74B229E7DF900052E062 /* Recursion */,
 				CE4B3EEF257346FB0045F51F /* Thin */,
 				CE78A748256511A000E9AAAD /* Launch */,
 				CEEAD9D125218284007E491C /* Monitor */,
@@ -1792,6 +1828,7 @@
 				CEDC03A824C6C5C000E8734C /* ALGLinkController.m in Sources */,
 				CE34F1B02508CC7000BF4BA3 /* OCJSPatchController.m in Sources */,
 				2B2CDA8A29D190E600927ACF /* ALListReverseString.c in Sources */,
+				2BDE74B129E79A1F0052E062 /* OCASCIIController.m in Sources */,
 				CEB0454224D416A90045BAA8 /* ALGLinkController+DeleteOne.m in Sources */,
 				CE6C172824B85F5A0061EB32 /* OCInheritA.m in Sources */,
 				CE34F1BF250F668100BF4BA3 /* OCBlockController+CatchValue.m in Sources */,
@@ -1885,6 +1922,7 @@
 				176C1DD225F6238C002316BD /* OCMessageController.m in Sources */,
 				2B2CDA7E29CB1C2300927ACF /* ALGBigOController.m in Sources */,
 				173C59D42864935A008B8768 /* BPresentAction.m in Sources */,
+				2BDE74B529E7DFBF0052E062 /* iOSRecursionController.m in Sources */,
 				CE9C790624BF169300071276 /* iOSMemoryLeakController.m in Sources */,
 				CE78A74B256511F300E9AAAD /* OCLaunchController.m in Sources */,
 				CED28E0B24B5B43000AD2D6E /* OCPointerController.m in Sources */,
@@ -2022,18 +2060,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 86NC63YY5X;
+				DEVELOPMENT_TEAM = 2R274Q77L4;
 				INFOPLIST_FILE = Programming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.soyoung.qingyang.medical;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx22222222.3334;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = SoyoungQingYangMedicalDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Programming/Swift/Programming-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -2046,15 +2086,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 86NC63YY5X;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2R274Q77L4;
 				INFOPLIST_FILE = Programming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.soyoung.qingyang.medical;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx22222222.3334;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Programming/Swift/Programming-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
