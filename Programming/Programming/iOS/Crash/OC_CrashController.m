@@ -83,4 +83,9 @@
     NSLog(@"value = %d",value);
 }
 
+- (void)arrayBeyond {
+    NSArray *array = @[@1,@3,@4];
+    NSNumber *number = array[3];
+}
+
 @end
