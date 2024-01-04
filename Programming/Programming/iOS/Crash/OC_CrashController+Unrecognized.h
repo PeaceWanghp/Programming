@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface OC_CrashController (Unrecognized)
 
 @property (nonatomic,copy) NSString *testUnrecognized;
+@property (nonatomic,copy) NSString *categoryProperty;
 
 @end
 

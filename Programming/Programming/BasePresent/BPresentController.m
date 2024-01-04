@@ -42,6 +42,8 @@
                                                                          target:self
                                                                          action:@selector(backAction)];
     self.navigationItem.leftBarButtonItem = backBarButtonItem;
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.tableView.backgroundColor = [UIColor whiteColor];
 }
 
 // 返回按钮的回调方法
@@ -144,6 +146,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell.contentView.backgroundColor = UIColor.whiteColor;
     }
     BPresentItemModel *itemModel;
     if (self.model.groupDataSource.count > 0) {
