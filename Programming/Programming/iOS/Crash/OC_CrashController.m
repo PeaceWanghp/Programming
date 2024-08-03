@@ -45,6 +45,8 @@
     [self.model appendDarkItemTitle:@"*EXC_BAD_ACCESS (SIGABRT)/KERN_INVALID_ADDRESS" target:self selector:@selector(exc_bad_access_KERN_INVALID_ADDRESS)];
     //试图解引用 NULL 指针
     [self.model appendDarkItemTitle:@"*EXC_BAD_ACCESS (SIGABRT)/KERN_INVALID_ADDRESS" target:self selector:@selector(exc_bad_access_KERN_INVALID_ADDRESS_1)];
+    //试图操作已释放的 FILE 对象
+    [self.model appendDarkItemTitle:@"*EXC_BAD_ACCESS (SIGSEGV)/KERN_INVALID_ADDRESS" target:self selector:@selector(exc_bad_access_KERN_INVALID_ADDRESS_2)];
     //infinite recursion(无限递归) stack-overflow
     [self.model appendDarkItemTitle:@"*EXC_BAD_ACCESS (SIGABRT)/KERN_PROTECTION_FAILURE" target:self selector:@selector(exc_bad_access_KERN_PROTECTION_FAILURE)];
     
@@ -93,14 +95,9 @@
 #pragma mark - Test
 
 - (void)testMethod {
-    __unsafe_unretained OC_CrashObject *unsafe_unretained_Object;
-    @autoreleasepool {
-        OC_CrashObject *object = [OC_CrashObject new];
-        object.string = @"aaabbb";
-        unsafe_unretained_Object = object;
-    }
-    NSLog(@"string = %@",unsafe_unretained_Object.string);
-    
+    int *ptr = (int *)0x12345678; // 将指针设置为一个非法地址
+    *ptr = 42; // 试图在非法地址上写入数据
+
 }
 
 - (void)uiNotMainThread {
@@ -118,6 +115,12 @@
 - (void)exc_bad_access_KERN_INVALID_ADDRESS_1 {
     int *ptr = NULL;
     int value = *ptr; // 试图解引用 NULL 指针
+}
+
+- (void)exc_bad_access_KERN_INVALID_ADDRESS_2 {
+    FILE *file = fopen("example.txt", "r");
+    fclose(file);
+    int character = fgetc(file); // 试图操作已释放的 FILE 对象
 }
 
 - (void)exc_bad_access_KERN_PROTECTION_FAILURE {
@@ -187,6 +190,9 @@
 
 - (void)exc_crash_sigabrt_NonExistentMethod {
     [self performSelector:@selector(nonexistentMethod)]; // 调用不存在的方法
+    //or
+//    id nullObject = [NSNull null];
+//    [nullObject length]; // NSNull 不能响应 length 方法
 }
 
 - (void)exc_crash_sigabrt_categoryProperty {
@@ -196,7 +202,7 @@
 #pragma mark -
 #pragma mark -- BadAccess
 - (void)testBadAccess {
-    
+
 }
 
 - (void)arrayBeyond {

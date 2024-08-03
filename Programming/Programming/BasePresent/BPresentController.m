@@ -101,9 +101,13 @@
     
     if (headerModel.status) {
         header.contentView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
+        header.contentView.backgroundColor = UIColor.lightGrayColor;
+        header.textLabel.textColor = UIColor.blackColor;
     }
     else {
         header.contentView.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1];
+        header.contentView.backgroundColor = UIColor.lightGrayColor;
+        header.textLabel.textColor = UIColor.blackColor;
     }
     header.textLabel.text = headerModel.title;
     header.tag = section;
